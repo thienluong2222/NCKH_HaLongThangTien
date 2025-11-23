@@ -1,0 +1,11 @@
+Chính sách đổi trả hàng:
+Khách hàng có thể đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua hàng. Sản phẩm phải còn nguyên tem mác và chưa qua sử dụng. Để thực hiện đổi trả, vui lòng mang theo hóa đơn gốc đến bất kỳ chi nhánh nào của chúng tôi. Các mặt hàng giảm giá trên 50% sẽ không được áp dụng chính sách đổi trả.
+
+Giờ làm việc:
+Cửa hàng của chúng tôi mở cửa từ 8:00 sáng đến 10:00 tối tất cả các ngày trong tuần, bao gồm cả ngày lễ.
+
+Liên hệ hỗ trợ:
+Nếu bạn cần hỗ trợ thêm, vui lòng gọi đến số hotline 1900-1234 hoặc gửi email về dia-chi-email@example.com. Đội ngũ hỗ trợ sẽ phản hồi trong vòng 24 giờ làm việc.
+
+Thông tin về PhoBERT:
+PhoBERT là một mô hình ngôn ngữ lớn được huấn luyện trước (pre-trained) cho tiếng Việt, dựa trên kiến trúc RoBERTa. Nó được phát triển bởi VinAI Research. PhoBERT giúp cải thiện đáng kể hiệu suất cho các tác vụ xử lý ngôn ngữ tự nhiên tiếng Việt như phân loại văn bản, gán nhãn từ loại, và nhận diện thực thể tên riêng.
