@@ -8,10 +8,12 @@ import matplotlib.pyplot as plt
 from ultralytics import YOLO
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.output_parsers import StrOutputParser
 from constraintsDB import CONSTRAINTS_DB, SUBCLASS_TO_FESTIVAL
 import math
 from dotenv import load_dotenv
+import json
 
 load_dotenv()
 API_KEY = os.getenv("GEMINI_API_KEY")
@@ -770,6 +772,17 @@ GLOBAL_CONFIG = {
     "T_out": 0.85      # Ngưỡng quyết định cuối cùng (sau khi hỏi user)
 }
 
+UNCERTAINTY_RULES = {
+    "chắc có": 0.85,
+    "có": 1.0,
+    "hình như có": 0.6,
+    "có lẽ có": 0.55,
+    "chắc không": 0.35,
+    "không": 0.0,
+    "hình như không": 0.45,
+    "có lẽ không": 0.4
+}
+
 # ==========================================
 # CÁC HÀM TOÁN HỌC BỔ TRỢ
 # ==========================================
@@ -811,11 +824,10 @@ class ObjectDetection:
 class BayesianFestivalClassifier:
     def __init__(self, api_key):
         self.api_key = api_key
-        # Khởi tạo LLM
-        self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=api_key, max_retries=3)
+        # Sử dụng model mạnh hơn một chút để parse JSON tốt hơn nếu cần, hoặc flash vẫn ok
+        self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=api_key, max_retries=3, temperature=0)
 
     def _index_detections(self, detections):
-        """Tạo index để truy xuất nhanh O(1)"""
         by_subclass = defaultdict(list)
         by_frame = defaultdict(list)
         for d in detections:
@@ -824,9 +836,7 @@ class BayesianFestivalClassifier:
         return by_subclass, by_frame
 
     def _check_is_on(self, top_sub, bot_sub, by_subclass, by_frame):
-        """Kiểm tra quan hệ không gian"""
-        relevant_frames = set(d.frame_id for d in by_subclass[top_sub]) & \
-                        set(d.frame_id for d in by_subclass[bot_sub])
+        relevant_frames = set(d.frame_id for d in by_subclass[top_sub]) & set(d.frame_id for d in by_subclass[bot_sub])
         for fid in relevant_frames:
             tops = [d for d in by_frame[fid] if d.subclass == top_sub]
             bots = [d for d in by_frame[fid] if d.subclass == bot_sub]
@@ -841,223 +851,199 @@ class BayesianFestivalClassifier:
                                 return True
         return False
 
-    def check_constaints(self, rule, by_subclass, by_frame):
-        """Kiểm tra 1 rule có thỏa mãn không. Trả về Bool."""
+    def check_constraints(self, rule, by_subclass, by_frame):
         ctype, params, is_hard, weight, threshold = rule
         satisfied = False
-
         if ctype == "is_presence":
-            missing = [p for p in params if p not in by_subclass]
-            satisfied = len(missing) == 0
-            
+            satisfied = len([p for p in params if p not in by_subclass]) == 0
         elif ctype == "is_presence_in_frame":
             for fid, dets in by_frame.items():
                 subs = {d.subclass for d in dets}
                 if all(p in subs for p in params):
                     satisfied = True; break
-                    
         elif ctype == "at_least":
             total = sum(sum(d.count for d in by_subclass[p]) for p in params if p in by_subclass)
             satisfied = total >= (threshold or 1)
-            
         elif ctype == "at_least_in_frame":
             for fid, dets in by_frame.items():
                 cnt = sum(d.count for d in dets if d.subclass in params)
                 if cnt >= (threshold or 1):
                     satisfied = True; break
-                    
         elif ctype == "confidence_min":
             target = list(by_subclass.keys()) if "all" in params else [p for p in params if p in by_subclass]
             if target:
-                total_conf = sum(d.confidence * d.count for s in target for d in by_subclass[s])
-                total_cnt = sum(d.count for s in target for d in by_subclass[s])
-                avg = total_conf / total_cnt if total_cnt > 0 else 0
+                avg = sum(d.confidence * d.count for s in target for d in by_subclass[s]) / sum(d.count for s in target for d in by_subclass[s])
                 satisfied = avg >= (threshold or 0)
-            
         elif ctype == "is_on" and len(params) == 2:
             satisfied = self._check_is_on(params[0], params[1], by_subclass, by_frame)
-            
         return satisfied
 
     def calculate_initial_logits(self, detections):
-        """
-        BƯỚC 2: Tính Logit ban đầu dựa trên bằng chứng máy thấy.
-        Logic: Logit khởi tạo = 0.
-            Nếu rule thỏa mãn -> Logit += weight
-            Nếu rule KHÔNG thỏa -> Bỏ qua (Logit += 0), KHÔNG TRỪ ĐIỂM.
-        """
         by_subclass, by_frame = self._index_detections(detections)
         festival_logits = {}
         festival_unsatisfied = defaultdict(list)
 
         for festival, rules in CONSTRAINTS_DB.items():
-            current_logit = 0.0 # Bắt đầu ở mức trung lập (p=0.5)
-            
+            current_logit = 0.0
             for rule in rules:
-                ctype, params, is_hard, weight, threshold = rule
-                is_satisfied = self.check_constaints(rule, by_subclass, by_frame)
-                
+                is_satisfied = self.check_constraints(rule, by_subclass, by_frame)
+                weight = rule[3]
                 if is_satisfied:
-                    # Bằng chứng dương tính -> Cộng điểm
                     current_logit += weight
                 else:
-                    # Bằng chứng âm tính -> Bỏ qua (Ignore), không trừ điểm
-                    # Nhưng vẫn lưu vào danh sách để hỏi user xem có bị sót không
                     festival_unsatisfied[festival].append(rule)
-            
             festival_logits[festival] = current_logit
-            
         return festival_logits, festival_unsatisfied
 
     def select_candidates(self, festival_logits):
-        """
-        BƯỚC 3: Lọc ứng viên dựa trên Probability (Sigmoid của Logit)
-        """
-        # Chuyển logit sang probability để so sánh với threshold
         festival_probs = {f: sigmoid(l) for f, l in festival_logits.items()}
-        
         if not festival_probs: return []
-        
         max_prob = max(festival_probs.values())
         candidates = []
         
-        print(f"\n📊 BẢNG XẾP HẠNG BAN ĐẦU (AI DETECT - LOGIT SPACE):")
-        sorted_fests = sorted(festival_probs.items(), key=lambda x: x[1], reverse=True)
-        for f, p in sorted_fests:
+        print(f"\n📊 BẢNG XẾP HẠNG BAN ĐẦU:")
+        for f, p in sorted(festival_probs.items(), key=lambda x: x[1], reverse=True):
             print(f"   - {f}: {p:.2%} (Logit: {festival_logits[f]:.2f})")
 
         for f, p in festival_probs.items():
-            # Logic chọn ứng viên từ PSEUDO
-            if p >= GLOBAL_CONFIG["T_high"]:
-                candidates.append(f)
-            elif p >= GLOBAL_CONFIG["T_low"] and (max_prob - p) <= GLOBAL_CONFIG["delta"]:
-                candidates.append(f)
-                
+            if p >= GLOBAL_CONFIG["T_high"]: candidates.append(f)
+            elif p >= GLOBAL_CONFIG["T_low"] and (max_prob - p) <= GLOBAL_CONFIG["delta"]: candidates.append(f)
         return candidates
 
     # ==========================================
-    # PHẦN 3: LLM INTERACTION (CẢI TIẾN)
+    # PHẦN 3: LLM INTERACTION - CONSOLIDATED QUESTION
     # ==========================================
-    def generate_question_smart(self, festival, rule):
-        """Sinh câu hỏi thông minh có ngữ cảnh"""
-        ctype, params, _, _, _ = rule
-        param_str = ", ".join(params)
-        
-        prompt = f"""
-        Bạn là trợ lý AI đang xác minh video lễ hội "{festival}".
-        Hệ thống thị giác máy tính ĐÃ QUÉT video nhưng KHÔNG TÌM THẤY hoặc KHÔNG CHẮC CHẮN về yếu tố sau:
-        - Loại luật: {ctype}
-        - Đối tượng cần tìm: {param_str}
-        
-        Nhiệm vụ: Hãy đặt một câu hỏi Ngắn Gọn, Tự Nhiên cho người dùng để họ xác nhận bằng mắt thường.
-        - Nếu là 'is_presence'/'at_least': Hỏi "Bạn có thấy [đối tượng] xuất hiện xung quanh không?"
-        - Nếu là 'is_on': Hỏi "Bạn có thấy [đối tượng 1] nằm trên [đối tượng 2] không?"
-        - Đừng dùng từ ngữ kỹ thuật như "bounding box", "frame".
-        
-        Câu hỏi:
+    
+    def generate_consolidated_question(self, candidates, festival_unsatisfied):
         """
-        return self.llm.invoke(prompt).content.strip()
-
-    def analyze_answer_smart(self, question, answer):
-        """Phân tích câu trả lời với sắc thái Tiếng Việt (Thang đo 0-1 cho Additive Logic)"""
-        prompt = f"""
-        Ngữ cảnh: AI hỏi về sự xuất hiện của sự vật trong video.
-        AI hỏi: "{question}"
-        User trả lời: "{answer}"
-        
-        Hãy phân tích thái độ của user để đưa ra điểm số (0 đến 1) về mức độ xác nhận:
-        - 1.0: Chắc chắn CÓ, Đúng, Thấy rõ. (Positive Confirmation)
-        - 0.5: Hình như có, Có vẻ là vậy, Không chắc lắm. (Weak Confirmation)
-        - 0.0: KHÔNG, Không thấy, Không rõ, Hình như không. (Negative/Unknown)
-        
-        Chỉ trả về CON SỐ (VD: 1.0, 0.5, 0.0).
+        Tạo 1 câu hỏi duy nhất tổng hợp tất cả các đặc trưng còn thiếu.
         """
-        result = self.llm.invoke(prompt).content.strip()
-        try:
-            return float(result)
-        except:
-            return 0.0
-
-    def get_verification_questions(self, candidates, festival_unsatisfied):
-        """
-        BƯỚC 4a (Frontend-ready): Sinh danh sách câu hỏi để gửi xuống Client.
-        Thay vì hỏi trực tiếp, hàm này trả về cấu trúc dữ liệu câu hỏi (JSON friendly).
-        """
-        questions_payload = []
-        
-        print(f"\nĐang sinh câu hỏi xác thực cho: {candidates}...")
-
+        all_missing_features = set()
         for fest in candidates:
-            unsatisfied_rules = festival_unsatisfied[fest]
-            if not unsatisfied_rules:
-                continue
-            
-            # Sắp xếp luật theo trọng số giảm dần
-            unsatisfied_rules.sort(key=lambda x: x[3], reverse=True)
-            
-            # Chỉ lấy tối đa 3 câu hỏi quan trọng nhất
-            max_questions = 3
-            
-            for i, rule in enumerate(unsatisfied_rules[:max_questions]):
-                weight = rule[3]
-                question_text = self.generate_question_smart(fest, rule)
-                
-                # Đóng gói object câu hỏi
-                q_obj = {
-                    "question_id": f"{fest}_{i}",
-                    "festival": fest,
-                    "question_text": question_text,
-                    "rule_weight": weight,
-                    # "rule_type": rule[0], # Nếu frontend cần hiển thị icon/loại luật
-                    # "params": rule[1]
-                }
-                questions_payload.append(q_obj)
-                
-        return questions_payload
+            rules = festival_unsatisfied[fest]
+            for rule in rules:
+                # Rule[1] là params (list các subclass cần tìm)
+                all_missing_features.update(rule[1])
+        
+        if not all_missing_features:
+            return None
+        
+        feature_list_str = ", ".join(all_missing_features)
+        candidate_str = ", ".join(candidates)
+        
+        question = (
+            f"Hệ thống đang phân vân giữa các lễ hội: {candidate_str}. "
+            f"Bạn hãy quan sát kỹ video và cho biết bạn có thấy các đặc trưng sau không: "
+            f"{feature_list_str}?"
+        )
+        
+        # Trả về cả text câu hỏi và list features để dùng cho bước analyze sau này
+        return {
+            "question_text": question,
+            "target_features": list(all_missing_features)
+        }
 
-    def process_user_answers(self, festival_logits, user_responses):
+    def analyze_complex_answer(self, question, user_answer, target_features):
         """
-        BƯỚC 4b (Frontend-ready): Nhận danh sách câu trả lời từ Client và cập nhật Logit.
-        user_responses: List các dict chứa {question_text, answer, rule_weight, festival}
+        Phân tích câu trả lời phức tạp bằng LLM và map với UNCERTAINTY_RULES.
+        Trả về JSON mapping: {feature: {"status": True/False, "confidence": float}}
+        """
+        # Chuyển rules thành string để đưa vào prompt
+        rules_desc = json.dumps(UNCERTAINTY_RULES, ensure_ascii=False)
+        features_desc = ", ".join(target_features)
+        
+        prompt = f"""
+        Nhiệm vụ: Phân tích câu trả lời của người dùng về sự xuất hiện của các vật thể trong video.
+        
+        Danh sách vật thể cần tìm (Features): {features_desc}
+        
+        Bảng điểm tin cậy (Uncertainty Rules):
+        {rules_desc}
+        
+        Câu hỏi của hệ thống: "{question}"
+        Câu trả lời của người dùng: "{user_answer}"
+        
+        Yêu cầu Output:
+        Trả về một JSON object duy nhất. Key là tên vật thể (trong danh sách Features), Value là object chứa:
+        - "status": true (nếu người dùng bảo có), false (nếu người dùng bảo không).
+        - "confidence": Điểm số lấy chính xác từ Bảng điểm tin cậy dựa trên từ ngữ người dùng dùng.
+        
+        Ví dụ: Nếu user nói "Có đèn gió nhưng chắc không có ghe ngo", output:
+        {{
+            "đèn gió": {{"status": true, "confidence": 1.0}},
+            "ghe ngo": {{"status": false, "confidence": 0.35}}
+        }}
+        
+        Chỉ trả về JSON, không thêm markdown.
+        """
+        
+        parser = JsonOutputParser()
+        try:
+            result = self.llm.invoke(prompt).content
+            # Clean markdown if exists
+            if "```json" in result:
+                result = result.split("```json")[1].split("```")[0]
+            parsed_result = json.loads(result.strip())
+            return parsed_result
+        except Exception as e:
+            print(f"Lỗi parse JSON từ LLM: {e}")
+            return {}
+
+    def update_logits_from_consolidated_answer(self, festival_logits, candidates, festival_unsatisfied, parsed_answer):
+        """
+        Cập nhật điểm Logit dựa trên kết quả phân tích JSON.
+        (Có thưởng có phạt).
         """
         final_logits = festival_logits.copy()
         
-        print(f"\n🔄 Đang xử lý {len(user_responses)} câu trả lời từ người dùng...")
-
-        for response in user_responses:
-            fest = response.get("festival")
-            weight = response.get("rule_weight")
-            question = response.get("question_text")
-            answer = response.get("answer")
+        print("\nCập nhật điểm dựa trên câu trả lời...")
+        
+        for fest in candidates:
+            unsatisfied_rules = festival_unsatisfied[fest]
             
-            if not (fest and weight and question and answer):
-                continue
-
-            # Phân tích câu trả lời bằng LLM
-            score_mod = self.analyze_answer_smart(question, answer)
-            
-            # Logic cập nhật: Chỉ thưởng nếu đúng (độ tin cậy cao)
-            if score_mod >= 0.8: # User xác nhận chắc chắn
-                final_logits[fest] += weight
-                print(f"   => [{fest}] User YES (+{weight:.2f}): {question} -> {answer}")
-            else:
-                # User trả lời Không hoặc Không rõ hoặc Lưỡng lự -> Bỏ qua
-                print(f"   => [{fest}] User NO/UNCLEAR (Skip): {question} -> {answer}")
+            for rule in unsatisfied_rules:
+                params = rule[1]
+                weight = rule[3]
                 
+                # Kiểm tra xem feature trong rule này có được user nhắc tới không
+                # Một rule có thể yêu cầu nhiều params (VD: ["A", "B"]). 
+                # Đơn giản hóa: Nếu bất kỳ param nào trong rule được nhắc tới
+                
+                for param in params:
+                    if param in parsed_answer:
+                        data = parsed_answer[param]
+                        status = data.get("status")
+                        conf = data.get("confidence", 0.5)
+                        
+                        if status is True:
+                            # User xác nhận CÓ -> Cộng điểm
+                            # Delta = Weight * Confidence
+                            delta = weight * conf
+                            final_logits[fest] += delta
+                            print(f"   => [{fest}] '{param}' CÓ (conf={conf}): +{delta:.2f}")
+                            
+                        elif status is False:
+                            # User xác nhận KHÔNG -> Trừ điểm (Phương án A)
+                            # Penalty = (Weight * Confidence) / 2
+                            penalty = (weight * conf) / 2
+                            final_logits[fest] -= penalty
+                            print(f"   => [{fest}] '{param}' KHÔNG (conf={conf}): -{penalty:.2f}")
+                            
         return final_logits
 
+
     def decide_final_result(self, final_logits):
-        """BƯỚC 5: Kết luận cuối cùng"""
+        """Kết luận cuối cùng"""
         final_probs = {f: sigmoid(l) for f, l in final_logits.items()}
         results = []
         
-        print(f"\n🏆 KẾT QUẢ CUỐI CÙNG:")
-        for f, p in final_probs.items():
+        print(f"\n KẾT QUẢ CUỐI CÙNG:")
+        sorted_res = sorted(final_probs.items(), key=lambda x: x[1], reverse=True)
+        for f, p in sorted_res:
+            status = "ĐẠT" if p >= GLOBAL_CONFIG["T_out"] else "TRƯỢT"
+            print(f"   {f}: {p:.2%} ({status})")
             if p >= GLOBAL_CONFIG["T_out"]:
                 results.append(f)
-                print(f"{f}: {p:.2%} (ĐẠT)")
-            else:
-                print(f"{f}: {p:.2%} (TRƯỢT)")
                 
         return results, final_probs
 
@@ -1066,10 +1052,13 @@ class BayesianFestivalClassifier:
 # ==========================================
 if __name__ == "__main__":
     # Cấu hình đường dẫn
-    MODEL_PATH = '../weight/best.pt' # Thay đường dẫn thật
-    CSV_PATH = '../artifacts/merged_data.csv' # Thay đường dẫn thật
-    VIDEO_PATH = '../assets/input/2.mp4' # Thay đường dẫn thật
-    API_KEY = API_KEY # Điền API Key
+    MODEL_PATH = '../weight/best.pt' 
+    CSV_PATH = '../artifacts/merged_data.csv'
+    VIDEO_PATH = '../assets/input/2.mp4'
+    
+    if not API_KEY:
+        print("❌ Lỗi: Chưa cấu hình GEMINI_API_KEY trong file .env hoặc code.")
+        exit()
 
     # 1. Khởi tạo Pipeline
     yolo_pipe = YOLOCSVPipeline(MODEL_PATH, CSV_PATH)
@@ -1088,39 +1077,43 @@ if __name__ == "__main__":
     if not candidates:
         print("❌ Không có lễ hội nào tiềm năng dựa trên hình ảnh.")
     else:
-        # --- MÔ PHỎNG LUỒNG FRONTEND ---
-        print("\n--- BƯỚC 4a: SERVER SINH CÂU HỎI (GỬI CHO FRONTEND) ---")
-        questions_json = classifier.get_verification_questions(candidates, unsatisfied)
+        # --- BƯỚC 4: HỎI ĐÁP TỔNG HỢP ---
+        print("\n--- BƯỚC 4: HỎI ĐÁP TỔNG HỢP (CONSOLIDATED) ---")
         
-        # In ra để kiểm tra (đây là dữ liệu API trả về)
-        for q in questions_json:
-            print(f"   [JSON] {q['festival']} | Weight: {q['rule_weight']} | Q: {q['question_text']}")
-
-        # --- MÔ PHỎNG USER TRẢ LỜI Ở FRONTEND ---
-        # Giả sử user trả lời một số câu hỏi (đây là dữ liệu Frontend gửi lên)
-        print("\n--- ... (Frontend hiển thị và User nhập liệu) ... ---")
-        user_responses_mock = []
+        # 4a. Sinh câu hỏi duy nhất
+        qa_package = classifier.generate_consolidated_question(candidates, unsatisfied)
         
-        # Code giả lập việc nhập liệu (chỉ để test file này chạy được)
-        # Trong thực tế, bạn bỏ đoạn input() này đi và nhận JSON từ request
-        if questions_json:
-            print(">> Hãy nhập câu trả lời giả lập (Enter để skip):")
-            for q in questions_json[:2]: # Hỏi thử 2 câu đầu
-                ans = input(f"   {q['question_text']}? ")
-                if ans:
-                    response_obj = q.copy() # Copy lại thông tin câu hỏi
-                    response_obj["answer"] = ans
-                    user_responses_mock.append(response_obj)
-        
-        print("\n--- BƯỚC 4b: SERVER XỬ LÝ CÂU TRẢ LỜI ---")
-        final_logits = classifier.process_user_answers(logits, user_responses_mock)
-        
-        print("\n--- BƯỚC 5: KẾT LUẬN ---")
-        winners, final_probs = classifier.decide_final_result(final_logits)
-        
-        if len(winners) == 1:
-            print(f"\n🎉 VIDEO NÀY THUỘC VỀ: {winners[0]}")
-        elif len(winners) > 1:
-            print(f"\n🎉 VIDEO NÀY CÓ THỂ LÀ SỰ KẾT HỢP: {', '.join(winners)}")
+        if qa_package:
+            print(f"🤖 AI: {qa_package['question_text']}")
+            
+            # 4b. Nhận câu trả lời (Giả lập nhập liệu từ terminal)
+            # Ví dụ user nhập: "Tôi thấy đèn gió và hình như có cả trang phục khmer, nhưng chắc không có mâm cúng đâu"
+            user_ans = input("👤 User (Mô tả tự nhiên): ")
+            
+            if user_ans:
+                # 4c. Phân tích câu trả lời phức tạp
+                print("⏳ AI đang phân tích câu trả lời...")
+                parsed_result = classifier.analyze_complex_answer(
+                    qa_package['question_text'], 
+                    user_ans, 
+                    qa_package['target_features']
+                )
+                print(f"   -> Kết quả phân tích: {json.dumps(parsed_result, ensure_ascii=False)}")
+                
+                # 4d. Cập nhật điểm
+                final_logits = classifier.update_logits_from_consolidated_answer(
+                    logits, candidates, unsatisfied, parsed_result
+                )
+                
+                # --- BƯỚC 5: KẾT LUẬN ---
+                winners, final_probs = classifier.decide_final_result(final_logits)
+                
+                if len(winners) == 1:
+                    print(f"\n🎉 VIDEO NÀY THUỘC VỀ: {winners[0]}")
+                elif len(winners) > 1:
+                    print(f"\n🎉 VIDEO NÀY CÓ THỂ LÀ SỰ KẾT HỢP: {', '.join(winners)}")
+                else:
+                    print("\n🤔 KHÔNG XÁC ĐỊNH ĐƯỢC LỄ HỘI CỤ THỂ.")
         else:
-            print("\n🤔 KHÔNG XÁC ĐỊNH ĐƯỢC LỄ HỘI CỤ THỂ.")
+            print("✅ Máy đã tự tin, không cần hỏi thêm.")
+            winners, final_probs = classifier.decide_final_result(logits)
