@@ -1,0 +1,359 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          133.77734375,
+          13.350622177124023
+        ],
+        [
+          257.6861267089844,
+          13.350622177124023
+        ],
+        [
+          257.6861267089844,
+          164.1825714111328
+        ],
+        [
+          133.77734375,
+          164.1825714111328
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          372.2970886230469,
+          124.21137237548828
+        ],
+        [
+          716.4889526367188,
+          124.21137237548828
+        ],
+        [
+          716.4889526367188,
+          612.6099853515625
+        ],
+        [
+          372.2970886230469,
+          612.6099853515625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "score": null,
+      "points": [
+        [
+          180.3029327392578,
+          130.78392028808594
+        ],
+        [
+          437.3719482421875,
+          130.78392028808594
+        ],
+        [
+          437.3719482421875,
+          394.2119445800781
+        ],
+        [
+          180.3029327392578,
+          394.2119445800781
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          0.0022745132446289062,
+          159.24462890625
+        ],
+        [
+          241.12429809570312,
+          159.24462890625
+        ],
+        [
+          241.12429809570312,
+          618.0
+        ],
+        [
+          0.0022745132446289062,
+          618.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          314.1600646972656,
+          3.3997907638549805
+        ],
+        [
+          409.95184326171875,
+          3.3997907638549805
+        ],
+        [
+          409.95184326171875,
+          159.06317138671875
+        ],
+        [
+          314.1600646972656,
+          159.06317138671875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          263.6285705566406,
+          2.9334144592285156
+        ],
+        [
+          356.7225341796875,
+          2.9334144592285156
+        ],
+        [
+          356.7225341796875,
+          137.02679443359375
+        ],
+        [
+          263.6285705566406,
+          137.02679443359375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          272.85858154296875,
+          0.9567234516143799
+        ],
+        [
+          401.9261474609375,
+          0.9567234516143799
+        ],
+        [
+          401.9261474609375,
+          142.34527587890625
+        ],
+        [
+          272.85858154296875,
+          142.34527587890625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          125.35575103759766,
+          13.175237655639648
+        ],
+        [
+          255.8718719482422,
+          13.175237655639648
+        ],
+        [
+          255.8718719482422,
+          219.4362335205078
+        ],
+        [
+          125.35575103759766,
+          219.4362335205078
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          699.5399780273438,
+          153.2962188720703
+        ],
+        [
+          878.4847412109375,
+          153.2962188720703
+        ],
+        [
+          878.4847412109375,
+          364.67791748046875
+        ],
+        [
+          699.5399780273438,
+          364.67791748046875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          579.255615234375,
+          6.802639484405518
+        ],
+        [
+          734.6043090820312,
+          6.802639484405518
+        ],
+        [
+          734.6043090820312,
+          211.37106323242188
+        ],
+        [
+          579.255615234375,
+          211.37106323242188
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          220.5079345703125,
+          1.9607315063476562
+        ],
+        [
+          354.32220458984375,
+          1.9607315063476562
+        ],
+        [
+          354.32220458984375,
+          137.6270751953125
+        ],
+        [
+          220.5079345703125,
+          137.6270751953125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan sat Ro-niet-dek",
+      "score": null,
+      "points": [
+        [
+          692.6865671641791,
+          337.35820895522386
+        ],
+        [
+          903.134328358209,
+          337.35820895522386
+        ],
+        [
+          903.134328358209,
+          609.7462686567164
+        ],
+        [
+          692.6865671641791,
+          609.7462686567164
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0025_at_000025.jpg",
+  "imageData": null,
+  "imageHeight": 618,
+  "imageWidth": 1060,
+  "description": ""
+}

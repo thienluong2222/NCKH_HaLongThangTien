@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Kieu ruoc ong",
+      "score": null,
+      "points": [
+        [
+          506.8725280761719,
+          8.006121635437012
+        ],
+        [
+          739.9463500976562,
+          8.006121635437012
+        ],
+        [
+          739.9463500976562,
+          557.464111328125
+        ],
+        [
+          506.8725280761719,
+          557.464111328125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          259.9914855957031,
+          47.3046875
+        ],
+        [
+          402.7748107910156,
+          47.3046875
+        ],
+        [
+          402.7748107910156,
+          565.7383422851562
+        ],
+        [
+          259.9914855957031,
+          565.7383422851562
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          397.26300048828125,
+          65.39677429199219
+        ],
+        [
+          557.4859008789062,
+          65.39677429199219
+        ],
+        [
+          557.4859008789062,
+          556.6793212890625
+        ],
+        [
+          397.26300048828125,
+          556.6793212890625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          713.9124668666295,
+          81.01829419817244
+        ],
+        [
+          874.1936558314733,
+          81.01829419817244
+        ],
+        [
+          874.1936558314733,
+          565.5150059291293
+        ],
+        [
+          713.9124668666295,
+          565.5150059291293
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          556.1428571428571,
+          333.5
+        ],
+        [
+          710.4285714285714,
+          333.5
+        ],
+        [
+          710.4285714285714,
+          590.6428571428571
+        ],
+        [
+          556.1428571428571,
+          590.6428571428571
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          50.428571428571445,
+          69.21428571428574
+        ],
+        [
+          264.0,
+          69.21428571428574
+        ],
+        [
+          264.0,
+          591.0
+        ],
+        [
+          50.428571428571445,
+          591.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          1.1428571428571592,
+          54.928571428571445
+        ],
+        [
+          114.00000000000001,
+          54.928571428571445
+        ],
+        [
+          114.00000000000001,
+          168.5
+        ],
+        [
+          1.1428571428571592,
+          168.5
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0022_at_000022.jpg",
+  "imageData": null,
+  "imageHeight": 592,
+  "imageWidth": 1128,
+  "description": ""
+}

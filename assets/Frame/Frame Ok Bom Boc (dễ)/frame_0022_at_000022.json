@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Den nuoc",
+      "points": [
+        [
+          274.3569641113281,
+          120.23442077636719
+        ],
+        [
+          712.2614135742188,
+          457.2013854980469
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0022_at_000022.jpg",
+  "imageData": null
+}

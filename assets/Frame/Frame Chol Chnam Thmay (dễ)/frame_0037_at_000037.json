@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Nui cat",
+      "points": [
+        [
+          603.8872680664062,
+          143.58489990234375
+        ],
+        [
+          1137.033935546875,
+          639.552978515625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0037_at_000037.jpg",
+  "imageData": null
+}

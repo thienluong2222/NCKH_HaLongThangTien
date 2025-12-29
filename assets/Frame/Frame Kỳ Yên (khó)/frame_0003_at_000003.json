@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Tuong Phat",
+      "score": null,
+      "points": [
+        [
+          167.49612426757812,
+          375.8900146484375
+        ],
+        [
+          386.1417541503906,
+          375.8900146484375
+        ],
+        [
+          386.1417541503906,
+          638.485107421875
+        ],
+        [
+          167.49612426757812,
+          638.485107421875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0003_at_000003.jpg",
+  "imageData": null,
+  "imageHeight": 646,
+  "imageWidth": 1162,
+  "description": ""
+}

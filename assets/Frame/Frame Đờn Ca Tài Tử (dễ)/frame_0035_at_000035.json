@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "dan tranh",
+      "score": null,
+      "points": [
+        [
+          124.70212765957442,
+          459.53191489361706
+        ],
+        [
+          538.177304964539,
+          459.53191489361706
+        ],
+        [
+          538.177304964539,
+          567.0
+        ],
+        [
+          124.70212765957442,
+          567.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0035_at_000035.jpg",
+  "imageData": null,
+  "imageHeight": 568,
+  "imageWidth": 1126,
+  "description": ""
+}

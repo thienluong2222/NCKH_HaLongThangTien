@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Long may ke dam",
+      "score": null,
+      "points": [
+        [
+          606.4671532846716,
+          199.40145985401458
+        ],
+        [
+          728.3649635036496,
+          199.40145985401458
+        ],
+        [
+          728.3649635036496,
+          233.70802919708026
+        ],
+        [
+          606.4671532846716,
+          233.70802919708026
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0014_at_000014.jpg",
+  "imageData": null,
+  "imageHeight": 528,
+  "imageWidth": 1156,
+  "description": ""
+}

@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Nuoc thom",
+      "points": [
+        [
+          392.64849853515625,
+          545.9113159179688
+        ],
+        [
+          480.2047424316406,
+          595.3356323242188
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          2.970824956893921,
+          23.0401554107666
+        ],
+        [
+          679.04638671875,
+          550.8348388671875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nuoc thom",
+      "points": [
+        [
+          993.7417602539062,
+          548.8810424804688
+        ],
+        [
+          1103.725341796875,
+          593.345703125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0064_at_000064.jpg",
+  "imageData": null
+}

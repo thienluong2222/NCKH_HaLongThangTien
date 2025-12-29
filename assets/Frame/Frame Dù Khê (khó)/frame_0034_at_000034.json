@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Cam gay",
+      "score": null,
+      "points": [
+        [
+          511.3125,
+          361.859375
+        ],
+        [
+          544.90625,
+          361.859375
+        ],
+        [
+          544.90625,
+          481.390625
+        ],
+        [
+          511.3125,
+          481.390625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          556.625,
+          336.859375
+        ],
+        [
+          591.0,
+          336.859375
+        ],
+        [
+          591.0,
+          354.046875
+        ],
+        [
+          556.625,
+          354.046875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          623.8125,
+          311.859375
+        ],
+        [
+          661.3125,
+          311.859375
+        ],
+        [
+          661.3125,
+          330.609375
+        ],
+        [
+          623.8125,
+          330.609375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          623.03125,
+          337.640625
+        ],
+        [
+          669.125,
+          337.640625
+        ],
+        [
+          669.125,
+          363.421875
+        ],
+        [
+          623.03125,
+          363.421875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap than duoi",
+      "score": null,
+      "points": [
+        [
+          627.71875,
+          408.734375
+        ],
+        [
+          684.75,
+          408.734375
+        ],
+        [
+          684.75,
+          464.984375
+        ],
+        [
+          627.71875,
+          464.984375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Toc bui cao",
+      "score": null,
+      "points": [
+        [
+          301.15625,
+          250.921875
+        ],
+        [
+          342.5625,
+          250.921875
+        ],
+        [
+          342.5625,
+          280.609375
+        ],
+        [
+          301.15625,
+          280.609375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          1.9375000000000142,
+          63.42187500000001
+        ],
+        [
+          262.09375,
+          63.42187500000001
+        ],
+        [
+          262.09375,
+          329.828125
+        ],
+        [
+          1.9375000000000142,
+          329.828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0034_at_000034.jpg",
+  "imageData": null,
+  "imageHeight": 662,
+  "imageWidth": 1232,
+  "description": ""
+}

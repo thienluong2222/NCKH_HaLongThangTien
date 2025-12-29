@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          616.1290322580645,
+          348.9677419354839
+        ],
+        [
+          775.483870967742,
+          348.9677419354839
+        ],
+        [
+          775.483870967742,
+          487.6774193548387
+        ],
+        [
+          616.1290322580645,
+          487.6774193548387
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          474.19354838709677,
+          41.87096774193551
+        ],
+        [
+          554.1935483870967,
+          41.87096774193551
+        ],
+        [
+          554.1935483870967,
+          214.7741935483871
+        ],
+        [
+          474.19354838709677,
+          214.7741935483871
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          377.4193548387097,
+          334.12903225806457
+        ],
+        [
+          587.741935483871,
+          334.12903225806457
+        ],
+        [
+          587.741935483871,
+          519.9354838709677
+        ],
+        [
+          377.4193548387097,
+          519.9354838709677
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0030_at_000030.jpg",
+  "imageData": null,
+  "imageHeight": 576,
+  "imageWidth": 1000,
+  "description": ""
+}

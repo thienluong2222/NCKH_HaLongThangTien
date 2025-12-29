@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Nha su",
+      "points": [
+        [
+          29.39534568786621,
+          366.0222473144531
+        ],
+        [
+          159.32144165039062,
+          540.3463134765625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nha su",
+      "points": [
+        [
+          0.09600308537483215,
+          372.4432373046875
+        ],
+        [
+          39.98032760620117,
+          530.8475341796875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Tuong Phat",
+      "points": [
+        [
+          44.325077056884766,
+          365.5726623535156
+        ],
+        [
+          152.54409790039062,
+          499.88671875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0015_at_000015.jpg",
+  "imageData": null
+}

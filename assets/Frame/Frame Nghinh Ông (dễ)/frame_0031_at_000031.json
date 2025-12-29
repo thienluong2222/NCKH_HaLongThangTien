@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          109.10572814941406,
+          80.50825500488281
+        ],
+        [
+          403.1700134277344,
+          80.50825500488281
+        ],
+        [
+          403.1700134277344,
+          508.82415771484375
+        ],
+        [
+          109.10572814941406,
+          508.82415771484375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          756.145751953125,
+          161.3617706298828
+        ],
+        [
+          976.0,
+          161.3617706298828
+        ],
+        [
+          976.0,
+          509.3598327636719
+        ],
+        [
+          756.145751953125,
+          509.3598327636719
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc bieu dien nghe thuat nhan gian",
+      "score": null,
+      "points": [
+        [
+          386.7654320987654,
+          63.09876543209877
+        ],
+        [
+          755.283950617284,
+          63.09876543209877
+        ],
+        [
+          755.283950617284,
+          511.0
+        ],
+        [
+          386.7654320987654,
+          511.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          730.5925925925925,
+          -0.18518518518516558
+        ],
+        [
+          939.8518518518517,
+          -0.18518518518516558
+        ],
+        [
+          939.8518518518517,
+          156.60493827160496
+        ],
+        [
+          730.5925925925925,
+          156.60493827160496
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          745.503776644483,
+          155.95436322247542
+        ],
+        [
+          965.358024691358,
+          155.95436322247542
+        ],
+        [
+          965.358024691358,
+          503.9524253562644
+        ],
+        [
+          745.503776644483,
+          503.9524253562644
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          196.1728395061728,
+          -0.6049382716049259
+        ],
+        [
+          405.4320987654321,
+          -0.6049382716049259
+        ],
+        [
+          405.4320987654321,
+          156.18518518518513
+        ],
+        [
+          196.1728395061728,
+          156.18518518518513
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0031_at_000031.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 976,
+  "description": ""
+}

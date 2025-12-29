@@ -1,0 +1,301 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          586.309814453125,
+          349.8403015136719
+        ],
+        [
+          791.613525390625,
+          349.8403015136719
+        ],
+        [
+          791.613525390625,
+          554.0
+        ],
+        [
+          586.309814453125,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          19.926389694213867,
+          350.4406433105469
+        ],
+        [
+          263.9312744140625,
+          350.4406433105469
+        ],
+        [
+          263.9312744140625,
+          554.0
+        ],
+        [
+          19.926389694213867,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          461.1620788574219,
+          290.88629150390625
+        ],
+        [
+          595.2024536132812,
+          290.88629150390625
+        ],
+        [
+          595.2024536132812,
+          554.0
+        ],
+        [
+          461.1620788574219,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          562.52978515625,
+          278.5535583496094
+        ],
+        [
+          659.5857543945312,
+          278.5535583496094
+        ],
+        [
+          659.5857543945312,
+          486.8147888183594
+        ],
+        [
+          562.52978515625,
+          486.8147888183594
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          307.9346923828125,
+          354.7275390625
+        ],
+        [
+          507.4645690917969,
+          354.7275390625
+        ],
+        [
+          507.4645690917969,
+          554.0
+        ],
+        [
+          307.9346923828125,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          308.8663635253906,
+          343.66033935546875
+        ],
+        [
+          593.45166015625,
+          343.66033935546875
+        ],
+        [
+          593.45166015625,
+          554.0
+        ],
+        [
+          308.8663635253906,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          824.9929809570312,
+          0.0
+        ],
+        [
+          1110.0,
+          0.0
+        ],
+        [
+          1110.0,
+          501.6023864746094
+        ],
+        [
+          824.9929809570312,
+          501.6023864746094
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          418.6363636363636,
+          271.4055944055944
+        ],
+        [
+          468.2867132867133,
+          271.4055944055944
+        ],
+        [
+          468.2867132867133,
+          351.12587412587413
+        ],
+        [
+          418.6363636363636,
+          351.12587412587413
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          543.1118881118881,
+          253.9230769230769
+        ],
+        [
+          607.4475524475524,
+          253.9230769230769
+        ],
+        [
+          607.4475524475524,
+          393.7832167832168
+        ],
+        [
+          543.1118881118881,
+          393.7832167832168
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          656.3986013986014,
+          277.0
+        ],
+        [
+          717.9370629370629,
+          277.0
+        ],
+        [
+          717.9370629370629,
+          372.8041958041958
+        ],
+        [
+          656.3986013986014,
+          372.8041958041958
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0031_at_000031.jpg",
+  "imageData": null,
+  "imageHeight": 554,
+  "imageWidth": 1110,
+  "description": ""
+}

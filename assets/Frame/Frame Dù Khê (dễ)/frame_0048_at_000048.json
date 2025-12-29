@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          569.7832167832167,
+          0.0
+        ],
+        [
+          774.6783216783216,
+          0.0
+        ],
+        [
+          774.6783216783216,
+          153.78321678321677
+        ],
+        [
+          569.7832167832167,
+          153.78321678321677
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          328.5244755244755,
+          105.5314685314685
+        ],
+        [
+          466.2867132867133,
+          105.5314685314685
+        ],
+        [
+          466.2867132867133,
+          202.03496503496504
+        ],
+        [
+          328.5244755244755,
+          202.03496503496504
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Long may ke dam",
+      "score": null,
+      "points": [
+        [
+          343.20979020979024,
+          236.30069930069928
+        ],
+        [
+          453.6993006993007,
+          236.30069930069928
+        ],
+        [
+          453.6993006993007,
+          264.97202797202794
+        ],
+        [
+          343.20979020979024,
+          264.97202797202794
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Long may ke dam",
+      "score": null,
+      "points": [
+        [
+          575.3776223776224,
+          154.48251748251747
+        ],
+        [
+          685.8671328671328,
+          154.48251748251747
+        ],
+        [
+          685.8671328671328,
+          183.15384615384613
+        ],
+        [
+          575.3776223776224,
+          183.15384615384613
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          639.013986013986,
+          271.96503496503493
+        ],
+        [
+          806.8461538461538,
+          271.96503496503493
+        ],
+        [
+          806.8461538461538,
+          436.30069930069925
+        ],
+        [
+          639.013986013986,
+          436.30069930069925
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          448.80419580419584,
+          426.5104895104895
+        ],
+        [
+          686.5664335664335,
+          426.5104895104895
+        ],
+        [
+          686.5664335664335,
+          552.3846153846155
+        ],
+        [
+          448.80419580419584,
+          552.3846153846155
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0048_at_000048.jpg",
+  "imageData": null,
+  "imageHeight": 574,
+  "imageWidth": 1106,
+  "description": ""
+}

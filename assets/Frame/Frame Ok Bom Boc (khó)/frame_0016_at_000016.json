@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nha su",
+      "score": null,
+      "points": [
+        [
+          686.7027027027026,
+          8.932432432432414
+        ],
+        [
+          959.0692749023438,
+          8.932432432432414
+        ],
+        [
+          959.0692749023438,
+          525.83154296875
+        ],
+        [
+          686.7027027027026,
+          525.83154296875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0016_at_000016.jpg",
+  "imageData": null,
+  "imageHeight": 528,
+  "imageWidth": 1068,
+  "description": ""
+}

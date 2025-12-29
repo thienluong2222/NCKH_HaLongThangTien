@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "dan ty ba",
+      "points": [
+        [
+          745.9380493164062,
+          18.210596084594727
+        ],
+        [
+          1068.3018798828125,
+          573.4277954101562
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0006_at_000006.jpg",
+  "imageData": null
+}

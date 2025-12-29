@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          76.7213202236461,
+          269.9387755102041
+        ],
+        [
+          307.7482993197279,
+          269.9387755102041
+        ],
+        [
+          307.7482993197279,
+          534.3455617476484
+        ],
+        [
+          76.7213202236461,
+          534.3455617476484
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          844.4829931972789,
+          237.2857142857143
+        ],
+        [
+          966.2517006802722,
+          237.2857142857143
+        ],
+        [
+          966.2517006802722,
+          537.2857142857143
+        ],
+        [
+          844.4829931972789,
+          537.2857142857143
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          356.7278911564626,
+          112.1156462585034
+        ],
+        [
+          419.312925170068,
+          112.1156462585034
+        ],
+        [
+          419.312925170068,
+          286.26530612244903
+        ],
+        [
+          356.7278911564626,
+          286.26530612244903
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Den nuoc",
+      "score": null,
+      "points": [
+        [
+          676.4557823129252,
+          3.952380952380956
+        ],
+        [
+          781.8979591836735,
+          3.952380952380956
+        ],
+        [
+          781.8979591836735,
+          150.89115646258503
+        ],
+        [
+          676.4557823129252,
+          150.89115646258503
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0021_at_000021.jpg",
+  "imageData": null,
+  "imageHeight": 546,
+  "imageWidth": 1074,
+  "description": ""
+}

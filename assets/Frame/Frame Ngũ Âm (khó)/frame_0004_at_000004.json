@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          343.1818181818182,
+          20.069930069930063
+        ],
+        [
+          614.5104895104896,
+          20.069930069930063
+        ],
+        [
+          614.5104895104896,
+          568.3216783216784
+        ],
+        [
+          343.1818181818182,
+          568.3216783216784
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          619.4055944055945,
+          158.5314685314685
+        ],
+        [
+          808.916083916084,
+          158.5314685314685
+        ],
+        [
+          808.916083916084,
+          455.034965034965
+        ],
+        [
+          619.4055944055945,
+          455.034965034965
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          178.84615384615384,
+          149.44055944055944
+        ],
+        [
+          327.0979020979021,
+          149.44055944055944
+        ],
+        [
+          327.0979020979021,
+          391.3986013986014
+        ],
+        [
+          178.84615384615384,
+          391.3986013986014
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0004_at_000004.jpg",
+  "imageData": null,
+  "imageHeight": 580,
+  "imageWidth": 1050,
+  "description": ""
+}

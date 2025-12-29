@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          361.3126040671369
+        ],
+        [
+          100.02120971679693,
+          361.3126040671369
+        ],
+        [
+          100.02120971679693,
+          594.9658633444803
+        ],
+        [
+          0.0,
+          594.9658633444803
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          483.3976745605469,
+          207.93588256835938
+        ],
+        [
+          639.048095703125,
+          207.93588256835938
+        ],
+        [
+          639.048095703125,
+          587.3997802734375
+        ],
+        [
+          483.3976745605469,
+          587.3997802734375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          243.66187050359716,
+          338.36690647482015
+        ],
+        [
+          417.76258992805754,
+          338.36690647482015
+        ],
+        [
+          417.76258992805754,
+          420.38129496402877
+        ],
+        [
+          243.66187050359716,
+          420.38129496402877
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          397.61870503597123,
+          258.51079136690663
+        ],
+        [
+          510.42939066715365,
+          258.51079136690663
+        ],
+        [
+          510.42939066715365,
+          520.3812949640287
+        ],
+        [
+          397.61870503597123,
+          520.3812949640287
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0046_at_000046.jpg",
+  "imageData": null,
+  "imageHeight": 594,
+  "imageWidth": 1142,
+  "description": ""
+}

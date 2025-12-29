@@ -1,0 +1,103 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          422.6522216796875,
+          233.1524658203125
+        ],
+        [
+          477.3330383300781,
+          426.9541931152344
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          769.5839233398438,
+          216.87081909179688
+        ],
+        [
+          837.4583740234375,
+          440.3250427246094
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          460.37725830078125,
+          186.54042053222656
+        ],
+        [
+          535.4896240234375,
+          475.02789306640625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          896.6658935546875,
+          203.5808868408203
+        ],
+        [
+          943.1047973632812,
+          445.89752197265625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          216.20521545410156,
+          207.50918579101562
+        ],
+        [
+          274.6361999511719,
+          432.40924072265625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          957.02099609375,
+          304.53759765625
+        ],
+        [
+          1056.796142578125,
+          578.1903686523438
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0023_at_000023.jpg",
+  "imageData": null
+}

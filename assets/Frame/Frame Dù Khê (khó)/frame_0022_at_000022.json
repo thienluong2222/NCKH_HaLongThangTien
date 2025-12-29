@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Long may ke dam",
+      "score": null,
+      "points": [
+        [
+          412.92366412213744,
+          111.20610687022902
+        ],
+        [
+          551.8549618320611,
+          111.20610687022902
+        ],
+        [
+          551.8549618320611,
+          144.03053435114504
+        ],
+        [
+          412.92366412213744,
+          144.03053435114504
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          395.3664122137405,
+          0.0
+        ],
+        [
+          737.351145038168,
+          0.0
+        ],
+        [
+          737.351145038168,
+          124.94656488549619
+        ],
+        [
+          395.3664122137405,
+          124.94656488549619
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0022_at_000022.jpg",
+  "imageData": null,
+  "imageHeight": 556,
+  "imageWidth": 1206,
+  "description": ""
+}

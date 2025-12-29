@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          0.49876177310943604
+        ],
+        [
+          685.4645385742188,
+          0.49876177310943604
+        ],
+        [
+          685.4645385742188,
+          346.2619323730469
+        ],
+        [
+          0.0,
+          346.2619323730469
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "label": "Mua Lan",
+      "score": null,
+      "points": [
+        [
+          509.7027027027027,
+          255.4054054054054
+        ],
+        [
+          571.3243243243243,
+          255.4054054054054
+        ],
+        [
+          571.3243243243243,
+          468.37837837837833
+        ],
+        [
+          509.7027027027027,
+          468.37837837837833
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Mua Lan",
+      "score": null,
+      "points": [
+        [
+          437.81081081081084,
+          239.1891891891892
+        ],
+        [
+          515.1081081081081,
+          239.1891891891892
+        ],
+        [
+          515.1081081081081,
+          394.86486486486484
+        ],
+        [
+          437.81081081081084,
+          394.86486486486484
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Mua Lan",
+      "score": null,
+      "points": [
+        [
+          322.13513513513516,
+          258.10810810810807
+        ],
+        [
+          429.7027027027027,
+          258.10810810810807
+        ],
+        [
+          429.7027027027027,
+          404.5945945945946
+        ],
+        [
+          322.13513513513516,
+          404.5945945945946
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Mua Lan",
+      "score": null,
+      "points": [
+        [
+          552.4054054054054,
+          215.40540540540542
+        ],
+        [
+          607.5405405405405,
+          215.40540540540542
+        ],
+        [
+          607.5405405405405,
+          341.3513513513513
+        ],
+        [
+          552.4054054054054,
+          341.3513513513513
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0002_at_000002.jpg",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 854,
+  "description": ""
+}

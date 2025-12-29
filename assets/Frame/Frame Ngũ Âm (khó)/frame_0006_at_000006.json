@@ -1,0 +1,71 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "points": [
+        [
+          154.41375732421875,
+          397.3013610839844
+        ],
+        [
+          439.9101257324219,
+          515.9236450195312
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          8.827606201171875,
+          270.7515563964844
+        ],
+        [
+          83.13433837890625,
+          355.08282470703125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "points": [
+        [
+          224.62767028808594,
+          260.6314392089844
+        ],
+        [
+          307.2409973144531,
+          352.029052734375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan sat Ro-niet-dek",
+      "points": [
+        [
+          43.7710075378418,
+          346.30865478515625
+        ],
+        [
+          154.57899475097656,
+          498.68878173828125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0006_at_000006.jpg",
+  "imageData": null
+}

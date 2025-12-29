@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          2.9207370281219482,
+          41.243499755859375
+        ],
+        [
+          854.0,
+          432.28240966796875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0006_at_000006.jpg",
+  "imageData": null
+}

@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          59.78947368421052,
+          101.93421052631578
+        ],
+        [
+          170.3157894736842,
+          101.93421052631578
+        ],
+        [
+          170.3157894736842,
+          215.0921052631579
+        ],
+        [
+          59.78947368421052,
+          215.0921052631579
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          817.6842105263158,
+          129.5657894736842
+        ],
+        [
+          886.1052631578948,
+          129.5657894736842
+        ],
+        [
+          886.1052631578948,
+          247.32894736842104
+        ],
+        [
+          817.6842105263158,
+          247.32894736842104
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          774.2631578947369,
+          363.11842105263156
+        ],
+        [
+          825.578947368421,
+          363.11842105263156
+        ],
+        [
+          825.578947368421,
+          434.17105263157896
+        ],
+        [
+          774.2631578947369,
+          434.17105263157896
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0020_at_000020.jpg",
+  "imageData": null,
+  "imageHeight": 544,
+  "imageWidth": 1038,
+  "description": ""
+}

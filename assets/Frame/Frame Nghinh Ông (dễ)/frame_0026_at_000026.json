@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Kieu ruoc ong",
+      "score": null,
+      "points": [
+        [
+          356.9154052734375,
+          122.68282318115234
+        ],
+        [
+          534.404296875,
+          122.68282318115234
+        ],
+        [
+          534.404296875,
+          322.59637451171875
+        ],
+        [
+          356.9154052734375,
+          322.59637451171875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          756.3076782226562,
+          81.73149108886719
+        ],
+        [
+          881.2014770507812,
+          81.73149108886719
+        ],
+        [
+          881.2014770507812,
+          276.3930969238281
+        ],
+        [
+          756.3076782226562,
+          276.3930969238281
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          106.02740478515625,
+          210.9634246826172
+        ],
+        [
+          198.7038116455078,
+          210.9634246826172
+        ],
+        [
+          198.7038116455078,
+          457.6806640625
+        ],
+        [
+          106.02740478515625,
+          457.6806640625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc bieu dien nghe thuat nhan gian",
+      "score": null,
+      "points": [
+        [
+          700.06494140625,
+          191.18099975585938
+        ],
+        [
+          795.8836059570312,
+          191.18099975585938
+        ],
+        [
+          795.8836059570312,
+          420.49334716796875
+        ],
+        [
+          700.06494140625,
+          420.49334716796875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          597.2666015625,
+          188.93026733398438
+        ],
+        [
+          653.9423217773438,
+          188.93026733398438
+        ],
+        [
+          653.9423217773438,
+          400.9840087890625
+        ],
+        [
+          597.2666015625,
+          400.9840087890625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          265.7557998468846,
+          207.11157283076534
+        ],
+        [
+          358.4322067072361,
+          207.11157283076534
+        ],
+        [
+          358.4322067072361,
+          453.82881221064815
+        ],
+        [
+          265.7557998468846,
+          453.82881221064815
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          486.62462625385797,
+          169.02903276608316
+        ],
+        [
+          558.9876543209876,
+          169.02903276608316
+        ],
+        [
+          558.9876543209876,
+          460.6296296296296
+        ],
+        [
+          486.62462625385797,
+          460.6296296296296
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0026_at_000026.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 976,
+  "description": ""
+}

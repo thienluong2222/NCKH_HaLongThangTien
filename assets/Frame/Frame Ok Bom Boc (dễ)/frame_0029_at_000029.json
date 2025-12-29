@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ghe ngo",
+      "score": null,
+      "points": [
+        [
+          157.70422535211264,
+          218.70422535211264
+        ],
+        [
+          307.70422535211264,
+          218.70422535211264
+        ],
+        [
+          307.70422535211264,
+          382.0845070422535
+        ],
+        [
+          157.70422535211264,
+          382.0845070422535
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ghe ngo",
+      "score": null,
+      "points": [
+        [
+          459.8169014084507,
+          314.4788732394366
+        ],
+        [
+          742.2112676056338,
+          314.4788732394366
+        ],
+        [
+          742.2112676056338,
+          401.80281690140845
+        ],
+        [
+          459.8169014084507,
+          401.80281690140845
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ghe ngo",
+      "score": null,
+      "points": [
+        [
+          807.0,
+          282.7887323943662
+        ],
+        [
+          1095.7323943661972,
+          282.7887323943662
+        ],
+        [
+          1095.7323943661972,
+          363.07042253521126
+        ],
+        [
+          807.0,
+          363.07042253521126
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0029_at_000029.jpg",
+  "imageData": null,
+  "imageHeight": 486,
+  "imageWidth": 1114,
+  "description": ""
+}

@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          762.6552734375,
+          229.07162475585938
+        ],
+        [
+          1152.0,
+          229.07162475585938
+        ],
+        [
+          1152.0,
+          452.34698486328125
+        ],
+        [
+          762.6552734375,
+          452.34698486328125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          291.993896484375
+        ],
+        [
+          436.6401672363281,
+          291.993896484375
+        ],
+        [
+          436.6401672363281,
+          480.7106018066406
+        ],
+        [
+          0.0,
+          480.7106018066406
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          301.1315002441406,
+          212.16444396972656
+        ],
+        [
+          814.7821044921875,
+          212.16444396972656
+        ],
+        [
+          814.7821044921875,
+          353.8038635253906
+        ],
+        [
+          301.1315002441406,
+          353.8038635253906
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cay beo",
+      "score": null,
+      "points": [
+        [
+          456.9873962402344,
+          54.800350189208984
+        ],
+        [
+          482.476318359375,
+          54.800350189208984
+        ],
+        [
+          482.476318359375,
+          194.39166259765625
+        ],
+        [
+          456.9873962402344,
+          194.39166259765625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0017_at_000017.jpg",
+  "imageData": null,
+  "imageHeight": 566,
+  "imageWidth": 1152,
+  "description": ""
+}

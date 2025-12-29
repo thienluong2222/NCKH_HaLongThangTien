@@ -1,0 +1,215 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          195.65818786621094,
+          249.9380645751953
+        ],
+        [
+          1077.757080078125,
+          561.7845458984375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          0.0,
+          191.4168701171875
+        ],
+        [
+          281.0548400878906,
+          324.6004333496094
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          263.0841979980469,
+          3.0434203147888184
+        ],
+        [
+          524.8765869140625,
+          328.7330322265625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          491.42340087890625,
+          7.719786643981934
+        ],
+        [
+          593.093994140625,
+          169.26783752441406
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          33.0555534362793,
+          5.925235748291016
+        ],
+        [
+          224.76121520996094,
+          218.39987182617188
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          573.93310546875,
+          0.5157267451286316
+        ],
+        [
+          802.946533203125,
+          327.3066711425781
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          177.0765380859375,
+          1.7564164400100708
+        ],
+        [
+          350.69635009765625,
+          245.63711547851562
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          219.1623992919922,
+          2.9545249938964844
+        ],
+        [
+          349.36322021484375,
+          186.15435791015625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          691.1664428710938,
+          2.034738302230835
+        ],
+        [
+          1077.8082275390625,
+          448.7758483886719
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          0.07180041819810867,
+          68.16596984863281
+        ],
+        [
+          50.62287902832031,
+          236.8275604248047
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          0.0,
+          74.35037231445312
+        ],
+        [
+          52.379337310791016,
+          326.5581359863281
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "points": [
+        [
+          147.6205596923828,
+          39.41985321044922
+        ],
+        [
+          254.9589080810547,
+          135.47398376464844
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          745.3564453125,
+          1.8756136894226074
+        ],
+        [
+          853.7887573242188,
+          187.70535278320312
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0020_at_000020.jpg",
+  "imageData": null
+}

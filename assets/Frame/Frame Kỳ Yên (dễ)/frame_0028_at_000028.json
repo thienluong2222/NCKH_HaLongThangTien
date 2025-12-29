@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          0.3486648499965668,
+          242.77752685546875
+        ],
+        [
+          287.6080627441406,
+          242.77752685546875
+        ],
+        [
+          287.6080627441406,
+          473.1545715332031
+        ],
+        [
+          0.3486648499965668,
+          473.1545715332031
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          874.8607177734375,
+          210.85687255859375
+        ],
+        [
+          990.176025390625,
+          210.85687255859375
+        ],
+        [
+          990.176025390625,
+          380.71923828125
+        ],
+        [
+          874.8607177734375,
+          380.71923828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          813.2062377929688,
+          198.2090606689453
+        ],
+        [
+          897.4207153320312,
+          198.2090606689453
+        ],
+        [
+          897.4207153320312,
+          352.87945556640625
+        ],
+        [
+          813.2062377929688,
+          352.87945556640625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0028_at_000028.jpg",
+  "imageData": null,
+  "imageHeight": 510,
+  "imageWidth": 1116,
+  "description": ""
+}

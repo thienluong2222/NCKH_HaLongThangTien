@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Nha su",
+      "points": [
+        [
+          610.4623413085938,
+          0.0
+        ],
+        [
+          953.6152954101562,
+          521.6585693359375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0017_at_000017.jpg",
+  "imageData": null
+}

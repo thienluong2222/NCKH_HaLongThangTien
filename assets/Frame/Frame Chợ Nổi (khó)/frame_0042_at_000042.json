@@ -1,0 +1,151 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          839.7616577148438,
+          247.7506561279297
+        ],
+        [
+          1168.0,
+          595.022705078125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          531.025634765625,
+          269.36767578125
+        ],
+        [
+          852.0160522460938,
+          548.176513671875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          298.5371398925781,
+          271.0567932128906
+        ],
+        [
+          544.8980712890625,
+          553.7581787109375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Cay beo",
+      "points": [
+        [
+          589.7379150390625,
+          9.572729110717773
+        ],
+        [
+          644.2827758789062,
+          311.4466552734375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Cay beo",
+      "points": [
+        [
+          221.36094665527344,
+          184.11024475097656
+        ],
+        [
+          249.08265686035156,
+          319.3729553222656
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          37.09096145629883,
+          344.2305908203125
+        ],
+        [
+          171.32424926757812,
+          508.3751220703125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          156.12709045410156,
+          315.65533447265625
+        ],
+        [
+          325.1710510253906,
+          524.6935424804688
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Cay beo",
+      "points": [
+        [
+          381.8685302734375,
+          87.66622161865234
+        ],
+        [
+          414.1252746582031,
+          281.4164733886719
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          0.08659462630748749,
+          326.2173156738281
+        ],
+        [
+          45.69184494018555,
+          491.2833557128906
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0042_at_000042.jpg",
+  "imageData": null
+}

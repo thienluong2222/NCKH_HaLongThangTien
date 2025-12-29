@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          364.1700439453125,
+          420.5150146484375
+        ],
+        [
+          608.14599609375,
+          717.2183837890625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          1.4428749084472656,
+          228.43255615234375
+        ],
+        [
+          46.5291748046875,
+          254.6875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          0.0,
+          288.0985107421875
+        ],
+        [
+          104.91592407226562,
+          653.6365356445312
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0012_at_000012.jpg",
+  "imageData": null
+}

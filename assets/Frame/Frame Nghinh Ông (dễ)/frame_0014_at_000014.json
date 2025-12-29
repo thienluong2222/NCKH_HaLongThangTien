@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          620.137939453125,
+          258.8097229003906
+        ],
+        [
+          916.0,
+          258.8097229003906
+        ],
+        [
+          916.0,
+          520.4273071289062
+        ],
+        [
+          620.137939453125,
+          520.4273071289062
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          154.87686157226562
+        ],
+        [
+          200.6622314453125,
+          154.87686157226562
+        ],
+        [
+          200.6622314453125,
+          522.2781372070312
+        ],
+        [
+          0.0,
+          522.2781372070312
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          274.614013671875,
+          248.26072692871094
+        ],
+        [
+          596.02197265625,
+          248.26072692871094
+        ],
+        [
+          596.02197265625,
+          522.9659423828125
+        ],
+        [
+          274.614013671875,
+          522.9659423828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": true,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho ong",
+      "score": null,
+      "points": [
+        [
+          443.3801169590643,
+          90.3625730994152
+        ],
+        [
+          841.625730994152,
+          90.3625730994152
+        ],
+        [
+          841.625730994152,
+          281.5906432748538
+        ],
+        [
+          443.3801169590643,
+          281.5906432748538
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0014_at_000014.jpg",
+  "imageData": null,
+  "imageHeight": 524,
+  "imageWidth": 916,
+  "description": ""
+}

@@ -1,0 +1,272 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Canh hang dong",
+      "score": null,
+      "points": [
+        [
+          193.32846715328466,
+          8.89051094890511
+        ],
+        [
+          990.4087591240875,
+          8.89051094890511
+        ],
+        [
+          990.4087591240875,
+          251.22627737226279
+        ],
+        [
+          193.32846715328466,
+          251.22627737226279
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          662.6715328467153,
+          300.13138686131384
+        ],
+        [
+          699.8978102189781,
+          300.13138686131384
+        ],
+        [
+          699.8978102189781,
+          321.29927007299267
+        ],
+        [
+          662.6715328467153,
+          321.29927007299267
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          732.0145985401459,
+          350.49635036496346
+        ],
+        [
+          767.7810218978102,
+          350.49635036496346
+        ],
+        [
+          767.7810218978102,
+          392.1021897810219
+        ],
+        [
+          732.0145985401459,
+          392.1021897810219
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "That lung ban to",
+      "score": null,
+      "points": [
+        [
+          194.05839416058393,
+          313.99999999999994
+        ],
+        [
+          252.45255474452551,
+          313.99999999999994
+        ],
+        [
+          252.45255474452551,
+          346.11678832116786
+        ],
+        [
+          194.05839416058393,
+          346.11678832116786
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Do vai bong",
+      "score": null,
+      "points": [
+        [
+          188.21897810218977,
+          257.0656934306569
+        ],
+        [
+          275.81021897810217,
+          257.0656934306569
+        ],
+        [
+          275.81021897810217,
+          484.0729927007299
+        ],
+        [
+          188.21897810218977,
+          484.0729927007299
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Ao ren dinh hat",
+      "score": null,
+      "points": [
+        [
+          333.4744525547445,
+          271.6642335766423
+        ],
+        [
+          375.81021897810217,
+          271.6642335766423
+        ],
+        [
+          375.81021897810217,
+          331.51824817518246
+        ],
+        [
+          333.4744525547445,
+          331.51824817518246
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "label": "Vay \\",
+      "score": null,
+      "points": [
+        [
+          324.7153284671533,
+          332.2481751824817
+        ],
+        [
+          394.05839416058393,
+          332.2481751824817
+        ],
+        [
+          394.05839416058393,
+          463.6350364963503
+        ],
+        [
+          324.7153284671533,
+          463.6350364963503
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap than duoi",
+      "score": null,
+      "points": [
+        [
+          657.5620437956204,
+          314.72992700729924
+        ],
+        [
+          747.3430656934306,
+          314.72992700729924
+        ],
+        [
+          747.3430656934306,
+          492.8321167883211
+        ],
+        [
+          657.5620437956204,
+          492.8321167883211
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          705.007299270073,
+          195.02189781021897
+        ],
+        [
+          752.4525547445255,
+          195.02189781021897
+        ],
+        [
+          752.4525547445255,
+          227.13868613138683
+        ],
+        [
+          705.007299270073,
+          227.13868613138683
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0011_at_000011.jpg",
+  "imageData": null,
+  "imageHeight": 528,
+  "imageWidth": 1156,
+  "description": ""
+}

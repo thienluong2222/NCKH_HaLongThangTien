@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Tuong Phat",
+      "score": null,
+      "points": [
+        [
+          587.3407156808036,
+          250.21428571428572
+        ],
+        [
+          740.0,
+          250.21428571428572
+        ],
+        [
+          740.0,
+          553.7857142857142
+        ],
+        [
+          587.3407156808036,
+          553.7857142857142
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Nha su",
+      "score": null,
+      "points": [
+        [
+          1.4285714285715096,
+          50.21428571428572
+        ],
+        [
+          545.0,
+          50.21428571428572
+        ],
+        [
+          545.0,
+          563.0
+        ],
+        [
+          1.4285714285715096,
+          563.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Nha su",
+      "score": null,
+      "points": [
+        [
+          744.2857142857142,
+          184.5
+        ],
+        [
+          815.7142857142857,
+          184.5
+        ],
+        [
+          815.7142857142857,
+          519.4999999999999
+        ],
+        [
+          744.2857142857142,
+          519.4999999999999
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          766.4285714285713,
+          0.0
+        ],
+        [
+          837.8571428571428,
+          0.0
+        ],
+        [
+          837.8571428571428,
+          185.21428571428572
+        ],
+        [
+          766.4285714285713,
+          185.21428571428572
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          220.00000000000006,
+          0.0
+        ],
+        [
+          280.7142857142858,
+          0.0
+        ],
+        [
+          280.7142857142858,
+          85.92857142857143
+        ],
+        [
+          220.00000000000006,
+          85.92857142857143
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          502.8571428571429,
+          0.2142857142857224
+        ],
+        [
+          574.2857142857142,
+          0.2142857142857224
+        ],
+        [
+          574.2857142857142,
+          185.21428571428572
+        ],
+        [
+          502.8571428571429,
+          185.21428571428572
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0024_at_000024.jpg",
+  "imageData": null,
+  "imageHeight": 564,
+  "imageWidth": 1130,
+  "description": ""
+}

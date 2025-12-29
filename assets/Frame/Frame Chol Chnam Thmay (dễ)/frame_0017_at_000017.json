@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          236.75886524822693,
+          0.0
+        ],
+        [
+          733.9219858156029,
+          0.0
+        ],
+        [
+          733.9219858156029,
+          575.0
+        ],
+        [
+          236.75886524822693,
+          575.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0017_at_000017.jpg",
+  "imageData": null,
+  "imageHeight": 576,
+  "imageWidth": 1126,
+  "description": ""
+}

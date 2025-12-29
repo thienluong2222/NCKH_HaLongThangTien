@@ -1,0 +1,272 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          341.7491149902344,
+          217.69261169433594
+        ],
+        [
+          382.418212890625,
+          217.69261169433594
+        ],
+        [
+          382.418212890625,
+          371.76788330078125
+        ],
+        [
+          341.7491149902344,
+          371.76788330078125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          123.43054962158203,
+          212.97662353515625
+        ],
+        [
+          170.2178192138672,
+          212.97662353515625
+        ],
+        [
+          170.2178192138672,
+          372.527099609375
+        ],
+        [
+          123.43054962158203,
+          372.527099609375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          483.0663146972656,
+          228.01087951660156
+        ],
+        [
+          517.1350708007812,
+          228.01087951660156
+        ],
+        [
+          517.1350708007812,
+          370.269287109375
+        ],
+        [
+          483.0663146972656,
+          370.269287109375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          62.72245788574219,
+          211.18414306640625
+        ],
+        [
+          116.01537322998047,
+          211.18414306640625
+        ],
+        [
+          116.01537322998047,
+          373.80059814453125
+        ],
+        [
+          62.72245788574219,
+          373.80059814453125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          536.4168090820312,
+          240.5793914794922
+        ],
+        [
+          572.764404296875,
+          240.5793914794922
+        ],
+        [
+          572.764404296875,
+          372.35260009765625
+        ],
+        [
+          536.4168090820312,
+          372.35260009765625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          9.91236686706543,
+          265.15576171875
+        ],
+        [
+          57.43299102783203,
+          265.15576171875
+        ],
+        [
+          57.43299102783203,
+          386.9751281738281
+        ],
+        [
+          9.91236686706543,
+          386.9751281738281
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          579.2333374023438,
+          233.68804931640625
+        ],
+        [
+          615.5859985351562,
+          233.68804931640625
+        ],
+        [
+          615.5859985351562,
+          366.6058654785156
+        ],
+        [
+          579.2333374023438,
+          366.6058654785156
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          419.42132568359375,
+          246.41671752929688
+        ],
+        [
+          468.0886075949368,
+          246.41671752929688
+        ],
+        [
+          468.0886075949368,
+          373.1898734177215
+        ],
+        [
+          419.42132568359375,
+          373.1898734177215
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          391.50632911392404,
+          217.74937438964844
+        ],
+        [
+          415.0906982421875,
+          217.74937438964844
+        ],
+        [
+          415.0906982421875,
+          373.8227848101266
+        ],
+        [
+          391.50632911392404,
+          373.8227848101266
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0036_at_000036.jpg",
+  "imageData": null,
+  "imageHeight": 566,
+  "imageWidth": 902,
+  "description": ""
+}

@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          0.41040462427747926,
+          178.72832369942196
+        ],
+        [
+          473.82080924855495,
+          178.72832369942196
+        ],
+        [
+          473.82080924855495,
+          474.6820809248555
+        ],
+        [
+          0.41040462427747926,
+          474.6820809248555
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0010_at_000010.jpg",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 854,
+  "description": ""
+}

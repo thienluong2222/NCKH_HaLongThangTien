@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          6.155011177062988,
+          13.831878662109375
+        ],
+        [
+          964.6546020507812,
+          596.4628295898438
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          128.48953247070312,
+          11.229798316955566
+        ],
+        [
+          764.036865234375,
+          477.9136047363281
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0060_at_000060.jpg",
+  "imageData": null
+}

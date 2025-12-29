@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Kieu ruoc ong",
+      "score": null,
+      "points": [
+        [
+          527.3048095703125,
+          99.19193267822266
+        ],
+        [
+          764.61474609375,
+          99.19193267822266
+        ],
+        [
+          764.61474609375,
+          574.6683349609375
+        ],
+        [
+          527.3048095703125,
+          574.6683349609375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          735.6703491210938,
+          179.15228271484375
+        ],
+        [
+          896.7002563476562,
+          179.15228271484375
+        ],
+        [
+          896.7002563476562,
+          588.4788208007812
+        ],
+        [
+          735.6703491210938,
+          588.4788208007812
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          88.7824935913086,
+          212.43739318847656
+        ],
+        [
+          358.443603515625,
+          212.43739318847656
+        ],
+        [
+          358.443603515625,
+          588.784912109375
+        ],
+        [
+          88.7824935913086,
+          588.784912109375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          432.7994079589844,
+          189.09315490722656
+        ],
+        [
+          578.318603515625,
+          189.09315490722656
+        ],
+        [
+          578.318603515625,
+          590.6038818359375
+        ],
+        [
+          432.7994079589844,
+          590.6038818359375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          301.261474609375,
+          184.0717010498047
+        ],
+        [
+          433.65496826171875,
+          184.0717010498047
+        ],
+        [
+          433.65496826171875,
+          587.9359130859375
+        ],
+        [
+          301.261474609375,
+          587.9359130859375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          1.8571428571428727,
+          135.64285714285714
+        ],
+        [
+          189.7142857142857,
+          135.64285714285714
+        ],
+        [
+          189.7142857142857,
+          229.21428571428572
+        ],
+        [
+          1.8571428571428727,
+          229.21428571428572
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0019_at_000019.jpg",
+  "imageData": null,
+  "imageHeight": 592,
+  "imageWidth": 1128,
+  "description": ""
+}

@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Chua",
+      "points": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          273.34234619140625,
+          525.560546875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Chua",
+      "points": [
+        [
+          254.4473876953125,
+          139.33973693847656
+        ],
+        [
+          426.70947265625,
+          461.1850280761719
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0020_at_000020.jpg",
+  "imageData": null
+}

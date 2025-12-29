@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          92.47058823529407,
+          96.70588235294116
+        ],
+        [
+          204.23529411764704,
+          96.70588235294116
+        ],
+        [
+          204.23529411764704,
+          218.47058823529412
+        ],
+        [
+          92.47058823529407,
+          218.47058823529412
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          204.82352941176467,
+          47.29411764705881
+        ],
+        [
+          377.17647058823525,
+          47.29411764705881
+        ],
+        [
+          377.17647058823525,
+          162.0
+        ],
+        [
+          204.82352941176467,
+          162.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          317.76470588235287,
+          214.94117647058823
+        ],
+        [
+          454.82352941176464,
+          214.94117647058823
+        ],
+        [
+          454.82352941176464,
+          348.47058823529414
+        ],
+        [
+          317.76470588235287,
+          348.47058823529414
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          245.41176470588232,
+          377.88235294117646
+        ],
+        [
+          318.9411764705882,
+          377.88235294117646
+        ],
+        [
+          318.9411764705882,
+          497.29411764705884
+        ],
+        [
+          245.41176470588232,
+          497.29411764705884
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "trong Chhay-dam",
+      "score": null,
+      "points": [
+        [
+          491.2941176470588,
+          21.411764705882337
+        ],
+        [
+          556.0,
+          21.411764705882337
+        ],
+        [
+          556.0,
+          69.05882352941175
+        ],
+        [
+          491.2941176470588,
+          69.05882352941175
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "trong Chhay-dam",
+      "score": null,
+      "points": [
+        [
+          546.5882352941176,
+          71.99999999999999
+        ],
+        [
+          597.7647058823529,
+          71.99999999999999
+        ],
+        [
+          597.7647058823529,
+          112.58823529411764
+        ],
+        [
+          546.5882352941176,
+          112.58823529411764
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nha su",
+      "score": null,
+      "points": [
+        [
+          862.470588235294,
+          60.8235294117647
+        ],
+        [
+          923.0588235294117,
+          60.8235294117647
+        ],
+        [
+          923.0588235294117,
+          179.05882352941174
+        ],
+        [
+          862.470588235294,
+          179.05882352941174
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0003_at_000003.jpg",
+  "imageData": null,
+  "imageHeight": 514,
+  "imageWidth": 932,
+  "description": ""
+}

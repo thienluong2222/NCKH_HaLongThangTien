@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          0.0,
+          7.068202495574951
+        ],
+        [
+          1135.784423828125,
+          598.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nuoc thom",
+      "points": [
+        [
+          524.4884033203125,
+          547.6136474609375
+        ],
+        [
+          625.3331909179688,
+          593.4296264648438
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0063_at_000063.jpg",
+  "imageData": null
+}

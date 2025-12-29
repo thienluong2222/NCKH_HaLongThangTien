@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "dan kim",
+      "score": null,
+      "points": [
+        [
+          65.71241830065358,
+          249.33986928104576
+        ],
+        [
+          319.3071895424836,
+          249.33986928104576
+        ],
+        [
+          319.3071895424836,
+          565.0
+        ],
+        [
+          65.71241830065358,
+          565.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0012_at_000012.jpg",
+  "imageData": null,
+  "imageHeight": 566,
+  "imageWidth": 1036,
+  "description": ""
+}

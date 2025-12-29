@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          477.8571428571429,
+          5.214285714285722
+        ],
+        [
+          577.1428571428571,
+          5.214285714285722
+        ],
+        [
+          577.1428571428571,
+          185.92857142857144
+        ],
+        [
+          477.8571428571429,
+          185.92857142857144
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          770.0,
+          27.35714285714286
+        ],
+        [
+          816.4285714285713,
+          27.35714285714286
+        ],
+        [
+          816.4285714285713,
+          231.64285714285717
+        ],
+        [
+          770.0,
+          231.64285714285717
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nha su",
+      "score": null,
+      "points": [
+        [
+          75.00000000000007,
+          0.0
+        ],
+        [
+          414.28571428571433,
+          0.0
+        ],
+        [
+          414.28571428571433,
+          554.4999999999999
+        ],
+        [
+          75.00000000000007,
+          554.4999999999999
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nha su",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          164.5
+        ],
+        [
+          69.28571428571435,
+          164.5
+        ],
+        [
+          69.28571428571435,
+          548.7857142857142
+        ],
+        [
+          0.0,
+          548.7857142857142
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nha su",
+      "score": null,
+      "points": [
+        [
+          685.7142857142857,
+          206.6428571428571
+        ],
+        [
+          779.2857142857142,
+          206.6428571428571
+        ],
+        [
+          779.2857142857142,
+          461.6428571428571
+        ],
+        [
+          685.7142857142857,
+          461.6428571428571
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0027_at_000027.jpg",
+  "imageData": null,
+  "imageHeight": 564,
+  "imageWidth": 1130,
+  "description": ""
+}

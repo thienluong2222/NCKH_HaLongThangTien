@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          2.5014255046844482,
+          460.10321044921875
+        ],
+        [
+          103.18824005126953,
+          460.10321044921875
+        ],
+        [
+          103.18824005126953,
+          507.53546142578125
+        ],
+        [
+          2.5014255046844482,
+          507.53546142578125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0037_at_000037.jpg",
+  "imageData": null,
+  "imageHeight": 510,
+  "imageWidth": 1116,
+  "description": ""
+}

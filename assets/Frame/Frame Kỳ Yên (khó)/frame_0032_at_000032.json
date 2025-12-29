@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          134.06724548339844,
+          320.77081298828125
+        ],
+        [
+          364.57666015625,
+          320.77081298828125
+        ],
+        [
+          364.57666015625,
+          554.0
+        ],
+        [
+          134.06724548339844,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          576.4098510742188,
+          307.6123046875
+        ],
+        [
+          783.5617065429688,
+          307.6123046875
+        ],
+        [
+          783.5617065429688,
+          554.0
+        ],
+        [
+          576.4098510742188,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          341.84564208984375,
+          278.0077819824219
+        ],
+        [
+          468.8194580078125,
+          278.0077819824219
+        ],
+        [
+          468.8194580078125,
+          514.4390869140625
+        ],
+        [
+          341.84564208984375,
+          514.4390869140625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Sac Than",
+      "score": null,
+      "points": [
+        [
+          499.54052734375,
+          292.7419738769531
+        ],
+        [
+          623.2962036132812,
+          292.7419738769531
+        ],
+        [
+          623.2962036132812,
+          549.1190795898438
+        ],
+        [
+          499.54052734375,
+          549.1190795898438
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          330.47998046875,
+          411.2664794921875
+        ],
+        [
+          531.8699340820312,
+          411.2664794921875
+        ],
+        [
+          531.8699340820312,
+          554.0
+        ],
+        [
+          330.47998046875,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          832.5956420898438,
+          0.0
+        ],
+        [
+          1110.0,
+          0.0
+        ],
+        [
+          1110.0,
+          478.41033935546875
+        ],
+        [
+          832.5956420898438,
+          478.41033935546875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          461.993006993007,
+          287.4895104895105
+        ],
+        [
+          511.64335664335664,
+          287.4895104895105
+        ],
+        [
+          511.64335664335664,
+          416.86013986013984
+        ],
+        [
+          461.993006993007,
+          416.86013986013984
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0032_at_000032.jpg",
+  "imageData": null,
+  "imageHeight": 554,
+  "imageWidth": 1110,
+  "description": ""
+}

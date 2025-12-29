@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "dan kim",
+      "points": [
+        [
+          127.67462158203125,
+          302.5874328613281
+        ],
+        [
+          570.6574096679688,
+          588.3826293945312
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "dan kim",
+      "points": [
+        [
+          705.7482299804688,
+          301.89794921875
+        ],
+        [
+          1085.8477783203125,
+          597.8997192382812
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0004_at_000004.jpg",
+  "imageData": null
+}

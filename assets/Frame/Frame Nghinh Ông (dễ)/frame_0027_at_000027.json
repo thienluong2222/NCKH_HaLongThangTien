@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          815.5948305483217,
+          172.33013802987557
+        ],
+        [
+          929.3916445131655,
+          172.33013802987557
+        ],
+        [
+          929.3916445131655,
+          425.6952808521412
+        ],
+        [
+          815.5948305483217,
+          425.6952808521412
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          460.50841079523536,
+          200.75308641975312
+        ],
+        [
+          518.8641975308642,
+          200.75308641975312
+        ],
+        [
+          518.8641975308642,
+          382.85185185185185
+        ],
+        [
+          460.50841079523536,
+          382.85185185185185
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          506.0392749927662,
+          233.32098765432102
+        ],
+        [
+          564.395061728395,
+          233.32098765432102
+        ],
+        [
+          564.395061728395,
+          415.41975308641975
+        ],
+        [
+          506.0392749927662,
+          415.41975308641975
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0027_at_000027.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 976,
+  "description": ""
+}

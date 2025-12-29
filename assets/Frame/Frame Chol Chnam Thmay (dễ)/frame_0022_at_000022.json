@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Nguoi mua chan",
+      "points": [
+        [
+          418.9101257324219,
+          0.0
+        ],
+        [
+          780.7197265625,
+          571.1992797851562
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi mua chan",
+      "points": [
+        [
+          90.20762634277344,
+          0.0
+        ],
+        [
+          426.71954345703125,
+          571.66064453125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0022_at_000022.jpg",
+  "imageData": null
+}

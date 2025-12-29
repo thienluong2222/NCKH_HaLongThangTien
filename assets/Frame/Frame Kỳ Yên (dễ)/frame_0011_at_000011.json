@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          380.375,
+          193.25779724121094
+        ],
+        [
+          447.63519287109375,
+          193.25779724121094
+        ],
+        [
+          447.63519287109375,
+          474.86273193359375
+        ],
+        [
+          380.375,
+          474.86273193359375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          236.3805389404297,
+          180.63075256347656
+        ],
+        [
+          386.30438232421875,
+          180.63075256347656
+        ],
+        [
+          386.30438232421875,
+          480.0
+        ],
+        [
+          236.3805389404297,
+          480.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          475.64864864864865,
+          162.97297297297297
+        ],
+        [
+          615.4772338867188,
+          162.97297297297297
+        ],
+        [
+          615.4772338867188,
+          478.0570373535156
+        ],
+        [
+          475.64864864864865,
+          478.0570373535156
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          711.2261352539062,
+          29.175037384033203
+        ],
+        [
+          853.80078125,
+          29.175037384033203
+        ],
+        [
+          853.80078125,
+          479.6780090332031
+        ],
+        [
+          711.2261352539062,
+          479.6780090332031
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          604.1641235351562,
+          28.648544311523438
+        ],
+        [
+          854.0,
+          28.648544311523438
+        ],
+        [
+          854.0,
+          480.0
+        ],
+        [
+          604.1641235351562,
+          480.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          197.7152557373047,
+          208.76602172851562
+        ],
+        [
+          261.9623718261719,
+          208.76602172851562
+        ],
+        [
+          261.9623718261719,
+          467.3917236328125
+        ],
+        [
+          197.7152557373047,
+          467.3917236328125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0011_at_000011.jpg",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 854,
+  "description": ""
+}

@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Tuong Phat",
+      "score": null,
+      "points": [
+        [
+          475.60563380281695,
+          109.85915492957746
+        ],
+        [
+          523.4929577464789,
+          109.85915492957746
+        ],
+        [
+          523.4929577464789,
+          192.95774647887322
+        ],
+        [
+          475.60563380281695,
+          192.95774647887322
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tuong Phat",
+      "score": null,
+      "points": [
+        [
+          697.4366197183099,
+          73.2394366197183
+        ],
+        [
+          753.0704225352113,
+          73.2394366197183
+        ],
+        [
+          753.0704225352113,
+          178.8732394366197
+        ],
+        [
+          697.4366197183099,
+          178.8732394366197
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          694.6197183098592,
+          185.9154929577465
+        ],
+        [
+          718.5633802816901,
+          185.9154929577465
+        ],
+        [
+          718.5633802816901,
+          252.11267605633805
+        ],
+        [
+          694.6197183098592,
+          252.11267605633805
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          729.1267605633802,
+          200.0
+        ],
+        [
+          763.6338028169014,
+          200.0
+        ],
+        [
+          763.6338028169014,
+          260.5633802816901
+        ],
+        [
+          729.1267605633802,
+          260.5633802816901
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0023_at_000023.jpg",
+  "imageData": null,
+  "imageHeight": 550,
+  "imageWidth": 1116,
+  "description": ""
+}

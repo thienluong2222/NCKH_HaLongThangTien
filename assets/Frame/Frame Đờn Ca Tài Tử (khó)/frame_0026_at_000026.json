@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi mua",
+      "score": null,
+      "points": [
+        [
+          723.2557983398438,
+          385.9945068359375
+        ],
+        [
+          819.3836669921875,
+          385.9945068359375
+        ],
+        [
+          819.3836669921875,
+          575.4869384765625
+        ],
+        [
+          723.2557983398438,
+          575.4869384765625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua",
+      "score": null,
+      "points": [
+        [
+          545.3873291015625,
+          249.53012084960938
+        ],
+        [
+          714.9567260742188,
+          249.53012084960938
+        ],
+        [
+          714.9567260742188,
+          575.440673828125
+        ],
+        [
+          545.3873291015625,
+          575.440673828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0026_at_000026.jpg",
+  "imageData": null,
+  "imageHeight": 582,
+  "imageWidth": 1148,
+  "description": ""
+}

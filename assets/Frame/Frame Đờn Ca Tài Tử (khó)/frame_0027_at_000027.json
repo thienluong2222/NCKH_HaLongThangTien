@@ -1,0 +1,71 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          599.882080078125,
+          356.35186767578125
+        ],
+        [
+          711.9715576171875,
+          579.7173461914062
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          296.7966003417969,
+          234.59022521972656
+        ],
+        [
+          406.6047668457031,
+          550.876708984375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          650.12060546875,
+          189.90818786621094
+        ],
+        [
+          734.313232421875,
+          428.3020935058594
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          418.77252197265625,
+          178.8811798095703
+        ],
+        [
+          501.4004211425781,
+          392.54522705078125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0027_at_000027.jpg",
+  "imageData": null
+}

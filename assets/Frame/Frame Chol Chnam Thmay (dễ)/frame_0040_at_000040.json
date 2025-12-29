@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nui cat",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          241.50359712230218
+        ],
+        [
+          325.8345323741008,
+          241.50359712230218
+        ],
+        [
+          325.8345323741008,
+          608.916748046875
+        ],
+        [
+          0.0,
+          608.916748046875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0040_at_000040.jpg",
+  "imageData": null,
+  "imageHeight": 642,
+  "imageWidth": 1138,
+  "description": ""
+}

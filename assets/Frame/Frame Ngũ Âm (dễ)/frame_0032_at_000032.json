@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          341.3094482421875,
+          262.87774658203125
+        ],
+        [
+          457.5152893066406,
+          262.87774658203125
+        ],
+        [
+          457.5152893066406,
+          347.213134765625
+        ],
+        [
+          341.3094482421875,
+          347.213134765625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "score": null,
+      "points": [
+        [
+          405.3157653808594,
+          367.83561643835617
+        ],
+        [
+          712.5479452054794,
+          367.83561643835617
+        ],
+        [
+          712.5479452054794,
+          546.16357421875
+        ],
+        [
+          405.3157653808594,
+          546.16357421875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trong nho Kha-so-sompho",
+      "score": null,
+      "points": [
+        [
+          446.7945205479452,
+          339.75342465753425
+        ],
+        [
+          523.5068493150685,
+          339.75342465753425
+        ],
+        [
+          523.5068493150685,
+          375.36986301369865
+        ],
+        [
+          446.7945205479452,
+          375.36986301369865
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          453.6438356164383,
+          244.54794520547944
+        ],
+        [
+          559.8082191780823,
+          244.54794520547944
+        ],
+        [
+          559.8082191780823,
+          319.8904109589041
+        ],
+        [
+          453.6438356164383,
+          319.8904109589041
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0032_at_000032.jpg",
+  "imageData": null,
+  "imageHeight": 548,
+  "imageWidth": 1084,
+  "description": ""
+}

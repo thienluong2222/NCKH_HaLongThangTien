@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ghe ngo",
+      "score": null,
+      "points": [
+        [
+          2.569643974304199,
+          262.7100524902344
+        ],
+        [
+          1058.8590604026845,
+          262.7100524902344
+        ],
+        [
+          1058.8590604026845,
+          324.51677852348996
+        ],
+        [
+          2.569643974304199,
+          324.51677852348996
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0003_at_000003.jpg",
+  "imageData": null,
+  "imageHeight": 494,
+  "imageWidth": 1060,
+  "description": ""
+}

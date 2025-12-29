@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          712.7156982421875,
+          0.44782334566116333
+        ],
+        [
+          1078.0,
+          0.44782334566116333
+        ],
+        [
+          1078.0,
+          532.0
+        ],
+        [
+          712.7156982421875,
+          532.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          177.89756774902344,
+          0.0
+        ],
+        [
+          652.093994140625,
+          0.0
+        ],
+        [
+          652.093994140625,
+          531.16650390625
+        ],
+        [
+          177.89756774902344,
+          531.16650390625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          297.0242919921875,
+          1.0513979196548462
+        ],
+        [
+          1043.358642578125,
+          1.0513979196548462
+        ],
+        [
+          1043.358642578125,
+          532.0
+        ],
+        [
+          297.0242919921875,
+          532.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          454.91058349609375,
+          0.0
+        ],
+        [
+          846.9464111328125,
+          0.0
+        ],
+        [
+          846.9464111328125,
+          530.0364379882812
+        ],
+        [
+          454.91058349609375,
+          530.0364379882812
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0057_at_000057.jpg",
+  "imageData": null,
+  "imageHeight": 532,
+  "imageWidth": 1078,
+  "description": ""
+}

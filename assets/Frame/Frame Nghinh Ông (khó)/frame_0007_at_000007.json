@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Ok om bok",
+      "points": [
+        [
+          963.4271850585938,
+          92.62080383300781
+        ],
+        [
+          1124.0,
+          152.0406951904297
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0007_at_000007.jpg",
+  "imageData": null
+}

@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi mua",
+      "score": null,
+      "points": [
+        [
+          578.9830932617188,
+          101.87516021728516
+        ],
+        [
+          897.7865600585938,
+          101.87516021728516
+        ],
+        [
+          897.7865600585938,
+          536.3118286132812
+        ],
+        [
+          578.9830932617188,
+          536.3118286132812
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          429.3154362416107,
+          152.2013422818792
+        ],
+        [
+          549.4496644295301,
+          152.2013422818792
+        ],
+        [
+          549.4496644295301,
+          226.69798657718118
+        ],
+        [
+          429.3154362416107,
+          226.69798657718118
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          661.5302013422818,
+          59.58389261744965
+        ],
+        [
+          786.3624161073825,
+          59.58389261744965
+        ],
+        [
+          786.3624161073825,
+          181.06040268456374
+        ],
+        [
+          661.5302013422818,
+          181.06040268456374
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao khoac vai",
+      "score": null,
+      "points": [
+        [
+          634.3154362416107,
+          188.9731543624161
+        ],
+        [
+          884.6510067114093,
+          188.9731543624161
+        ],
+        [
+          884.6510067114093,
+          510.44966442953023
+        ],
+        [
+          634.3154362416107,
+          510.44966442953023
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          60.18791946308722,
+          295.82550335570465
+        ],
+        [
+          226.63087248322145,
+          295.82550335570465
+        ],
+        [
+          226.63087248322145,
+          541.4630872483222
+        ],
+        [
+          60.18791946308722,
+          541.4630872483222
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Toc bui cao",
+      "score": null,
+      "points": [
+        [
+          436.02684563758385,
+          177.03355704697984
+        ],
+        [
+          493.744966442953,
+          177.03355704697984
+        ],
+        [
+          493.744966442953,
+          212.60402684563758
+        ],
+        [
+          436.02684563758385,
+          212.60402684563758
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0033_at_000033.jpg",
+  "imageData": null,
+  "imageHeight": 544,
+  "imageWidth": 1064,
+  "description": ""
+}

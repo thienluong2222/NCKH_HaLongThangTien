@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Cam gay",
+      "score": null,
+      "points": [
+        [
+          659.1372549019608,
+          327.1503267973856
+        ],
+        [
+          719.9215686274509,
+          327.1503267973856
+        ],
+        [
+          719.9215686274509,
+          530.4183006535948
+        ],
+        [
+          659.1372549019608,
+          530.4183006535948
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Toc bui cao",
+      "score": null,
+      "points": [
+        [
+          592.4705882352941,
+          291.8562091503268
+        ],
+        [
+          634.3006535947712,
+          291.8562091503268
+        ],
+        [
+          634.3006535947712,
+          326.4967320261438
+        ],
+        [
+          592.4705882352941,
+          326.4967320261438
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          574.8235294117646,
+          391.8562091503268
+        ],
+        [
+          608.156862745098,
+          391.8562091503268
+        ],
+        [
+          608.156862745098,
+          436.30065359477123
+        ],
+        [
+          574.8235294117646,
+          436.30065359477123
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          107.50326797385621,
+          34.99346405228759
+        ],
+        [
+          960.4444444444445,
+          34.99346405228759
+        ],
+        [
+          960.4444444444445,
+          348.718954248366
+        ],
+        [
+          107.50326797385621,
+          348.718954248366
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0038_at_000038.jpg",
+  "imageData": null,
+  "imageHeight": 536,
+  "imageWidth": 1032,
+  "description": ""
+}

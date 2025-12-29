@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "trong Chhay-dam",
+      "score": null,
+      "points": [
+        [
+          193.17985611510798,
+          424.1726618705036
+        ],
+        [
+          534.1870503597122,
+          424.1726618705036
+        ],
+        [
+          534.1870503597122,
+          579.0
+        ],
+        [
+          193.17985611510798,
+          579.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0010_at_000010.jpg",
+  "imageData": null,
+  "imageHeight": 580,
+  "imageWidth": 1136,
+  "description": ""
+}

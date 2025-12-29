@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          108.99378204345703,
+          0.0
+        ],
+        [
+          204.5759162303665,
+          0.0
+        ],
+        [
+          204.5759162303665,
+          351.3350785340314
+        ],
+        [
+          108.99378204345703,
+          351.3350785340314
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          216.9730682373047,
+          0.0
+        ],
+        [
+          297.7696335078534,
+          0.0
+        ],
+        [
+          297.7696335078534,
+          343.4816753926701
+        ],
+        [
+          216.9730682373047,
+          343.4816753926701
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          305.62303664921467,
+          3.544112205505371
+        ],
+        [
+          393.72144385532556,
+          3.544112205505371
+        ],
+        [
+          393.72144385532556,
+          312.0680628272251
+        ],
+        [
+          305.62303664921467,
+          312.0680628272251
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          403.5287958115183,
+          6.308900523560215
+        ],
+        [
+          483.10994764397907,
+          6.308900523560215
+        ],
+        [
+          483.10994764397907,
+          235.62827225130889
+        ],
+        [
+          403.5287958115183,
+          235.62827225130889
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "label": "hoa sen",
+      "score": null,
+      "points": [
+        [
+          714.0,
+          291.1256544502618
+        ],
+        [
+          768.9738219895288,
+          291.1256544502618
+        ],
+        [
+          768.9738219895288,
+          364.4240837696335
+        ],
+        [
+          714.0,
+          364.4240837696335
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "hoa sen",
+      "score": null,
+      "points": [
+        [
+          620.282722513089,
+          317.82722513089004
+        ],
+        [
+          695.151832460733,
+          317.82722513089004
+        ],
+        [
+          695.151832460733,
+          400.5497382198953
+        ],
+        [
+          620.282722513089,
+          400.5497382198953
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0018_at_000018.jpg",
+  "imageData": null,
+  "imageHeight": 410,
+  "imageWidth": 828,
+  "description": ""
+}

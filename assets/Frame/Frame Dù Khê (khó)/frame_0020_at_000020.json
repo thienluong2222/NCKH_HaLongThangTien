@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Cam gay",
+      "score": null,
+      "points": [
+        [
+          547.2748091603054,
+          185.2519083969466
+        ],
+        [
+          615.9770992366413,
+          185.2519083969466
+        ],
+        [
+          615.9770992366413,
+          551.6641221374045
+        ],
+        [
+          547.2748091603054,
+          551.6641221374045
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          628.1908396946566,
+          116.54961832061069
+        ],
+        [
+          703.7633587786261,
+          116.54961832061069
+        ],
+        [
+          703.7633587786261,
+          160.82442748091603
+        ],
+        [
+          628.1908396946566,
+          160.82442748091603
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          444.9847328244275,
+          115.78625954198473
+        ],
+        [
+          525.1374045801527,
+          115.78625954198473
+        ],
+        [
+          525.1374045801527,
+          149.37404580152673
+        ],
+        [
+          444.9847328244275,
+          149.37404580152673
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Do vai bong",
+      "score": null,
+      "points": [
+        [
+          385.44274809160305,
+          165.40458015267177
+        ],
+        [
+          483.91603053435114,
+          165.40458015267177
+        ],
+        [
+          483.91603053435114,
+          469.22137404580155
+        ],
+        [
+          385.44274809160305,
+          469.22137404580155
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0020_at_000020.jpg",
+  "imageData": null,
+  "imageHeight": 556,
+  "imageWidth": 1206,
+  "description": ""
+}

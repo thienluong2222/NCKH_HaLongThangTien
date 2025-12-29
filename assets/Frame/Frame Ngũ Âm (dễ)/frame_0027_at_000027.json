@@ -1,0 +1,87 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          442.9585876464844,
+          258.2919921875
+        ],
+        [
+          611.4727783203125,
+          383.557373046875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "points": [
+        [
+          386.56988525390625,
+          382.1178283691406
+        ],
+        [
+          891.3983764648438,
+          565.1817016601562
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          86.8265151977539,
+          277.82623291015625
+        ],
+        [
+          420.1006164550781,
+          429.3738708496094
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          741.5454711914062,
+          244.91412353515625
+        ],
+        [
+          847.188720703125,
+          378.0697021484375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan sat Ro-niet-dek",
+      "points": [
+        [
+          843.3289184570312,
+          343.7950134277344
+        ],
+        [
+          1055.8157958984375,
+          451.05499267578125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0027_at_000027.jpg",
+  "imageData": null
+}

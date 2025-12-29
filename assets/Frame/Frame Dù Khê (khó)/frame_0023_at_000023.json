@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          642.3702392578125,
+          201.1811981201172
+        ],
+        [
+          734.1838989257812,
+          201.1811981201172
+        ],
+        [
+          734.1838989257812,
+          515.1405639648438
+        ],
+        [
+          642.3702392578125,
+          515.1405639648438
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh hang dong",
+      "score": null,
+      "points": [
+        [
+          101.00000000000004,
+          44.045454545454575
+        ],
+        [
+          1152.5151515151515,
+          44.045454545454575
+        ],
+        [
+          1152.5151515151515,
+          346.3181818181818
+        ],
+        [
+          101.00000000000004,
+          346.3181818181818
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao khoac vai",
+      "score": null,
+      "points": [
+        [
+          379.030303030303,
+          291.77272727272725
+        ],
+        [
+          472.2121212121212,
+          291.77272727272725
+        ],
+        [
+          472.2121212121212,
+          358.43939393939394
+        ],
+        [
+          379.030303030303,
+          358.43939393939394
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0023_at_000023.jpg",
+  "imageData": null,
+  "imageHeight": 604,
+  "imageWidth": 1202,
+  "description": ""
+}

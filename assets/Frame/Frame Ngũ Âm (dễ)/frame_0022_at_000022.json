@@ -1,0 +1,301 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          241.08563232421875,
+          240.39828491210938
+        ],
+        [
+          689.5379028320312,
+          240.39828491210938
+        ],
+        [
+          689.5379028320312,
+          516.0
+        ],
+        [
+          241.08563232421875,
+          516.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          113.59642791748047,
+          0.0
+        ],
+        [
+          298.890869140625,
+          0.0
+        ],
+        [
+          298.890869140625,
+          221.5694580078125
+        ],
+        [
+          113.59642791748047,
+          221.5694580078125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          276.6556091308594,
+          7.978842258453369
+        ],
+        [
+          587.6655883789062,
+          7.978842258453369
+        ],
+        [
+          587.6655883789062,
+          367.6585693359375
+        ],
+        [
+          276.6556091308594,
+          367.6585693359375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          544.6187133789062,
+          125.7894287109375
+        ],
+        [
+          690.0,
+          125.7894287109375
+        ],
+        [
+          690.0,
+          287.9656982421875
+        ],
+        [
+          544.6187133789062,
+          287.9656982421875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          12.931083679199219,
+          128.4869384765625
+        ],
+        [
+          303.99212646484375,
+          128.4869384765625
+        ],
+        [
+          303.99212646484375,
+          293.1842041015625
+        ],
+        [
+          12.931083679199219,
+          293.1842041015625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          438.47955322265625,
+          0.0
+        ],
+        [
+          544.5989379882812,
+          0.0
+        ],
+        [
+          544.5989379882812,
+          177.7906951904297
+        ],
+        [
+          438.47955322265625,
+          177.7906951904297
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          595.0547485351562,
+          0.0
+        ],
+        [
+          689.8863525390625,
+          0.0
+        ],
+        [
+          689.8863525390625,
+          116.50321197509766
+        ],
+        [
+          595.0547485351562,
+          116.50321197509766
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          344.7979736328125,
+          0.0
+        ],
+        [
+          420.4912414550781,
+          0.0
+        ],
+        [
+          420.4912414550781,
+          137.1131591796875
+        ],
+        [
+          344.7979736328125,
+          137.1131591796875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          535.0203247070312,
+          97.81908416748047
+        ],
+        [
+          689.6557006835938,
+          97.81908416748047
+        ],
+        [
+          689.6557006835938,
+          170.159423828125
+        ],
+        [
+          535.0203247070312,
+          170.159423828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          602.9824829101562,
+          87.72832489013672
+        ],
+        [
+          690.0,
+          87.72832489013672
+        ],
+        [
+          690.0,
+          151.8202362060547
+        ],
+        [
+          602.9824829101562,
+          151.8202362060547
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0022_at_000022.jpg",
+  "imageData": null,
+  "imageHeight": 516,
+  "imageWidth": 690,
+  "description": ""
+}

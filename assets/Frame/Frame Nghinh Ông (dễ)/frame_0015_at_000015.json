@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ban tho ong",
+      "score": null,
+      "points": [
+        [
+          195.42690058479528,
+          30.71345029239765
+        ],
+        [
+          842.7953216374269,
+          30.71345029239765
+        ],
+        [
+          842.7953216374269,
+          431.8830409356725
+        ],
+        [
+          195.42690058479528,
+          431.8830409356725
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0015_at_000015.jpg",
+  "imageData": null,
+  "imageHeight": 524,
+  "imageWidth": 916,
+  "description": ""
+}

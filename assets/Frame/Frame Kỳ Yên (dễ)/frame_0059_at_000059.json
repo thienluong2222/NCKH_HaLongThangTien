@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          293.9896545410156,
+          102.3905029296875
+        ],
+        [
+          975.1060180664062,
+          532.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0059_at_000059.jpg",
+  "imageData": null
+}

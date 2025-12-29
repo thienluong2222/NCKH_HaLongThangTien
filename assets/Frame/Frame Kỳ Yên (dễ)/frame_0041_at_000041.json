@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          47.029449462890625,
+          151.6905059814453
+        ],
+        [
+          1091.7794189453125,
+          151.6905059814453
+        ],
+        [
+          1091.7794189453125,
+          564.0
+        ],
+        [
+          47.029449462890625,
+          564.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0041_at_000041.jpg",
+  "imageData": null,
+  "imageHeight": 564,
+  "imageWidth": 1092,
+  "description": ""
+}

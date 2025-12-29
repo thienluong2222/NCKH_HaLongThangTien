@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ghe ngo",
+      "score": null,
+      "points": [
+        [
+          885.0410766601562,
+          242.83982849121094
+        ],
+        [
+          1046.9462890625,
+          242.83982849121094
+        ],
+        [
+          1046.9462890625,
+          404.90386962890625
+        ],
+        [
+          885.0410766601562,
+          404.90386962890625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ghe ngo",
+      "score": null,
+      "points": [
+        [
+          840.1851806640625,
+          185.9828643798828
+        ],
+        [
+          880.0913696289062,
+          185.9828643798828
+        ],
+        [
+          880.0913696289062,
+          228.21185302734375
+        ],
+        [
+          840.1851806640625,
+          228.21185302734375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          763.1372680664062,
+          186.55955505371094
+        ],
+        [
+          827.1566162109375,
+          186.55955505371094
+        ],
+        [
+          827.1566162109375,
+          269.58319091796875
+        ],
+        [
+          763.1372680664062,
+          269.58319091796875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ghe ngo",
+      "score": null,
+      "points": [
+        [
+          648.4285714285714,
+          222.92857142857144
+        ],
+        [
+          729.8571428571428,
+          222.92857142857144
+        ],
+        [
+          729.8571428571428,
+          390.7857142857143
+        ],
+        [
+          648.4285714285714,
+          390.7857142857143
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0009_at_000009.jpg",
+  "imageData": null,
+  "imageHeight": 568,
+  "imageWidth": 1134,
+  "description": ""
+}

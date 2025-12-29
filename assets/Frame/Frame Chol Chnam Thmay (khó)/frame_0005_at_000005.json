@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "trong Chhay-dam",
+      "score": null,
+      "points": [
+        [
+          492.4705882352941,
+          34.941176470588225
+        ],
+        [
+          550.7058823529411,
+          34.941176470588225
+        ],
+        [
+          550.7058823529411,
+          75.52941176470587
+        ],
+        [
+          492.4705882352941,
+          75.52941176470587
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "trong Chhay-dam",
+      "score": null,
+      "points": [
+        [
+          558.3529411764705,
+          77.29411764705881
+        ],
+        [
+          609.5294117647059,
+          77.29411764705881
+        ],
+        [
+          609.5294117647059,
+          111.41176470588233
+        ],
+        [
+          558.3529411764705,
+          111.41176470588233
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          28.35294117647055,
+          235.52941176470588
+        ],
+        [
+          118.94117647058819,
+          235.52941176470588
+        ],
+        [
+          118.94117647058819,
+          368.47058823529414
+        ],
+        [
+          28.35294117647055,
+          368.47058823529414
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          211.88235294117644,
+          327.29411764705884
+        ],
+        [
+          308.9411764705882,
+          327.29411764705884
+        ],
+        [
+          308.9411764705882,
+          443.764705882353
+        ],
+        [
+          211.88235294117644,
+          443.764705882353
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          359.52941176470586,
+          217.2941176470588
+        ],
+        [
+          501.2941176470588,
+          217.2941176470588
+        ],
+        [
+          501.2941176470588,
+          372.5882352941177
+        ],
+        [
+          359.52941176470586,
+          372.5882352941177
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0005_at_000005.jpg",
+  "imageData": null,
+  "imageHeight": 514,
+  "imageWidth": 932,
+  "description": ""
+}

@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          22.32748538011693,
+          117.84795321637426
+        ],
+        [
+          189.578947368421,
+          117.84795321637426
+        ],
+        [
+          189.578947368421,
+          500.8888888888889
+        ],
+        [
+          22.32748538011693,
+          500.8888888888889
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          419.98830409356725,
+          165.80116959064327
+        ],
+        [
+          572.0350877192983,
+          165.80116959064327
+        ],
+        [
+          572.0350877192983,
+          435.39181286549706
+        ],
+        [
+          419.98830409356725,
+          435.39181286549706
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          698.3508771929825,
+          186.26900584795322
+        ],
+        [
+          769.1111111111111,
+          186.26900584795322
+        ],
+        [
+          769.1111111111111,
+          434.8070175438597
+        ],
+        [
+          698.3508771929825,
+          434.8070175438597
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          338.70175438596493,
+          188.6081871345029
+        ],
+        [
+          420.5730994152047,
+          188.6081871345029
+        ],
+        [
+          420.5730994152047,
+          440.0701754385965
+        ],
+        [
+          338.70175438596493,
+          440.0701754385965
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho ong",
+      "score": null,
+      "points": [
+        [
+          730.514619883041,
+          44.16374269005847
+        ],
+        [
+          914.140350877193,
+          44.16374269005847
+        ],
+        [
+          914.140350877193,
+          301.4736842105263
+        ],
+        [
+          730.514619883041,
+          301.4736842105263
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0012_at_000012.jpg",
+  "imageData": null,
+  "imageHeight": 524,
+  "imageWidth": 916,
+  "description": ""
+}

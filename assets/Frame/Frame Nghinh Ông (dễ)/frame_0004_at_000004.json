@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          796.7947998046875,
+          396.216064453125
+        ],
+        [
+          1173.598388671875,
+          396.216064453125
+        ],
+        [
+          1173.598388671875,
+          1073.229248046875
+        ],
+        [
+          796.7947998046875,
+          1073.229248046875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          1469.7560975609756,
+          611.3414634146342
+        ],
+        [
+          1658.780487804878,
+          611.3414634146342
+        ],
+        [
+          1658.780487804878,
+          979.6341463414634
+        ],
+        [
+          1469.7560975609756,
+          979.6341463414634
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0004_at_000004.jpg",
+  "imageData": null,
+  "imageHeight": 1080,
+  "imageWidth": 1920,
+  "description": ""
+}

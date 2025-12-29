@@ -1,0 +1,119 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Ao dai",
+      "points": [
+        [
+          494.2519836425781,
+          199.46978759765625
+        ],
+        [
+          725.1681518554688,
+          478.0684509277344
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ao dai",
+      "points": [
+        [
+          262.5469970703125,
+          191.30386352539062
+        ],
+        [
+          475.6146240234375,
+          475.0555114746094
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ao dai",
+      "points": [
+        [
+          449.4808654785156,
+          231.62083435058594
+        ],
+        [
+          558.4168701171875,
+          420.0086975097656
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          712.4187622070312,
+          30.605558395385742
+        ],
+        [
+          854.0,
+          442.9845275878906
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          749.5556640625,
+          34.9376335144043
+        ],
+        [
+          854.0,
+          471.69805908203125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          593.2825927734375,
+          25.646404266357422
+        ],
+        [
+          854.0,
+          349.43890380859375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "points": [
+        [
+          188.5543670654297,
+          189.43353271484375
+        ],
+        [
+          283.2642822265625,
+          475.6941223144531
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0007_at_000007.jpg",
+  "imageData": null
+}

@@ -1,0 +1,71 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          6.520663261413574,
+          4.98886775970459
+        ],
+        [
+          626.02880859375,
+          590.57275390625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          24.540752410888672,
+          1.0104295015335083
+        ],
+        [
+          1136.166015625,
+          586.0051879882812
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nuoc thom",
+      "points": [
+        [
+          999.4910278320312,
+          562.0698852539062
+        ],
+        [
+          1066.05322265625,
+          594.6262817382812
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          458.1243896484375,
+          8.16626262664795
+        ],
+        [
+          1140.6927490234375,
+          568.5900268554688
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0062_at_000062.jpg",
+  "imageData": null
+}

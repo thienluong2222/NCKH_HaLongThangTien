@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Cong Dinh",
+      "score": null,
+      "points": [
+        [
+          226.70167541503906,
+          0.0
+        ],
+        [
+          932.8213500976562,
+          0.0
+        ],
+        [
+          932.8213500976562,
+          501.8783874511719
+        ],
+        [
+          226.70167541503906,
+          501.8783874511719
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0014_at_000014.jpg",
+  "imageData": null,
+  "imageHeight": 518,
+  "imageWidth": 1094,
+  "description": ""
+}

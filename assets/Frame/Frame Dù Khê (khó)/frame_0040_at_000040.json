@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          248.1063829787234,
+          55.83687943262409
+        ],
+        [
+          1002.7163120567376,
+          55.83687943262409
+        ],
+        [
+          1002.7163120567376,
+          487.75177304964535
+        ],
+        [
+          248.1063829787234,
+          487.75177304964535
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          166.54609929078012,
+          189.17021276595744
+        ],
+        [
+          299.1702127659574,
+          189.17021276595744
+        ],
+        [
+          299.1702127659574,
+          559.3829787234042
+        ],
+        [
+          166.54609929078012,
+          559.3829787234042
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0040_at_000040.jpg",
+  "imageData": null,
+  "imageHeight": 606,
+  "imageWidth": 1126,
+  "description": ""
+}

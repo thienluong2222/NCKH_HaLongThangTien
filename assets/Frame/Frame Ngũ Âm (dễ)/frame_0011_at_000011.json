@@ -1,0 +1,119 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          250.8629150390625,
+          229.4308624267578
+        ],
+        [
+          375.332275390625,
+          400.4959716796875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          340.7519836425781,
+          137.6086883544922
+        ],
+        [
+          617.829345703125,
+          451.3634338378906
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          0.08527164906263351,
+          107.26335144042969
+        ],
+        [
+          60.28364181518555,
+          435.1604309082031
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          0.0,
+          106.19036102294922
+        ],
+        [
+          59.93405532836914,
+          309.6275634765625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          48.021934509277344,
+          188.37841796875
+        ],
+        [
+          114.25609588623047,
+          265.8131103515625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          19.26789093017578,
+          316.97137451171875
+        ],
+        [
+          539.47021484375,
+          477.48565673828125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          97.20299530029297,
+          396.8188171386719
+        ],
+        [
+          853.4173583984375,
+          476.7083435058594
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0011_at_000011.jpg",
+  "imageData": null
+}

@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Tuong Phat",
+      "score": null,
+      "points": [
+        [
+          758.1631205673759,
+          221.79432624113474
+        ],
+        [
+          832.6312056737589,
+          221.79432624113474
+        ],
+        [
+          832.6312056737589,
+          321.79432624113474
+        ],
+        [
+          758.1631205673759,
+          321.79432624113474
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tuong Phat",
+      "score": null,
+      "points": [
+        [
+          1023.4113475177306,
+          211.86524822695034
+        ],
+        [
+          1058.163120567376,
+          211.86524822695034
+        ],
+        [
+          1058.163120567376,
+          252.99999999999997
+        ],
+        [
+          1023.4113475177306,
+          252.99999999999997
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tuong Phat",
+      "score": null,
+      "points": [
+        [
+          1090.0780141843973,
+          174.98581560283685
+        ],
+        [
+          1121.0,
+          174.98581560283685
+        ],
+        [
+          1121.0,
+          238.8156028368794
+        ],
+        [
+          1090.0780141843973,
+          238.8156028368794
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0034_at_000034.jpg",
+  "imageData": null,
+  "imageHeight": 606,
+  "imageWidth": 1122,
+  "description": ""
+}

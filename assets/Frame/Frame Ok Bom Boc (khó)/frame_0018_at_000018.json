@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nha su",
+      "score": null,
+      "points": [
+        [
+          406.5857238769531,
+          271.9591369628906
+        ],
+        [
+          527.7333374023438,
+          271.9591369628906
+        ],
+        [
+          527.7333374023438,
+          532.7528076171875
+        ],
+        [
+          406.5857238769531,
+          532.7528076171875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nha su",
+      "score": null,
+      "points": [
+        [
+          486.4417724609375,
+          222.0814208984375
+        ],
+        [
+          575.115478515625,
+          222.0814208984375
+        ],
+        [
+          575.115478515625,
+          425.72271728515625
+        ],
+        [
+          486.4417724609375,
+          425.72271728515625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tuong Phat",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          381.024169921875
+        ],
+        [
+          82.1948471069336,
+          381.024169921875
+        ],
+        [
+          82.1948471069336,
+          541.2689208984375
+        ],
+        [
+          0.0,
+          541.2689208984375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          832.8844604492188,
+          314.8934631347656
+        ],
+        [
+          980.910400390625,
+          314.8934631347656
+        ],
+        [
+          980.910400390625,
+          541.8958740234375
+        ],
+        [
+          832.8844604492188,
+          541.8958740234375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Den nuoc",
+      "score": null,
+      "points": [
+        [
+          665.5714285714287,
+          0.0
+        ],
+        [
+          735.639455782313,
+          0.0
+        ],
+        [
+          735.639455782313,
+          80.82312925170069
+        ],
+        [
+          665.5714285714287,
+          80.82312925170069
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0018_at_000018.jpg",
+  "imageData": null,
+  "imageHeight": 546,
+  "imageWidth": 1074,
+  "description": ""
+}

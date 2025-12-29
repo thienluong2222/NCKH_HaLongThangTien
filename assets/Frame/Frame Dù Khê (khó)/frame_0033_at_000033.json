@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          559.75,
+          328.265625
+        ],
+        [
+          591.0,
+          328.265625
+        ],
+        [
+          591.0,
+          345.453125
+        ],
+        [
+          559.75,
+          345.453125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          626.9375,
+          321.234375
+        ],
+        [
+          658.96875,
+          321.234375
+        ],
+        [
+          658.96875,
+          339.984375
+        ],
+        [
+          626.9375,
+          339.984375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Toc bui cao",
+      "score": null,
+      "points": [
+        [
+          461.3125,
+          336.078125
+        ],
+        [
+          495.6875,
+          336.078125
+        ],
+        [
+          495.6875,
+          356.390625
+        ],
+        [
+          461.3125,
+          356.390625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Toc bui cao",
+      "score": null,
+      "points": [
+        [
+          300.375,
+          248.578125
+        ],
+        [
+          351.15625,
+          248.578125
+        ],
+        [
+          351.15625,
+          279.828125
+        ],
+        [
+          300.375,
+          279.828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam gay",
+      "score": null,
+      "points": [
+        [
+          519.125,
+          370.453125
+        ],
+        [
+          544.90625,
+          370.453125
+        ],
+        [
+          544.90625,
+          465.765625
+        ],
+        [
+          519.125,
+          465.765625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          355.84375,
+          54.04687500000001
+        ],
+        [
+          794.125,
+          54.04687500000001
+        ],
+        [
+          794.125,
+          279.828125
+        ],
+        [
+          355.84375,
+          279.828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0033_at_000033.jpg",
+  "imageData": null,
+  "imageHeight": 662,
+  "imageWidth": 1232,
+  "description": ""
+}

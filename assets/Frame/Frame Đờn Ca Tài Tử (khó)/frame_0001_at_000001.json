@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "dan kim",
+      "score": null,
+      "points": [
+        [
+          337.4473684210526,
+          453.9868421052631
+        ],
+        [
+          378.8947368421052,
+          453.9868421052631
+        ],
+        [
+          378.8947368421052,
+          488.19736842105266
+        ],
+        [
+          337.4473684210526,
+          488.19736842105266
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "dan guitar",
+      "score": null,
+      "points": [
+        [
+          157.84210526315786,
+          463.1973684210526
+        ],
+        [
+          245.99999999999997,
+          463.1973684210526
+        ],
+        [
+          245.99999999999997,
+          503.328947368421
+        ],
+        [
+          157.84210526315786,
+          503.328947368421
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "dan tranh",
+      "score": null,
+      "points": [
+        [
+          261.78947368421046,
+          492.14473684210526
+        ],
+        [
+          364.4210526315789,
+          492.14473684210526
+        ],
+        [
+          364.4210526315789,
+          504.64473684210526
+        ],
+        [
+          261.78947368421046,
+          504.64473684210526
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "dan co",
+      "score": null,
+      "points": [
+        [
+          422.97368421052624,
+          473.0657894736842
+        ],
+        [
+          485.47368421052624,
+          473.0657894736842
+        ],
+        [
+          485.47368421052624,
+          500.69736842105266
+        ],
+        [
+          422.97368421052624,
+          500.69736842105266
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "dan bau",
+      "score": null,
+      "points": [
+        [
+          492.7105263157894,
+          461.2236842105263
+        ],
+        [
+          555.8684210526316,
+          461.2236842105263
+        ],
+        [
+          555.8684210526316,
+          503.9868421052632
+        ],
+        [
+          492.7105263157894,
+          503.9868421052632
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0001_at_000001.jpg",
+  "imageData": null,
+  "imageHeight": 506,
+  "imageWidth": 1042,
+  "description": ""
+}

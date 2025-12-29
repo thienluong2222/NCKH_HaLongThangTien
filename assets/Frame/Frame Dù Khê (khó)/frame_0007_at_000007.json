@@ -1,0 +1,301 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi mua",
+      "score": null,
+      "points": [
+        [
+          908.148193359375,
+          330.7456970214844
+        ],
+        [
+          1023.1764526367188,
+          330.7456970214844
+        ],
+        [
+          1023.1764526367188,
+          596.68603515625
+        ],
+        [
+          908.148193359375,
+          596.68603515625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          385.69854736328125,
+          294.0862121582031
+        ],
+        [
+          584.0985107421875,
+          294.0862121582031
+        ],
+        [
+          584.0985107421875,
+          592.6033935546875
+        ],
+        [
+          385.69854736328125,
+          592.6033935546875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Vay sampot",
+      "score": null,
+      "points": [
+        [
+          441.3076923076923,
+          453.46153846153845
+        ],
+        [
+          553.6153846153846,
+          453.46153846153845
+        ],
+        [
+          553.6153846153846,
+          595.0
+        ],
+        [
+          441.3076923076923,
+          595.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Vay sampot",
+      "score": null,
+      "points": [
+        [
+          930.5384615384615,
+          484.23076923076917
+        ],
+        [
+          1025.923076923077,
+          484.23076923076917
+        ],
+        [
+          1025.923076923077,
+          603.4615384615385
+        ],
+        [
+          930.5384615384615,
+          603.4615384615385
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Toc bui cao",
+      "score": null,
+      "points": [
+        [
+          924.3846153846154,
+          322.6923076923077
+        ],
+        [
+          980.5384615384615,
+          322.6923076923077
+        ],
+        [
+          980.5384615384615,
+          374.2307692307692
+        ],
+        [
+          924.3846153846154,
+          374.2307692307692
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          743.6153846153846,
+          235.76923076923077
+        ],
+        [
+          811.3076923076924,
+          235.76923076923077
+        ],
+        [
+          811.3076923076924,
+          311.15384615384613
+        ],
+        [
+          743.6153846153846,
+          311.15384615384613
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          722.0769230769231,
+          320.38461538461536
+        ],
+        [
+          839.7692307692308,
+          320.38461538461536
+        ],
+        [
+          839.7692307692308,
+          373.46153846153845
+        ],
+        [
+          722.0769230769231,
+          373.46153846153845
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap than duoi",
+      "score": null,
+      "points": [
+        [
+          693.6153846153846,
+          408.8461538461538
+        ],
+        [
+          869.0,
+          408.8461538461538
+        ],
+        [
+          869.0,
+          578.0769230769231
+        ],
+        [
+          693.6153846153846,
+          578.0769230769231
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          251.30769230769232,
+          362.6923076923077
+        ],
+        [
+          353.61538461538464,
+          362.6923076923077
+        ],
+        [
+          353.61538461538464,
+          584.2307692307692
+        ],
+        [
+          251.30769230769232,
+          584.2307692307692
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          340.5384615384616,
+          470.38461538461536
+        ],
+        [
+          381.3076923076923,
+          470.38461538461536
+        ],
+        [
+          381.3076923076923,
+          517.3076923076923
+        ],
+        [
+          340.5384615384616,
+          517.3076923076923
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0007_at_000007.jpg",
+  "imageData": null,
+  "imageHeight": 620,
+  "imageWidth": 1218,
+  "description": ""
+}

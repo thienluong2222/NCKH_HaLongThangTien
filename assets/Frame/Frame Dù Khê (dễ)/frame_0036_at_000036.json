@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          254.56209150326802,
+          46.10457516339871
+        ],
+        [
+          967.6339869281046,
+          46.10457516339871
+        ],
+        [
+          967.6339869281046,
+          384.01307189542484
+        ],
+        [
+          254.56209150326802,
+          384.01307189542484
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          710.1176470588235,
+          286.62745098039215
+        ],
+        [
+          755.2156862745098,
+          286.62745098039215
+        ],
+        [
+          755.2156862745098,
+          321.921568627451
+        ],
+        [
+          710.1176470588235,
+          321.921568627451
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          700.9673202614379,
+          289.24183006535947
+        ],
+        [
+          781.359477124183,
+          289.24183006535947
+        ],
+        [
+          781.359477124183,
+          535.0
+        ],
+        [
+          700.9673202614379,
+          535.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "That lung ban to",
+      "score": null,
+      "points": [
+        [
+          700.313725490196,
+          409.5032679738562
+        ],
+        [
+          764.3660130718954,
+          409.5032679738562
+        ],
+        [
+          764.3660130718954,
+          445.45098039215685
+        ],
+        [
+          700.313725490196,
+          445.45098039215685
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          752.6013071895425,
+          365.05882352941177
+        ],
+        [
+          779.3986928104575,
+          365.05882352941177
+        ],
+        [
+          779.3986928104575,
+          399.0457516339869
+        ],
+        [
+          752.6013071895425,
+          399.0457516339869
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0036_at_000036.jpg",
+  "imageData": null,
+  "imageHeight": 536,
+  "imageWidth": 1032,
+  "description": ""
+}

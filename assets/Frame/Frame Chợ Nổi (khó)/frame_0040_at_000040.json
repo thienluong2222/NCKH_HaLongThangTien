@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          158.9234161376953,
+          311.09600830078125
+        ],
+        [
+          591.0142211914062,
+          311.09600830078125
+        ],
+        [
+          591.0142211914062,
+          559.341064453125
+        ],
+        [
+          158.9234161376953,
+          559.341064453125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cay beo",
+      "score": null,
+      "points": [
+        [
+          355.88787841796875,
+          0.8393451571464539
+        ],
+        [
+          427.0538330078125,
+          0.8393451571464539
+        ],
+        [
+          427.0538330078125,
+          369.5450439453125
+        ],
+        [
+          355.88787841796875,
+          369.5450439453125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cay beo",
+      "score": null,
+      "points": [
+        [
+          790.2029418945312,
+          112.533935546875
+        ],
+        [
+          824.1510009765625,
+          112.533935546875
+        ],
+        [
+          824.1510009765625,
+          249.38119506835938
+        ],
+        [
+          790.2029418945312,
+          249.38119506835938
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cay beo",
+      "score": null,
+      "points": [
+        [
+          116.1231460571289,
+          110.62812042236328
+        ],
+        [
+          162.1222381591797,
+          110.62812042236328
+        ],
+        [
+          162.1222381591797,
+          324.16033935546875
+        ],
+        [
+          116.1231460571289,
+          324.16033935546875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          3.0777382850646973,
+          290.43115234375
+        ],
+        [
+          183.88568115234375,
+          290.43115234375
+        ],
+        [
+          183.88568115234375,
+          520.2814331054688
+        ],
+        [
+          3.0777382850646973,
+          520.2814331054688
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cay beo",
+      "score": null,
+      "points": [
+        [
+          576.8685302734375,
+          0.0
+        ],
+        [
+          637.0665893554688,
+          0.0
+        ],
+        [
+          637.0665893554688,
+          371.39178466796875
+        ],
+        [
+          576.8685302734375,
+          371.39178466796875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          562.5474243164062,
+          342.3752136230469
+        ],
+        [
+          911.5420532226562,
+          342.3752136230469
+        ],
+        [
+          911.5420532226562,
+          575.3286743164062
+        ],
+        [
+          562.5474243164062,
+          575.3286743164062
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0040_at_000040.jpg",
+  "imageData": null,
+  "imageHeight": 622,
+  "imageWidth": 1168,
+  "description": ""
+}

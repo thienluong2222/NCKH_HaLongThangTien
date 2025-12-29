@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          1088.845947265625,
+          464.6485595703125
+        ],
+        [
+          1279.887451171875,
+          464.6485595703125
+        ],
+        [
+          1279.887451171875,
+          720.0
+        ],
+        [
+          1088.845947265625,
+          720.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          794.39599609375,
+          313.34649658203125
+        ],
+        [
+          1280.0,
+          313.34649658203125
+        ],
+        [
+          1280.0,
+          717.2559204101562
+        ],
+        [
+          794.39599609375,
+          717.2559204101562
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          5.322580645161309,
+          217.6612903225806
+        ],
+        [
+          196.45161290322582,
+          217.6612903225806
+        ],
+        [
+          196.45161290322582,
+          299.11290322580646
+        ],
+        [
+          5.322580645161309,
+          299.11290322580646
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0010_at_000010.jpg",
+  "imageData": null,
+  "imageHeight": 720,
+  "imageWidth": 1280,
+  "description": ""
+}

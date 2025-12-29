@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          982.7725219726562,
+          178.95733642578125
+        ],
+        [
+          1093.9661865234375,
+          178.95733642578125
+        ],
+        [
+          1093.9661865234375,
+          513.0773315429688
+        ],
+        [
+          982.7725219726562,
+          513.0773315429688
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          494.6242980957031,
+          156.58620689655174
+        ],
+        [
+          713.8965517241379,
+          156.58620689655174
+        ],
+        [
+          713.8965517241379,
+          515.6580810546875
+        ],
+        [
+          494.6242980957031,
+          515.6580810546875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          786.8199462890625,
+          169.2197265625
+        ],
+        [
+          896.361083984375,
+          169.2197265625
+        ],
+        [
+          896.361083984375,
+          355.147216796875
+        ],
+        [
+          786.8199462890625,
+          355.147216796875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          371.142822265625,
+          155.18910217285156
+        ],
+        [
+          517.0009155273438,
+          155.18910217285156
+        ],
+        [
+          517.0009155273438,
+          517.86767578125
+        ],
+        [
+          371.142822265625,
+          517.86767578125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          662.1724137931035,
+          162.79310344827587
+        ],
+        [
+          867.0,
+          162.79310344827587
+        ],
+        [
+          867.0,
+          515.896551724138
+        ],
+        [
+          662.1724137931035,
+          515.896551724138
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          224.24137931034483,
+          166.24137931034485
+        ],
+        [
+          331.13793103448273,
+          166.24137931034485
+        ],
+        [
+          331.13793103448273,
+          449.0
+        ],
+        [
+          224.24137931034483,
+          449.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    }
+  ],
+  "imagePath": "frame_0019_at_000019.jpg",
+  "imageData": null,
+  "imageHeight": 518,
+  "imageWidth": 1094,
+  "description": ""
+}

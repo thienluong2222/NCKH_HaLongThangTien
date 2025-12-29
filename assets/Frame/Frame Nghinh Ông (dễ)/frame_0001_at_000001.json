@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          617.3170731707316,
+          727.1951219512196
+        ],
+        [
+          781.951219512195,
+          727.1951219512196
+        ],
+        [
+          781.951219512195,
+          861.3414634146342
+        ],
+        [
+          617.3170731707316,
+          861.3414634146342
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trong",
+      "score": null,
+      "points": [
+        [
+          103.90243902439029,
+          802.8048780487806
+        ],
+        [
+          345.3658536585366,
+          802.8048780487806
+        ],
+        [
+          345.3658536585366,
+          1002.8048780487804
+        ],
+        [
+          103.90243902439029,
+          1002.8048780487804
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          805.1219512195122,
+          588.1707317073171
+        ],
+        [
+          899.0243902439024,
+          588.1707317073171
+        ],
+        [
+          899.0243902439024,
+          865.0
+        ],
+        [
+          805.1219512195122,
+          865.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          683.170731707317,
+          622.3170731707318
+        ],
+        [
+          757.560975609756,
+          622.3170731707318
+        ],
+        [
+          757.560975609756,
+          734.5121951219512
+        ],
+        [
+          683.170731707317,
+          734.5121951219512
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          336.8292682926829,
+          571.0975609756098
+        ],
+        [
+          492.9268292682927,
+          571.0975609756098
+        ],
+        [
+          492.9268292682927,
+          869.8780487804878
+        ],
+        [
+          336.8292682926829,
+          869.8780487804878
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0001_at_000001.jpg",
+  "imageData": null,
+  "imageHeight": 1080,
+  "imageWidth": 1920,
+  "description": ""
+}

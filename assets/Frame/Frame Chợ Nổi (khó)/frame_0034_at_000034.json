@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          373.8260192871094,
+          343.35052490234375
+        ],
+        [
+          1171.1749267578125,
+          588.1829223632812
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0034_at_000034.jpg",
+  "imageData": null
+}

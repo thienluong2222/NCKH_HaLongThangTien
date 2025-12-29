@@ -1,0 +1,103 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          461.40631103515625,
+          251.98358154296875
+        ],
+        [
+          619.6875,
+          381.7241516113281
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "points": [
+        [
+          405.7491760253906,
+          385.0882263183594
+        ],
+        [
+          902.1703491210938,
+          565.8447875976562
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          34.64918518066406,
+          268.1037902832031
+        ],
+        [
+          436.5315856933594,
+          418.7741394042969
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          742.4542846679688,
+          221.22286987304688
+        ],
+        [
+          858.294189453125,
+          365.74420166015625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan sat Ro-niet-dek",
+      "points": [
+        [
+          853.8678588867188,
+          352.10321044921875
+        ],
+        [
+          1061.861328125,
+          439.18572998046875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "points": [
+        [
+          672.1744384765625,
+          387.03741455078125
+        ],
+        [
+          898.9129028320312,
+          565.536376953125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0026_at_000026.jpg",
+  "imageData": null
+}

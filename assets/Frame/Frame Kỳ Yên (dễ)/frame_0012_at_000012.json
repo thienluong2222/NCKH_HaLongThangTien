@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          508.0090637207031,
+          131.8729705810547
+        ],
+        [
+          680.4983520507812,
+          131.8729705810547
+        ],
+        [
+          680.4983520507812,
+          480.0
+        ],
+        [
+          508.0090637207031,
+          480.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          137.0928192138672,
+          194.83140563964844
+        ],
+        [
+          221.877197265625,
+          194.83140563964844
+        ],
+        [
+          221.877197265625,
+          480.0
+        ],
+        [
+          137.0928192138672,
+          480.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          214.3810272216797,
+          146.523681640625
+        ],
+        [
+          432.23480224609375,
+          146.523681640625
+        ],
+        [
+          432.23480224609375,
+          480.0
+        ],
+        [
+          214.3810272216797,
+          480.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          676.9954833984375,
+          20.3358211517334
+        ],
+        [
+          854.0,
+          20.3358211517334
+        ],
+        [
+          854.0,
+          470.6792907714844
+        ],
+        [
+          676.9954833984375,
+          470.6792907714844
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          690.3343505859375,
+          19.312408447265625
+        ],
+        [
+          854.0,
+          19.312408447265625
+        ],
+        [
+          854.0,
+          343.0762939453125
+        ],
+        [
+          690.3343505859375,
+          343.0762939453125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          367.3291320800781,
+          190.52291870117188
+        ],
+        [
+          438.8599853515625,
+          190.52291870117188
+        ],
+        [
+          438.8599853515625,
+          357.2260437011719
+        ],
+        [
+          367.3291320800781,
+          357.2260437011719
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          734.4454345703125,
+          78.87371063232422
+        ],
+        [
+          853.9755859375,
+          78.87371063232422
+        ],
+        [
+          853.9755859375,
+          475.2144775390625
+        ],
+        [
+          734.4454345703125,
+          475.2144775390625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0012_at_000012.jpg",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 854,
+  "description": ""
+}

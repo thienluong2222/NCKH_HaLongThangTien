@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          79.52631578947368,
+          109.17105263157893
+        ],
+        [
+          170.3157894736842,
+          109.17105263157893
+        ],
+        [
+          170.3157894736842,
+          221.01315789473682
+        ],
+        [
+          79.52631578947368,
+          221.01315789473682
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          824.2631578947369,
+          130.8815789473684
+        ],
+        [
+          887.421052631579,
+          130.8815789473684
+        ],
+        [
+          887.421052631579,
+          251.93421052631578
+        ],
+        [
+          824.2631578947369,
+          251.93421052631578
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0019_at_000019.jpg",
+  "imageData": null,
+  "imageHeight": 544,
+  "imageWidth": 1038,
+  "description": ""
+}

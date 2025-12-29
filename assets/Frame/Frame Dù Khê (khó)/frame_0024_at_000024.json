@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi mua",
+      "score": null,
+      "points": [
+        [
+          918.6052856445312,
+          218.8779754638672
+        ],
+        [
+          1024.4388427734375,
+          218.8779754638672
+        ],
+        [
+          1024.4388427734375,
+          522.1359252929688
+        ],
+        [
+          918.6052856445312,
+          522.1359252929688
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Toc bui cao",
+      "score": null,
+      "points": [
+        [
+          627.5151515151515,
+          205.40909090909093
+        ],
+        [
+          671.4545454545454,
+          205.40909090909093
+        ],
+        [
+          671.4545454545454,
+          239.5
+        ],
+        [
+          627.5151515151515,
+          239.5
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Long may ke dam",
+      "score": null,
+      "points": [
+        [
+          632.060606060606,
+          240.25757575757575
+        ],
+        [
+          668.4242424242424,
+          240.25757575757575
+        ],
+        [
+          668.4242424242424,
+          247.83333333333331
+        ],
+        [
+          632.060606060606,
+          247.83333333333331
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao khoac vai",
+      "score": null,
+      "points": [
+        [
+          391.9090909090909,
+          281.92424242424244
+        ],
+        [
+          468.42424242424244,
+          281.92424242424244
+        ],
+        [
+          468.42424242424244,
+          344.8030303030303
+        ],
+        [
+          391.9090909090909,
+          344.8030303030303
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          423.72727272727275,
+          236.469696969697
+        ],
+        [
+          478.27272727272725,
+          236.469696969697
+        ],
+        [
+          478.27272727272725,
+          262.9848484848485
+        ],
+        [
+          423.72727272727275,
+          262.9848484848485
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0024_at_000024.jpg",
+  "imageData": null,
+  "imageHeight": 604,
+  "imageWidth": 1202,
+  "description": ""
+}

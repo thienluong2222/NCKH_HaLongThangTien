@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          385.44274809160305,
+          214.25954198473283
+        ],
+        [
+          435.0610687022901,
+          214.25954198473283
+        ],
+        [
+          435.0610687022901,
+          244.03053435114504
+        ],
+        [
+          385.44274809160305,
+          244.03053435114504
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          448.03816793893134,
+          210.44274809160305
+        ],
+        [
+          497.65648854961836,
+          210.44274809160305
+        ],
+        [
+          497.65648854961836,
+          254.71755725190843
+        ],
+        [
+          448.03816793893134,
+          254.71755725190843
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          619.0305343511451,
+          124.94656488549619
+        ],
+        [
+          692.3129770992367,
+          124.94656488549619
+        ],
+        [
+          692.3129770992367,
+          162.35114503816794
+        ],
+        [
+          619.0305343511451,
+          162.35114503816794
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          386.96946564885496,
+          83.72519083969466
+        ],
+        [
+          462.54198473282446,
+          83.72519083969466
+        ],
+        [
+          462.54198473282446,
+          117.31297709923665
+        ],
+        [
+          386.96946564885496,
+          117.31297709923665
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam gay",
+      "score": null,
+      "points": [
+        [
+          539.6412213740459,
+          174.5648854961832
+        ],
+        [
+          619.793893129771,
+          174.5648854961832
+        ],
+        [
+          619.793893129771,
+          555.0
+        ],
+        [
+          539.6412213740459,
+          555.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Do vai bong",
+      "score": null,
+      "points": [
+        [
+          330.4809160305344,
+          147.84732824427482
+        ],
+        [
+          488.4961832061069,
+          147.84732824427482
+        ],
+        [
+          488.4961832061069,
+          550.9007633587786
+        ],
+        [
+          330.4809160305344,
+          550.9007633587786
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0021_at_000021.jpg",
+  "imageData": null,
+  "imageHeight": 556,
+  "imageWidth": 1206,
+  "description": ""
+}

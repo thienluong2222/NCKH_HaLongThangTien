@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Xe dieu hanh ruoc ong",
+      "score": null,
+      "points": [
+        [
+          357.41520467836256,
+          66.3859649122807
+        ],
+        [
+          669.1111111111111,
+          66.3859649122807
+        ],
+        [
+          669.1111111111111,
+          303.2280701754386
+        ],
+        [
+          357.41520467836256,
+          303.2280701754386
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          731.0994152046784,
+          241.23976608187135
+        ],
+        [
+          915.0,
+          241.23976608187135
+        ],
+        [
+          915.0,
+          446.5029239766082
+        ],
+        [
+          731.0994152046784,
+          446.5029239766082
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0011_at_000011.jpg",
+  "imageData": null,
+  "imageHeight": 524,
+  "imageWidth": 916,
+  "description": ""
+}

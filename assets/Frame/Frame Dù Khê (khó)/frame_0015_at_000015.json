@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          689.6788321167883,
+          346.11678832116786
+        ],
+        [
+          788.948905109489,
+          346.11678832116786
+        ],
+        [
+          788.948905109489,
+          393.5620437956204
+        ],
+        [
+          689.6788321167883,
+          393.5620437956204
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          653.9124087591241,
+          194.29197080291968
+        ],
+        [
+          706.4671532846716,
+          194.29197080291968
+        ],
+        [
+          706.4671532846716,
+          233.70802919708026
+        ],
+        [
+          653.9124087591241,
+          233.70802919708026
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "That lung ban to",
+      "score": null,
+      "points": [
+        [
+          655.3722627737226,
+          306.7007299270073
+        ],
+        [
+          709.3868613138686,
+          306.7007299270073
+        ],
+        [
+          709.3868613138686,
+          335.89781021897807
+        ],
+        [
+          655.3722627737226,
+          335.89781021897807
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap than duoi",
+      "score": null,
+      "points": [
+        [
+          641.5036496350365,
+          326.40875912408757
+        ],
+        [
+          727.6350364963504,
+          326.40875912408757
+        ],
+        [
+          727.6350364963504,
+          485.5328467153284
+        ],
+        [
+          641.5036496350365,
+          485.5328467153284
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "That lung ban to",
+      "score": null,
+      "points": [
+        [
+          291.13868613138686,
+          343.92700729927003
+        ],
+        [
+          370.7007299270073,
+          343.92700729927003
+        ],
+        [
+          370.7007299270073,
+          373.8540145985401
+        ],
+        [
+          291.13868613138686,
+          373.8540145985401
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0015_at_000015.jpg",
+  "imageData": null,
+  "imageHeight": 528,
+  "imageWidth": 1156,
+  "description": ""
+}

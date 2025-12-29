@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          274.8294982910156,
+          176.42221069335938
+        ],
+        [
+          403.42266845703125,
+          176.42221069335938
+        ],
+        [
+          403.42266845703125,
+          510.2912902832031
+        ],
+        [
+          274.8294982910156,
+          510.2912902832031
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          443.53125,
+          148.50331115722656
+        ],
+        [
+          564.0853881835938,
+          148.50331115722656
+        ],
+        [
+          564.0853881835938,
+          503.22052001953125
+        ],
+        [
+          443.53125,
+          503.22052001953125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          669.2940673828125,
+          133.1289520263672
+        ],
+        [
+          895.2557983398438,
+          133.1289520263672
+        ],
+        [
+          895.2557983398438,
+          509.4014587402344
+        ],
+        [
+          669.2940673828125,
+          509.4014587402344
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          795.2758620689655,
+          97.96551724137933
+        ],
+        [
+          942.8620689655172,
+          97.96551724137933
+        ],
+        [
+          942.8620689655172,
+          369.0
+        ],
+        [
+          795.2758620689655,
+          369.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0020_at_000020.jpg",
+  "imageData": null,
+  "imageHeight": 518,
+  "imageWidth": 1094,
+  "description": ""
+}

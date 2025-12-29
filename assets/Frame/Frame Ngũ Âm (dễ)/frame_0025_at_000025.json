@@ -1,0 +1,103 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          460.0581970214844,
+          241.00994873046875
+        ],
+        [
+          625.2481689453125,
+          380.7178039550781
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "points": [
+        [
+          411.35955810546875,
+          381.96990966796875
+        ],
+        [
+          909.8319702148438,
+          565.5701904296875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          49.37306594848633,
+          265.8946838378906
+        ],
+        [
+          444.0860290527344,
+          412.90869140625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan sat Ro-niet-dek",
+      "points": [
+        [
+          865.9100341796875,
+          347.15228271484375
+        ],
+        [
+          1072.6478271484375,
+          438.30523681640625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          771.2999877929688,
+          239.4571990966797
+        ],
+        [
+          869.7936401367188,
+          368.22930908203125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          171.5368194580078,
+          267.9510803222656
+        ],
+        [
+          446.802001953125,
+          413.9927062988281
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0025_at_000025.jpg",
+  "imageData": null
+}

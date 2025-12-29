@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          403.76335877862596,
+          243.26717557251908
+        ],
+        [
+          483.91603053435114,
+          243.26717557251908
+        ],
+        [
+          483.91603053435114,
+          276.0916030534351
+        ],
+        [
+          403.76335877862596,
+          276.0916030534351
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          601.4732824427482,
+          144.793893129771
+        ],
+        [
+          681.6259541984733,
+          144.793893129771
+        ],
+        [
+          681.6259541984733,
+          201.28244274809163
+        ],
+        [
+          601.4732824427482,
+          201.28244274809163
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam gay",
+      "score": null,
+      "points": [
+        [
+          548.8015267175573,
+          210.44274809160305
+        ],
+        [
+          623.6106870229008,
+          210.44274809160305
+        ],
+        [
+          623.6106870229008,
+          555.0
+        ],
+        [
+          548.8015267175573,
+          555.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0018_at_000018.jpg",
+  "imageData": null,
+  "imageHeight": 556,
+  "imageWidth": 1206,
+  "description": ""
+}

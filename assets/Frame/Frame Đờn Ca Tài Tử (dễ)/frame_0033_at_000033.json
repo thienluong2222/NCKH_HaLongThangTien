@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "dan kim",
+      "points": [
+        [
+          636.5989990234375,
+          0.7033097743988037
+        ],
+        [
+          1125.8121337890625,
+          558.3753051757812
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "dan guitar",
+      "points": [
+        [
+          134.1286163330078,
+          318.20355224609375
+        ],
+        [
+          827.8484497070312,
+          562.5184936523438
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0033_at_000033.jpg",
+  "imageData": null
+}

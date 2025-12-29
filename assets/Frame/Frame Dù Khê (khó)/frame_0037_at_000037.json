@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          189.95035460992904,
+          223.2127659574468
+        ],
+        [
+          254.48936170212764,
+          223.2127659574468
+        ],
+        [
+          254.48936170212764,
+          297.6808510638298
+        ],
+        [
+          189.95035460992904,
+          297.6808510638298
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          192.78723404255317,
+          316.1205673758865
+        ],
+        [
+          275.0567375886524,
+          316.1205673758865
+        ],
+        [
+          275.0567375886524,
+          354.41843971631204
+        ],
+        [
+          192.78723404255317,
+          354.41843971631204
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap than duoi",
+      "score": null,
+      "points": [
+        [
+          193.49645390070918,
+          394.84397163120565
+        ],
+        [
+          276.47517730496446,
+          394.84397163120565
+        ],
+        [
+          276.47517730496446,
+          567.8936170212766
+        ],
+        [
+          193.49645390070918,
+          567.8936170212766
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          269.3829787234042,
+          366.4751773049645
+        ],
+        [
+          305.55319148936167,
+          366.4751773049645
+        ],
+        [
+          305.55319148936167,
+          421.08510638297867
+        ],
+        [
+          269.3829787234042,
+          421.08510638297867
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          174.34751773049643,
+          24.631205673758842
+        ],
+        [
+          1058.7446808510638,
+          24.631205673758842
+        ],
+        [
+          1058.7446808510638,
+          328.17730496453896
+        ],
+        [
+          174.34751773049643,
+          328.17730496453896
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0037_at_000037.jpg",
+  "imageData": null,
+  "imageHeight": 606,
+  "imageWidth": 1126,
+  "description": ""
+}

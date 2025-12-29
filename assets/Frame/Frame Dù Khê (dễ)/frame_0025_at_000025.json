@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          420.75286865234375,
+          0.9524081945419312
+        ],
+        [
+          657.6121215820312,
+          0.9524081945419312
+        ],
+        [
+          657.6121215820312,
+          124.91783142089844
+        ],
+        [
+          420.75286865234375,
+          124.91783142089844
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Deo vong co",
+      "score": null,
+      "points": [
+        [
+          429.611083984375,
+          252.1439971923828
+        ],
+        [
+          662.7484741210938,
+          252.1439971923828
+        ],
+        [
+          662.7484741210938,
+          472.7560119628906
+        ],
+        [
+          429.611083984375,
+          472.7560119628906
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          250.9134979248047,
+          5.533905029296875
+        ],
+        [
+          826.2119140625,
+          5.533905029296875
+        ],
+        [
+          826.2119140625,
+          488.0
+        ],
+        [
+          250.9134979248047,
+          488.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          410.1217041015625,
+          255.67762756347656
+        ],
+        [
+          685.4612426757812,
+          255.67762756347656
+        ],
+        [
+          685.4612426757812,
+          480.5378723144531
+        ],
+        [
+          410.1217041015625,
+          480.5378723144531
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Long may ke dam",
+      "score": null,
+      "points": [
+        [
+          459.5981140136719,
+          109.02833557128906
+        ],
+        [
+          636.508544921875,
+          109.02833557128906
+        ],
+        [
+          636.508544921875,
+          172.0662841796875
+        ],
+        [
+          459.5981140136719,
+          172.0662841796875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          622.9061279296875,
+          67.63481140136719
+        ],
+        [
+          730.5349731445312,
+          67.63481140136719
+        ],
+        [
+          730.5349731445312,
+          179.00135803222656
+        ],
+        [
+          622.9061279296875,
+          179.00135803222656
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Moi do",
+      "score": null,
+      "points": [
+        [
+          507.33333333333337,
+          199.0
+        ],
+        [
+          596.6666666666666,
+          199.0
+        ],
+        [
+          596.6666666666666,
+          241.66666666666669
+        ],
+        [
+          507.33333333333337,
+          241.66666666666669
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0025_at_000025.jpg",
+  "imageData": null,
+  "imageHeight": 488,
+  "imageWidth": 1056,
+  "description": ""
+}

@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          905.083984375,
+          0.0
+        ],
+        [
+          1061.8466796875,
+          308.9424743652344
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0011_at_000011.jpg",
+  "imageData": null
+}

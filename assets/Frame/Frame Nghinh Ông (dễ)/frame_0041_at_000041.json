@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          478.3208923339844,
+          259.4109802246094
+        ],
+        [
+          754.919921875,
+          259.4109802246094
+        ],
+        [
+          754.919921875,
+          353.6407165527344
+        ],
+        [
+          478.3208923339844,
+          353.6407165527344
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          -0.6446249073949559,
+          238.79029056943693
+        ],
+        [
+          113.65517241379307,
+          238.79029056943693
+        ],
+        [
+          113.65517241379307,
+          324.0
+        ],
+        [
+          -0.6446249073949559,
+          324.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          474.3448275862069
+        ],
+        [
+          90.20689655172411,
+          474.3448275862069
+        ],
+        [
+          90.20689655172411,
+          557.1034482758621
+        ],
+        [
+          0.0,
+          557.1034482758621
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0041_at_000041.jpg",
+  "imageData": null,
+  "imageHeight": 588,
+  "imageWidth": 1088,
+  "description": ""
+}

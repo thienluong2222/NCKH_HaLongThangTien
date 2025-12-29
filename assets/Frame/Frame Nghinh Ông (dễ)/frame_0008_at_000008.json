@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          737.3027954101562,
+          211.2770233154297
+        ],
+        [
+          858.9042358398438,
+          211.2770233154297
+        ],
+        [
+          858.9042358398438,
+          440.3104248046875
+        ],
+        [
+          737.3027954101562,
+          440.3104248046875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Xe dieu hanh ruoc ong",
+      "score": null,
+      "points": [
+        [
+          365.4284362792969,
+          3.511122703552246
+        ],
+        [
+          756.44091796875,
+          3.511122703552246
+        ],
+        [
+          756.44091796875,
+          429.0518798828125
+        ],
+        [
+          365.4284362792969,
+          429.0518798828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          315.1237487792969,
+          8.923910140991211
+        ],
+        [
+          385.36700439453125,
+          8.923910140991211
+        ],
+        [
+          385.36700439453125,
+          239.81680297851562
+        ],
+        [
+          315.1237487792969,
+          239.81680297851562
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          152.47335815429688,
+          228.56080627441406
+        ],
+        [
+          268.7458190917969,
+          228.56080627441406
+        ],
+        [
+          268.7458190917969,
+          519.625
+        ],
+        [
+          152.47335815429688,
+          519.625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          699.5204678362574,
+          5.567251461988294
+        ],
+        [
+          762.6783625730994,
+          5.567251461988294
+        ],
+        [
+          762.6783625730994,
+          218.43274853801168
+        ],
+        [
+          699.5204678362574,
+          218.43274853801168
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0008_at_000008.jpg",
+  "imageData": null,
+  "imageHeight": 524,
+  "imageWidth": 916,
+  "description": ""
+}

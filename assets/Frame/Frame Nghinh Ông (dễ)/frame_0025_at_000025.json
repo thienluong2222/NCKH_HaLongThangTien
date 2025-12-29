@@ -1,0 +1,301 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Kieu ruoc ong",
+      "score": null,
+      "points": [
+        [
+          501.7694091796875,
+          24.070579528808594
+        ],
+        [
+          740.032958984375,
+          24.070579528808594
+        ],
+        [
+          740.032958984375,
+          434.3216247558594
+        ],
+        [
+          501.7694091796875,
+          434.3216247558594
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          712.3355712890625,
+          82.3198471069336
+        ],
+        [
+          861.1795043945312,
+          82.3198471069336
+        ],
+        [
+          861.1795043945312,
+          558.2671508789062
+        ],
+        [
+          712.3355712890625,
+          558.2671508789062
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          401.943359375,
+          86.80162048339844
+        ],
+        [
+          563.5816040039062,
+          86.80162048339844
+        ],
+        [
+          563.5816040039062,
+          558.7742309570312
+        ],
+        [
+          401.943359375,
+          558.7742309570312
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          571.1428571428571,
+          354.92857142857144
+        ],
+        [
+          718.8571428571429,
+          354.92857142857144
+        ],
+        [
+          718.8571428571429,
+          591.0
+        ],
+        [
+          571.1428571428571,
+          591.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          264.4715881347656,
+          68.59356689453125
+        ],
+        [
+          407.03631591796875,
+          68.59356689453125
+        ],
+        [
+          407.03631591796875,
+          552.6730346679688
+        ],
+        [
+          264.4715881347656,
+          552.6730346679688
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          878.2857142857142,
+          78.33958871023998
+        ],
+        [
+          947.5714285714284,
+          78.33958871023998
+        ],
+        [
+          947.5714285714284,
+          215.64285714285714
+        ],
+        [
+          878.2857142857142,
+          215.64285714285714
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          52.71428571428575,
+          75.07142857142861
+        ],
+        [
+          286.0,
+          75.07142857142861
+        ],
+        [
+          286.0,
+          591.0
+        ],
+        [
+          52.71428571428575,
+          591.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc bieu dien nghe thuat nhan gian",
+      "score": null,
+      "points": [
+        [
+          1011.1428571428571,
+          85.64285714285715
+        ],
+        [
+          1114.0000000000005,
+          85.64285714285715
+        ],
+        [
+          1114.0000000000005,
+          315.6428571428571
+        ],
+        [
+          1011.1428571428571,
+          315.6428571428571
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc bieu dien nghe thuat nhan gian",
+      "score": null,
+      "points": [
+        [
+          1023.0,
+          176.5
+        ],
+        [
+          1128.714285714286,
+          176.5
+        ],
+        [
+          1128.714285714286,
+          591.0
+        ],
+        [
+          1023.0,
+          591.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          0.7142857142856656,
+          58.50000000000004
+        ],
+        [
+          126.85714285714286,
+          58.50000000000004
+        ],
+        [
+          126.85714285714286,
+          147.0714285714286
+        ],
+        [
+          0.7142857142856656,
+          147.0714285714286
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0025_at_000025.jpg",
+  "imageData": null,
+  "imageHeight": 592,
+  "imageWidth": 1128,
+  "description": ""
+}

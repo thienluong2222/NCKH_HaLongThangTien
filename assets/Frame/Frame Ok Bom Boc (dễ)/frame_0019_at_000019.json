@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Den nuoc",
+      "score": null,
+      "points": [
+        [
+          303.0804748535156,
+          3.648219585418701
+        ],
+        [
+          733.3807373046875,
+          3.648219585418701
+        ],
+        [
+          733.3807373046875,
+          516.3036499023438
+        ],
+        [
+          303.0804748535156,
+          516.3036499023438
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Den hoa dang",
+      "score": null,
+      "points": [
+        [
+          780.9013671875,
+          435.8611145019531
+        ],
+        [
+          843.836669921875,
+          435.8611145019531
+        ],
+        [
+          843.836669921875,
+          490.466552734375
+        ],
+        [
+          780.9013671875,
+          490.466552734375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Den hoa dang",
+      "score": null,
+      "points": [
+        [
+          781.1176147460938,
+          412.67169189453125
+        ],
+        [
+          843.0690307617188,
+          412.67169189453125
+        ],
+        [
+          843.0690307617188,
+          490.78363037109375
+        ],
+        [
+          781.1176147460938,
+          490.78363037109375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0019_at_000019.jpg",
+  "imageData": null,
+  "imageHeight": 578,
+  "imageWidth": 1134,
+  "description": ""
+}

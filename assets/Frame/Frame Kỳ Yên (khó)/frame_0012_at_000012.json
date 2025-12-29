@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Mua Lan",
+      "score": null,
+      "points": [
+        [
+          916.2799072265625,
+          164.9665069580078
+        ],
+        [
+          1041.63671875,
+          164.9665069580078
+        ],
+        [
+          1041.63671875,
+          349.9524230957031
+        ],
+        [
+          916.2799072265625,
+          349.9524230957031
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Mua Lan",
+      "score": null,
+      "points": [
+        [
+          456.37226277372264,
+          257.05109489051097
+        ],
+        [
+          532.2846715328467,
+          257.05109489051097
+        ],
+        [
+          532.2846715328467,
+          305.2262773722628
+        ],
+        [
+          456.37226277372264,
+          305.2262773722628
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0012_at_000012.jpg",
+  "imageData": null,
+  "imageHeight": 636,
+  "imageWidth": 1158,
+  "description": ""
+}

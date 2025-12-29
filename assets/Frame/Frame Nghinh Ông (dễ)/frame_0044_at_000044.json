@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          53.766231536865234,
+          259.83990478515625
+        ],
+        [
+          238.06930541992188,
+          259.83990478515625
+        ],
+        [
+          238.06930541992188,
+          332.28253173828125
+        ],
+        [
+          53.766231536865234,
+          332.28253173828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          607.0031127929688,
+          39.38048553466797
+        ],
+        [
+          852.549560546875,
+          39.38048553466797
+        ],
+        [
+          852.549560546875,
+          420.0958557128906
+        ],
+        [
+          607.0031127929688,
+          420.0958557128906
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          568.1379310344828,
+          232.96551724137933
+        ],
+        [
+          622.6206896551724,
+          232.96551724137933
+        ],
+        [
+          622.6206896551724,
+          310.2068965517241
+        ],
+        [
+          568.1379310344828,
+          310.2068965517241
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Kieu ruoc ong",
+      "score": null,
+      "points": [
+        [
+          995.7241379310345,
+          299.8620689655172
+        ],
+        [
+          1062.6206896551723,
+          299.8620689655172
+        ],
+        [
+          1062.6206896551723,
+          377.1034482758621
+        ],
+        [
+          995.7241379310345,
+          377.1034482758621
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          933.6551724137931,
+          315.7241379310345
+        ],
+        [
+          989.5172413793103,
+          315.7241379310345
+        ],
+        [
+          989.5172413793103,
+          405.37931034482756
+        ],
+        [
+          933.6551724137931,
+          405.37931034482756
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0044_at_000044.jpg",
+  "imageData": null,
+  "imageHeight": 588,
+  "imageWidth": 1088,
+  "description": ""
+}

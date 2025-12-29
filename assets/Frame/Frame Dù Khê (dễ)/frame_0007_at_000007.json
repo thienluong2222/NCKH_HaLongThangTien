@@ -1,0 +1,272 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          528.6143188476562,
+          271.7126770019531
+        ],
+        [
+          619.523193359375,
+          271.7126770019531
+        ],
+        [
+          619.523193359375,
+          474.0
+        ],
+        [
+          528.6143188476562,
+          474.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          371.94781494140625,
+          252.54443359375
+        ],
+        [
+          452.51031494140625,
+          252.54443359375
+        ],
+        [
+          452.51031494140625,
+          474.0
+        ],
+        [
+          371.94781494140625,
+          474.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          35.43902439024391,
+          19.621951219512198
+        ],
+        [
+          912.8780487804878,
+          19.621951219512198
+        ],
+        [
+          912.8780487804878,
+          414.1341463414634
+        ],
+        [
+          35.43902439024391,
+          414.1341463414634
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam gay",
+      "score": null,
+      "points": [
+        [
+          511.04878048780483,
+          287.9146341463414
+        ],
+        [
+          670.1951219512194,
+          287.9146341463414
+        ],
+        [
+          670.1951219512194,
+          404.9878048780488
+        ],
+        [
+          511.04878048780483,
+          404.9878048780488
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          411.6585365853658,
+          392.79268292682923
+        ],
+        [
+          499.4634146341463,
+          392.79268292682923
+        ],
+        [
+          499.4634146341463,
+          406.81707317073165
+        ],
+        [
+          411.6585365853658,
+          406.81707317073165
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "That lung ban to",
+      "score": null,
+      "points": [
+        [
+          378.95238095238096,
+          361.4285714285714
+        ],
+        [
+          436.0952380952381,
+          361.4285714285714
+        ],
+        [
+          436.0952380952381,
+          383.8095238095238
+        ],
+        [
+          378.95238095238096,
+          383.8095238095238
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "That lung ban to",
+      "score": null,
+      "points": [
+        [
+          538.0,
+          355.23809523809524
+        ],
+        [
+          595.6190476190476,
+          355.23809523809524
+        ],
+        [
+          595.6190476190476,
+          380.95238095238096
+        ],
+        [
+          538.0,
+          380.95238095238096
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          586.0952380952381,
+          329.5238095238095
+        ],
+        [
+          619.4285714285714,
+          329.5238095238095
+        ],
+        [
+          619.4285714285714,
+          359.5238095238095
+        ],
+        [
+          586.0952380952381,
+          359.5238095238095
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          516.5714285714286,
+          352.85714285714283
+        ],
+        [
+          539.4285714285714,
+          352.85714285714283
+        ],
+        [
+          539.4285714285714,
+          395.23809523809524
+        ],
+        [
+          516.5714285714286,
+          395.23809523809524
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0007_at_000007.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 966,
+  "description": ""
+}

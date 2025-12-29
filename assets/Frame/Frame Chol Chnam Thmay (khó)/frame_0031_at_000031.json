@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          261.93548387096774,
+          416.06451612903226
+        ],
+        [
+          394.83870967741933,
+          416.06451612903226
+        ],
+        [
+          394.83870967741933,
+          570.258064516129
+        ],
+        [
+          261.93548387096774,
+          570.258064516129
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          816.1290322580645,
+          446.3870967741936
+        ],
+        [
+          904.516129032258,
+          446.3870967741936
+        ],
+        [
+          904.516129032258,
+          570.258064516129
+        ],
+        [
+          816.1290322580645,
+          570.258064516129
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          638.0645161290322,
+          254.1290322580645
+        ],
+        [
+          749.0322580645161,
+          254.1290322580645
+        ],
+        [
+          749.0322580645161,
+          387.03225806451616
+        ],
+        [
+          638.0645161290322,
+          387.03225806451616
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          392.9032258064516,
+          230.25806451612902
+        ],
+        [
+          569.0322580645161,
+          230.25806451612902
+        ],
+        [
+          569.0322580645161,
+          381.8709677419355
+        ],
+        [
+          392.9032258064516,
+          381.8709677419355
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0031_at_000031.jpg",
+  "imageData": null,
+  "imageHeight": 576,
+  "imageWidth": 1000,
+  "description": ""
+}

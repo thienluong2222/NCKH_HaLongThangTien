@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          61.75163398692811,
+          43.49019607843138
+        ],
+        [
+          997.6993464052288,
+          43.49019607843138
+        ],
+        [
+          997.6993464052288,
+          380.09150326797385
+        ],
+        [
+          61.75163398692811,
+          380.09150326797385
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          647.3725490196078,
+          372.2483660130719
+        ],
+        [
+          691.8169934640523,
+          372.2483660130719
+        ],
+        [
+          691.8169934640523,
+          406.8888888888889
+        ],
+        [
+          647.3725490196078,
+          406.8888888888889
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          574.8235294117646,
+          278.7843137254902
+        ],
+        [
+          616.6535947712418,
+          278.7843137254902
+        ],
+        [
+          616.6535947712418,
+          318.0
+        ],
+        [
+          574.8235294117646,
+          318.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0035_at_000035.jpg",
+  "imageData": null,
+  "imageHeight": 536,
+  "imageWidth": 1032,
+  "description": ""
+}

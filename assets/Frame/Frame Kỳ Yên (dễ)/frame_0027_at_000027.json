@@ -1,0 +1,135 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "points": [
+        [
+          463.11077880859375,
+          353.4709777832031
+        ],
+        [
+          603.8285522460938,
+          506.24261474609375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "points": [
+        [
+          745.550537109375,
+          312.12432861328125
+        ],
+        [
+          882.4415893554688,
+          507.419189453125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "points": [
+        [
+          602.7146606445312,
+          311.2801513671875
+        ],
+        [
+          873.0629272460938,
+          507.49981689453125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "points": [
+        [
+          588.7303466796875,
+          332.2267761230469
+        ],
+        [
+          798.4454345703125,
+          507.07794189453125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "points": [
+        [
+          67.13497161865234,
+          294.9317626953125
+        ],
+        [
+          166.42042541503906,
+          505.40447998046875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "points": [
+        [
+          0.21384456753730774,
+          253.53697204589844
+        ],
+        [
+          137.6211700439453,
+          505.14068603515625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "points": [
+        [
+          0.03157646581530571,
+          257.1453857421875
+        ],
+        [
+          80.7318344116211,
+          503.669921875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "points": [
+        [
+          772.0114135742188,
+          322.8587951660156
+        ],
+        [
+          896.739990234375,
+          508.5018615722656
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0027_at_000027.jpg",
+  "imageData": null
+}

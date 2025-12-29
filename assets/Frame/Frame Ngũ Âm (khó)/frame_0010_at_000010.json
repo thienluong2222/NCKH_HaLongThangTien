@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          140.33961486816406,
+          381.74224853515625
+        ],
+        [
+          442.0,
+          381.74224853515625
+        ],
+        [
+          442.0,
+          520.7410278320312
+        ],
+        [
+          140.33961486816406,
+          520.7410278320312
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "score": null,
+      "points": [
+        [
+          212.36898803710938,
+          260.45458984375
+        ],
+        [
+          284.60186767578125,
+          260.45458984375
+        ],
+        [
+          284.60186767578125,
+          348.3990478515625
+        ],
+        [
+          212.36898803710938,
+          348.3990478515625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan sat Ro-niet-dek",
+      "score": null,
+      "points": [
+        [
+          17.183206106870273,
+          327.6870229007634
+        ],
+        [
+          133.9770992366412,
+          327.6870229007634
+        ],
+        [
+          133.9770992366412,
+          469.67175572519085
+        ],
+        [
+          17.183206106870273,
+          469.67175572519085
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          260.5114503816794
+        ],
+        [
+          66.8015267175573,
+          260.5114503816794
+        ],
+        [
+          66.8015267175573,
+          339.1374045801527
+        ],
+        [
+          0.0,
+          339.1374045801527
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0010_at_000010.jpg",
+  "imageData": null,
+  "imageHeight": 634,
+  "imageWidth": 442,
+  "description": ""
+}

@@ -1,0 +1,119 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          451.3848571777344,
+          300.3648376464844
+        ],
+        [
+          1016.8956909179688,
+          574.9214477539062
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          989.104248046875,
+          342.0679016113281
+        ],
+        [
+          1168.0,
+          579.434814453125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Cay beo",
+      "points": [
+        [
+          73.84967803955078,
+          206.6285858154297
+        ],
+        [
+          96.79795837402344,
+          321.1790466308594
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Cay beo",
+      "points": [
+        [
+          336.5162353515625,
+          67.49244689941406
+        ],
+        [
+          381.7008056640625,
+          325.8577575683594
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          105.43090057373047,
+          328.5918884277344
+        ],
+        [
+          297.450439453125,
+          533.6234741210938
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          0.1681976318359375,
+          342.71087646484375
+        ],
+        [
+          126.45407104492188,
+          513.4175415039062
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Cay beo",
+      "points": [
+        [
+          148.9659423828125,
+          142.6385498046875
+        ],
+        [
+          181.234130859375,
+          295.3918151855469
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0041_at_000041.jpg",
+  "imageData": null
+}

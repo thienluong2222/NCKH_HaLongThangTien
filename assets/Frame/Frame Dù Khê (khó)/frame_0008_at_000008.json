@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          820.5384615384615,
+          185.0
+        ],
+        [
+          912.8461538461538,
+          185.0
+        ],
+        [
+          912.8461538461538,
+          298.07692307692304
+        ],
+        [
+          820.5384615384615,
+          298.07692307692304
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          803.6153846153846,
+          335.0
+        ],
+        [
+          964.3846153846154,
+          335.0
+        ],
+        [
+          964.3846153846154,
+          385.0
+        ],
+        [
+          803.6153846153846,
+          385.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap than duoi",
+      "score": null,
+      "points": [
+        [
+          744.3846153846154,
+          432.6923076923077
+        ],
+        [
+          992.8461538461538,
+          432.6923076923077
+        ],
+        [
+          992.8461538461538,
+          613.4615384615385
+        ],
+        [
+          744.3846153846154,
+          613.4615384615385
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          492.84615384615387,
+          268.0769230769231
+        ],
+        [
+          587.4615384615385,
+          268.0769230769231
+        ],
+        [
+          587.4615384615385,
+          365.0
+        ],
+        [
+          492.84615384615387,
+          365.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Vay sampot",
+      "score": null,
+      "points": [
+        [
+          402.0769230769231,
+          501.9230769230769
+        ],
+        [
+          536.6923076923077,
+          501.9230769230769
+        ],
+        [
+          536.6923076923077,
+          619.0
+        ],
+        [
+          402.0769230769231,
+          619.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          114.38461538461542,
+          348.8461538461538
+        ],
+        [
+          243.61538461538464,
+          348.8461538461538
+        ],
+        [
+          243.61538461538464,
+          619.0
+        ],
+        [
+          114.38461538461542,
+          619.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh cung dien",
+      "score": null,
+      "points": [
+        [
+          151.30769230769232,
+          67.3076923076923
+        ],
+        [
+          1077.4615384615386,
+          67.3076923076923
+        ],
+        [
+          1077.4615384615386,
+          348.8461538461538
+        ],
+        [
+          151.30769230769232,
+          348.8461538461538
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0008_at_000008.jpg",
+  "imageData": null,
+  "imageHeight": 620,
+  "imageWidth": 1218,
+  "description": ""
+}

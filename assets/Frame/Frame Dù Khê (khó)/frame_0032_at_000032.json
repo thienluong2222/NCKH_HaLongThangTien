@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          777.9882202148438,
+          227.70169067382812
+        ],
+        [
+          1038.388916015625,
+          227.70169067382812
+        ],
+        [
+          1038.388916015625,
+          437.95928955078125
+        ],
+        [
+          777.9882202148438,
+          437.95928955078125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          306.625,
+          197.015625
+        ],
+        [
+          555.84375,
+          197.015625
+        ],
+        [
+          555.84375,
+          370.453125
+        ],
+        [
+          306.625,
+          370.453125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          783.1875,
+          54.04687500000001
+        ],
+        [
+          1005.84375,
+          54.04687500000001
+        ],
+        [
+          1005.84375,
+          157.171875
+        ],
+        [
+          783.1875,
+          157.171875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          790.21875,
+          472.015625
+        ],
+        [
+          958.96875,
+          472.015625
+        ],
+        [
+          958.96875,
+          600.140625
+        ],
+        [
+          790.21875,
+          600.140625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0032_at_000032.jpg",
+  "imageData": null,
+  "imageHeight": 662,
+  "imageWidth": 1232,
+  "description": ""
+}

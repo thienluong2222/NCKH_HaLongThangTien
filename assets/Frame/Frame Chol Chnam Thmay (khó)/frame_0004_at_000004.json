@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          63.64705882352937,
+          181.41176470588235
+        ],
+        [
+          194.23529411764704,
+          181.41176470588235
+        ],
+        [
+          194.23529411764704,
+          293.1764705882353
+        ],
+        [
+          63.64705882352937,
+          293.1764705882353
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          254.82352941176467,
+          353.764705882353
+        ],
+        [
+          357.76470588235287,
+          353.764705882353
+        ],
+        [
+          357.76470588235287,
+          486.11764705882354
+        ],
+        [
+          254.82352941176467,
+          486.11764705882354
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          367.17647058823525,
+          191.41176470588235
+        ],
+        [
+          517.7647058823529,
+          191.41176470588235
+        ],
+        [
+          517.7647058823529,
+          372.0
+        ],
+        [
+          367.17647058823525,
+          372.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "trong Chhay-dam",
+      "score": null,
+      "points": [
+        [
+          474.82352941176464,
+          23.17647058823528
+        ],
+        [
+          564.235294117647,
+          23.17647058823528
+        ],
+        [
+          564.235294117647,
+          73.76470588235293
+        ],
+        [
+          474.82352941176464,
+          73.76470588235293
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "trong Chhay-dam",
+      "score": null,
+      "points": [
+        [
+          546.0,
+          71.99999999999999
+        ],
+        [
+          590.7058823529411,
+          71.99999999999999
+        ],
+        [
+          590.7058823529411,
+          111.41176470588233
+        ],
+        [
+          546.0,
+          111.41176470588233
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0004_at_000004.jpg",
+  "imageData": null,
+  "imageHeight": 514,
+  "imageWidth": 932,
+  "description": ""
+}

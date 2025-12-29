@@ -1,0 +1,103 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Ao dai",
+      "points": [
+        [
+          321.97247314453125,
+          264.573486328125
+        ],
+        [
+          484.8451843261719,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ao dai",
+      "points": [
+        [
+          621.5447998046875,
+          249.76158142089844
+        ],
+        [
+          741.853271484375,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ao dai",
+      "points": [
+        [
+          511.61260986328125,
+          259.17138671875
+        ],
+        [
+          647.037841796875,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ao dai",
+      "points": [
+        [
+          462.3800964355469,
+          233.99339294433594
+        ],
+        [
+          562.7627563476562,
+          421.4728698730469
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "points": [
+        [
+          849.40673828125,
+          0.0
+        ],
+        [
+          1109.5396728515625,
+          453.3518981933594
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Ao dai",
+      "points": [
+        [
+          465.6115417480469,
+          245.1469268798828
+        ],
+        [
+          642.1593627929688,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0030_at_000030.jpg",
+  "imageData": null
+}

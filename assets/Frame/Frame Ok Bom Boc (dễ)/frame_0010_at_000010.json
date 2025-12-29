@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          779.0802001953125,
+          199.4043426513672
+        ],
+        [
+          883.4376220703125,
+          199.4043426513672
+        ],
+        [
+          883.4376220703125,
+          357.37054443359375
+        ],
+        [
+          779.0802001953125,
+          357.37054443359375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ghe ngo",
+      "score": null,
+      "points": [
+        [
+          870.0274658203125,
+          200.29855346679688
+        ],
+        [
+          926.7977905273438,
+          200.29855346679688
+        ],
+        [
+          926.7977905273438,
+          259.63818359375
+        ],
+        [
+          870.0274658203125,
+          259.63818359375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0010_at_000010.jpg",
+  "imageData": null,
+  "imageHeight": 568,
+  "imageWidth": 1134,
+  "description": ""
+}

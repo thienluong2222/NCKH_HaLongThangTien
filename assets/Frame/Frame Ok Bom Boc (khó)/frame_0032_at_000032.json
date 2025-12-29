@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Den nuoc",
+      "score": null,
+      "points": [
+        [
+          54.82150650024414,
+          162.3355255126953
+        ],
+        [
+          265.21044921875,
+          162.3355255126953
+        ],
+        [
+          265.21044921875,
+          475.9612731933594
+        ],
+        [
+          54.82150650024414,
+          475.9612731933594
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Den nuoc",
+      "score": null,
+      "points": [
+        [
+          503.2519836425781,
+          85.25627136230469
+        ],
+        [
+          601.4273681640625,
+          85.25627136230469
+        ],
+        [
+          601.4273681640625,
+          212.85069274902344
+        ],
+        [
+          503.2519836425781,
+          212.85069274902344
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Den nuoc",
+      "score": null,
+      "points": [
+        [
+          522.1619262695312,
+          227.4114532470703
+        ],
+        [
+          737.0662841796875,
+          227.4114532470703
+        ],
+        [
+          737.0662841796875,
+          460.389404296875
+        ],
+        [
+          522.1619262695312,
+          460.389404296875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0032_at_000032.jpg",
+  "imageData": null,
+  "imageHeight": 584,
+  "imageWidth": 1272,
+  "description": ""
+}

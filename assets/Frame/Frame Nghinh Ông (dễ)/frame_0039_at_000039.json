@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          304.5838623046875,
+          0.0
+        ],
+        [
+          429.67535400390625,
+          0.0
+        ],
+        [
+          429.67535400390625,
+          297.27899169921875
+        ],
+        [
+          304.5838623046875,
+          297.27899169921875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          238.06534378616897,
+          5.703703703703695
+        ],
+        [
+          318.2469135802469,
+          5.703703703703695
+        ],
+        [
+          318.2469135802469,
+          295.8148148148148
+        ],
+        [
+          238.06534378616897,
+          295.8148148148148
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0039_at_000039.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 976,
+  "description": ""
+}

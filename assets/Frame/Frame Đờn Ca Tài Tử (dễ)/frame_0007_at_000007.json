@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "dan ty ba",
+      "points": [
+        [
+          548.1404418945312,
+          7.204935073852539
+        ],
+        [
+          826.70068359375,
+          570.917236328125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "dan ty ba",
+      "points": [
+        [
+          824.0100708007812,
+          44.665184020996094
+        ],
+        [
+          1084.8895263671875,
+          541.8156127929688
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0007_at_000007.jpg",
+  "imageData": null
+}

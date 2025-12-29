@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          146.89920043945312,
+          0.0
+        ],
+        [
+          644.1467895507812,
+          0.0
+        ],
+        [
+          644.1467895507812,
+          474.0
+        ],
+        [
+          146.89920043945312,
+          474.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "That lung ban to",
+      "score": null,
+      "points": [
+        [
+          219.6817626953125,
+          437.8109130859375
+        ],
+        [
+          519.9813842773438,
+          437.8109130859375
+        ],
+        [
+          519.9813842773438,
+          474.0
+        ],
+        [
+          219.6817626953125,
+          474.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          308.609756097561,
+          190.35365853658536
+        ],
+        [
+          518.3658536585366,
+          190.35365853658536
+        ],
+        [
+          518.3658536585366,
+          429.3780487804878
+        ],
+        [
+          308.609756097561,
+          429.3780487804878
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          297.0243902439024,
+          0.0
+        ],
+        [
+          468.3658536585366,
+          0.0
+        ],
+        [
+          468.3658536585366,
+          76.32926829268293
+        ],
+        [
+          297.0243902439024,
+          76.32926829268293
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Moi do",
+      "score": null,
+      "points": [
+        [
+          403.7317073170732,
+          133.03658536585365
+        ],
+        [
+          461.0487804878049,
+          133.03658536585365
+        ],
+        [
+          461.0487804878049,
+          158.03658536585365
+        ],
+        [
+          403.7317073170732,
+          158.03658536585365
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          655.560975609756,
+          287.30487804878044
+        ],
+        [
+          815.3170731707316,
+          287.30487804878044
+        ],
+        [
+          815.3170731707316,
+          437.9146341463414
+        ],
+        [
+          655.560975609756,
+          437.9146341463414
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          77.51219512195122,
+          287.9146341463414
+        ],
+        [
+          193.97560975609753,
+          287.9146341463414
+        ],
+        [
+          193.97560975609753,
+          417.18292682926824
+        ],
+        [
+          77.51219512195122,
+          417.18292682926824
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0008_at_000008.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 966,
+  "description": ""
+}

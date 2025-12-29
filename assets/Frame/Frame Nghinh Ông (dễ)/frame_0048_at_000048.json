@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          617.0399169921875,
+          207.52162170410156
+        ],
+        [
+          712.3564453125,
+          207.52162170410156
+        ],
+        [
+          712.3564453125,
+          508.0791320800781
+        ],
+        [
+          617.0399169921875,
+          508.0791320800781
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          531.648681640625,
+          313.0434875488281
+        ],
+        [
+          627.025146484375,
+          313.0434875488281
+        ],
+        [
+          627.025146484375,
+          500.2059020996094
+        ],
+        [
+          531.648681640625,
+          500.2059020996094
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          160.58393343918615,
+          377.2305379085403
+        ],
+        [
+          266.68345323741005,
+          377.2305379085403
+        ],
+        [
+          266.68345323741005,
+          590.1654676258992
+        ],
+        [
+          160.58393343918615,
+          590.1654676258992
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          127.11510791366909,
+          282.2517985611511
+        ],
+        [
+          203.3741007194245,
+          282.2517985611511
+        ],
+        [
+          203.3741007194245,
+          322.53956834532374
+        ],
+        [
+          127.11510791366909,
+          322.53956834532374
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          337.9064748201439,
+          291.6043165467626
+        ],
+        [
+          365.9640287769784,
+          291.6043165467626
+        ],
+        [
+          365.9640287769784,
+          313.18705035971226
+        ],
+        [
+          337.9064748201439,
+          313.18705035971226
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          926.3956834532374,
+          299.5179856115108
+        ],
+        [
+          1033.5899280575538,
+          299.5179856115108
+        ],
+        [
+          1033.5899280575538,
+          347.0
+        ],
+        [
+          926.3956834532374,
+          347.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0048_at_000048.jpg",
+  "imageData": null,
+  "imageHeight": 594,
+  "imageWidth": 1142,
+  "description": ""
+}

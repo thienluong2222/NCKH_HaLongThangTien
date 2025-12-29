@@ -1,0 +1,71 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "points": [
+        [
+          0.0,
+          25.810115814208984
+        ],
+        [
+          233.9680938720703,
+          546.139892578125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          109.67086791992188,
+          13.166050910949707
+        ],
+        [
+          811.1224365234375,
+          557.523681640625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "points": [
+        [
+          388.6078796386719,
+          148.17819213867188
+        ],
+        [
+          813.6548461914062,
+          555.464111328125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "points": [
+        [
+          577.3445434570312,
+          0.0
+        ],
+        [
+          817.7546997070312,
+          233.12892150878906
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0028_at_000028.jpg",
+  "imageData": null
+}

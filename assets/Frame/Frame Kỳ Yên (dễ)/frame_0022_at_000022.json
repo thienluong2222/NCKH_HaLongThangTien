@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Chua",
+      "score": null,
+      "points": [
+        [
+          187.9913787841797,
+          1.4178714752197266
+        ],
+        [
+          404.26739501953125,
+          1.4178714752197266
+        ],
+        [
+          404.26739501953125,
+          146.2190399169922
+        ],
+        [
+          187.9913787841797,
+          146.2190399169922
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cong Dinh",
+      "score": null,
+      "points": [
+        [
+          683.551724137931,
+          131.0689655172414
+        ],
+        [
+          881.4827586206897,
+          131.0689655172414
+        ],
+        [
+          881.4827586206897,
+          275.2068965517241
+        ],
+        [
+          683.551724137931,
+          275.2068965517241
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0022_at_000022.jpg",
+  "imageData": null,
+  "imageHeight": 518,
+  "imageWidth": 1094,
+  "description": ""
+}

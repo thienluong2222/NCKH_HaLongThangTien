@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Xe dieu hanh",
+      "points": [
+        [
+          495.2960205078125,
+          229.1334228515625
+        ],
+        [
+          911.2086181640625,
+          494.72698974609375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Cong Dinh",
+      "points": [
+        [
+          94.04044342041016,
+          35.606590270996094
+        ],
+        [
+          708.3819580078125,
+          452.6978759765625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Cong Dinh",
+      "points": [
+        [
+          105.53072357177734,
+          35.75162887573242
+        ],
+        [
+          709.2263793945312,
+          320.29058837890625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0024_at_000024.jpg",
+  "imageData": null
+}

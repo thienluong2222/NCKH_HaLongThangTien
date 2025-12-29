@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          442.50331125827813,
+          88.38410596026489
+        ],
+        [
+          725.2847682119204,
+          88.38410596026489
+        ],
+        [
+          725.2847682119204,
+          590.3708609271523
+        ],
+        [
+          442.50331125827813,
+          590.3708609271523
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          739.0,
+          73.81456953642383
+        ],
+        [
+          987.5364238410596,
+          73.81456953642383
+        ],
+        [
+          987.5364238410596,
+          591.0
+        ],
+        [
+          739.0,
+          591.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0021_at_000021.jpg",
+  "imageData": null,
+  "imageHeight": 592,
+  "imageWidth": 1036,
+  "description": ""
+}

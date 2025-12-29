@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          631.9004516601562,
+          125.95616912841797
+        ],
+        [
+          726.4259033203125,
+          125.95616912841797
+        ],
+        [
+          726.4259033203125,
+          383.7936096191406
+        ],
+        [
+          631.9004516601562,
+          383.7936096191406
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          243.45505813687868,
+          379.998154668083
+        ],
+        [
+          403.0,
+          379.998154668083
+        ],
+        [
+          403.0,
+          523.0
+        ],
+        [
+          243.45505813687868,
+          523.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          30.10466766357422,
+          1.0457018613815308
+        ],
+        [
+          112.60282897949219,
+          1.0457018613815308
+        ],
+        [
+          112.60282897949219,
+          294.4499206542969
+        ],
+        [
+          30.10466766357422,
+          294.4499206542969
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc le hoi",
+      "score": null,
+      "points": [
+        [
+          851.9530029296875,
+          289.84649658203125
+        ],
+        [
+          916.0,
+          289.84649658203125
+        ],
+        [
+          916.0,
+          439.775146484375
+        ],
+        [
+          851.9530029296875,
+          439.775146484375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cong dinh ong",
+      "score": null,
+      "points": [
+        [
+          283.7309941520468,
+          0.0
+        ],
+        [
+          915.0,
+          0.0
+        ],
+        [
+          915.0,
+          193.87134502923976
+        ],
+        [
+          283.7309941520468,
+          193.87134502923976
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          91.91812865497074,
+          9.660818713450283
+        ],
+        [
+          280.22222222222223,
+          9.660818713450283
+        ],
+        [
+          280.22222222222223,
+          457.6140350877193
+        ],
+        [
+          91.91812865497074,
+          457.6140350877193
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0009_at_000009.jpg",
+  "imageData": null,
+  "imageHeight": 524,
+  "imageWidth": 916,
+  "description": ""
+}

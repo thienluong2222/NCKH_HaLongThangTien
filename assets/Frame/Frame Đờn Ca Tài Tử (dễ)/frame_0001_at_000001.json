@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "dan guitar",
+      "score": null,
+      "points": [
+        [
+          3.9589041095890227,
+          419.5205479452055
+        ],
+        [
+          604.6438356164383,
+          419.5205479452055
+        ],
+        [
+          604.6438356164383,
+          599.0
+        ],
+        [
+          3.9589041095890227,
+          599.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0001_at_000001.jpg",
+  "imageData": null,
+  "imageHeight": 600,
+  "imageWidth": 1086,
+  "description": ""
+}

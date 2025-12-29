@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Den nuoc",
+      "points": [
+        [
+          284.42388916015625,
+          3.3528170585632324
+        ],
+        [
+          726.7459106445312,
+          519.841552734375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Den nuoc",
+      "points": [
+        [
+          173.81304931640625,
+          184.18360900878906
+        ],
+        [
+          322.0101623535156,
+          379.83331298828125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0021_at_000021.jpg",
+  "imageData": null
+}

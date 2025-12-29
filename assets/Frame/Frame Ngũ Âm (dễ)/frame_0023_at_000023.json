@@ -1,0 +1,272 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          251.7146759033203,
+          244.7318878173828
+        ],
+        [
+          690.0,
+          244.7318878173828
+        ],
+        [
+          690.0,
+          510.0555114746094
+        ],
+        [
+          251.7146759033203,
+          510.0555114746094
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          111.47228240966797,
+          0.0
+        ],
+        [
+          308.2195129394531,
+          0.0
+        ],
+        [
+          308.2195129394531,
+          218.8395538330078
+        ],
+        [
+          111.47228240966797,
+          218.8395538330078
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          300.5320129394531,
+          2.6647467613220215
+        ],
+        [
+          600.9561767578125,
+          2.6647467613220215
+        ],
+        [
+          600.9561767578125,
+          369.5500183105469
+        ],
+        [
+          300.5320129394531,
+          369.5500183105469
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          609.8667602539062,
+          0.0
+        ],
+        [
+          690.0,
+          0.0
+        ],
+        [
+          690.0,
+          123.62714385986328
+        ],
+        [
+          609.8667602539062,
+          123.62714385986328
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          28.0241756439209,
+          157.053466796875
+        ],
+        [
+          327.15264892578125,
+          157.053466796875
+        ],
+        [
+          327.15264892578125,
+          293.4964904785156
+        ],
+        [
+          28.0241756439209,
+          293.4964904785156
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          532.5681762695312,
+          109.48358917236328
+        ],
+        [
+          661.34912109375,
+          109.48358917236328
+        ],
+        [
+          661.34912109375,
+          172.18275451660156
+        ],
+        [
+          532.5681762695312,
+          172.18275451660156
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          594.10400390625,
+          131.79751586914062
+        ],
+        [
+          690.0,
+          131.79751586914062
+        ],
+        [
+          690.0,
+          292.8793640136719
+        ],
+        [
+          594.10400390625,
+          292.8793640136719
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          610.9407348632812,
+          86.89093780517578
+        ],
+        [
+          689.9859008789062,
+          86.89093780517578
+        ],
+        [
+          689.9859008789062,
+          151.5801239013672
+        ],
+        [
+          610.9407348632812,
+          151.5801239013672
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          28.178558349609375,
+          153.75588989257812
+        ],
+        [
+          129.7402801513672,
+          153.75588989257812
+        ],
+        [
+          129.7402801513672,
+          289.3127136230469
+        ],
+        [
+          28.178558349609375,
+          289.3127136230469
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0023_at_000023.jpg",
+  "imageData": null,
+  "imageHeight": 516,
+  "imageWidth": 690,
+  "description": ""
+}

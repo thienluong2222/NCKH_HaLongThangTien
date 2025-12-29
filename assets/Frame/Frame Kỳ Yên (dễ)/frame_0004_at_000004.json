@@ -1,0 +1,71 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Dinh Binh Thuy",
+      "points": [
+        [
+          1.907209873199463,
+          71.23766326904297
+        ],
+        [
+          485.5984191894531,
+          338.0107727050781
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Mua Lan",
+      "points": [
+        [
+          328.46490478515625,
+          291.4994201660156
+        ],
+        [
+          512.89697265625,
+          468.4865417480469
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Mua Lan",
+      "points": [
+        [
+          549.3265991210938,
+          277.5923156738281
+        ],
+        [
+          660.5617065429688,
+          403.8708190917969
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Mua Lan",
+      "points": [
+        [
+          436.0563049316406,
+          253.1382293701172
+        ],
+        [
+          643.2548217773438,
+          423.4388122558594
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0004_at_000004.jpg",
+  "imageData": null
+}

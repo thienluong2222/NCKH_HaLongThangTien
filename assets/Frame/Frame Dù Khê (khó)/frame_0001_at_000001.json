@@ -1,0 +1,243 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          865.4031372070312,
+          350.58197021484375
+        ],
+        [
+          936.303955078125,
+          350.58197021484375
+        ],
+        [
+          936.303955078125,
+          513.380615234375
+        ],
+        [
+          865.4031372070312,
+          513.380615234375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Canh cung dien",
+      "score": null,
+      "points": [
+        [
+          80.5595296291205,
+          24.434061167790347
+        ],
+        [
+          1109.0,
+          24.434061167790347
+        ],
+        [
+          1109.0,
+          317.3076923076923
+        ],
+        [
+          80.5595296291205,
+          317.3076923076923
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          417.2786560058594,
+          362.1690979003906
+        ],
+        [
+          475.9568786621094,
+          362.1690979003906
+        ],
+        [
+          475.9568786621094,
+          509.4407043457031
+        ],
+        [
+          417.2786560058594,
+          509.4407043457031
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "label": "Cam gay",
+      "score": null,
+      "points": [
+        [
+          503.61538461538464,
+          348.8461538461538
+        ],
+        [
+          770.5384615384615,
+          348.8461538461538
+        ],
+        [
+          770.5384615384615,
+          379.6153846153846
+        ],
+        [
+          503.61538461538464,
+          379.6153846153846
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Vay sampot",
+      "score": null,
+      "points": [
+        [
+          585.1538461538462,
+          401.9230769230769
+        ],
+        [
+          669.7692307692308,
+          401.9230769230769
+        ],
+        [
+          669.7692307692308,
+          501.9230769230769
+        ],
+        [
+          585.1538461538462,
+          501.9230769230769
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Vay sampot",
+      "score": null,
+      "points": [
+        [
+          472.0769230769231,
+          412.6923076923077
+        ],
+        [
+          533.6153846153846,
+          412.6923076923077
+        ],
+        [
+          533.6153846153846,
+          515.0
+        ],
+        [
+          472.0769230769231,
+          515.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          336.69230769230774,
+          332.6923076923077
+        ],
+        [
+          383.61538461538464,
+          332.6923076923077
+        ],
+        [
+          383.61538461538464,
+          509.61538461538464
+        ],
+        [
+          336.69230769230774,
+          509.61538461538464
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "That lung ban to",
+      "score": null,
+      "points": [
+        [
+          405.1538461538462,
+          454.2307692307692
+        ],
+        [
+          463.61538461538464,
+          454.2307692307692
+        ],
+        [
+          463.61538461538464,
+          475.0
+        ],
+        [
+          405.1538461538462,
+          475.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0001_at_000001.jpg",
+  "imageData": null,
+  "imageHeight": 620,
+  "imageWidth": 1218,
+  "description": ""
+}

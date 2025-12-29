@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Tau bien",
+      "points": [
+        [
+          192.8063507080078,
+          291.74090576171875
+        ],
+        [
+          339.3717956542969,
+          379.24334716796875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Tau bien",
+      "points": [
+        [
+          699.157470703125,
+          253.79127502441406
+        ],
+        [
+          840.21875,
+          385.7889709472656
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Tau bien",
+      "points": [
+        [
+          471.3390197753906,
+          295.8298645019531
+        ],
+        [
+          649.6861572265625,
+          382.4069519042969
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0016_at_000016.jpg",
+  "imageData": null
+}

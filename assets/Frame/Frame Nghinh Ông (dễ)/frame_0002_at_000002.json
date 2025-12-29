@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          1238.5067138671875,
+          496.2869567871094
+        ],
+        [
+          1329.9451904296875,
+          496.2869567871094
+        ],
+        [
+          1329.9451904296875,
+          844.1607055664062
+        ],
+        [
+          1238.5067138671875,
+          844.1607055664062
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          957.560975609756,
+          728.4146341463414
+        ],
+        [
+          1164.8780487804877,
+          728.4146341463414
+        ],
+        [
+          1164.8780487804877,
+          928.4146341463414
+        ],
+        [
+          957.560975609756,
+          928.4146341463414
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          988.0487804878048,
+          575.9756097560976
+        ],
+        [
+          1102.6829268292684,
+          575.9756097560976
+        ],
+        [
+          1102.6829268292684,
+          780.8536585365854
+        ],
+        [
+          988.0487804878048,
+          780.8536585365854
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          630.7317073170732,
+          557.6829268292684
+        ],
+        [
+          818.5365853658536,
+          557.6829268292684
+        ],
+        [
+          818.5365853658536,
+          967.4390243902438
+        ],
+        [
+          630.7317073170732,
+          967.4390243902438
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trong",
+      "score": null,
+      "points": [
+        [
+          356.3414634146342,
+          819.8780487804878
+        ],
+        [
+          627.0731707317074,
+          819.8780487804878
+        ],
+        [
+          627.0731707317074,
+          1079.0
+        ],
+        [
+          356.3414634146342,
+          1079.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          1724.6341463414633,
+          73.53658536585367
+        ],
+        [
+          1917.3170731707316,
+          73.53658536585367
+        ],
+        [
+          1917.3170731707316,
+          621.0975609756098
+        ],
+        [
+          1724.6341463414633,
+          621.0975609756098
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0002_at_000002.jpg",
+  "imageData": null,
+  "imageHeight": 1080,
+  "imageWidth": 1920,
+  "description": ""
+}

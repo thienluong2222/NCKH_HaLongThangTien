@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          413.3900146484375,
+          0.0
+        ],
+        [
+          758.01318359375,
+          0.0
+        ],
+        [
+          758.01318359375,
+          474.0
+        ],
+        [
+          413.3900146484375,
+          474.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Moi do",
+      "score": null,
+      "points": [
+        [
+          452.80084228515625,
+          137.46826171875
+        ],
+        [
+          505.3988342285156,
+          137.46826171875
+        ],
+        [
+          505.3988342285156,
+          187.41915893554688
+        ],
+        [
+          452.80084228515625,
+          187.41915893554688
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          435.4390243902439,
+          169.0121951219512
+        ],
+        [
+          628.1219512195122,
+          169.0121951219512
+        ],
+        [
+          628.1219512195122,
+          453.7682926829268
+        ],
+        [
+          435.4390243902439,
+          453.7682926829268
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          454.3414634146341,
+          0.0
+        ],
+        [
+          640.9268292682926,
+          0.0
+        ],
+        [
+          640.9268292682926,
+          90.96341463414633
+        ],
+        [
+          454.3414634146341,
+          90.96341463414633
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Khoac ao ren",
+      "score": null,
+      "points": [
+        [
+          554.3414634146342,
+          59.86585365853658
+        ],
+        [
+          761.0487804878048,
+          59.86585365853658
+        ],
+        [
+          761.0487804878048,
+          472.06097560975604
+        ],
+        [
+          554.3414634146342,
+          472.06097560975604
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0010_at_000010.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 966,
+  "description": ""
+}

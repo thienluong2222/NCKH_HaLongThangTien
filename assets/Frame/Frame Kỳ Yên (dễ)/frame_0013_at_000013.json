@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          451.8028259277344,
+          117.40855407714844
+        ],
+        [
+          573.4049682617188,
+          117.40855407714844
+        ],
+        [
+          573.4049682617188,
+          480.0
+        ],
+        [
+          451.8028259277344,
+          480.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Sac Than",
+      "score": null,
+      "points": [
+        [
+          310.4925537109375,
+          168.01022338867188
+        ],
+        [
+          448.2967529296875,
+          168.01022338867188
+        ],
+        [
+          448.2967529296875,
+          334.9649963378906
+        ],
+        [
+          310.4925537109375,
+          334.9649963378906
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          106.81399536132812,
+          137.11489868164062
+        ],
+        [
+          219.57037353515625,
+          137.11489868164062
+        ],
+        [
+          219.57037353515625,
+          480.0
+        ],
+        [
+          106.81399536132812,
+          480.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          238.36483764648438,
+          163.19046020507812
+        ],
+        [
+          321.2779541015625,
+          163.19046020507812
+        ],
+        [
+          321.2779541015625,
+          454.2964782714844
+        ],
+        [
+          238.36483764648438,
+          454.2964782714844
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          423.9906311035156,
+          140.02915954589844
+        ],
+        [
+          491.24346923828125,
+          140.02915954589844
+        ],
+        [
+          491.24346923828125,
+          444.30499267578125
+        ],
+        [
+          423.9906311035156,
+          444.30499267578125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          96.76558685302734,
+          146.91436767578125
+        ],
+        [
+          149.900390625,
+          146.91436767578125
+        ],
+        [
+          149.900390625,
+          455.2411804199219
+        ],
+        [
+          96.76558685302734,
+          455.2411804199219
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0013_at_000013.jpg",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 854,
+  "description": ""
+}

@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trang phuc bieu dien nghe thuat nhan gian",
+      "score": null,
+      "points": [
+        [
+          84.89229583740234,
+          319.9426574707031
+        ],
+        [
+          180.79042053222656,
+          319.9426574707031
+        ],
+        [
+          180.79042053222656,
+          522.3317260742188
+        ],
+        [
+          84.89229583740234,
+          522.3317260742188
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cong dinh ong",
+      "score": null,
+      "points": [
+        [
+          0.10839858651161194,
+          0.0
+        ],
+        [
+          111.13201141357422,
+          0.0
+        ],
+        [
+          111.13201141357422,
+          369.4397888183594
+        ],
+        [
+          0.10839858651161194,
+          369.4397888183594
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cong dinh ong",
+      "score": null,
+      "points": [
+        [
+          96.59649122807015,
+          7.906432748538001
+        ],
+        [
+          741.625730994152,
+          7.906432748538001
+        ],
+        [
+          741.625730994152,
+          127.78947368421052
+        ],
+        [
+          96.59649122807015,
+          127.78947368421052
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Lan su rong",
+      "score": null,
+      "points": [
+        [
+          550.9824561403509,
+          168.140350877193
+        ],
+        [
+          905.3684210526316,
+          168.140350877193
+        ],
+        [
+          905.3684210526316,
+          472.8187134502924
+        ],
+        [
+          550.9824561403509,
+          472.8187134502924
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Xe dieu hanh ruoc ong",
+      "score": null,
+      "points": [
+        [
+          376.7134502923977,
+          78.66666666666666
+        ],
+        [
+          651.5672514619883,
+          78.66666666666666
+        ],
+        [
+          651.5672514619883,
+          358.19883040935673
+        ],
+        [
+          376.7134502923977,
+          358.19883040935673
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          377.8830409356725,
+          76.32748538011695
+        ],
+        [
+          448.6432748538012,
+          76.32748538011695
+        ],
+        [
+          448.6432748538012,
+          290.9473684210526
+        ],
+        [
+          377.8830409356725,
+          290.9473684210526
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co hoi",
+      "score": null,
+      "points": [
+        [
+          693.672514619883,
+          93.28654970760233
+        ],
+        [
+          772.0350877192983,
+          93.28654970760233
+        ],
+        [
+          772.0350877192983,
+          240.6549707602339
+        ],
+        [
+          693.672514619883,
+          240.6549707602339
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0010_at_000010.jpg",
+  "imageData": null,
+  "imageHeight": 524,
+  "imageWidth": 916,
+  "description": ""
+}

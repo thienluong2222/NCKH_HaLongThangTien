@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          664.1681518554688,
+          423.5263977050781
+        ],
+        [
+          1119.6092529296875,
+          510.8327331542969
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          379.1114501953125,
+          338.82330322265625
+        ],
+        [
+          714.84912109375,
+          480.38616943359375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Thuyen",
+      "points": [
+        [
+          218.14064025878906,
+          395.025634765625
+        ],
+        [
+          306.1822509765625,
+          442.78216552734375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0042_at_000042.jpg",
+  "imageData": null
+}

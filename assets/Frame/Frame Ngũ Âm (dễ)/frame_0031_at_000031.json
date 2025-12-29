@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          328.5797119140625,
+          267.24273681640625
+        ],
+        [
+          447.33367919921875,
+          267.24273681640625
+        ],
+        [
+          447.33367919921875,
+          366.4739074707031
+        ],
+        [
+          328.5797119140625,
+          366.4739074707031
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "score": null,
+      "points": [
+        [
+          397.4794520547945,
+          377.4246575342466
+        ],
+        [
+          704.0714721679688,
+          377.4246575342466
+        ],
+        [
+          704.0714721679688,
+          546.3610229492188
+        ],
+        [
+          397.4794520547945,
+          546.3610229492188
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          675.2484741210938,
+          279.45294189453125
+        ],
+        [
+          862.0863647460938,
+          279.45294189453125
+        ],
+        [
+          862.0863647460938,
+          377.8435363769531
+        ],
+        [
+          675.2484741210938,
+          377.8435363769531
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          450.3824462890625,
+          253.89700317382812
+        ],
+        [
+          539.0921020507812,
+          253.89700317382812
+        ],
+        [
+          539.0921020507812,
+          321.8332824707031
+        ],
+        [
+          450.3824462890625,
+          321.8332824707031
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trong nho Kha-so-sompho",
+      "score": null,
+      "points": [
+        [
+          443.3698630136986,
+          339.75342465753425
+        ],
+        [
+          513.2328767123288,
+          339.75342465753425
+        ],
+        [
+          513.2328767123288,
+          384.2739726027397
+        ],
+        [
+          443.3698630136986,
+          384.2739726027397
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0031_at_000031.jpg",
+  "imageData": null,
+  "imageHeight": 548,
+  "imageWidth": 1084,
+  "description": ""
+}

@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          13.529767990112305,
+          0.799359142780304
+        ],
+        [
+          224.8169708251953,
+          0.799359142780304
+        ],
+        [
+          224.8169708251953,
+          435.8723449707031
+        ],
+        [
+          13.529767990112305,
+          435.8723449707031
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          695.05810546875,
+          0.0
+        ],
+        [
+          871.2994384765625,
+          0.0
+        ],
+        [
+          871.2994384765625,
+          426.3247985839844
+        ],
+        [
+          695.05810546875,
+          426.3247985839844
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc bieu dien nghe thuat nhan gian",
+      "score": null,
+      "points": [
+        [
+          249.11111111111114,
+          5.07407407407409
+        ],
+        [
+          611.4567901234568,
+          5.07407407407409
+        ],
+        [
+          611.4567901234568,
+          511.0
+        ],
+        [
+          249.11111111111114,
+          511.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0029_at_000029.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 976,
+  "description": ""
+}

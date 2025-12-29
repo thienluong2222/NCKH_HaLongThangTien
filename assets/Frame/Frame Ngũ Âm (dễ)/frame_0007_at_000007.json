@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trong lon Sakho-thom",
+      "score": null,
+      "points": [
+        [
+          675.245361328125,
+          198.26718139648438
+        ],
+        [
+          853.97802734375,
+          198.26718139648438
+        ],
+        [
+          853.97802734375,
+          477.0746765136719
+        ],
+        [
+          675.245361328125,
+          477.0746765136719
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          6.7687861271676475,
+          260.80924855491327
+        ],
+        [
+          439.13872832369947,
+          260.80924855491327
+        ],
+        [
+          439.13872832369947,
+          465.4335260115607
+        ],
+        [
+          6.7687861271676475,
+          465.4335260115607
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0007_at_000007.jpg",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 854,
+  "description": ""
+}

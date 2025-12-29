@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          351.5640869140625,
+          288.71307373046875
+        ],
+        [
+          489.6763610839844,
+          288.71307373046875
+        ],
+        [
+          489.6763610839844,
+          564.2463989257812
+        ],
+        [
+          351.5640869140625,
+          564.2463989257812
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          594.4009399414062,
+          194.3838653564453
+        ],
+        [
+          806.502197265625,
+          194.3838653564453
+        ],
+        [
+          806.502197265625,
+          570.29150390625
+        ],
+        [
+          594.4009399414062,
+          570.29150390625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "trong Chhay-dam",
+      "score": null,
+      "points": [
+        [
+          526.1205673758865,
+          298.9929078014185
+        ],
+        [
+          589.950354609929,
+          298.9929078014185
+        ],
+        [
+          589.950354609929,
+          376.29787234042556
+        ],
+        [
+          526.1205673758865,
+          376.29787234042556
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "trong Chhay-dam",
+      "score": null,
+      "points": [
+        [
+          284.98581560283685,
+          315.30496453900713
+        ],
+        [
+          348.8156028368794,
+          315.30496453900713
+        ],
+        [
+          348.8156028368794,
+          391.19148936170217
+        ],
+        [
+          284.98581560283685,
+          391.19148936170217
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0014_at_000014.jpg",
+  "imageData": null,
+  "imageHeight": 576,
+  "imageWidth": 1126,
+  "description": ""
+}

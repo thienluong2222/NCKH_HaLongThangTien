@@ -1,0 +1,87 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          334.7281494140625,
+          287.7197570800781
+        ],
+        [
+          439.82391357421875,
+          420.28070068359375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "points": [
+        [
+          816.0707397460938,
+          309.2083740234375
+        ],
+        [
+          1043.9383544921875,
+          533.9754028320312
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "points": [
+        [
+          708.892822265625,
+          306.68212890625
+        ],
+        [
+          837.083984375,
+          440.1856689453125
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan sat Ro-niet-dek",
+      "points": [
+        [
+          709.6566772460938,
+          311.714111328125
+        ],
+        [
+          837.19580078125,
+          446.0486145019531
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "points": [
+        [
+          817.3753662109375,
+          305.7987365722656
+        ],
+        [
+          1030.7760009765625,
+          476.7234802246094
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0016_at_000016.jpg",
+  "imageData": null
+}

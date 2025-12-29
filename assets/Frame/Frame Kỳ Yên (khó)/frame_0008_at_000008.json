@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          417.0294117647059,
+          329.25
+        ],
+        [
+          568.5,
+          329.25
+        ],
+        [
+          568.5,
+          640.2794117647059
+        ],
+        [
+          417.0294117647059,
+          640.2794117647059
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0008_at_000008.jpg",
+  "imageData": null,
+  "imageHeight": 646,
+  "imageWidth": 1162,
+  "description": ""
+}

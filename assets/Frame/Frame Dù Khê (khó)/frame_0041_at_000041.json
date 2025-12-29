@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          116.9007092198581,
+          196.97163120567373
+        ],
+        [
+          294.2056737588652,
+          196.97163120567373
+        ],
+        [
+          294.2056737588652,
+          561.5106382978723
+        ],
+        [
+          116.9007092198581,
+          561.5106382978723
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          162.29078014184395,
+          287.04255319148933
+        ],
+        [
+          242.43262411347516,
+          287.04255319148933
+        ],
+        [
+          242.43262411347516,
+          335.26950354609926
+        ],
+        [
+          162.29078014184395,
+          335.26950354609926
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap than duoi",
+      "score": null,
+      "points": [
+        [
+          166.54609929078012,
+          372.85815602836874
+        ],
+        [
+          267.9645390070921,
+          372.85815602836874
+        ],
+        [
+          267.9645390070921,
+          581.3687943262411
+        ],
+        [
+          166.54609929078012,
+          581.3687943262411
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          169.38297872340422,
+          198.3900709219858
+        ],
+        [
+          225.41134751773046,
+          198.3900709219858
+        ],
+        [
+          225.41134751773046,
+          270.02127659574467
+        ],
+        [
+          169.38297872340422,
+          270.02127659574467
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          136.04964539007088,
+          342.36170212765956
+        ],
+        [
+          167.25531914893614,
+          342.36170212765956
+        ],
+        [
+          167.25531914893614,
+          370.02127659574467
+        ],
+        [
+          136.04964539007088,
+          370.02127659574467
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0041_at_000041.jpg",
+  "imageData": null,
+  "imageHeight": 606,
+  "imageWidth": 1126,
+  "description": ""
+}

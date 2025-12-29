@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi mua",
+      "score": null,
+      "points": [
+        [
+          922.402099609375,
+          216.44520568847656
+        ],
+        [
+          1031.267333984375,
+          216.44520568847656
+        ],
+        [
+          1031.267333984375,
+          516.9739990234375
+        ],
+        [
+          922.402099609375,
+          516.9739990234375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh hang dong",
+      "score": null,
+      "points": [
+        [
+          219.93939393939397,
+          43.287878787878824
+        ],
+        [
+          981.3030303030303,
+          43.287878787878824
+        ],
+        [
+          981.3030303030303,
+          267.53030303030306
+        ],
+        [
+          219.93939393939397,
+          267.53030303030306
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao khoac vai",
+      "score": null,
+      "points": [
+        [
+          346.45454545454544,
+          270.56060606060606
+        ],
+        [
+          424.4848484848485,
+          270.56060606060606
+        ],
+        [
+          424.4848484848485,
+          337.9848484848485
+        ],
+        [
+          346.45454545454544,
+          337.9848484848485
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0027_at_000027.jpg",
+  "imageData": null,
+  "imageHeight": 604,
+  "imageWidth": 1202,
+  "description": ""
+}

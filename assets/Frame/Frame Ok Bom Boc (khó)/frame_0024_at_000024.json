@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Den nuoc",
+      "score": null,
+      "points": [
+        [
+          663.3045043945312,
+          0.02949829213321209
+        ],
+        [
+          768.8284912109375,
+          0.02949829213321209
+        ],
+        [
+          768.8284912109375,
+          148.62657165527344
+        ],
+        [
+          663.3045043945312,
+          148.62657165527344
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          322.7142857142857,
+          284.2244897959184
+        ],
+        [
+          473.05442176870747,
+          284.2244897959184
+        ],
+        [
+          473.05442176870747,
+          507.3537414965987
+        ],
+        [
+          322.7142857142857,
+          507.3537414965987
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua chan",
+      "score": null,
+      "points": [
+        [
+          567.6122448979593,
+          293.0680272108844
+        ],
+        [
+          784.6190476190477,
+          293.0680272108844
+        ],
+        [
+          784.6190476190477,
+          540.687074829932
+        ],
+        [
+          567.6122448979593,
+          540.687074829932
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0024_at_000024.jpg",
+  "imageData": null,
+  "imageHeight": 546,
+  "imageWidth": 1074,
+  "description": ""
+}

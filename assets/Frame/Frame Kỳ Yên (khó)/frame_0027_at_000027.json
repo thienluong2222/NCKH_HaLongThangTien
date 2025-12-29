@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          581.166748046875,
+          194.3643798828125
+        ],
+        [
+          727.2471313476562,
+          194.3643798828125
+        ],
+        [
+          727.2471313476562,
+          553.7455444335938
+        ],
+        [
+          581.166748046875,
+          553.7455444335938
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          868.986013986014,
+          175.30831909179688
+        ],
+        [
+          958.4998168945312,
+          175.30831909179688
+        ],
+        [
+          958.4998168945312,
+          528.048951048951
+        ],
+        [
+          868.986013986014,
+          528.048951048951
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          271.7547302246094,
+          208.66433715820312
+        ],
+        [
+          514.8778686523438,
+          208.66433715820312
+        ],
+        [
+          514.8778686523438,
+          554.0
+        ],
+        [
+          271.7547302246094,
+          554.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          821.4335664335664,
+          201.47552447552445
+        ],
+        [
+          868.986013986014,
+          201.47552447552445
+        ],
+        [
+          868.986013986014,
+          470.006993006993
+        ],
+        [
+          821.4335664335664,
+          470.006993006993
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Le phuc Ky Yen",
+      "score": null,
+      "points": [
+        [
+          530.5244755244755,
+          193.08391608391608
+        ],
+        [
+          601.8531468531468,
+          193.08391608391608
+        ],
+        [
+          601.8531468531468,
+          487.4895104895105
+        ],
+        [
+          530.5244755244755,
+          487.4895104895105
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          32.622377622377606,
+          179.09790209790208
+        ],
+        [
+          199.75524475524475,
+          179.09790209790208
+        ],
+        [
+          199.75524475524475,
+          549.7272727272726
+        ],
+        [
+          32.622377622377606,
+          549.7272727272726
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Mua Lan",
+      "score": null,
+      "points": [
+        [
+          765.4895104895105,
+          174.9020979020979
+        ],
+        [
+          815.8391608391609,
+          174.9020979020979
+        ],
+        [
+          815.8391608391609,
+          213.36363636363635
+        ],
+        [
+          765.4895104895105,
+          213.36363636363635
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0027_at_000027.jpg",
+  "imageData": null,
+  "imageHeight": 554,
+  "imageWidth": 1110,
+  "description": ""
+}

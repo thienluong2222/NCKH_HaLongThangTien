@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          151.76097106933594,
+          105.25346374511719
+        ],
+        [
+          196.8634796142578,
+          105.25346374511719
+        ],
+        [
+          196.8634796142578,
+          288.32928466796875
+        ],
+        [
+          151.76097106933594,
+          288.32928466796875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          323.7857142857143,
+          65.39285714285712
+        ],
+        [
+          365.45238095238096,
+          65.39285714285712
+        ],
+        [
+          365.45238095238096,
+          149.91666666666663
+        ],
+        [
+          323.7857142857143,
+          149.91666666666663
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          378.54761904761904,
+          76.70238095238093
+        ],
+        [
+          407.1190476190476,
+          76.70238095238093
+        ],
+        [
+          407.1190476190476,
+          176.10714285714283
+        ],
+        [
+          378.54761904761904,
+          176.10714285714283
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Den nuoc",
+      "score": null,
+      "points": [
+        [
+          580.9285714285713,
+          29.08333333333331
+        ],
+        [
+          670.8095238095237,
+          29.08333333333331
+        ],
+        [
+          670.8095238095237,
+          137.41666666666663
+        ],
+        [
+          580.9285714285713,
+          137.41666666666663
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0006_at_000006.jpg",
+  "imageData": null,
+  "imageHeight": 504,
+  "imageWidth": 944,
+  "description": ""
+}

@@ -1,0 +1,272 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Du ruoc doan",
+      "score": null,
+      "points": [
+        [
+          338.8375244140625,
+          36.74431610107422
+        ],
+        [
+          573.93896484375,
+          36.74431610107422
+        ],
+        [
+          573.93896484375,
+          202.27951049804688
+        ],
+        [
+          338.8375244140625,
+          202.27951049804688
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          483.97297297297297,
+          0.0
+        ],
+        [
+          519.1081081081081,
+          0.0
+        ],
+        [
+          519.1081081081081,
+          27.716216216216203
+        ],
+        [
+          483.97297297297297,
+          27.716216216216203
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          300.18918918918916,
+          7.44594594594593
+        ],
+        [
+          317.08108108108104,
+          7.44594594594593
+        ],
+        [
+          317.08108108108104,
+          49.33783783783783
+        ],
+        [
+          300.18918918918916,
+          49.33783783783783
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          277.8918918918919,
+          10.824324324324309
+        ],
+        [
+          297.48648648648646,
+          10.824324324324309
+        ],
+        [
+          297.48648648648646,
+          51.36486486486485
+        ],
+        [
+          277.8918918918919,
+          51.36486486486485
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          255.59459459459458,
+          18.93243243243242
+        ],
+        [
+          271.8108108108108,
+          18.93243243243242
+        ],
+        [
+          271.8108108108108,
+          52.040540540540526
+        ],
+        [
+          255.59459459459458,
+          52.040540540540526
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          229.24324324324323,
+          31.094594594594582
+        ],
+        [
+          240.7297297297297,
+          31.094594594594582
+        ],
+        [
+          240.7297297297297,
+          68.93243243243242
+        ],
+        [
+          229.24324324324323,
+          68.93243243243242
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          213.027027027027,
+          37.175675675675656
+        ],
+        [
+          227.2162162162162,
+          37.175675675675656
+        ],
+        [
+          227.2162162162162,
+          71.63513513513513
+        ],
+        [
+          213.027027027027,
+          71.63513513513513
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "label": "Nguoi mua",
+      "score": null,
+      "points": [
+        [
+          326.5405405405405,
+          202.04054054054055
+        ],
+        [
+          404.9189189189189,
+          202.04054054054055
+        ],
+        [
+          404.9189189189189,
+          363.527027027027
+        ],
+        [
+          326.5405405405405,
+          363.527027027027
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi mua",
+      "score": null,
+      "points": [
+        [
+          544.7837837837839,
+          190.55405405405406
+        ],
+        [
+          601.5405405405406,
+          190.55405405405406
+        ],
+        [
+          601.5405405405406,
+          352.0405405405405
+        ],
+        [
+          544.7837837837839,
+          352.0405405405405
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0036_at_000036.jpg",
+  "imageData": null,
+  "imageHeight": 548,
+  "imageWidth": 1072,
+  "description": ""
+}

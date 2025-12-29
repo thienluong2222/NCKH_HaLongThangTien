@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          248.67799377441406,
+          19.133560180664062
+        ],
+        [
+          535.6297607421875,
+          19.133560180664062
+        ],
+        [
+          535.6297607421875,
+          393.4184265136719
+        ],
+        [
+          248.67799377441406,
+          393.4184265136719
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          207.69500732421875,
+          264.8922424316406
+        ],
+        [
+          689.717529296875,
+          264.8922424316406
+        ],
+        [
+          689.717529296875,
+          514.6356201171875
+        ],
+        [
+          207.69500732421875,
+          514.6356201171875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          83.39198303222656,
+          0.0
+        ],
+        [
+          272.587158203125,
+          0.0
+        ],
+        [
+          272.587158203125,
+          236.11167907714844
+        ],
+        [
+          83.39198303222656,
+          236.11167907714844
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          502.36578369140625,
+          134.39208984375
+        ],
+        [
+          690.0,
+          134.39208984375
+        ],
+        [
+          690.0,
+          311.2426452636719
+        ],
+        [
+          502.36578369140625,
+          311.2426452636719
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc Khmer",
+      "score": null,
+      "points": [
+        [
+          575.0022583007812,
+          1.5556612014770508
+        ],
+        [
+          687.861083984375,
+          1.5556612014770508
+        ],
+        [
+          687.861083984375,
+          133.98944091796875
+        ],
+        [
+          575.0022583007812,
+          133.98944091796875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          576.3873291015625,
+          106.67774963378906
+        ],
+        [
+          689.7399291992188,
+          106.67774963378906
+        ],
+        [
+          689.7399291992188,
+          173.16622924804688
+        ],
+        [
+          576.3873291015625,
+          173.16622924804688
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          164.54962158203125
+        ],
+        [
+          270.5232238769531,
+          164.54962158203125
+        ],
+        [
+          270.5232238769531,
+          316.6005859375
+        ],
+        [
+          0.0,
+          316.6005859375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0020_at_000020.jpg",
+  "imageData": null,
+  "imageHeight": 516,
+  "imageWidth": 690,
+  "description": ""
+}

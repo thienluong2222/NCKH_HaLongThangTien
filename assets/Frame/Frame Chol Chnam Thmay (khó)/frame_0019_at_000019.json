@@ -1,0 +1,87 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Co Phat dan",
+      "points": [
+        [
+          171.32382202148438,
+          0.20585259795188904
+        ],
+        [
+          207.2222137451172,
+          48.41670608520508
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Co Phat dan",
+      "points": [
+        [
+          965.6223754882812,
+          64.9990005493164
+        ],
+        [
+          1028.2708740234375,
+          130.70652770996094
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Co Phat dan",
+      "points": [
+        [
+          149.269287109375,
+          0.5338930487632751
+        ],
+        [
+          206.40469360351562,
+          51.75541305541992
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Co Phat dan",
+      "points": [
+        [
+          874.0193481445312,
+          115.79000854492188
+        ],
+        [
+          914.4592895507812,
+          174.0102081298828
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Co Phat dan",
+      "points": [
+        [
+          800.6602783203125,
+          150.97023010253906
+        ],
+        [
+          833.8008422851562,
+          198.0866241455078
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0019_at_000019.jpg",
+  "imageData": null
+}

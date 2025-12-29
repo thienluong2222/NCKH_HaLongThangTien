@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          10.531250000000014,
+          52.48437500000001
+        ],
+        [
+          227.71875,
+          52.48437500000001
+        ],
+        [
+          227.71875,
+          333.734375
+        ],
+        [
+          10.531250000000014,
+          333.734375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          339.4375,
+          33.73437500000001
+        ],
+        [
+          828.5,
+          33.73437500000001
+        ],
+        [
+          828.5,
+          293.109375
+        ],
+        [
+          339.4375,
+          293.109375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          989.4375,
+          99.359375
+        ],
+        [
+          1230.84375,
+          99.359375
+        ],
+        [
+          1230.84375,
+          334.515625
+        ],
+        [
+          989.4375,
+          334.515625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          269.125,
+          262.640625
+        ],
+        [
+          351.9375,
+          262.640625
+        ],
+        [
+          351.9375,
+          514.984375
+        ],
+        [
+          269.125,
+          514.984375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          448.375,
+          332.515625
+        ],
+        [
+          527.71875,
+          332.515625
+        ],
+        [
+          527.71875,
+          479.828125
+        ],
+        [
+          448.375,
+          479.828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          551.0625,
+          334.421875
+        ],
+        [
+          630.40625,
+          334.421875
+        ],
+        [
+          630.40625,
+          481.734375
+        ],
+        [
+          551.0625,
+          481.734375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          609.21875,
+          324.609375
+        ],
+        [
+          688.5625,
+          324.609375
+        ],
+        [
+          688.5625,
+          471.921875
+        ],
+        [
+          609.21875,
+          471.921875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0036_at_000036.jpg",
+  "imageData": null,
+  "imageHeight": 662,
+  "imageWidth": 1232,
+  "description": ""
+}

@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Ao dai",
+      "points": [
+        [
+          177.5521240234375,
+          193.00181579589844
+        ],
+        [
+          242.9263458251953,
+          443.8631286621094
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0025_at_000025.jpg",
+  "imageData": null
+}

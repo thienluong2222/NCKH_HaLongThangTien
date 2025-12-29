@@ -1,0 +1,243 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          555.5020141601562,
+          1.182971715927124
+        ],
+        [
+          857.6716918945312,
+          1.182971715927124
+        ],
+        [
+          857.6716918945312,
+          136.705810546875
+        ],
+        [
+          555.5020141601562,
+          136.705810546875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          225.591552734375,
+          61.963253021240234
+        ],
+        [
+          313.9483642578125,
+          61.963253021240234
+        ],
+        [
+          313.9483642578125,
+          118.55384826660156
+        ],
+        [
+          225.591552734375,
+          118.55384826660156
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          759.6309204101562,
+          288.24908447265625
+        ],
+        [
+          916.0,
+          288.24908447265625
+        ],
+        [
+          916.0,
+          416.4499206542969
+        ],
+        [
+          759.6309204101562,
+          416.4499206542969
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          354.2582527740657,
+          320.7719298245614
+        ],
+        [
+          642.7953216374269,
+          320.7719298245614
+        ],
+        [
+          642.7953216374269,
+          432.46783625730995
+        ],
+        [
+          354.2582527740657,
+          432.46783625730995
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tau bien",
+      "score": null,
+      "points": [
+        [
+          -0.6019028334589933,
+          73.75435714275517
+        ],
+        [
+          77.8830409356725,
+          73.75435714275517
+        ],
+        [
+          77.8830409356725,
+          105.56725146198829
+        ],
+        [
+          -0.6019028334589933,
+          105.56725146198829
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          391.91812865497076,
+          265.80116959064327
+        ],
+        [
+          456.2456140350877,
+          265.80116959064327
+        ],
+        [
+          456.2456140350877,
+          333.05263157894734
+        ],
+        [
+          391.91812865497076,
+          333.05263157894734
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          463.84795321637426,
+          253.5204678362573
+        ],
+        [
+          509.46198830409355,
+          253.5204678362573
+        ],
+        [
+          509.46198830409355,
+          314.3391812865497
+        ],
+        [
+          463.84795321637426,
+          314.3391812865497
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          578.46783625731,
+          296.2105263157895
+        ],
+        [
+          616.4795321637426,
+          296.2105263157895
+        ],
+        [
+          616.4795321637426,
+          364.63157894736844
+        ],
+        [
+          578.46783625731,
+          364.63157894736844
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0018_at_000018.jpg",
+  "imageData": null,
+  "imageHeight": 524,
+  "imageWidth": 916,
+  "description": ""
+}

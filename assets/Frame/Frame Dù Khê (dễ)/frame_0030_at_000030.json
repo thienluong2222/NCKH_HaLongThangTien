@@ -1,0 +1,475 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          557.3233032226562,
+          276.4847412109375
+        ],
+        [
+          691.3433837890625,
+          276.4847412109375
+        ],
+        [
+          691.3433837890625,
+          526.3146362304688
+        ],
+        [
+          557.3233032226562,
+          526.3146362304688
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          441.8952941894531,
+          196.443603515625
+        ],
+        [
+          537.5445556640625,
+          196.443603515625
+        ],
+        [
+          537.5445556640625,
+          524.8934326171875
+        ],
+        [
+          441.8952941894531,
+          524.8934326171875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh cung dien",
+      "score": null,
+      "points": [
+        [
+          282.74281546573513,
+          0.547549593368629
+        ],
+        [
+          1057.503355704698,
+          0.547549593368629
+        ],
+        [
+          1057.503355704698,
+          236.7651006711409
+        ],
+        [
+          282.74281546573513,
+          236.7651006711409
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          23.7349910736084,
+          226.1438446044922
+        ],
+        [
+          125.41094207763672,
+          226.1438446044922
+        ],
+        [
+          125.41094207763672,
+          525.0196533203125
+        ],
+        [
+          23.7349910736084,
+          525.0196533203125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          145.42086791992188,
+          210.12786865234375
+        ],
+        [
+          263.669189453125,
+          210.12786865234375
+        ],
+        [
+          263.669189453125,
+          523.8251953125
+        ],
+        [
+          145.42086791992188,
+          523.8251953125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          288.1193542480469,
+          234.91697692871094
+        ],
+        [
+          410.0492858886719,
+          234.91697692871094
+        ],
+        [
+          410.0492858886719,
+          521.5877075195312
+        ],
+        [
+          288.1193542480469,
+          521.5877075195312
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Vay sampot",
+      "score": null,
+      "points": [
+        [
+          30.657718120805335,
+          325.35570469798654
+        ],
+        [
+          97.10067114093955,
+          325.35570469798654
+        ],
+        [
+          97.10067114093955,
+          476.3624161073825
+        ],
+        [
+          30.657718120805335,
+          476.3624161073825
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Vay sampot",
+      "score": null,
+      "points": [
+        [
+          135.35570469798657,
+          327.36912751677846
+        ],
+        [
+          210.5234899328859,
+          327.36912751677846
+        ],
+        [
+          210.5234899328859,
+          469.6510067114094
+        ],
+        [
+          135.35570469798657,
+          469.6510067114094
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Vay sampot",
+      "score": null,
+      "points": [
+        [
+          196.42953020134226,
+          345.489932885906
+        ],
+        [
+          254.14765100671138,
+          345.489932885906
+        ],
+        [
+          254.14765100671138,
+          476.3624161073825
+        ],
+        [
+          196.42953020134226,
+          476.3624161073825
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Vay sampot",
+      "score": null,
+      "points": [
+        [
+          285.0201342281879,
+          345.489932885906
+        ],
+        [
+          374.95302013422815,
+          345.489932885906
+        ],
+        [
+          374.95302013422815,
+          483.744966442953
+        ],
+        [
+          285.0201342281879,
+          483.744966442953
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Vay sampot",
+      "score": null,
+      "points": [
+        [
+          440.05369127516775,
+          324.0134228187919
+        ],
+        [
+          530.6577181208053,
+          324.0134228187919
+        ],
+        [
+          530.6577181208053,
+          475.0201342281879
+        ],
+        [
+          440.05369127516775,
+          475.0201342281879
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          477.63758389261744,
+          187.7718120805369
+        ],
+        [
+          517.9060402684563,
+          187.7718120805369
+        ],
+        [
+          517.9060402684563,
+          229.38255033557047
+        ],
+        [
+          477.63758389261744,
+          229.38255033557047
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao khoac vai",
+      "score": null,
+      "points": [
+        [
+          701.7986577181207,
+          217.9731543624161
+        ],
+        [
+          785.0201342281879,
+          217.9731543624161
+        ],
+        [
+          785.0201342281879,
+          430.7248322147651
+        ],
+        [
+          701.7986577181207,
+          430.7248322147651
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          656.8322147651006,
+          102.53691275167785
+        ],
+        [
+          740.0536912751677,
+          102.53691275167785
+        ],
+        [
+          740.0536912751677,
+          189.78523489932886
+        ],
+        [
+          656.8322147651006,
+          189.78523489932886
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "That lung ban to",
+      "score": null,
+      "points": [
+        [
+          590.3892617449663,
+          403.20805369127515
+        ],
+        [
+          678.979865771812,
+          403.20805369127515
+        ],
+        [
+          678.979865771812,
+          434.75167785234896
+        ],
+        [
+          590.3892617449663,
+          434.75167785234896
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          589.718120805369,
+          323.3422818791946
+        ],
+        [
+          658.1744966442952,
+          323.3422818791946
+        ],
+        [
+          658.1744966442952,
+          375.6912751677852
+        ],
+        [
+          589.718120805369,
+          375.6912751677852
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0030_at_000030.jpg",
+  "imageData": null,
+  "imageHeight": 544,
+  "imageWidth": 1064,
+  "description": ""
+}

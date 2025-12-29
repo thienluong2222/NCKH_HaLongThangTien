@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Den nuoc",
+      "score": null,
+      "points": [
+        [
+          2.9523809523809064,
+          1.7023809523809277
+        ],
+        [
+          366.6428571428571,
+          1.7023809523809277
+        ],
+        [
+          366.6428571428571,
+          480.2738095238095
+        ],
+        [
+          2.9523809523809064,
+          480.2738095238095
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          463.07142857142856,
+          0.0
+        ],
+        [
+          502.35714285714283,
+          0.0
+        ],
+        [
+          502.35714285714283,
+          72.53571428571426
+        ],
+        [
+          463.07142857142856,
+          72.53571428571426
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          449.38095238095235,
+          67.1785714285714
+        ],
+        [
+          504.73809523809524,
+          67.1785714285714
+        ],
+        [
+          504.73809523809524,
+          171.94047619047615
+        ],
+        [
+          449.38095238095235,
+          171.94047619047615
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Co Phat dan",
+      "score": null,
+      "points": [
+        [
+          514.8571428571428,
+          50.511904761904745
+        ],
+        [
+          550.5714285714286,
+          50.511904761904745
+        ],
+        [
+          550.5714285714286,
+          196.94047619047618
+        ],
+        [
+          514.8571428571428,
+          196.94047619047618
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Den nuoc",
+      "score": null,
+      "points": [
+        [
+          752.9523809523808,
+          21.940476190476165
+        ],
+        [
+          844.0238095238095,
+          21.940476190476165
+        ],
+        [
+          844.0238095238095,
+          148.13095238095235
+        ],
+        [
+          752.9523809523808,
+          148.13095238095235
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0009_at_000009.jpg",
+  "imageData": null,
+  "imageHeight": 504,
+  "imageWidth": 944,
+  "description": ""
+}

@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "points": [
+        [
+          607.8176879882812,
+          278.76800537109375
+        ],
+        [
+          726.5029907226562,
+          578.2886352539062
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi mua",
+      "points": [
+        [
+          914.1516723632812,
+          199.381103515625
+        ],
+        [
+          990.9459228515625,
+          459.5674133300781
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "points": [
+        [
+          337.4510192871094,
+          297.05914306640625
+        ],
+        [
+          449.58544921875,
+          577.4994506835938
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0024_at_000024.jpg",
+  "imageData": null
+}

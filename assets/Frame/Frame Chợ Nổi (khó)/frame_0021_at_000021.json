@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          912.54248046875,
+          125.43389892578125
+        ],
+        [
+          1152.0,
+          125.43389892578125
+        ],
+        [
+          1152.0,
+          352.715576171875
+        ],
+        [
+          912.54248046875,
+          352.715576171875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          257.72760009765625,
+          185.26309204101562
+        ],
+        [
+          549.770751953125,
+          185.26309204101562
+        ],
+        [
+          549.770751953125,
+          311.78802490234375
+        ],
+        [
+          257.72760009765625,
+          311.78802490234375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Thuyen",
+      "score": null,
+      "points": [
+        [
+          45.281803131103516,
+          232.6440887451172
+        ],
+        [
+          202.58529663085938,
+          232.6440887451172
+        ],
+        [
+          202.58529663085938,
+          316.71832275390625
+        ],
+        [
+          45.281803131103516,
+          316.71832275390625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0021_at_000021.jpg",
+  "imageData": null,
+  "imageHeight": 566,
+  "imageWidth": 1152,
+  "description": ""
+}

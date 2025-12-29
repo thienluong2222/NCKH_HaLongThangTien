@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          380.8330993652344,
+          212.75721740722656
+        ],
+        [
+          582.5501708984375,
+          212.75721740722656
+        ],
+        [
+          582.5501708984375,
+          478.60247802734375
+        ],
+        [
+          380.8330993652344,
+          478.60247802734375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          226.66441345214844,
+          196.78497314453125
+        ],
+        [
+          367.9659423828125,
+          196.78497314453125
+        ],
+        [
+          367.9659423828125,
+          477.0199279785156
+        ],
+        [
+          226.66441345214844,
+          477.0199279785156
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          609.3614501953125,
+          229.84657287597656
+        ],
+        [
+          811.585693359375,
+          229.84657287597656
+        ],
+        [
+          811.585693359375,
+          479.010009765625
+        ],
+        [
+          609.3614501953125,
+          479.010009765625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          416.8251647949219,
+          188.71780395507812
+        ],
+        [
+          493.38092041015625,
+          188.71780395507812
+        ],
+        [
+          493.38092041015625,
+          342.73590087890625
+        ],
+        [
+          416.8251647949219,
+          342.73590087890625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          345.6728515625,
+          213.08212280273438
+        ],
+        [
+          430.3194885253906,
+          213.08212280273438
+        ],
+        [
+          430.3194885253906,
+          444.4750061035156
+        ],
+        [
+          345.6728515625,
+          444.4750061035156
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai",
+      "score": null,
+      "points": [
+        [
+          347.26458740234375,
+          213.58702087402344
+        ],
+        [
+          429.8594970703125,
+          213.58702087402344
+        ],
+        [
+          429.8594970703125,
+          373.77947998046875
+        ],
+        [
+          347.26458740234375,
+          373.77947998046875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ban tho Dinh Binh Thuy",
+      "score": null,
+      "points": [
+        [
+          587.5405405405405,
+          22.67252540588379
+        ],
+        [
+          853.9102783203125,
+          22.67252540588379
+        ],
+        [
+          853.9102783203125,
+          337.56756756756755
+        ],
+        [
+          587.5405405405405,
+          337.56756756756755
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0006_at_000006.jpg",
+  "imageData": null,
+  "imageHeight": 480,
+  "imageWidth": 854,
+  "description": ""
+}

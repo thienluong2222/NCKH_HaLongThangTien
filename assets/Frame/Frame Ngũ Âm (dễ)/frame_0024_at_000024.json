@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          482.9150695800781,
+          255.37525939941406
+        ],
+        [
+          640.3944091796875,
+          255.37525939941406
+        ],
+        [
+          640.3944091796875,
+          383.62567138671875
+        ],
+        [
+          482.9150695800781,
+          383.62567138671875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trong lon Sakho-thom",
+      "score": null,
+      "points": [
+        [
+          424.7674560546875,
+          383.5848693847656
+        ],
+        [
+          927.4839477539062,
+          383.5848693847656
+        ],
+        [
+          927.4839477539062,
+          564.4434814453125
+        ],
+        [
+          424.7674560546875,
+          564.4434814453125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan sat Ro-niet-dek",
+      "score": null,
+      "points": [
+        [
+          880.4065551757812,
+          355.1105651855469
+        ],
+        [
+          1095.0634765625,
+          355.1105651855469
+        ],
+        [
+          1095.0634765625,
+          444.70611572265625
+        ],
+        [
+          880.4065551757812,
+          444.70611572265625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          59.80967330932617,
+          280.8349609375
+        ],
+        [
+          462.0635681152344,
+          280.8349609375
+        ],
+        [
+          462.0635681152344,
+          413.72296142578125
+        ],
+        [
+          59.80967330932617,
+          413.72296142578125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          772.6436767578125,
+          248.75843811035156
+        ],
+        [
+          887.1742553710938,
+          248.75843811035156
+        ],
+        [
+          887.1742553710938,
+          385.38922119140625
+        ],
+        [
+          772.6436767578125,
+          385.38922119140625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0024_at_000024.jpg",
+  "imageData": null,
+  "imageHeight": 568,
+  "imageWidth": 1124,
+  "description": ""
+}

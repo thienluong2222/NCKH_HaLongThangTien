@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          588.2189781021898,
+          254.14598540145985
+        ],
+        [
+          718.8759124087591,
+          254.14598540145985
+        ],
+        [
+          718.8759124087591,
+          510.95770263671875
+        ],
+        [
+          588.2189781021898,
+          510.95770263671875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh hang dong",
+      "score": null,
+      "points": [
+        [
+          169.24087591240874,
+          13.27007299270074
+        ],
+        [
+          972.8905109489051,
+          13.27007299270074
+        ],
+        [
+          972.8905109489051,
+          314.72992700729924
+        ],
+        [
+          169.24087591240874,
+          314.72992700729924
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          680.1897810218978,
+          230.05839416058396
+        ],
+        [
+          740.7737226277372,
+          230.05839416058396
+        ],
+        [
+          740.7737226277372,
+          360.71532846715326
+        ],
+        [
+          680.1897810218978,
+          360.71532846715326
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0010_at_000010.jpg",
+  "imageData": null,
+  "imageHeight": 528,
+  "imageWidth": 1156,
+  "description": ""
+}

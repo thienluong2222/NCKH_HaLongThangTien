@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "dan kim",
+      "points": [
+        [
+          395.9419250488281,
+          315.99755859375
+        ],
+        [
+          835.1370239257812,
+          593.6329956054688
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0003_at_000003.jpg",
+  "imageData": null
+}

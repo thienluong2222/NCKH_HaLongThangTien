@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "dan kim",
+      "score": null,
+      "points": [
+        [
+          43.490196078431346,
+          272.8692810457516
+        ],
+        [
+          223.2287581699346,
+          272.8692810457516
+        ],
+        [
+          223.2287581699346,
+          565.0
+        ],
+        [
+          43.490196078431346,
+          565.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "dan tranh",
+      "score": null,
+      "points": [
+        [
+          290.54901960784315,
+          500.9738562091503
+        ],
+        [
+          415.3856209150327,
+          500.9738562091503
+        ],
+        [
+          415.3856209150327,
+          565.0
+        ],
+        [
+          290.54901960784315,
+          565.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0011_at_000011.jpg",
+  "imageData": null,
+  "imageHeight": 566,
+  "imageWidth": 1036,
+  "description": ""
+}

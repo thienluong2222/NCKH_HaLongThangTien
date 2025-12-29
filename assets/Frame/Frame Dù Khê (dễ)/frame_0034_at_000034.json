@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          72.29437255859375,
+          207.4715118408203
+        ],
+        [
+          305.74884033203125,
+          207.4715118408203
+        ],
+        [
+          305.74884033203125,
+          538.8440551757812
+        ],
+        [
+          72.29437255859375,
+          538.8440551757812
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          582.3355704697985,
+          175.0201342281879
+        ],
+        [
+          701.7986577181207,
+          175.0201342281879
+        ],
+        [
+          701.7986577181207,
+          307.9060402684563
+        ],
+        [
+          582.3355704697985,
+          307.9060402684563
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Toc bui cao",
+      "score": null,
+      "points": [
+        [
+          166.22818791946307,
+          204.55033557046977
+        ],
+        [
+          248.10738255033556,
+          204.55033557046977
+        ],
+        [
+          248.10738255033556,
+          270.32214765100673
+        ],
+        [
+          166.22818791946307,
+          270.32214765100673
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao khoac vai",
+      "score": null,
+      "points": [
+        [
+          86.36241610738251,
+          344.1476510067114
+        ],
+        [
+          278.30872483221475,
+          344.1476510067114
+        ],
+        [
+          278.30872483221475,
+          532.738255033557
+        ],
+        [
+          86.36241610738251,
+          532.738255033557
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh cung dien",
+      "score": null,
+      "points": [
+        [
+          36.697986577181176,
+          25.35570469798656
+        ],
+        [
+          1026.6308724832213,
+          25.35570469798656
+        ],
+        [
+          1026.6308724832213,
+          264.95302013422815
+        ],
+        [
+          36.697986577181176,
+          264.95302013422815
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0034_at_000034.jpg",
+  "imageData": null,
+  "imageHeight": 544,
+  "imageWidth": 1064,
+  "description": ""
+}

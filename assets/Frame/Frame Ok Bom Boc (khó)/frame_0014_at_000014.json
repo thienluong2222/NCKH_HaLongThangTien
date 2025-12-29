@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Nha su",
+      "points": [
+        [
+          893.0029296875,
+          0.0
+        ],
+        [
+          1068.0,
+          526.6004638671875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Nha su",
+      "points": [
+        [
+          462.3009033203125,
+          0.0
+        ],
+        [
+          874.811279296875,
+          523.0389404296875
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0014_at_000014.jpg",
+  "imageData": null
+}

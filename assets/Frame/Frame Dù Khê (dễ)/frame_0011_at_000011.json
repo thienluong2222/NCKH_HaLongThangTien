@@ -1,0 +1,243 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          182.51028442382812,
+          45.31468963623047
+        ],
+        [
+          310.6852111816406,
+          45.31468963623047
+        ],
+        [
+          310.6852111816406,
+          474.0
+        ],
+        [
+          182.51028442382812,
+          474.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          565.196379456339,
+          82.05764500098893
+        ],
+        [
+          641.8347461555577,
+          82.05764500098893
+        ],
+        [
+          641.8347461555577,
+          128.04655186134045
+        ],
+        [
+          565.196379456339,
+          128.04655186134045
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam gay",
+      "score": null,
+      "points": [
+        [
+          422.0243902439024,
+          228.76829268292684
+        ],
+        [
+          768.1951219512194,
+          228.76829268292684
+        ],
+        [
+          768.1951219512194,
+          296.45121951219505
+        ],
+        [
+          422.0243902439024,
+          296.45121951219505
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap than duoi",
+      "score": null,
+      "points": [
+        [
+          526.2926829268292,
+          332.42682926829264
+        ],
+        [
+          679.951219512195,
+          332.42682926829264
+        ],
+        [
+          679.951219512195,
+          473.0
+        ],
+        [
+          526.2926829268292,
+          473.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          206.78048780487802,
+          250.10975609756096
+        ],
+        [
+          261.0487804878049,
+          250.10975609756096
+        ],
+        [
+          261.0487804878049,
+          314.7439024390244
+        ],
+        [
+          206.78048780487802,
+          314.7439024390244
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "That lung ban to",
+      "score": null,
+      "points": [
+        [
+          542.1463414634146,
+          239.13414634146338
+        ],
+        [
+          634.8292682926829,
+          239.13414634146338
+        ],
+        [
+          634.8292682926829,
+          286.0853658536586
+        ],
+        [
+          542.1463414634146,
+          286.0853658536586
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Moi do",
+      "score": null,
+      "points": [
+        [
+          266.5365853658537,
+          114.7439024390244
+        ],
+        [
+          279.9512195121951,
+          114.7439024390244
+        ],
+        [
+          279.9512195121951,
+          129.3780487804878
+        ],
+        [
+          266.5365853658537,
+          129.3780487804878
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Long may ke dam",
+      "score": null,
+      "points": [
+        [
+          253.12195121951217,
+          93.40243902439025
+        ],
+        [
+          283.609756097561,
+          93.40243902439025
+        ],
+        [
+          283.609756097561,
+          104.3780487804878
+        ],
+        [
+          253.12195121951217,
+          104.3780487804878
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0011_at_000011.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 966,
+  "description": ""
+}

@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Ghe ngo",
+      "points": [
+        [
+          13.613821029663086,
+          189.31341552734375
+        ],
+        [
+          882.7297973632812,
+          353.8782958984375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0006_at_000006.jpg",
+  "imageData": null
+}

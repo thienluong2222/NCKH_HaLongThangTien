@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trang phuc bieu dien nghe thuat nhan gian",
+      "score": null,
+      "points": [
+        [
+          386.14814814814815,
+          10.629629629629648
+        ],
+        [
+          750.9629629629629,
+          10.629629629629648
+        ],
+        [
+          750.9629629629629,
+          511.0
+        ],
+        [
+          386.14814814814815,
+          511.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          235.53086419753095,
+          43.3456790123457
+        ],
+        [
+          422.5679012345679,
+          43.3456790123457
+        ],
+        [
+          422.5679012345679,
+          311.8641975308642
+        ],
+        [
+          235.53086419753095,
+          311.8641975308642
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc bieu dien nghe thuat nhan gian",
+      "score": null,
+      "points": [
+        [
+          384.14814814814815,
+          8.629629629629648
+        ],
+        [
+          748.9629629629629,
+          8.629629629629648
+        ],
+        [
+          748.9629629629629,
+          509.0
+        ],
+        [
+          384.14814814814815,
+          509.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          846.0,
+          143.962962962963
+        ],
+        [
+          976.8024691358025,
+          143.962962962963
+        ],
+        [
+          976.8024691358025,
+          511.0
+        ],
+        [
+          846.0,
+          511.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc linh",
+      "score": null,
+      "points": [
+        [
+          717.4567901234568,
+          145.75308641975312
+        ],
+        [
+          839.8518518518518,
+          145.75308641975312
+        ],
+        [
+          839.8518518518518,
+          408.16049382716045
+        ],
+        [
+          717.4567901234568,
+          408.16049382716045
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0032_at_000032.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 976,
+  "description": ""
+}

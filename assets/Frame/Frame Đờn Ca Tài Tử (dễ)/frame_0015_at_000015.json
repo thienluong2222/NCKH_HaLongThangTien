@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "dan guitar",
+      "points": [
+        [
+          250.20884704589844,
+          384.556640625
+        ],
+        [
+          403.9013671875,
+          462.2914123535156
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0015_at_000015.jpg",
+  "imageData": null
+}

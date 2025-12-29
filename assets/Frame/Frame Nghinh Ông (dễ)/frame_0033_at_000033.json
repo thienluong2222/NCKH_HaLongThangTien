@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trang phuc bieu dien nghe thuat nhan gian",
+      "score": null,
+      "points": [
+        [
+          699.2115953233506,
+          63.15535693698462
+        ],
+        [
+          917.6954210069443,
+          63.15535693698462
+        ],
+        [
+          917.6954210069443,
+          511.4837985568578
+        ],
+        [
+          699.2115953233506,
+          511.4837985568578
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          397.25925925925924,
+          74.82716049382718
+        ],
+        [
+          542.2684936523438,
+          74.82716049382718
+        ],
+        [
+          542.2684936523438,
+          496.2925720214844
+        ],
+        [
+          397.25925925925924,
+          496.2925720214844
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Trang phuc bieu dien nghe thuat nhan gian",
+      "score": null,
+      "points": [
+        [
+          493.5078916196469,
+          63.62449273945367
+        ],
+        [
+          757.0,
+          63.62449273945367
+        ],
+        [
+          757.0,
+          511.0
+        ],
+        [
+          493.5078916196469,
+          511.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0033_at_000033.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 976,
+  "description": ""
+}

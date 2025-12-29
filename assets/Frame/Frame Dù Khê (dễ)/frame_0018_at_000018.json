@@ -1,0 +1,359 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "kie_linking": [],
+      "label": "Canh cung dien",
+      "score": null,
+      "points": [
+        [
+          11.333333333333332,
+          10.628275553385436
+        ],
+        [
+          790.156209309896,
+          10.628275553385436
+        ],
+        [
+          790.156209309896,
+          356.3333333333333
+        ],
+        [
+          11.333333333333332,
+          356.3333333333333
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "kie_linking": [],
+      "label": "Canh cung dien",
+      "score": null,
+      "points": [
+        [
+          531.3333333333333,
+          51.0
+        ],
+        [
+          1003.7538859049479,
+          51.0
+        ],
+        [
+          1003.7538859049479,
+          397.2268371582031
+        ],
+        [
+          531.3333333333333,
+          397.2268371582031
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {}
+    },
+    {
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          255.99999999999997,
+          347.0
+        ],
+        [
+          284.0,
+          347.0
+        ],
+        [
+          284.0,
+          407.6666666666667
+        ],
+        [
+          255.99999999999997,
+          407.6666666666667
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam vu khi",
+      "score": null,
+      "points": [
+        [
+          665.3333333333333,
+          359.6666666666667
+        ],
+        [
+          717.3333333333333,
+          359.6666666666667
+        ],
+        [
+          717.3333333333333,
+          400.3333333333333
+        ],
+        [
+          665.3333333333333,
+          400.3333333333333
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          22.0,
+          415.6666666666667
+        ],
+        [
+          98.0,
+          415.6666666666667
+        ],
+        [
+          98.0,
+          487.0
+        ],
+        [
+          22.0,
+          487.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          108.66666666666667,
+          400.3333333333333
+        ],
+        [
+          179.33333333333331,
+          400.3333333333333
+        ],
+        [
+          179.33333333333331,
+          485.0
+        ],
+        [
+          108.66666666666667,
+          485.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          174.0,
+          412.3333333333333
+        ],
+        [
+          231.33333333333331,
+          412.3333333333333
+        ],
+        [
+          231.33333333333331,
+          487.0
+        ],
+        [
+          174.0,
+          487.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          220.66666666666666,
+          407.6666666666667
+        ],
+        [
+          276.6666666666667,
+          407.6666666666667
+        ],
+        [
+          276.6666666666667,
+          485.66666666666663
+        ],
+        [
+          220.66666666666666,
+          485.66666666666663
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          714.6666666666666,
+          405.6666666666667
+        ],
+        [
+          794.6666666666666,
+          405.6666666666667
+        ],
+        [
+          794.6666666666666,
+          483.66666666666663
+        ],
+        [
+          714.6666666666666,
+          483.66666666666663
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          819.3333333333333,
+          402.3333333333333
+        ],
+        [
+          908.6666666666666,
+          402.3333333333333
+        ],
+        [
+          908.6666666666666,
+          487.0
+        ],
+        [
+          819.3333333333333,
+          487.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          894.0,
+          403.0
+        ],
+        [
+          983.3333333333333,
+          403.0
+        ],
+        [
+          983.3333333333333,
+          485.66666666666663
+        ],
+        [
+          894.0,
+          485.66666666666663
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          968.6666666666666,
+          411.6666666666667
+        ],
+        [
+          1054.6666666666667,
+          411.6666666666667
+        ],
+        [
+          1054.6666666666667,
+          485.0
+        ],
+        [
+          968.6666666666666,
+          485.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0018_at_000018.jpg",
+  "imageData": null,
+  "imageHeight": 488,
+  "imageWidth": 1056,
+  "description": ""
+}

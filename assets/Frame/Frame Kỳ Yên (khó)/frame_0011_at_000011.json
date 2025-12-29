@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Mua Lan",
+      "score": null,
+      "points": [
+        [
+          624.985401459854,
+          235.8832116788321
+        ],
+        [
+          709.6569343065693,
+          235.8832116788321
+        ],
+        [
+          709.6569343065693,
+          330.04379562043795
+        ],
+        [
+          624.985401459854,
+          330.04379562043795
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0011_at_000011.jpg",
+  "imageData": null,
+  "imageHeight": 636,
+  "imageWidth": 1158,
+  "description": ""
+}

@@ -1,0 +1,69 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "dan guitar",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          320.35616438356163
+        ],
+        [
+          428.5890410958905,
+          320.35616438356163
+        ],
+        [
+          428.5890410958905,
+          409.3972602739726
+        ],
+        [
+          0.0,
+          409.3972602739726
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "dan kim",
+      "score": null,
+      "points": [
+        [
+          233.3835616438356,
+          160.0821917808219
+        ],
+        [
+          437.0,
+          160.0821917808219
+        ],
+        [
+          437.0,
+          316.9315068493151
+        ],
+        [
+          233.3835616438356,
+          316.9315068493151
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0013_at_000013.jpg",
+  "imageData": null,
+  "imageHeight": 614,
+  "imageWidth": 438,
+  "description": ""
+}

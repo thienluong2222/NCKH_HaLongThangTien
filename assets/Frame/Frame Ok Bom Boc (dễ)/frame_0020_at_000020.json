@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Den hoa dang",
+      "points": [
+        [
+          787.9688720703125,
+          450.1934814453125
+        ],
+        [
+          846.712646484375,
+          491.16461181640625
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "Den nuoc",
+      "points": [
+        [
+          320.4962463378906,
+          7.230523586273193
+        ],
+        [
+          717.794189453125,
+          495.448974609375
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0020_at_000020.jpg",
+  "imageData": null
+}

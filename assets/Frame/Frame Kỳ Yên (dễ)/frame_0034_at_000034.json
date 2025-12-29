@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "shapes": [
+    {
+      "label": "Cong Dinh",
+      "points": [
+        [
+          353.16290283203125,
+          0.0
+        ],
+        [
+          1033.4781494140625,
+          394.1725769042969
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "frame_0034_at_000034.jpg",
+  "imageData": null
+}

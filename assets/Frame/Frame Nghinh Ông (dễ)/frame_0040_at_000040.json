@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Trong",
+      "score": null,
+      "points": [
+        [
+          324.41975308641975,
+          4.456790123456798
+        ],
+        [
+          433.0617283950616,
+          4.456790123456798
+        ],
+        [
+          433.0617283950616,
+          143.34567901234573
+        ],
+        [
+          324.41975308641975,
+          143.34567901234573
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          424.41975308641975,
+          4.4567901234568055
+        ],
+        [
+          578.7407407407408,
+          4.4567901234568055
+        ],
+        [
+          578.7407407407408,
+          298.9012345679012
+        ],
+        [
+          424.41975308641975,
+          298.9012345679012
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Ao dai truyen thong",
+      "score": null,
+      "points": [
+        [
+          265.0,
+          0.0
+        ],
+        [
+          394.641975308642,
+          0.0
+        ],
+        [
+          394.641975308642,
+          293.99999999999994
+        ],
+        [
+          265.0,
+          293.99999999999994
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0040_at_000040.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 976,
+  "description": ""
+}

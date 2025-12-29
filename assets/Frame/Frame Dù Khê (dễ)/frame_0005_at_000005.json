@@ -1,0 +1,214 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Canh cung dien",
+      "score": null,
+      "points": [
+        [
+          229.30718994140625,
+          58.31817626953125
+        ],
+        [
+          1920.0,
+          58.31817626953125
+        ],
+        [
+          1920.0,
+          976.6844482421875
+        ],
+        [
+          229.30718994140625,
+          976.6844482421875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh cung dien",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          22.5113525390625
+        ],
+        [
+          1646.814697265625,
+          22.5113525390625
+        ],
+        [
+          1646.814697265625,
+          903.421875
+        ],
+        [
+          0.0,
+          903.421875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh cung dien",
+      "score": null,
+      "points": [
+        [
+          3.60791015625,
+          35.79547119140625
+        ],
+        [
+          1055.95068359375,
+          35.79547119140625
+        ],
+        [
+          1055.95068359375,
+          907.0400390625
+        ],
+        [
+          3.60791015625,
+          907.0400390625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Khoac ao ren",
+      "score": null,
+      "points": [
+        [
+          1063.6585365853657,
+          527.4146341463415
+        ],
+        [
+          1339.2682926829268,
+          527.4146341463415
+        ],
+        [
+          1339.2682926829268,
+          970.0975609756098
+        ],
+        [
+          1063.6585365853657,
+          970.0975609756098
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          1057.560975609756,
+          428.6341463414634
+        ],
+        [
+          1150.2439024390244,
+          428.6341463414634
+        ],
+        [
+          1150.2439024390244,
+          478.6341463414634
+        ],
+        [
+          1057.560975609756,
+          478.6341463414634
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi vuong mien",
+      "score": null,
+      "points": [
+        [
+          1010.0,
+          440.8292682926829
+        ],
+        [
+          1068.5365853658536,
+          440.8292682926829
+        ],
+        [
+          1068.5365853658536,
+          489.60975609756093
+        ],
+        [
+          1010.0,
+          489.60975609756093
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Khoac ao ren",
+      "score": null,
+      "points": [
+        [
+          797.8048780487804,
+          553.0243902439024
+        ],
+        [
+          1024.6341463414633,
+          553.0243902439024
+        ],
+        [
+          1024.6341463414633,
+          873.7560975609756
+        ],
+        [
+          797.8048780487804,
+          873.7560975609756
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0005_at_000005.jpg",
+  "imageData": null,
+  "imageHeight": 1078,
+  "imageWidth": 1920,
+  "description": ""
+}

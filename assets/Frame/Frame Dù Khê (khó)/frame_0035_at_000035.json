@@ -1,0 +1,156 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          279.84588623046875,
+          256.3385314941406
+        ],
+        [
+          355.2205810546875,
+          256.3385314941406
+        ],
+        [
+          355.2205810546875,
+          501.60565185546875
+        ],
+        [
+          279.84588623046875,
+          501.60565185546875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          437.09375,
+          330.609375
+        ],
+        [
+          532.40625,
+          330.609375
+        ],
+        [
+          532.40625,
+          477.484375
+        ],
+        [
+          437.09375,
+          477.484375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          544.90625,
+          328.265625
+        ],
+        [
+          632.40625,
+          328.265625
+        ],
+        [
+          632.40625,
+          470.453125
+        ],
+        [
+          544.90625,
+          470.453125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          608.96875,
+          322.015625
+        ],
+        [
+          694.90625,
+          322.015625
+        ],
+        [
+          694.90625,
+          473.578125
+        ],
+        [
+          608.96875,
+          473.578125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Canh thien nhien trong rung",
+      "score": null,
+      "points": [
+        [
+          994.125,
+          83.734375
+        ],
+        [
+          1212.09375,
+          83.734375
+        ],
+        [
+          1212.09375,
+          354.828125
+        ],
+        [
+          994.125,
+          354.828125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0035_at_000035.jpg",
+  "imageData": null,
+  "imageHeight": 662,
+  "imageWidth": 1232,
+  "description": ""
+}

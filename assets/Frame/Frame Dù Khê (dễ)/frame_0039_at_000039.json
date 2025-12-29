@@ -1,0 +1,127 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          436.1172790527344,
+          138.8240509033203
+        ],
+        [
+          717.32275390625,
+          138.8240509033203
+        ],
+        [
+          717.32275390625,
+          535.23876953125
+        ],
+        [
+          436.1172790527344,
+          535.23876953125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Tay ao dinh hat",
+      "score": null,
+      "points": [
+        [
+          508.0724792480469,
+          292.56146240234375
+        ],
+        [
+          600.2026977539062,
+          292.56146240234375
+        ],
+        [
+          600.2026977539062,
+          369.41583251953125
+        ],
+        [
+          508.0724792480469,
+          369.41583251953125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          469.18096923828125,
+          136.80982971191406
+        ],
+        [
+          595.4773559570312,
+          136.80982971191406
+        ],
+        [
+          595.4773559570312,
+          220.92340087890625
+        ],
+        [
+          469.18096923828125,
+          220.92340087890625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Long may ke dam",
+      "score": null,
+      "points": [
+        [
+          496.3921568627451,
+          206.88888888888889
+        ],
+        [
+          563.7124183006536,
+          206.88888888888889
+        ],
+        [
+          563.7124183006536,
+          243.49019607843138
+        ],
+        [
+          496.3921568627451,
+          243.49019607843138
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0039_at_000039.jpg",
+  "imageData": null,
+  "imageHeight": 536,
+  "imageWidth": 1032,
+  "description": ""
+}

@@ -1,0 +1,185 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          165.8500213623047,
+          0.0
+        ],
+        [
+          711.4199829101562,
+          0.0
+        ],
+        [
+          711.4199829101562,
+          474.0
+        ],
+        [
+          165.8500213623047,
+          474.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Giap nguc dinh hat",
+      "score": null,
+      "points": [
+        [
+          297.22561050042873,
+          170.5758038032344
+        ],
+        [
+          521.6693666039445,
+          170.5758038032344
+        ],
+        [
+          521.6693666039445,
+          386.41172604444534
+        ],
+        [
+          297.22561050042873,
+          386.41172604444534
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dau doi khan dong",
+      "score": null,
+      "points": [
+        [
+          347.88421630859375,
+          0.0
+        ],
+        [
+          525.8948364257812,
+          0.0
+        ],
+        [
+          525.8948364257812,
+          84.09142303466797
+        ],
+        [
+          347.88421630859375,
+          84.09142303466797
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Cam gay",
+      "score": null,
+      "points": [
+        [
+          0.0,
+          306.20731707317066
+        ],
+        [
+          942.1463414634146,
+          306.20731707317066
+        ],
+        [
+          942.1463414634146,
+          450.71951219512187
+        ],
+        [
+          0.0,
+          450.71951219512187
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Long may ke dam",
+      "score": null,
+      "points": [
+        [
+          352.5121951219512,
+          61.695121951219505
+        ],
+        [
+          425.0731707317073,
+          61.695121951219505
+        ],
+        [
+          425.0731707317073,
+          98.28048780487805
+        ],
+        [
+          352.5121951219512,
+          98.28048780487805
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Moi do",
+      "score": null,
+      "points": [
+        [
+          366.5365853658536,
+          132.42682926829266
+        ],
+        [
+          413.4878048780488,
+          132.42682926829266
+        ],
+        [
+          413.4878048780488,
+          164.74390243902437
+        ],
+        [
+          366.5365853658536,
+          164.74390243902437
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0015_at_000015.jpg",
+  "imageData": null,
+  "imageHeight": 474,
+  "imageWidth": 966,
+  "description": ""
+}

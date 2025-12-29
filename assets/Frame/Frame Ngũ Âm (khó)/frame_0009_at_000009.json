@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          155.98373413085938,
+          394.88580322265625
+        ],
+        [
+          440.7164611816406,
+          394.88580322265625
+        ],
+        [
+          440.7164611816406,
+          521.8197021484375
+        ],
+        [
+          155.98373413085938,
+          521.8197021484375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan sat Ro-niet-dek",
+      "score": null,
+      "points": [
+        [
+          46.385108947753906,
+          344.2077941894531
+        ],
+        [
+          153.0070343017578,
+          344.2077941894531
+        ],
+        [
+          153.0070343017578,
+          497.5133056640625
+        ],
+        [
+          46.385108947753906,
+          497.5133056640625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          8.784542083740234,
+          265.1468505859375
+        ],
+        [
+          89.51335906982422,
+          265.1468505859375
+        ],
+        [
+          89.51335906982422,
+          353.6344299316406
+        ],
+        [
+          8.784542083740234,
+          353.6344299316406
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0009_at_000009.jpg",
+  "imageData": null,
+  "imageHeight": 634,
+  "imageWidth": 442,
+  "description": ""
+}

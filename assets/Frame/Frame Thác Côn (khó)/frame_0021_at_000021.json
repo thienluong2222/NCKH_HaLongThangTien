@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          417.6842105263158,
+          278.9078947368421
+        ],
+        [
+          442.0263157894737,
+          278.9078947368421
+        ],
+        [
+          442.0263157894737,
+          370.35526315789474
+        ],
+        [
+          417.6842105263158,
+          370.35526315789474
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          445.3157894736842,
+          290.09210526315786
+        ],
+        [
+          468.3421052631579,
+          290.09210526315786
+        ],
+        [
+          468.3421052631579,
+          375.61842105263156
+        ],
+        [
+          445.3157894736842,
+          375.61842105263156
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Binh bong dua",
+      "score": null,
+      "points": [
+        [
+          474.92105263157896,
+          302.59210526315786
+        ],
+        [
+          505.1842105263158,
+          302.59210526315786
+        ],
+        [
+          505.1842105263158,
+          371.0131578947368
+        ],
+        [
+          474.92105263157896,
+          371.0131578947368
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0021_at_000021.jpg",
+  "imageData": null,
+  "imageHeight": 544,
+  "imageWidth": 1038,
+  "description": ""
+}

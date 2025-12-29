@@ -1,0 +1,40 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi bieu dien",
+      "score": null,
+      "points": [
+        [
+          153.07092198581557,
+          205.4822695035461
+        ],
+        [
+          271.5106382978723,
+          205.4822695035461
+        ],
+        [
+          271.5106382978723,
+          577.113475177305
+        ],
+        [
+          153.07092198581557,
+          577.113475177305
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0042_at_000042.jpg",
+  "imageData": null,
+  "imageHeight": 606,
+  "imageWidth": 1126,
+  "description": ""
+}

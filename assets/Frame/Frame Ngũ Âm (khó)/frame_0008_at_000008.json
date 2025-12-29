@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          158.8383026123047,
+          394.834228515625
+        ],
+        [
+          438.1178283691406,
+          394.834228515625
+        ],
+        [
+          438.1178283691406,
+          523.7313232421875
+        ],
+        [
+          158.8383026123047,
+          523.7313232421875
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan sat Ro-niet-dek",
+      "score": null,
+      "points": [
+        [
+          51.794044494628906,
+          345.4485778808594
+        ],
+        [
+          160.1436004638672,
+          345.4485778808594
+        ],
+        [
+          160.1436004638672,
+          496.8593444824219
+        ],
+        [
+          51.794044494628906,
+          496.8593444824219
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          15.026041984558105,
+          254.79603576660156
+        ],
+        [
+          95.1069564819336,
+          254.79603576660156
+        ],
+        [
+          95.1069564819336,
+          352.1685485839844
+        ],
+        [
+          15.026041984558105,
+          352.1685485839844
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0008_at_000008.jpg",
+  "imageData": null,
+  "imageHeight": 634,
+  "imageWidth": 442,
+  "description": ""
+}

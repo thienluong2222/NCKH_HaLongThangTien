@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Dan cong Coung-tuoch Coung-thom",
+      "score": null,
+      "points": [
+        [
+          668.034912109375,
+          304.513427734375
+        ],
+        [
+          1024.513671875,
+          304.513427734375
+        ],
+        [
+          1024.513671875,
+          531.8468017578125
+        ],
+        [
+          668.034912109375,
+          531.8468017578125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          177.97158813476562,
+          288.73748779296875
+        ],
+        [
+          290.9609375,
+          288.73748779296875
+        ],
+        [
+          290.9609375,
+          428.62042236328125
+        ],
+        [
+          177.97158813476562,
+          428.62042236328125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Dan thuyen Ro niet ek",
+      "score": null,
+      "points": [
+        [
+          553.8270263671875,
+          315.5384521484375
+        ],
+        [
+          684.7103271484375,
+          315.5384521484375
+        ],
+        [
+          684.7103271484375,
+          443.70111083984375
+        ],
+        [
+          553.8270263671875,
+          443.70111083984375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0015_at_000015.jpg",
+  "imageData": null,
+  "imageHeight": 540,
+  "imageWidth": 1044,
+  "description": ""
+}

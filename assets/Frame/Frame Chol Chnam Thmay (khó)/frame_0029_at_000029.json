@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          687.0967741935484,
+          396.0645161290323
+        ],
+        [
+          836.1290322580645,
+          396.0645161290323
+        ],
+        [
+          836.1290322580645,
+          543.1612903225806
+        ],
+        [
+          687.0967741935484,
+          543.1612903225806
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          355.48387096774195,
+          343.80645161290323
+        ],
+        [
+          450.96774193548384,
+          343.80645161290323
+        ],
+        [
+          450.96774193548384,
+          445.741935483871
+        ],
+        [
+          355.48387096774195,
+          445.741935483871
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "Nguoi tham gia te nuoc",
+      "score": null,
+      "points": [
+        [
+          500.0,
+          382.5161290322581
+        ],
+        [
+          619.3548387096774,
+          382.5161290322581
+        ],
+        [
+          619.3548387096774,
+          507.6774193548387
+        ],
+        [
+          500.0,
+          507.6774193548387
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0029_at_000029.jpg",
+  "imageData": null,
+  "imageHeight": 576,
+  "imageWidth": 1000,
+  "description": ""
+}

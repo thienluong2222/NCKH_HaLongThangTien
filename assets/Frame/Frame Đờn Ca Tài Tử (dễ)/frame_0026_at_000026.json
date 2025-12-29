@@ -1,0 +1,98 @@
+{
+  "version": "3.3.3",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "dan tranh",
+      "score": null,
+      "points": [
+        [
+          137.90647482014393,
+          321.9856115107914
+        ],
+        [
+          676.0359712230216,
+          321.9856115107914
+        ],
+        [
+          676.0359712230216,
+          457.2374100719424
+        ],
+        [
+          137.90647482014393,
+          457.2374100719424
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "dan guitar",
+      "score": null,
+      "points": [
+        [
+          470.2805755395683,
+          145.726618705036
+        ],
+        [
+          783.2302158273382,
+          145.726618705036
+        ],
+        [
+          783.2302158273382,
+          282.41726618705036
+        ],
+        [
+          470.2805755395683,
+          282.41726618705036
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    },
+    {
+      "label": "dan co",
+      "score": null,
+      "points": [
+        [
+          798.3381294964029,
+          166.58992805755398
+        ],
+        [
+          1123.5179856115108,
+          166.58992805755398
+        ],
+        [
+          1123.5179856115108,
+          245.00719424460436
+        ],
+        [
+          798.3381294964029,
+          245.00719424460436
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "difficult": false,
+      "shape_type": "rectangle",
+      "flags": {},
+      "attributes": {},
+      "kie_linking": []
+    }
+  ],
+  "imagePath": "frame_0026_at_000026.jpg",
+  "imageData": null,
+  "imageHeight": 508,
+  "imageWidth": 1142,
+  "description": ""
+}
