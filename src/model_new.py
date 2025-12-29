@@ -901,7 +901,7 @@ class BayesianFestivalClassifier:
         max_prob = max(festival_probs.values())
         candidates = []
         
-        print(f"\n📊 BẢNG XẾP HẠNG BAN ĐẦU:")
+        print(f"\nBẢNG XẾP HẠNG BAN ĐẦU:")
         for f, p in sorted(festival_probs.items(), key=lambda x: x[1], reverse=True):
             print(f"   - {f}: {p:.2%} (Logit: {festival_logits[f]:.2f})")
 
