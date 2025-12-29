@@ -1,2 +1,4 @@
 .env
 .venv
+assets/Frame
+__pycache__

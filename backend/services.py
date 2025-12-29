@@ -882,6 +882,7 @@ class BayesianFestivalClassifier:
         by_subclass, by_frame = self._index_detections(detections)
         festival_logits = {}
         festival_unsatisfied = defaultdict(list)
+        festival_satisfied = defaultdict(list)  # NEW: Lưu cả ràng buộc đã thỏa mãn
 
         for festival, rules in CONSTRAINTS_DB.items():
             current_logit = 0.0
@@ -890,10 +891,57 @@ class BayesianFestivalClassifier:
                 weight = rule[3]
                 if is_satisfied:
                     current_logit += weight
+                    festival_satisfied[festival].append(rule)  # NEW
                 else:
                     festival_unsatisfied[festival].append(rule)
             festival_logits[festival] = current_logit
-        return festival_logits, festival_unsatisfied
+        return festival_logits, festival_unsatisfied, festival_satisfied  # NEW: Trả về thêm satisfied
+    
+    def get_top_3_with_constraints(self, festival_logits, festival_satisfied, festival_unsatisfied):
+        """
+        Lấy top 3 lễ hội có confidence cao nhất kèm theo chi tiết ràng buộc.
+        
+        Returns:
+            List[dict]: Top 3 lễ hội với satisfied/unsatisfied constraints
+        """
+        festival_probs = {f: sigmoid(l) for f, l in festival_logits.items()}
+        
+        # Sắp xếp theo confidence giảm dần
+        sorted_festivals = sorted(festival_probs.items(), key=lambda x: x[1], reverse=True)[:3]
+        
+        result = []
+        for festival, confidence in sorted_festivals:
+            # Chuyển đổi rules thành format dễ đọc
+            satisfied_rules = []
+            for rule in festival_satisfied.get(festival, []):
+                satisfied_rules.append({
+                    "type": rule[0],
+                    "params": rule[1],
+                    "is_hard": rule[2],
+                    "weight": rule[3],
+                    "threshold": rule[4],
+                    "satisfied": True
+                })
+            
+            unsatisfied_rules = []
+            for rule in festival_unsatisfied.get(festival, []):
+                unsatisfied_rules.append({
+                    "type": rule[0],
+                    "params": rule[1],
+                    "is_hard": rule[2],
+                    "weight": rule[3],
+                    "threshold": rule[4],
+                    "satisfied": False
+                })
+            
+            result.append({
+                "festival": festival,
+                "confidence": round(confidence, 4),
+                "satisfied": satisfied_rules,
+                "unsatisfied": unsatisfied_rules
+            })
+        
+        return result
 
     def select_candidates(self, festival_logits):
         festival_probs = {f: sigmoid(l) for f, l in festival_logits.items()}
