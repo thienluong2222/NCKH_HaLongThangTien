@@ -1,0 +1,127 @@
+<div class="upload-container heritage-card fade-in-up">
+  <!-- Section Header -->
+  <div class="section-header">
+    <div class="header-icon-wrapper">
+      <mat-icon class="header-icon">cloud_upload</mat-icon>
+    </div>
+    <div class="header-text">
+      <h3>Tải lên phương tiện</h3>
+      <p>Kéo thả hình ảnh hoặc video để phân tích lễ hội</p>
+    </div>
+  </div>
+  
+  <div class="upload-content-wrapper">
+    <!-- Upload Zones Container -->
+    <div class="upload-zones">
+      <!-- Image Upload Zone -->
+      <div 
+        class="upload-zone"
+        [class.dragover]="isDraggingImage()"
+        [class.has-files]="previews().length > 0"
+        (dragover)="onDragOver($event, 'image')"
+        (dragleave)="onDragLeave('image')"
+        (drop)="onDrop($event, 'image')"
+        (click)="imageInput.click()">
+        
+        <input 
+          #imageInput 
+          type="file" 
+          accept="image/*" 
+          multiple 
+          hidden
+          (change)="onFileSelect($event, 'image')">
+        
+        <div class="upload-zone-content">
+          <div class="zone-icon">
+            <mat-icon>photo_library</mat-icon>
+            <div class="icon-ring"></div>
+          </div>
+          <span class="zone-title">Hình ảnh</span>
+          <span class="zone-subtitle">Kéo thả hoặc nhấp để chọn</span>
+          <div class="zone-formats">
+            <span class="format-tag">JPG</span>
+            <span class="format-tag">PNG</span>
+            <span class="format-tag">WEBP</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Video Upload Zone -->
+      <div 
+        class="upload-zone video-zone"
+        [class.dragover]="isDraggingVideo()"
+        (dragover)="onDragOver($event, 'video')"
+        (dragleave)="onDragLeave('video')"
+        (drop)="onDrop($event, 'video')"
+        (click)="videoInput.click()">
+        
+        <input 
+          #videoInput 
+          type="file" 
+          accept="video/*" 
+          hidden
+          (change)="onFileSelect($event, 'video')">
+        
+        <div class="upload-zone-content">
+          <div class="zone-icon video">
+            <mat-icon>videocam</mat-icon>
+            <div class="icon-ring"></div>
+          </div>
+          <span class="zone-title">Video</span>
+          <span class="zone-subtitle">Kéo thả hoặc nhấp để chọn</span>
+          <div class="zone-formats">
+            <span class="format-tag">MP4</span>
+            <span class="format-tag">AVI</span>
+            <span class="format-tag">MOV</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Preview Section -->
+    @if (previews().length > 0) {
+      <div class="preview-section">
+        <div class="preview-header">
+          <div class="preview-title">
+            <mat-icon>folder_open</mat-icon>
+            <h4>Tệp đã chọn ({{ previews().length }})</h4>
+          </div>
+          <button mat-button class="clear-btn" (click)="clearAll()">
+            <mat-icon>delete_sweep</mat-icon>
+            Xóa tất cả
+          </button>
+        </div>
+        
+        <div class="preview-grid">
+          @for (preview of previews(); track preview.url) {
+            <div class="preview-item" [@fadeInScale]>
+              <div class="preview-media">
+                @if (preview.type === 'image') {
+                  <img [src]="preview.url" [alt]="preview.file.name">
+                } @else {
+                  <video [src]="preview.url"></video>
+                  <div class="video-badge">
+                    <mat-icon>play_circle</mat-icon>
+                  </div>
+                }
+              </div>
+              <div class="preview-info">
+                <span class="file-name">{{ preview.file.name | slice:0:20 }}...</span>
+                <span class="file-size">{{ formatSize(preview.file.size) }}</span>
+              </div>
+              <button mat-icon-button class="remove-btn" (click)="removeFile(preview)">
+                <mat-icon>close</mat-icon>
+              </button>
+            </div>
+          }
+        </div>
+        
+        <button class="analyze-btn btn-heritage primary" (click)="startAnalysis()">
+          <mat-icon>auto_awesome</mat-icon>
+          <span>Bắt đầu phân tích AI</span>
+          <div class="btn-shine"></div>
+        </button>
+      </div>
+    }
+  </div>
+</div>

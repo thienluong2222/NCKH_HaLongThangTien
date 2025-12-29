@@ -1,0 +1,167 @@
+<!-- Loading State -->
+@if (festivalService.isLoading()) {
+  <div class="results-container heritage-card loading-state fade-in-up">
+    <div class="loading-content">
+      <div class="loading-spinner">
+        <div class="spinner-ring"></div>
+        <div class="spinner-icon">🔍</div>
+      </div>
+      <h3>Đang phân tích...</h3>
+      <p>AI đang nhận dạng các yếu tố lễ hội trong phương tiện của bạn</p>
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+}
+
+<!-- Results State -->
+@if (festivalService.hasResults() && !festivalService.isLoading()) {
+  <div class="results-container winner-state" [@cardState]="'visible'">
+    <!-- Decorative Elements -->
+    <div class="winner-decoration">
+      <div class="lantern lantern-1">🏮</div>
+      <div class="lantern lantern-2">🏮</div>
+      <div class="sparkle sparkle-1">✨</div>
+      <div class="sparkle sparkle-2">✨</div>
+      <div class="sparkle sparkle-3">✨</div>
+    </div>
+    
+    <div class="winner-content">
+      <!-- Trophy Badge -->
+      <div class="trophy-badge">
+        <span class="trophy-icon">🏆</span>
+        <span class="trophy-label">Top 3 kết quả phân tích</span>
+      </div>
+      
+      <!-- Top 3 Results -->
+      <div class="top-three-results">
+        @for (result of festivalService.topThree(); track result.name; let i = $index) {
+          <div class="result-item" [class.winner]="i === 0" [class.second]="i === 1" [class.third]="i === 2">
+            <div class="rank-badge">
+              @if (i === 0) {
+                <span class="rank-icon">🥇</span>
+              } @else if (i === 1) {
+                <span class="rank-icon">🥈</span>
+              } @else {
+                <span class="rank-icon">🥉</span>
+              }
+            </div>
+            
+            <div class="result-info">
+              <h3 class="result-name">{{ result.name }}</h3>
+              <p class="result-description">{{ result.description }}</p>
+            </div>
+            
+            <div class="result-confidence">
+              <span class="confidence-value" [style.color]="result.color || 'var(--heritage-gold)'">
+                {{ result.confidence }}%
+              </span>
+              <div class="confidence-bar-container">
+                <div 
+                  class="confidence-bar" 
+                  [style.width.%]="result.confidence"
+                  [style.background]="result.color || 'var(--heritage-gold)'">
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+      
+      <!-- Winner Highlight -->
+      @if (festivalService.winner(); as winner) {
+        <div class="winner-highlight">
+          <div class="highlight-header">
+            <mat-icon>emoji_events</mat-icon>
+            <span>Kết quả chính xác nhất</span>
+          </div>
+          
+          <div class="highlight-content">
+            <div class="highlight-ring">
+              <svg viewBox="0 0 100 100">
+                <defs>
+                  <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#D4A853"/>
+                    <stop offset="50%" stop-color="#CD7F32"/>
+                    <stop offset="100%" stop-color="#8B2323"/>
+                  </linearGradient>
+                </defs>
+                <circle 
+                  class="ring-bg" 
+                  cx="50" cy="50" r="42" 
+                  fill="none" 
+                  stroke="rgba(212, 168, 83, 0.15)" 
+                  stroke-width="8"/>
+                <circle 
+                  class="ring-progress" 
+                  cx="50" cy="50" r="42" 
+                  fill="none" 
+                  stroke="url(#ringGradient)" 
+                  stroke-width="8"
+                  stroke-linecap="round"
+                  [style.stroke-dasharray]="getCircumference(42)"
+                  [style.stroke-dashoffset]="getOffset(42)"
+                  transform="rotate(-90 50 50)"/>
+              </svg>
+              <div class="ring-value">
+                <span class="value">{{ winner.confidence }}</span>
+                <span class="percent">%</span>
+              </div>
+            </div>
+            
+            <div class="highlight-info">
+              <h2>{{ winner.name }}</h2>
+              <p>{{ winner.description }}</p>
+              <div class="cultural-badge">
+                <mat-icon>verified</mat-icon>
+                <span>Di sản Văn hóa Phi vật thể</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+      
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button class="btn-heritage primary">
+          <mat-icon>share</mat-icon>
+          <span>Chia sẻ kết quả</span>
+        </button>
+        <button class="btn-heritage secondary" (click)="festivalService.reset()">
+          <mat-icon>refresh</mat-icon>
+          <span>Phân tích mới</span>
+        </button>
+      </div>
+    </div>
+  </div>
+}
+
+<!-- Empty State -->
+@if (!festivalService.hasResults() && !festivalService.isLoading()) {
+  <div class="results-container heritage-card empty-state fade-in-up">
+    <div class="empty-content">
+      <div class="empty-illustration">
+        <div class="illustration-bg"></div>
+        <span class="illustration-icon">🎭</span>
+        <div class="illustration-ring"></div>
+      </div>
+      <h3>Sẵn sàng khám phá</h3>
+      <p>Tải lên hình ảnh hoặc video để nhận dạng lễ hội văn hóa Việt Nam</p>
+      <div class="empty-features">
+        <div class="feature">
+          <mat-icon>photo_camera</mat-icon>
+          <span>Hình ảnh</span>
+        </div>
+        <div class="feature">
+          <mat-icon>videocam</mat-icon>
+          <span>Video</span>
+        </div>
+        <div class="feature">
+          <mat-icon>auto_awesome</mat-icon>
+          <span>AI Analysis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+}

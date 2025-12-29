@@ -1,0 +1,135 @@
+<div class="heritage-explanation">
+  <!-- Header Section -->
+  <div class="explanation-header">
+    <div class="header-content">
+      <div class="header-icon">
+        <span class="icon-inner">📊</span>
+        <div class="icon-glow"></div>
+      </div>
+      <div class="header-text">
+        <h3>Phân tích Chi tiết</h3>
+        <p>Khám phá logic AI đằng sau dự đoán</p>
+      </div>
+    </div>
+    <div class="header-decoration">
+      <span class="pattern">✧</span>
+      <span class="pattern">◇</span>
+      <span class="pattern">✧</span>
+    </div>
+  </div>
+
+  <!-- Tabs Content -->
+  <div class="tabs-container">
+    <mat-tab-group animationDuration="300ms" class="heritage-tabs">
+      <!-- Chart Tab -->
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <div class="tab-label">
+            <mat-icon>bar_chart</mat-icon>
+            <span>Biểu đồ xác suất</span>
+          </div>
+        </ng-template>
+        
+        <div class="tab-content">
+          <div class="chart-wrapper">
+            <div #chartContainer id="chart" class="chart-container"></div>
+          </div>
+        </div>
+      </mat-tab>
+      
+      <!-- Visual Rules Tab -->
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <div class="tab-label">
+            <mat-icon>visibility</mat-icon>
+            <span>Quy tắc hình ảnh</span>
+          </div>
+        </ng-template>
+        
+        <div class="tab-content">
+          <div class="rules-section">
+            <div class="section-header">
+              <span class="section-icon">🔍</span>
+              <h4>Các yếu tố hình ảnh được phát hiện</h4>
+            </div>
+            
+            @if (festivalService.hasResults()) {
+              <div class="rules-grid">
+                @for (rule of visualRules; track rule.name) {
+                  <div class="rule-card" [class.satisfied]="rule.satisfied">
+                    <div class="rule-status">
+                      <mat-icon>{{ rule.satisfied ? 'check_circle' : 'cancel' }}</mat-icon>
+                    </div>
+                    <div class="rule-content">
+                      <h5>{{ rule.name }}</h5>
+                      <p>{{ rule.description }}</p>
+                    </div>
+                    <div class="rule-badge" [class.found]="rule.satisfied">
+                      {{ rule.satisfied ? 'Phát hiện' : 'Không tìm thấy' }}
+                    </div>
+                  </div>
+                }
+              </div>
+            } @else {
+              <div class="empty-state">
+                <div class="empty-illustration">
+                  <span class="main-icon">🖼️</span>
+                  <span class="orbit-icon">🔍</span>
+                </div>
+                <h5>Chưa có dữ liệu</h5>
+                <p>Tải lên hình ảnh hoặc video để xem các quy tắc hình ảnh được phát hiện</p>
+              </div>
+            }
+          </div>
+        </div>
+      </mat-tab>
+      
+      <!-- Chat Analysis Tab -->
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <div class="tab-label">
+            <mat-icon>forum</mat-icon>
+            <span>Phân tích trò chuyện</span>
+          </div>
+        </ng-template>
+        
+        <div class="tab-content">
+          <div class="rules-section">
+            <div class="section-header">
+              <span class="section-icon">💬</span>
+              <h4>Thông tin từ cuộc trò chuyện</h4>
+            </div>
+            
+            @if (chatRules.length > 0) {
+              <div class="rules-grid">
+                @for (rule of chatRules; track rule.keyword) {
+                  <div class="rule-card chat-rule">
+                    <div class="rule-status boost">
+                      <mat-icon>auto_awesome</mat-icon>
+                    </div>
+                    <div class="rule-content">
+                      <h5>{{ rule.keyword }}</h5>
+                      <p>{{ rule.impact }}</p>
+                    </div>
+                    <div class="rule-badge boost">
+                      +{{ rule.boost }}%
+                    </div>
+                  </div>
+                }
+              </div>
+            } @else {
+              <div class="empty-state">
+                <div class="empty-illustration">
+                  <span class="main-icon">💭</span>
+                  <span class="orbit-icon">✨</span>
+                </div>
+                <h5>Chưa có dữ liệu trò chuyện</h5>
+                <p>Trò chuyện với AI để cung cấp thêm ngữ cảnh và cải thiện độ chính xác</p>
+              </div>
+            }
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
