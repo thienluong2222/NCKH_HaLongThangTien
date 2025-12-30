@@ -959,12 +959,158 @@ class BayesianFestivalClassifier:
         return candidates
 
     # ==========================================
-    # PHẦN 3: LLM INTERACTION - CONSOLIDATED QUESTION
+    # PHẦN 3: LLM INTERACTION - MULTI-TURN QUESTIONS
     # ==========================================
+    
+    def generate_multi_turn_questions(self, candidates, festival_unsatisfied, max_questions=3):
+        """
+        Tạo tối đa 3 câu hỏi, ưu tiên features xuất hiện trong nhiều festival để loại nhanh.
+        
+        Chiến lược:
+        - Đếm số festival liên quan đến mỗi feature
+        - Sắp xếp theo số festival giảm dần (nhiều → hỏi trước)
+        - Chia thành nhóm, mỗi nhóm tạo 1 câu hỏi
+        
+        Args:
+            candidates: List các festival candidate
+            festival_unsatisfied: Dict {festival: [rules...]} các ràng buộc chưa thỏa mãn
+            max_questions: Số câu hỏi tối đa (default=3)
+            
+        Returns:
+            List[dict]: Danh sách câu hỏi với metadata
+        """
+        # Bước 1: Thu thập tất cả features và đếm số festival liên quan
+        feature_to_festivals = {}  # {feature: set(festivals)}
+        feature_weights = {}  # {feature: max_weight}
+        
+        for fest in candidates:
+            rules = festival_unsatisfied.get(fest, [])
+            for rule in rules:
+                params = rule[1]  # List các features trong rule
+                weight = rule[3]
+                for feature in params:
+                    if feature not in feature_to_festivals:
+                        feature_to_festivals[feature] = set()
+                        feature_weights[feature] = 0
+                    feature_to_festivals[feature].add(fest)
+                    feature_weights[feature] = max(feature_weights[feature], weight)
+        
+        if not feature_to_festivals:
+            return []
+        
+        # Bước 2: Sắp xếp features theo số festival (giảm dần), sau đó theo weight (giảm dần)
+        sorted_features = sorted(
+            feature_to_festivals.keys(),
+            key=lambda f: (len(feature_to_festivals[f]), feature_weights[f]),
+            reverse=True
+        )
+        
+        # Bước 3: Chia features thành các nhóm (tối đa max_questions nhóm)
+        # Mỗi nhóm 3-5 features
+        features_per_question = max(3, len(sorted_features) // max_questions + 1)
+        feature_groups = []
+        
+        for i in range(0, len(sorted_features), features_per_question):
+            group = sorted_features[i:i + features_per_question]
+            if group:
+                feature_groups.append(group)
+            if len(feature_groups) >= max_questions:
+                # Gộp features còn lại vào nhóm cuối
+                remaining = sorted_features[i + features_per_question:]
+                if remaining:
+                    feature_groups[-1].extend(remaining)
+                break
+        
+        # Bước 4: Tạo câu hỏi cho mỗi nhóm
+        questions = []
+        candidate_str = ", ".join(candidates)
+        
+        for idx, group in enumerate(feature_groups):
+            feature_list_str = ", ".join(group)
+            
+            # Xác định priority dựa trên vị trí
+            if idx == 0:
+                priority = "high"
+                priority_desc = "phân biệt nhanh"
+            elif idx == 1:
+                priority = "medium"
+                priority_desc = "xác nhận chi tiết"
+            else:
+                priority = "low"
+                priority_desc = "làm rõ cuối"
+            
+            # Tính số festival liên quan đến nhóm này
+            related_festivals = set()
+            for feature in group:
+                related_festivals.update(feature_to_festivals[feature])
+            
+            question_text = (
+                f"Hệ thống đang phân vân giữa các lễ hội: {candidate_str}. "
+                f"Bạn hãy quan sát kỹ video và cho biết bạn có thấy các đặc trưng sau không: "
+                f"{feature_list_str}?"
+            )
+            
+            questions.append({
+                "question_id": idx + 1,
+                "question_text": question_text,
+                "target_features": group,
+                "priority": priority,
+                "priority_desc": priority_desc,
+                "related_festivals": list(related_festivals),
+                "feature_details": {
+                    f: {
+                        "festivals": list(feature_to_festivals[f]),
+                        "weight": feature_weights[f]
+                    } for f in group
+                }
+            })
+        
+        return questions
+    
+    def get_question_by_turn(self, questions, turn):
+        """
+        Lấy câu hỏi theo lượt (turn).
+        
+        Args:
+            questions: List câu hỏi từ generate_multi_turn_questions()
+            turn: Lượt hiện tại (1, 2, 3)
+            
+        Returns:
+            dict hoặc None nếu hết câu hỏi
+        """
+        if turn <= 0 or turn > len(questions):
+            return None
+        return questions[turn - 1]
+    
+    def should_continue_asking(self, festival_logits, threshold=None):
+        """
+        Kiểm tra có cần hỏi thêm không dựa trên confidence gap.
+        
+        Returns:
+            bool: True nếu cần hỏi thêm, False nếu đủ tự tin
+        """
+        if threshold is None:
+            threshold = GLOBAL_CONFIG["T_high"]
+            
+        probs = {f: sigmoid(l) for f, l in festival_logits.items()}
+        sorted_probs = sorted(probs.values(), reverse=True)
+        
+        # Nếu top 1 đã đủ cao
+        if sorted_probs[0] >= threshold:
+            return False
+        
+        # Nếu khoảng cách top 1 và top 2 đủ lớn
+        if len(sorted_probs) >= 2:
+            gap = sorted_probs[0] - sorted_probs[1]
+            if gap >= GLOBAL_CONFIG["delta"] * 2:
+                return False
+        
+        return True
     
     def generate_consolidated_question(self, candidates, festival_unsatisfied):
         """
         Tạo 1 câu hỏi duy nhất tổng hợp tất cả các đặc trưng còn thiếu.
+        (Giữ lại để backward compatible)
         """
         all_missing_features = set()
         for fest in candidates:

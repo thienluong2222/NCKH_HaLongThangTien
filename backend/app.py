@@ -236,22 +236,28 @@ def analyze_video():
                 "detected_objects_count": len(detected_objects)
             }), 200
         
-        # Sinh câu hỏi làm rõ
-        qa_package = classifier.generate_consolidated_question(candidates, unsatisfied)
+        # Sinh câu hỏi làm rõ (multi-turn)
+        questions = classifier.generate_multi_turn_questions(candidates, unsatisfied)
         
-        if qa_package:
-            # Cần hỏi thêm user
-            logger.info(f"Cần hỏi thêm về {len(qa_package['target_features'])} features")
+        if questions:
+            # Cần hỏi thêm user - bắt đầu với câu hỏi 1
+            first_question = questions[0]
+            logger.info(f"Sinh {len(questions)} câu hỏi, bắt đầu với Q1: {len(first_question['target_features'])} features")
             
             req_id = history.id
             
-            # Lưu session để xử lý tiếp
+            # Lưu session để xử lý tiếp (bao gồm tất cả câu hỏi)
             ACTIVE_SESSIONS[req_id] = {
                 "logits": logits,
                 "unsatisfied": unsatisfied,
                 "satisfied": satisfied,
                 "candidates": candidates,
-                "qa_package": qa_package,
+                "all_questions": questions,  # Lưu tất cả câu hỏi
+                "current_turn": 1,  # Lượt hiện tại
+                "qa_package": {  # Backward compatible
+                    "question_text": first_question['question_text'],
+                    "target_features": first_question['target_features']
+                },
                 "video_path": video_path,
                 "history": history
             }
@@ -264,8 +270,13 @@ def analyze_video():
                 "status": "needs_clarification",
                 "request_id": req_id,
                 "history_id": history.id,
-                "question": qa_package['question_text'],
-                "target_features": qa_package['target_features'],
+                "question": first_question['question_text'],
+                "question_id": first_question['question_id'],
+                "current_turn": 1,
+                "total_questions": len(questions),
+                "target_features": first_question['target_features'],
+                "priority": first_question['priority'],
+                "related_festivals": first_question['related_festivals'],
                 "candidates_preliminary": candidates,
                 "top_3_constraints": top_3_constraints,
                 "detected_objects_count": len(detected_objects)
@@ -336,9 +347,13 @@ def submit_answer():
     candidates = session_data['candidates']
     qa_package = session_data['qa_package']
     history = session_data['history']
+    
+    # Multi-turn support
+    all_questions = session_data.get('all_questions', [])
+    current_turn = session_data.get('current_turn', 1)
 
     try:
-        logger.info(f"Phân tích câu trả lời: '{user_answer[:50]}...'")
+        logger.info(f"Phân tích câu trả lời lượt {current_turn}: '{user_answer[:50]}...'")
         
         # Phân tích câu trả lời bằng LLM
         parsed_result = classifier.analyze_complex_answer(
@@ -352,6 +367,58 @@ def submit_answer():
             logits, candidates, unsatisfied, parsed_result
         )
         
+        # Lưu Q&A vào history
+        history.qa_history.append(QARecord(
+            question=qa_package['question_text'],
+            answer=user_answer
+        ))
+        
+        # Kiểm tra có cần hỏi thêm không
+        next_turn = current_turn + 1
+        has_more_questions = next_turn <= len(all_questions)
+        should_continue = classifier.should_continue_asking(final_logits)
+        
+        if has_more_questions and should_continue:
+            # Còn câu hỏi và cần hỏi thêm
+            next_question = all_questions[next_turn - 1]
+            logger.info(f"Tiếp tục với câu hỏi {next_turn}/{len(all_questions)}")
+            
+            # Cập nhật session
+            ACTIVE_SESSIONS[req_id].update({
+                "logits": final_logits,
+                "current_turn": next_turn,
+                "qa_package": {
+                    "question_text": next_question['question_text'],
+                    "target_features": next_question['target_features']
+                }
+            })
+            
+            # Lấy top 3 với constraints hiện tại
+            top_3_constraints = classifier.get_top_3_with_constraints(
+                final_logits, satisfied, unsatisfied
+            )
+            
+            history_store.update(history.id, history)
+            
+            return jsonify({
+                "status": "needs_clarification",
+                "request_id": req_id,
+                "history_id": history.id,
+                "question": next_question['question_text'],
+                "question_id": next_question['question_id'],
+                "current_turn": next_turn,
+                "total_questions": len(all_questions),
+                "target_features": next_question['target_features'],
+                "priority": next_question['priority'],
+                "related_festivals": next_question['related_festivals'],
+                "candidates_preliminary": candidates,
+                "top_3_constraints": top_3_constraints,
+                "previous_analysis": parsed_result
+            }), 200
+        
+        # Kết thúc - không cần hỏi thêm hoặc hết câu hỏi
+        logger.info(f"Kết thúc sau {current_turn} lượt hỏi")
+        
         # Kết luận cuối cùng
         winners, final_probs = classifier.decide_final_result(final_logits)
         
@@ -363,11 +430,7 @@ def submit_answer():
         sorted_probs = sorted(final_probs.items(), key=lambda x: x[1], reverse=True)[:3]
         top_3 = [{"festival": f, "confidence": round(p, 4)} for f, p in sorted_probs]
         
-        # Cập nhật history
-        history.qa_history.append(QARecord(
-            question=qa_package['question_text'],
-            answer=user_answer
-        ))
+        # Cập nhật history - kết quả cuối
         history.result = AnalysisResult(
             winner=winners[0] if winners else None,
             top_3=top_3
@@ -377,12 +440,13 @@ def submit_answer():
         
         # Xóa session
         del ACTIVE_SESSIONS[req_id]
-        logger.info(f"Hoàn thành phân tích: {winners}")
+        logger.info(f"Hoàn thành phân tích sau {current_turn} lượt: {winners}")
         
         return jsonify({
             "status": "finished",
             "history_id": history.id,
             "result": winners,
+            "total_turns": current_turn,
             "probabilities": {k: round(float(v), 4) for k, v in final_probs.items()},
             "top_3": top_3,
             "top_3_constraints": top_3_constraints,
