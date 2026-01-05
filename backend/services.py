@@ -737,6 +737,44 @@ class YOLOCSVPipeline:
         cap.release()
         return all_objects
 
+    def process_image(self, image_path, confidence_threshold=0.5):
+        """
+        Xử lý ảnh đơn và trả về list ObjectDetection (format giống process_video)
+        
+        Args:
+            image_path: Đường dẫn đến file ảnh
+            confidence_threshold: Ngưỡng confidence
+            
+        Returns:
+            List[ObjectDetection]: Danh sách object được phát hiện
+        """
+        raw_dets = self.predict_and_map_with_boxes(image_path, confidence_threshold)
+        
+        # Group by subclass
+        subclass_groups = {}
+        for d in raw_dets:
+            # Chỉ lấy detection có mapping hợp lệ
+            if d.get('mapped'):
+                lbl = d['label']
+                if lbl not in subclass_groups:
+                    subclass_groups[lbl] = {'confs': [], 'boxes': []}
+                subclass_groups[lbl]['confs'].append(d['confidence'])
+                subclass_groups[lbl]['boxes'].append(d['box'])
+        
+        all_objects = []
+        for sub, data in subclass_groups.items():
+            obj = ObjectDetection(
+                subclass=sub,
+                confidence=np.mean(data['confs']),
+                frame_id=0,  # Ảnh chỉ có 1 frame
+                time_stamp=0.0,
+                count=len(data['boxes']),
+                bboxs=data['boxes']
+            )
+            all_objects.append(obj)
+        
+        return all_objects
+
 
 # Định nghĩa cấu trúc dữ liệu
 class ObjectDetection:

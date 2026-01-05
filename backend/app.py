@@ -76,6 +76,18 @@ def allowed_file(filename: str, file_type: str = 'video') -> bool:
     return False
 
 
+def get_file_type(filename: str) -> str:
+    """Xác định loại file (image/video/unknown)"""
+    if '.' not in filename:
+        return 'unknown'
+    ext = filename.rsplit('.', 1)[1].lower()
+    if ext in Config.ALLOWED_IMAGE_EXTENSIONS:
+        return 'image'
+    elif ext in Config.ALLOWED_VIDEO_EXTENSIONS:
+        return 'video'
+    return 'unknown'
+
+
 def require_services(f):
     """Decorator kiểm tra services đã được khởi tạo"""
     @wraps(f)
@@ -156,43 +168,54 @@ def get_festivals():
     }), 200
 
 
-@app.route('/api/video', methods=['POST'])
+@app.route('/api/analyze', methods=['POST'])
 @require_services
-def analyze_video():
+def analyze_media():
     """
-    Upload và phân tích video
+    Upload và phân tích video hoặc hình ảnh
     ---
-    Request: multipart/form-data với field 'video'
+    Request: multipart/form-data với field 'file' (video hoặc ảnh)
     Returns:
         - status: 'needs_clarification' hoặc 'finished'
         - Nếu cần hỏi thêm: question, candidates_preliminary, request_id
         - Nếu hoàn thành: result, probabilities, top_3_constraints
     """
-    if 'video' not in request.files:
-        return jsonify({'error': 'Không có file video', 'code': 'NO_FILE'}), 400
+    if 'file' not in request.files:
+        return jsonify({'error': 'Không có file', 'code': 'NO_FILE'}), 400
 
-    video_file = request.files['video']
-    if video_file.filename == '':
+    media_file = request.files['file']
+    if media_file.filename == '':
         return jsonify({'error': 'Chưa chọn file', 'code': 'EMPTY_FILENAME'}), 400
 
-    if not allowed_file(video_file.filename, 'video'):
+    # Xác định loại file
+    file_type = get_file_type(media_file.filename)
+    
+    if file_type == 'unknown':
         return jsonify({
             'error': 'Định dạng file không hỗ trợ',
             'code': 'INVALID_FORMAT',
-            'allowed': list(Config.ALLOWED_VIDEO_EXTENSIONS)
+            'allowed_images': list(Config.ALLOWED_IMAGE_EXTENSIONS),
+            'allowed_videos': list(Config.ALLOWED_VIDEO_EXTENSIONS)
         }), 400
 
     # Lưu file
-    filename = secure_filename(video_file.filename)
+    filename = secure_filename(media_file.filename)
     unique_filename = f"{uuid.uuid4().hex[:8]}_{filename}"
-    video_path = os.path.join(app.config['UPLOAD_FOLDER'], unique_filename)
-    video_file.save(video_path)
-    logger.info(f"📹 Đã lưu video: {unique_filename}")
+    file_path = os.path.join(app.config['UPLOAD_FOLDER'], unique_filename)
+    media_file.save(file_path)
+    
+    file_emoji = "🖼️" if file_type == 'image' else "📹"
+    logger.info(f"{file_emoji} Đã lưu {file_type}: {unique_filename}")
 
     try:
-        # Step 1: YOLO Detection
-        logger.info("🔍 Bắt đầu YOLO detection...")
-        detected_objects = yolo_pipe.process_video(video_path)
+        # Step 1: YOLO Detection (tùy loại file)
+        logger.info(f"🔍 Bắt đầu YOLO detection cho {file_type}...")
+        
+        if file_type == 'image':
+            detected_objects = yolo_pipe.process_image(file_path)
+        else:
+            detected_objects = yolo_pipe.process_video(file_path)
+            
         logger.info(f"Phát hiện {len(detected_objects)} objects")
         
         # Step 2: Tính toán Bayesian logits (ĐÃ CẬP NHẬT: trả về 3 giá trị)
@@ -258,7 +281,8 @@ def analyze_video():
                     "question_text": first_question['question_text'],
                     "target_features": first_question['target_features']
                 },
-                "video_path": video_path,
+                "file_path": file_path,
+                "file_type": file_type,
                 "history": history
             }
             
@@ -307,11 +331,26 @@ def analyze_video():
             }), 200
         
     except Exception as e:
-        logger.error(f"Lỗi xử lý video: {str(e)}", exc_info=True)
+        logger.error(f"Lỗi xử lý {file_type}: {str(e)}", exc_info=True)
         return jsonify({
-            'error': f'Lỗi xử lý video: {str(e)}',
+            'error': f'Lỗi xử lý file: {str(e)}',
             'code': 'PROCESSING_ERROR'
         }), 500
+
+
+# # Backward compatible: giữ endpoint /api/video
+# @app.route('/api/video', methods=['POST'])
+# @require_services
+# def analyze_video_legacy():
+#     """
+#     Legacy endpoint - redirect to /api/analyze
+#     Giữ để tương thích ngược với client cũ
+#     """
+#     # Chuyển field 'video' thành 'file' nếu cần
+#     if 'video' in request.files and 'file' not in request.files:
+#         request.files = request.files.copy()
+#         request.files['file'] = request.files['video']
+#     return analyze_media()
 
 
 @app.route('/api/answer', methods=['POST'])
