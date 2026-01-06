@@ -987,9 +987,9 @@ class BayesianFestivalClassifier:
         max_prob = max(festival_probs.values())
         candidates = []
         
-        print(f"\nBẢNG XẾP HẠNG BAN ĐẦU:")
-        for f, p in sorted(festival_probs.items(), key=lambda x: x[1], reverse=True):
-            print(f"   - {f}: {p:.2%} (Logit: {festival_logits[f]:.2f})")
+        #print(f"\nBẢNG XẾP HẠNG BAN ĐẦU:")
+        # for f, p in sorted(festival_probs.items(), key=lambda x: x[1], reverse=True):
+        #     print(f"   - {f}: {p:.2%} (Logit: {festival_logits[f]:.2f})")
 
         for f, p in festival_probs.items():
             if p >= GLOBAL_CONFIG["T_high"]: candidates.append(f)
@@ -1228,7 +1228,7 @@ class BayesianFestivalClassifier:
         """
         final_logits = festival_logits.copy()
         
-        print("\nCập nhật điểm dựa trên câu trả lời...")
+        #print("\nCập nhật điểm dựa trên câu trả lời...")
         
         for fest in candidates:
             unsatisfied_rules = festival_unsatisfied[fest]
@@ -1252,14 +1252,14 @@ class BayesianFestivalClassifier:
                             # Delta = Weight * Confidence
                             delta = weight * conf
                             final_logits[fest] += delta
-                            print(f"   => [{fest}] '{param}' CÓ (conf={conf}): +{delta:.2f}")
+                            #print(f"   => [{fest}] '{param}' CÓ (conf={conf}): +{delta:.2f}")
                             
                         elif status is False:
                             # User xác nhận KHÔNG -> Trừ điểm (Phương án A)
                             # Penalty = (Weight * Confidence) / 2
                             penalty = (weight * conf) / 2
                             final_logits[fest] -= penalty
-                            print(f"   => [{fest}] '{param}' KHÔNG (conf={conf}): -{penalty:.2f}")
+                            #print(f"   => [{fest}] '{param}' KHÔNG (conf={conf}): -{penalty:.2f}")
                             
         return final_logits
 

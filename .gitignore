@@ -1,3 +1,6 @@
 .env
 .venv
 __pycache__
+assets/
+node_modules/
+evaluation_results/
