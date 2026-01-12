@@ -10,7 +10,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.output_parsers import StrOutputParser
-from constraintsDB import CONSTRAINTS_DB, SUBCLASS_TO_FESTIVAL
+from constraintsDB import CONSTRAINTS_DB, SUBCLASS_TO_FESTIVAL, FEATURE_DISPLAY_NAMES
 import math
 from dotenv import load_dotenv
 import json
@@ -805,9 +805,10 @@ class ObjectDetection:
 # ==========================================
 GLOBAL_CONFIG = {
     "T_high": 0.85,    # Ngưỡng tin cậy cao để chọn ứng viên ngay
-    "T_low": 0.50,     # Ngưỡng thấp nhất để xem xét
+    "T_low": 0.55,     # Ngưỡng thấp nhất để xem xét (loại bỏ logit=0 có sigmoid=0.5)
     "delta": 0.25,     # Chênh lệch tối đa cho phép so với conf_max
-    "T_out": 0.85      # Ngưỡng quyết định cuối cùng (sau khi hỏi user)
+    "T_out": 0.85,     # Ngưỡng quyết định cuối cùng (sau khi hỏi user)
+    "max_candidates": 3  # Số lượng candidates tối đa
 }
 
 UNCERTAINTY_RULES = {
@@ -982,6 +983,10 @@ class BayesianFestivalClassifier:
         return result
 
     def select_candidates(self, festival_logits):
+        # Nếu tất cả logit <= 0 → không có bằng chứng → trả về rỗng
+        if all(l <= 0 for l in festival_logits.values()):
+            return []
+        
         festival_probs = {f: sigmoid(l) for f, l in festival_logits.items()}
         if not festival_probs: return []
         max_prob = max(festival_probs.values())
@@ -994,25 +999,160 @@ class BayesianFestivalClassifier:
         for f, p in festival_probs.items():
             if p >= GLOBAL_CONFIG["T_high"]: candidates.append(f)
             elif p >= GLOBAL_CONFIG["T_low"] and (max_prob - p) <= GLOBAL_CONFIG["delta"]: candidates.append(f)
+        
+        # Giới hạn tối đa số candidates, ưu tiên prob cao nhất
+        max_candidates = GLOBAL_CONFIG.get("max_candidates", 3)
+        if len(candidates) > max_candidates:
+            candidates = sorted(candidates, key=lambda f: festival_probs[f], reverse=True)[:max_candidates]
+        
         return candidates
 
     # ==========================================
     # PHẦN 3: LLM INTERACTION - MULTI-TURN QUESTIONS
     # ==========================================
     
-    def generate_multi_turn_questions(self, candidates, festival_unsatisfied, max_questions=3):
+    def _get_display_name(self, technical_name):
         """
-        Tạo tối đa 3 câu hỏi, ưu tiên features xuất hiện trong nhiều festival để loại nhanh.
+        Chuyển tên kỹ thuật (YOLO label) thành tên hiển thị tự nhiên.
+        
+        Args:
+            technical_name: Tên kỹ thuật (VD: "binh bong dua")
+            
+        Returns:
+            str: Tên hiển thị (VD: "bình bông dừa")
+        """
+        # Nếu có trong mapping, dùng tên hiển thị
+        if technical_name in FEATURE_DISPLAY_NAMES:
+            return FEATURE_DISPLAY_NAMES[technical_name]
+        # Fallback: thay _ thành khoảng trắng
+        return technical_name.replace("_", " ")
+    
+    def _get_technical_name(self, display_name):
+        """
+        Chuyển tên hiển thị ngược lại thành tên kỹ thuật.
+        
+        Args:
+            display_name: Tên hiển thị (VD: "bình bông dừa")
+            
+        Returns:
+            str: Tên kỹ thuật (VD: "binh bong dua") hoặc None nếu không tìm thấy
+        """
+        # Tìm trong mapping (reverse lookup)
+        for tech_name, disp_name in FEATURE_DISPLAY_NAMES.items():
+            if disp_name.lower() == display_name.lower():
+                return tech_name
+        # Fallback: trả về chính nó (có thể đã là tên kỹ thuật)
+        return display_name
+    
+    def _convert_features_to_display(self, features):
+        """
+        Chuyển danh sách features sang tên hiển thị.
+        
+        Args:
+            features: List tên kỹ thuật
+            
+        Returns:
+            List tên hiển thị
+        """
+        return [self._get_display_name(f) for f in features]
+    
+    def _format_feature_list(self, features, use_display_names=True):
+        """
+        Format danh sách features thành chuỗi tự nhiên.
+        VD: ["A", "B", "C"] → "A, B hoặc C"
+        
+        Args:
+            features: List tên features
+            use_display_names: Chuyển sang tên hiển thị (default=True)
+        """
+        if not features:
+            return ""
+        
+        # Chuyển sang tên hiển thị nếu cần
+        display_features = self._convert_features_to_display(features) if use_display_names else features
+        
+        if len(display_features) == 1:
+            return display_features[0]
+        if len(display_features) == 2:
+            return f"{display_features[0]} hoặc {display_features[1]}"
+        return ", ".join(display_features[:-1]) + f" hoặc {display_features[-1]}"
+    
+    def _generate_natural_question(self, features, candidates, question_number, total_questions):
+        """
+        Sử dụng LLM để sinh câu hỏi tự nhiên, đa dạng.
+        
+        Args:
+            features: List các features cần hỏi (tên kỹ thuật)
+            candidates: List các lễ hội candidate
+            question_number: Số thứ tự câu hỏi (1, 2, 3)
+            total_questions: Tổng số câu hỏi
+            
+        Returns:
+            str: Câu hỏi tự nhiên
+        """
+        # Chuyển sang tên hiển thị cho LLM
+        display_features = self._convert_features_to_display(features)
+        feature_list = ", ".join(display_features)
+        candidate_list = ", ".join(candidates)
+        
+        prompt = f"""
+Nhiệm vụ: Sinh một câu hỏi tự nhiên bằng tiếng Việt để hỏi người dùng về sự xuất hiện của các vật thể trong video.
+
+Thông tin:
+- Các vật thể cần hỏi: {feature_list}
+- Các lễ hội đang xem xét: {candidate_list}
+- Đây là câu hỏi số {question_number}/{total_questions}
+
+Yêu cầu:
+1. Câu hỏi phải tự nhiên, thân thiện như đang trò chuyện
+2. Không dùng từ "đặc trưng" hay thuật ngữ kỹ thuật
+3. Hỏi về sự xuất hiện/hiện diện của các vật thể xung quanh người dùng
+4. Câu hỏi ngắn gọn, dễ hiểu
+5. Nếu là câu hỏi đầu tiên, có thể giới thiệu ngắn về việc hệ thống đang phân tích
+6. Các câu hỏi sau không cần nhắc lại danh sách lễ hội
+7. QUAN TRỌNG: Chỉ trả về câu hỏi, không thêm gì khác
+
+Ví dụ câu hỏi tốt:
+- "Tôi thấy video có vẻ liên quan đến {candidate_list}. Bạn có nhìn thấy {feature_list} ở xung quanh không?"
+- "Xung quanh bạn có xuất hiện {feature_list} không?"
+- "Bạn có để ý thấy {feature_list} không?"
+
+Hãy sinh câu hỏi:
+"""
+        
+        try:
+            result = self.llm.invoke(prompt).content.strip()
+            # Loại bỏ dấu ngoặc kép nếu có
+            if result.startswith('"') and result.endswith('"'):
+                result = result[1:-1]
+            if result.startswith("'") and result.endswith("'"):
+                result = result[1:-1]
+            return result
+        except Exception as e:
+            print(f"Lỗi sinh câu hỏi bằng LLM: {e}")
+            # Fallback về câu hỏi mặc định
+            feature_str = self._format_feature_list(features)
+            if question_number == 1:
+                return f"Hệ thống đang xem xét các lễ hội: {candidate_list}. Trong video, bạn có nhìn thấy {feature_str} không?"
+            return f"Bạn có thấy {feature_str} không?"
+    
+    def generate_multi_turn_questions(self, candidates, festival_unsatisfied, max_questions=3, max_features_per_question=3, use_llm=True):
+        """
+        Tạo tối đa 3 câu hỏi, mỗi câu hỏi tối đa 3 features.
+        Ưu tiên features xuất hiện trong nhiều festival để loại nhanh.
         
         Chiến lược:
         - Đếm số festival liên quan đến mỗi feature
         - Sắp xếp theo số festival giảm dần (nhiều → hỏi trước)
-        - Chia thành nhóm, mỗi nhóm tạo 1 câu hỏi
+        - Chia thành nhóm, mỗi nhóm tối đa 3 features
+        - Dùng LLM sinh câu hỏi tự nhiên (nếu use_llm=True)
         
         Args:
             candidates: List các festival candidate
             festival_unsatisfied: Dict {festival: [rules...]} các ràng buộc chưa thỏa mãn
             max_questions: Số câu hỏi tối đa (default=3)
+            max_features_per_question: Số features tối đa mỗi câu hỏi (default=3)
+            use_llm: Sử dụng LLM để sinh câu hỏi tự nhiên (default=True)
             
         Returns:
             List[dict]: Danh sách câu hỏi với metadata
@@ -1043,29 +1183,20 @@ class BayesianFestivalClassifier:
             reverse=True
         )
         
-        # Bước 3: Chia features thành các nhóm (tối đa max_questions nhóm)
-        # Mỗi nhóm 3-5 features
-        features_per_question = max(3, len(sorted_features) // max_questions + 1)
+        # Bước 3: Chia features thành các nhóm (mỗi nhóm tối đa max_features_per_question)
         feature_groups = []
-        
-        for i in range(0, len(sorted_features), features_per_question):
-            group = sorted_features[i:i + features_per_question]
+        for i in range(0, len(sorted_features), max_features_per_question):
+            group = sorted_features[i:i + max_features_per_question]
             if group:
                 feature_groups.append(group)
             if len(feature_groups) >= max_questions:
-                # Gộp features còn lại vào nhóm cuối
-                remaining = sorted_features[i + features_per_question:]
-                if remaining:
-                    feature_groups[-1].extend(remaining)
                 break
         
         # Bước 4: Tạo câu hỏi cho mỗi nhóm
         questions = []
-        candidate_str = ", ".join(candidates)
+        total_questions = len(feature_groups)
         
         for idx, group in enumerate(feature_groups):
-            feature_list_str = ", ".join(group)
-            
             # Xác định priority dựa trên vị trí
             if idx == 0:
                 priority = "high"
@@ -1082,11 +1213,22 @@ class BayesianFestivalClassifier:
             for feature in group:
                 related_festivals.update(feature_to_festivals[feature])
             
-            question_text = (
-                f"Hệ thống đang phân vân giữa các lễ hội: {candidate_str}. "
-                f"Bạn hãy quan sát kỹ video và cho biết bạn có thấy các đặc trưng sau không: "
-                f"{feature_list_str}?"
-            )
+            # Sinh câu hỏi
+            if use_llm:
+                question_text = self._generate_natural_question(
+                    features=group,
+                    candidates=candidates,
+                    question_number=idx + 1,
+                    total_questions=total_questions
+                )
+            else:
+                # Fallback không dùng LLM
+                feature_list_str = self._format_feature_list(group)
+                candidate_str = ", ".join(candidates)
+                if idx == 0:
+                    question_text = f"Hệ thống đang xem xét các lễ hội: {candidate_str}. Trong video, bạn có nhìn thấy {feature_list_str} không?"
+                else:
+                    question_text = f"Bạn có thấy {feature_list_str} không?"
             
             questions.append({
                 "question_id": idx + 1,
@@ -1179,13 +1321,30 @@ class BayesianFestivalClassifier:
         """
         Phân tích câu trả lời phức tạp bằng LLM và map với UNCERTAINTY_RULES.
         Trả về JSON mapping: {feature: {"status": True/False, "confidence": float}}
+        
+        Args:
+            question: Câu hỏi đã hỏi
+            user_answer: Câu trả lời của user
+            target_features: List tên kỹ thuật của features
+            
+        Returns:
+            Dict với key là tên KỸ THUẬT (để cập nhật logits)
         """
+        # Chuyển sang tên hiển thị cho LLM hiểu
+        display_features = self._convert_features_to_display(target_features)
+        
+        # Tạo mapping để convert ngược lại
+        display_to_technical = {
+            self._get_display_name(tech): tech 
+            for tech in target_features
+        }
+        
         # Chuyển rules thành string để đưa vào prompt
         rules_desc = json.dumps(UNCERTAINTY_RULES, ensure_ascii=False)
-        features_desc = ", ".join(target_features)
+        features_desc = ", ".join(display_features)
         
         prompt = f"""
-        Nhiệm vụ: Phân tích câu trả lời của người dùng về sự xuất hiện của các vật thể trong video.
+        Nhiệm vụ: Phân tích câu trả lời của người dùng về sự xuất hiện của các vật thể ở xung quanh người dùng.
         
         Danh sách vật thể cần tìm (Features): {features_desc}
         
@@ -1196,16 +1355,17 @@ class BayesianFestivalClassifier:
         Câu trả lời của người dùng: "{user_answer}"
         
         Yêu cầu Output:
-        Trả về một JSON object duy nhất. Key là tên vật thể (trong danh sách Features), Value là object chứa:
+        Trả về một JSON object duy nhất. Key là tên vật thể (CHÍNH XÁC như trong danh sách Features), Value là object chứa:
         - "status": true (nếu người dùng bảo có), false (nếu người dùng bảo không).
         - "confidence": Điểm số lấy chính xác từ Bảng điểm tin cậy dựa trên từ ngữ người dùng dùng.
         
-        Ví dụ: Nếu user nói "Có đèn gió nhưng chắc không có ghe ngo", output:
+        Ví dụ: Nếu danh sách là "đèn hoa đăng, ghe ngo" và user nói "Có đèn hoa đăng nhưng chắc không có ghe ngo", output:
         {{
-            "đèn gió": {{"status": true, "confidence": 1.0}},
+            "đèn hoa đăng": {{"status": true, "confidence": 1.0}},
             "ghe ngo": {{"status": false, "confidence": 0.35}}
         }}
         
+        QUAN TRỌNG: Key trong JSON phải CHÍNH XÁC như tên trong danh sách Features.
         Chỉ trả về JSON, không thêm markdown.
         """
         
@@ -1216,7 +1376,20 @@ class BayesianFestivalClassifier:
             if "```json" in result:
                 result = result.split("```json")[1].split("```")[0]
             parsed_result = json.loads(result.strip())
-            return parsed_result
+            
+            # Convert display names về technical names
+            technical_result = {}
+            for display_name, value in parsed_result.items():
+                # Tìm technical name tương ứng
+                tech_name = display_to_technical.get(display_name)
+                if tech_name:
+                    technical_result[tech_name] = value
+                else:
+                    # Fallback: thử tìm trực tiếp hoặc dùng reverse lookup
+                    tech_name = self._get_technical_name(display_name)
+                    technical_result[tech_name] = value
+            
+            return technical_result
         except Exception as e:
             print(f"Lỗi parse JSON từ LLM: {e}")
             return {}

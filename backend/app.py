@@ -35,8 +35,40 @@ CORS(app)
 app.config['UPLOAD_FOLDER'] = Config.UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = Config.MAX_CONTENT_LENGTH
 
+# Thư mục lưu file user upload (dễ .gitignore)
+USER_UPLOADS_FOLDER = os.path.join(Config.UPLOAD_FOLDER, 'user_uploads')
+
 # Tạo thư mục upload nếu chưa có
 os.makedirs(Config.UPLOAD_FOLDER, exist_ok=True)
+os.makedirs(USER_UPLOADS_FOLDER, exist_ok=True)
+
+
+def cleanup_uploads_on_startup():
+    """
+    Xóa tất cả file trong thư mục uploads/user_uploads khi server khởi động.
+    """
+    deleted_count = 0
+    
+    try:
+        for item in os.listdir(USER_UPLOADS_FOLDER):
+            item_path = os.path.join(USER_UPLOADS_FOLDER, item)
+                
+            # Xóa file
+            if os.path.isfile(item_path):
+                os.remove(item_path)
+                deleted_count += 1
+                
+        if deleted_count > 0:
+            logger.info(f"🧹 Startup cleanup: Đã xóa {deleted_count} file cũ trong uploads/user_uploads/")
+        else:
+            logger.info("🧹 Startup cleanup: Không có file cũ cần xóa")
+            
+    except Exception as e:
+        logger.error(f"❌ Lỗi cleanup uploads: {e}")
+
+
+# Chạy cleanup khi khởi động
+cleanup_uploads_on_startup()
 
 # ==========================================
 # KHỞI TẠO SERVICES
@@ -198,10 +230,10 @@ def analyze_media():
             'allowed_videos': list(Config.ALLOWED_VIDEO_EXTENSIONS)
         }), 400
 
-    # Lưu file
+    # Lưu file vào thư mục user_uploads
     filename = secure_filename(media_file.filename)
     unique_filename = f"{uuid.uuid4().hex[:8]}_{filename}"
-    file_path = os.path.join(app.config['UPLOAD_FOLDER'], unique_filename)
+    file_path = os.path.join(USER_UPLOADS_FOLDER, unique_filename)
     media_file.save(file_path)
     
     file_emoji = "🖼️" if file_type == 'image' else "📹"
