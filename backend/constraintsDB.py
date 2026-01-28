@@ -11,11 +11,11 @@
 # ==========================================
 FEATURE_DISPLAY_NAMES = {
     # === Lễ hội Thác Côn ===
-    "binh bong dua": "bình bông dừa",
+    "Binh bong dua": "bình bông dừa",
     "bong dua": "bông dừa",
     "trai dua": "trái dừa",
-    "hoa sen": "hoa sen",
-    "nha su": "nhà sư",
+    "Hoa sen": "hoa sen",
+    "Nha su": "nhà sư",
     
     # === Sân Khấu Dù Kê ===
     "Nguoi bieu dien": "người biểu diễn",
@@ -41,7 +41,7 @@ FEATURE_DISPLAY_NAMES = {
     "Trang diem mat quy": "trang điểm mặt quỷ",
     "Khan ran": "khăn rằn",
     "Cam vu khi": "cầm vũ khí",
-    "Ao khoac vai": "áo khoác vai",
+    "Ao Khoac vai": "áo khoác vai",
     "Rau dai": "râu dài",
     "Cam gay": "cầm gậy",
     
@@ -75,8 +75,8 @@ FEATURE_DISPLAY_NAMES = {
     # === Nhạc Ngũ Âm Người Khmer ===
     "Ken Srolay pin-piet": "kèn Srolay pin-piet",
     "Dan sat Ro-niet-dek": "đàn sắt Ro-niet-dek",
-    "Dan cong Coung-touch Coung-thom": "đàn cồng Coung-touch Coung-thom",
-    "Dan thuyen Ro-niet-ek": "đàn thuyền Ro-niet-ek",
+    "Dan cong Coung-tuoch Coung-thom": "đàn cồng Coung-tuoch Coung-thom",
+    "Dan thuyen Ro niet ek": "đàn thuyền Ro niet ek",
     "Trong lon Sakho-thom": "trống lớn Sakho-thom",
     "Trong nho Kha-so-sompho": "trống nhỏ Kha-so-sompho",
     "Trang phuc Khmer": "trang phục Khmer",
@@ -131,8 +131,8 @@ FEATURE_DISPLAY_NAMES = {
 
 CONSTRAINTS_DB = {
     "Lễ hội thác côn": [
-        ("is_presence", ["binh bong dua"], True, 1.0, None),
-        ("at_least", ["binh bong dua"], True, 1.0, 10),
+        ("is_presence", ["Binh bong dua"], True, 1.0, None),
+        ("at_least", ["Binh bong dua"], True, 1.0, 10),
         ("is_on", ["bong dua", "trai dua"], False, 0.5, None),
         ("at_least_in_frame", ["binh bong dua"], True, 1.0, 2),  # Ít nhất 2 objects cùng frame
         ("confidence_min", ["binh bong dua"], True, 1.0, 0.8)
@@ -156,27 +156,27 @@ CONSTRAINTS_DB = {
         ("is_on", ["Nguoi bieu dien", "Cam vu khi"], False, 0.6, None),
         ("is_on", ["Nguoi bieu dien", "Ao khoac vai"], False, 0.6, None),
         ("is_on", ["Nguoi bieu dien", "Rau dai"], False, 0.6, None),
-        ("is_presence", ["Nguoi bieu dien"], True, 1.0, None),
-        ("is_presence", ["Canh thien nhien trong rung"], False, 0.3, None),
-        ("is_presence", ["Canh cung dien"], False, 0.3, None),
-        ("is_presence", ["Canh hang dong"], False, 0.3, None),
-        ("is_presence", ["Canh bien"], False, 0.3, None),
-        ("is_presence", ["Giap nguc dinh hat"], False, 0.2, None),
-        ("is_presence", ["Tay ao dinh hat"], False, 0.2, None),
-        ("is_presence", ["Toc bui cao"], False, 0.2, None),
-        ("is_presence", ["Deo vong tay"], False, 0.2, None),
-        ("is_presence", ["Dau doi khan dong"], False, 0.2, None),
-        ("is_presence", ["Ao ren dinh hat"], False, 0.2, None),
-        ("is_presence", ["Vay sampot"], False, 0.2, None),
-        ("is_presence", ["That lung ban to"], False, 0.2, None),
-        ("is_presence", ["Deo vong co"], False, 0.2, None),
-        ("is_presence", ["Do vai bong"], False, 0.2, None),
-        ("is_presence", ["Giap than duoi"], False, 0.2, None),
-        ("is_presence", ["Cam vu khi"], False, 0.2, None),
-        ("is_presence", ["Ao khoac vai"], False, 0.2, None),
-        ("is_presence", ["Rau dai"], False, 0.2, None),
-        ("is_presence", ["trang diem mat quy"], True, 0.3, None),
-        ("at_least_in_frame", ["long may ke dam", "moi do"], True, 0.3, None)
+        ("at_least", ["Nguoi bieu dien"], True, 1.0, 1),
+        ("at_least", ["Canh thien nhien trong rung"], False, 0.3, 1),
+        ("at_least", ["Canh cung dien"], False, 0.3, 1),
+        ("at_least", ["Canh hang dong"], False, 0.3, 1),
+        ("at_least", ["Canh bien"], False, 0.3, 1),
+        ("at_least", ["Giap nguc dinh hat"], False, 0.2, 1),
+        ("at_least", ["Tay ao dinh hat"], False, 0.2, 1),
+        ("at_least", ["Toc bui cao"], False, 0.2, 1),
+        ("at_least", ["Deo vong tay"], False, 0.2, 1),
+        ("at_least", ["Dau doi khan dong"], False, 0.2, 1),
+        ("at_least", ["Ao ren dinh hat"], False, 0.2, 1),
+        ("at_least", ["Vay sampot"], False, 0.2, 1),
+        ("at_least", ["That lung ban to"], False, 0.2, 1),
+        ("at_least", ["Deo vong co"], False, 0.2, 1),
+        ("at_least", ["Do vai bong"], False, 0.2, 1),
+        ("at_least", ["Giap than duoi"], False, 0.2, 1),
+        ("at_least", ["Cam vu khi"], False, 0.2, 1),
+        ("at_least", ["Ao Khoac vai"], False, 0.2, 1),
+        ("at_least", ["Rau dai"], False, 0.2, 1),
+        ("at_least", ["Trang diem mat quy"], True, 0.3, 1),
+        ("at_least_in_frame", ["Long may ke dam", "Moi do"], True, 0.3, 1)
 
         
     ],
@@ -185,47 +185,47 @@ CONSTRAINTS_DB = {
         ("at_least_in_frame", ["Trang phuc bieu dien nghe thuat dan gian", "Xe dieu hanh ruoc ong"], True, 1.0, None),
         ("at_least_in_frame", ["Kieu ruoc ong", "Trang phuc linh"], True, 1.0, None),
         ("at_least_in_frame", ["Trang phuc linh"], False, 0.75, 3),
-        ("is_presence", ["Trang phuc linh", "Ao dai truyen thong"], False, 0.5, None),
-        ("is_presence", ["Ban tho ong", "Trang phuc le hoi"], False, 0.6, None),
-        ("is_presence", ["Ban tho ong", "Ao dai truyen thong"], False, 0.6, None),
-        ("is_presence", ["Tau bien"], True, 0.6, None),
-        ("is_presence", ["Trong"], False, 0.1, None),
-        ("is_presence", ["Xe dieu hanh ruoc ong"], False, 0.7, None),
-        ("is_presence", ["Cong dinh ong"], False, 0.2, None),
+        ("at_least", ["Trang phuc linh", "Ao dai truyen thong"], False, 0.5, 1),
+        ("at_least", ["Ban tho ong", "Trang phuc le hoi"], False, 0.6, 1),
+        ("at_least", ["Ban tho ong", "Ao dai truyen thong"], False, 0.6, 1),
+        ("at_least", ["Tau bien"], True, 0.6, 1),
+        ("at_least", ["Trong"], False, 0.1, 1),
+        ("at_least", ["Xe dieu hanh ruoc ong"], False, 0.7, 1),
+        ("at_least", ["Cong dinh ong"], False, 0.2, 1),
         ("at_least", ["Lan su rong"], False, 0.3, 2),
     ],
 
     "Chợ nổi Cái Răng": [
-        ("is_presence", ["Cay beo", "Thuyen"], True, 1.0, None),
+        ("at_least", ["Cay beo", "Thuyen"], True, 1.0, 1),
         ("at_least_in_frame", ["Cay beo", "Thuyen"], True, 1.0, 5),
         ("is_on", ["Cay beo", "Thuyen"], True, 1.0, None)
     ],
 
     "Đờn ca tài tử": [
-        ("is_presence", ["dan kim"], True, 0.25, None),
-        ("is_presence", ["dan guitar"], True, 0.25, None),
-        ("is_presence", ["dan bau"], True, 0.25, None),
-        ("is_presence", ["dan ty ba"], True, 0.25, None),
-        ("is_presence", ["dan tam"], True, 0.25, None),
-        ("is_presence", ["sao"], True, 0.25, None),
-        ("is_presence", ["dan tranh"],True, 0.25, None)
-        ("is_presence", ["dan kim", "dan guitar", "dan bau"], False, 0.3, None)
-        ("is_presence", ["dan ty ba", "dan tam", "dan bau"], False, 0.3, None)
-        ("is_presence", ["dan ty ba", "dan tam", "sao"], False, 0.3, None)
-        ("is_presence", ["dan tranh", "dan tam", "sao"], False, 0.3, None)
+        ("at_least", ["dan kim"], True, 0.25, 1),
+        ("at_least", ["dan guitar"], True, 0.25, 1),
+        ("at_least", ["dan bau"], True, 0.25, 1),
+        ("at_least", ["dan ty ba"], True, 0.25, 1),
+        ("at_least", ["dan tam"], True, 0.25, 1),
+        ("at_least", ["sao"], True, 0.25, 1),
+        ("at_least", ["dan tranh"],True, 0.25, 1),
+        ("at_least", ["dan kim", "dan guitar", "dan bau"], False, 0.3, 1),
+        ("at_least", ["dan ty ba", "dan tam", "dan bau"], False, 0.3, 1),
+        ("at_least", ["dan ty ba", "dan tam", "sao"], False, 0.3, 1),
+        ("at_least", ["dan tranh", "dan tam", "sao"], False, 0.3, 1),
 
     ],
 
     "Nhạc Ngũ Âm người Khmer": [
         ("at_least", ["Ken Srolay pin-piet"], False, 0.5, None),
         ("at_least", ["Dan sat Ro-niet-dek"], False, 0.7, None),
-        ("at_least", ["Dan cong Coung-touch Coung-thom"],True, 0.9,None),
-        ("at_least", ["Dan thuyen Ro-niet-ek"], True, 1.0, 5),
+        ("at_least", ["Dan cong Coung-tuoch Coung-thom"],True, 0.9,None),
+        ("at_least", ["Dan thuyen Ro niet ek"], True, 1.0, 5),
         ("at_least", ["Trong lon Sakho-thom"], False, 0.6, 2),
         ("at_least", ["Trong nho Kha-so-sompho"], False, 0.6, 2),
         ("at_least_in_frame", ["Dan sat Ro-niet-dek", "Trang phuc Khmer"], False, 0.2, None),
-        ("at_least_in_frame", ["Dan cong Coung-touch Coung-thom", "Trang phuc Khmer"], False, 0.2, None),
-        ("at_least_in_frame", ["Dan thuyen Ro-niet-ek", "Trang phuc Khmer"], False, 0.2, None),
+        ("at_least_in_frame", ["Dan cong Coung-tuoch Coung-thom", "Trang phuc Khmer"], False, 0.2, None),
+        ("at_least_in_frame", ["Dan thuyen Ro niet ek", "Trang phuc Khmer"], False, 0.2, None),
         ("at_least_in_frame", ["Trong lon Sakho-thom", "Trang phuc Khmer"], False, 0.2, None),
         ("at_least_in_frame", ["Trong nho Kha-so-sompho", "Trang phuc Khmer"], False, 0.2, None)
     ],

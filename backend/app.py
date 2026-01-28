@@ -93,6 +93,9 @@ except Exception as e:
 # In-memory storage cho sessions đang xử lý
 ACTIVE_SESSIONS = {}
 
+# Session timeout (seconds) - 30 phút
+SESSION_TIMEOUT = 30 * 60
+
 # ==========================================
 # HELPER FUNCTIONS
 # ==========================================
@@ -106,6 +109,37 @@ def allowed_file(filename: str, file_type: str = 'video') -> bool:
     elif file_type == 'image':
         return ext in Config.ALLOWED_IMAGE_EXTENSIONS
     return False
+
+
+def cleanup_file(file_path: str):
+    """Xóa file upload sau khi xử lý xong"""
+    try:
+        if file_path and os.path.exists(file_path):
+            os.remove(file_path)
+            logger.info(f"🗑️ Đã xóa file: {os.path.basename(file_path)}")
+    except Exception as e:
+        logger.warning(f"⚠️ Không thể xóa file {file_path}: {e}")
+
+
+def cleanup_expired_sessions():
+    """Xóa các session hết hạn và file liên quan"""
+    current_time = datetime.now()
+    expired_ids = []
+    
+    for req_id, session_data in ACTIVE_SESSIONS.items():
+        created_at = session_data.get('created_at')
+        if created_at:
+            elapsed = (current_time - created_at).total_seconds()
+            if elapsed > SESSION_TIMEOUT:
+                expired_ids.append(req_id)
+    
+    for req_id in expired_ids:
+        session_data = ACTIVE_SESSIONS.pop(req_id, None)
+        if session_data:
+            cleanup_file(session_data.get('file_path'))
+            logger.info(f"🧹 Đã cleanup session hết hạn: {req_id}")
+    
+    return len(expired_ids)
 
 
 def get_file_type(filename: str) -> str:
@@ -281,6 +315,9 @@ def analyze_media():
             history.status = "finished"
             history_store.save(history)
             
+            # Cleanup file vì không cần nữa
+            cleanup_file(file_path)
+            
             return jsonify({
                 "status": "finished",
                 "history_id": history.id,
@@ -315,7 +352,8 @@ def analyze_media():
                 },
                 "file_path": file_path,
                 "file_type": file_type,
-                "history": history
+                "history": history,
+                "created_at": datetime.now()  # Để tracking timeout
             }
             
             # Update history status
@@ -352,6 +390,9 @@ def analyze_media():
             history.status = "finished"
             history_store.save(history)
             
+            # Cleanup file vì không cần nữa
+            cleanup_file(file_path)
+            
             return jsonify({
                 "status": "finished",
                 "history_id": history.id,
@@ -364,6 +405,9 @@ def analyze_media():
         
     except Exception as e:
         logger.error(f"Lỗi xử lý {file_type}: {str(e)}", exc_info=True)
+        # Cleanup file khi có lỗi
+        if 'file_path' in locals():
+            cleanup_file(file_path)
         return jsonify({
             'error': f'Lỗi xử lý file: {str(e)}',
             'code': 'PROCESSING_ERROR'
@@ -509,8 +553,10 @@ def submit_answer():
         history.status = "finished"
         history_store.update(history.id, history)
         
-        # Xóa session
+        # Xóa session và cleanup file
+        file_path = session_data.get('file_path')
         del ACTIVE_SESSIONS[req_id]
+        cleanup_file(file_path)
         logger.info(f"Hoàn thành phân tích sau {current_turn} lượt: {winners}")
         
         return jsonify({
@@ -530,6 +576,100 @@ def submit_answer():
             'error': f'Lỗi phân tích: {str(e)}',
             'code': 'ANALYSIS_ERROR'
         }), 500
+
+
+@app.route('/api/skip', methods=['POST'])
+@require_services
+def skip_questions():
+    """
+    Bỏ qua câu hỏi và kết thúc phân tích ngay với kết quả hiện tại
+    ---
+    Request JSON:
+        - request_id: ID của phiên phân tích
+    Returns:
+        - Kết quả phân tích dựa trên logits hiện tại
+    """
+    data = request.json
+    if not data:
+        return jsonify({'error': 'Thiếu request body', 'code': 'NO_BODY'}), 400
+        
+    req_id = data.get('request_id')
+
+    if not req_id or req_id not in ACTIVE_SESSIONS:
+        return jsonify({
+            'error': 'Request ID không hợp lệ hoặc đã hết hạn',
+            'code': 'INVALID_REQUEST_ID'
+        }), 400
+
+    session_data = ACTIVE_SESSIONS[req_id]
+    logits = session_data['logits']
+    satisfied = session_data['satisfied']
+    unsatisfied = session_data['unsatisfied']
+    history = session_data['history']
+    current_turn = session_data.get('current_turn', 1)
+
+    try:
+        logger.info(f"User bỏ qua câu hỏi, kết thúc sớm tại lượt {current_turn}")
+        
+        # Kết luận với logits hiện tại
+        winners, final_probs = classifier.decide_final_result(logits)
+        
+        # Lấy top 3 với constraints
+        top_3_constraints = classifier.get_top_3_with_constraints(
+            logits, satisfied, unsatisfied
+        )
+        
+        sorted_probs = sorted(final_probs.items(), key=lambda x: x[1], reverse=True)[:3]
+        top_3 = [{"festival": f, "confidence": round(p, 4)} for f, p in sorted_probs]
+        
+        # Cập nhật history
+        history.result = AnalysisResult(
+            winner=winners[0] if winners else None,
+            top_3=top_3
+        )
+        history.status = "finished"
+        history_store.update(history.id, history)
+        
+        # Cleanup session và file
+        file_path = session_data.get('file_path')
+        del ACTIVE_SESSIONS[req_id]
+        cleanup_file(file_path)
+        logger.info(f"Kết thúc sớm - Kết quả: {winners}")
+        
+        return jsonify({
+            "status": "finished",
+            "history_id": history.id,
+            "result": winners,
+            "skipped_at_turn": current_turn,
+            "probabilities": {k: round(float(v), 4) for k, v in final_probs.items()},
+            "top_3": top_3,
+            "top_3_constraints": top_3_constraints,
+            "message": "Đã bỏ qua câu hỏi và kết thúc với kết quả hiện tại"
+        }), 200
+
+    except Exception as e:
+        logger.error(f"Lỗi khi skip: {str(e)}", exc_info=True)
+        return jsonify({
+            'error': f'Lỗi xử lý: {str(e)}',
+            'code': 'SKIP_ERROR'
+        }), 500
+
+
+@app.route('/api/sessions/cleanup', methods=['POST'])
+@require_services
+def manual_cleanup_sessions():
+    """
+    Endpoint để cleanup các session hết hạn thủ công
+    ---
+    Returns:
+        - Số session đã cleanup
+    """
+    cleaned = cleanup_expired_sessions()
+    return jsonify({
+        "message": f"Đã cleanup {cleaned} session hết hạn",
+        "cleaned_count": cleaned,
+        "active_sessions": len(ACTIVE_SESSIONS)
+    }), 200
 
 
 # ==========================================

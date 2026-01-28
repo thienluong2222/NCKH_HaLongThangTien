@@ -694,12 +694,32 @@ class YOLOCSVPipeline:
     
     def process_video(self, video_path, confidence_threshold=0.5, fps_detect=1):
         """Xử lý video và trả về list ObjectDetection (Dùng cho Bayesian Classifier)"""
+        print(f"\n{'='*60}")
+        print(f"🎬 BẮT ĐẦU XỬ LÝ VIDEO: {video_path}")
+        print(f"{'='*60}")
+        
         cap = cv2.VideoCapture(video_path)
+        
+        if not cap.isOpened():
+            print(f"❌ Không thể mở video: {video_path}")
+            return []
+        
         video_fps = cap.get(cv2.CAP_PROP_FPS)
-        frame_interval = int(video_fps / fps_detect)
+        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        
+        print(f"📊 Video FPS: {video_fps}, Total frames: {total_frames}")
+        
+        # Validation: tránh division by zero
+        if video_fps <= 0:
+            print(f"⚠️ Video FPS không hợp lệ ({video_fps}), sử dụng mặc định 30")
+            video_fps = 30
+        
+        frame_interval = max(1, int(video_fps / fps_detect))
+        print(f"⚙️ Frame interval: {frame_interval} (detect mỗi {frame_interval} frames)")
         
         all_objects = []
         frame_count = 0
+        detected_frames = 0
 
         while True:
             ret, frame = cap.read()
@@ -731,10 +751,22 @@ class YOLOCSVPipeline:
                         bboxs=data['boxes']
                     )
                     all_objects.append(obj)
+                
+                detected_frames += 1
             
             frame_count += 1
         
         cap.release()
+        
+        # Summary log
+        unique_subclasses = set(obj.subclass for obj in all_objects)
+        print(f"\n✅ HOÀN THÀNH XỬ LÝ VIDEO:")
+        print(f"├─ Tổng frames đã đọc: {frame_count}")
+        print(f"├─ Frames đã detect: {detected_frames}")
+        print(f"├─ Tổng objects phát hiện: {len(all_objects)}")
+        print(f"└─ Unique subclasses: {len(unique_subclasses)} - {list(unique_subclasses)[:5]}...")
+        print(f"{'='*60}\n")
+        
         return all_objects
 
     def process_image(self, image_path, confidence_threshold=0.5):
@@ -748,7 +780,13 @@ class YOLOCSVPipeline:
         Returns:
             List[ObjectDetection]: Danh sách object được phát hiện
         """
+        print(f"\n{'='*60}")
+        print(f"🖼️ BẮT ĐẦU XỬ LÝ ẢNH: {image_path}")
+        print(f"{'='*60}")
+        
         raw_dets = self.predict_and_map_with_boxes(image_path, confidence_threshold)
+        
+        print(f"📊 Raw detections: {len(raw_dets)}")
         
         # Group by subclass
         subclass_groups = {}
@@ -772,6 +810,13 @@ class YOLOCSVPipeline:
                 bboxs=data['boxes']
             )
             all_objects.append(obj)
+        
+        # Summary log
+        unique_subclasses = set(obj.subclass for obj in all_objects)
+        print(f"\n✅ HOÀN THÀNH XỬ LÝ ẢNH:")
+        print(f"├─ Mapped detections: {len(all_objects)}")
+        print(f"└─ Unique subclasses: {len(unique_subclasses)} - {list(unique_subclasses)}")
+        print(f"{'='*60}\n")
         
         return all_objects
 
@@ -804,10 +849,10 @@ class ObjectDetection:
 # CẤU HÌNH TOÀN CỤC (Từ PSEUDO)
 # ==========================================
 GLOBAL_CONFIG = {
-    "T_high": 0.85,    # Ngưỡng tin cậy cao để chọn ứng viên ngay
+    "T_high": 0.82,    # Ngưỡng tin cậy cao để chọn ứng viên ngay
     "T_low": 0.55,     # Ngưỡng thấp nhất để xem xét (loại bỏ logit=0 có sigmoid=0.5)
     "delta": 0.25,     # Chênh lệch tối đa cho phép so với conf_max
-    "T_out": 0.85,     # Ngưỡng quyết định cuối cùng (sau khi hỏi user)
+    "T_out": 0.82,     # Ngưỡng quyết định cuối cùng (sau khi hỏi user)
     "max_candidates": 3  # Số lượng candidates tối đa
 }
 
@@ -910,31 +955,76 @@ class BayesianFestivalClassifier:
                     satisfied = True; break
         elif ctype == "confidence_min":
             target = list(by_subclass.keys()) if "all" in params else [p for p in params if p in by_subclass]
-            if target:
-                avg = sum(d.confidence * d.count for s in target for d in by_subclass[s]) / sum(d.count for s in target for d in by_subclass[s])
+            
+            total_weighted_conf = 0
+            total_count = 0
+            
+            for s in target:
+                for d in by_subclass[s]:
+                    total_weighted_conf += d.confidence * d.count
+                    total_count += d.count
+            
+            if total_count > 0:
+                avg = total_weighted_conf / total_count
                 satisfied = avg >= (threshold or 0)
+            else:
+                satisfied = False
         elif ctype == "is_on" and len(params) == 2:
             satisfied = self._check_is_on(params[0], params[1], by_subclass, by_frame)
         return satisfied
 
     def calculate_initial_logits(self, detections):
+        print(f"\n{'─'*60}")
+        print(f"🧮 TÍNH TOÁN BAYESIAN LOGITS")
+        print(f"{'─'*60}")
+        print(f"📊 Input: {len(detections)} detections")
+        
         by_subclass, by_frame = self._index_detections(detections)
+        
+        print(f"📋 Unique subclasses detected: {list(by_subclass.keys())}")
+        print(f"📋 Total frames with detections: {len(by_frame)}")
+        
         festival_logits = {}
         festival_unsatisfied = defaultdict(list)
-        festival_satisfied = defaultdict(list)  # NEW: Lưu cả ràng buộc đã thỏa mãn
+        festival_satisfied = defaultdict(list)
 
         for festival, rules in CONSTRAINTS_DB.items():
             current_logit = 0.0
+            satisfied_count = 0
+            
             for rule in rules:
                 is_satisfied = self.check_constraints(rule, by_subclass, by_frame)
                 weight = rule[3]
                 if is_satisfied:
                     current_logit += weight
-                    festival_satisfied[festival].append(rule)  # NEW
+                    festival_satisfied[festival].append(rule)
+                    satisfied_count += 1
                 else:
                     festival_unsatisfied[festival].append(rule)
+            
             festival_logits[festival] = current_logit
-        return festival_logits, festival_unsatisfied, festival_satisfied  # NEW: Trả về thêm satisfied
+            
+            # Debug chi tiết cho Sân Khấu Dù Kê
+            if festival == "Sân Khấu Dù Kê":
+                print(f"\n🎭 DEBUG 'Sân Khấu Dù Kê':")
+                print(f"   ├─ Tổng rules: {len(rules)}")
+                print(f"   ├─ Rules thỏa mãn: {satisfied_count}")
+                print(f"   ├─ Logit: {current_logit:.2f}")
+                print(f"   └─ Các rules thỏa mãn:")
+                for r in festival_satisfied[festival][:5]:  # Chỉ hiện 5 rules đầu
+                    print(f"      • {r[0]}: {r[1]} (weight={r[3]})")
+                if satisfied_count > 5:
+                    print(f"      ... và {satisfied_count - 5} rules khác")
+        
+        # Log top 5 festivals by logit
+        sorted_logits = sorted(festival_logits.items(), key=lambda x: x[1], reverse=True)[:5]
+        print(f"\n🏆 TOP 5 FESTIVALS (by logit):")
+        for fest, logit_val in sorted_logits:
+            prob = sigmoid(logit_val)
+            print(f"   {fest}: logit={logit_val:.2f}, prob={prob:.2%}")
+        print(f"{'─'*60}\n")
+        
+        return festival_logits, festival_unsatisfied, festival_satisfied
     
     def get_top_3_with_constraints(self, festival_logits, festival_satisfied, festival_unsatisfied):
         """
