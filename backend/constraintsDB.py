@@ -175,8 +175,8 @@ CONSTRAINTS_DB = {
         ("is_presence", ["Cam vu khi"], False, 0.2, None),
         ("is_presence", ["Ao khoac vai"], False, 0.2, None),
         ("is_presence", ["Rau dai"], False, 0.2, None),
-        ("is_presence", ["trang diem mat quy"], False, 0.5, None),
-        ("at_least_in_frame", ["long may ke dam", "moi do"], False, 0.4, None)
+        ("is_presence", ["trang diem mat quy"], True, 0.3, None),
+        ("at_least_in_frame", ["long may ke dam", "moi do"], True, 0.3, None)
 
         
     ],
@@ -188,7 +188,7 @@ CONSTRAINTS_DB = {
         ("is_presence", ["Trang phuc linh", "Ao dai truyen thong"], False, 0.5, None),
         ("is_presence", ["Ban tho ong", "Trang phuc le hoi"], False, 0.6, None),
         ("is_presence", ["Ban tho ong", "Ao dai truyen thong"], False, 0.6, None),
-        ("is_presence", ["Tau bien"], False, 0.6, None),
+        ("is_presence", ["Tau bien"], True, 0.6, None),
         ("is_presence", ["Trong"], False, 0.1, None),
         ("is_presence", ["Xe dieu hanh ruoc ong"], False, 0.7, None),
         ("is_presence", ["Cong dinh ong"], False, 0.2, None),
@@ -209,6 +209,11 @@ CONSTRAINTS_DB = {
         ("is_presence", ["dan tam"], True, 0.25, None),
         ("is_presence", ["sao"], True, 0.25, None),
         ("is_presence", ["dan tranh"],True, 0.25, None)
+        ("is_presence", ["dan kim", "dan guitar", "dan bau"], False, 0.3, None)
+        ("is_presence", ["dan ty ba", "dan tam", "dan bau"], False, 0.3, None)
+        ("is_presence", ["dan ty ba", "dan tam", "sao"], False, 0.3, None)
+        ("is_presence", ["dan tranh", "dan tam", "sao"], False, 0.3, None)
+
     ],
 
     "Nhạc Ngũ Âm người Khmer": [
