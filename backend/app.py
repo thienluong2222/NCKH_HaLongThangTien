@@ -29,7 +29,13 @@ logger = logging.getLogger(__name__)
 # FLASK APP INITIALIZATION
 # ==========================================
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={
+    r"/api/*": {
+        "origins": "*",
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"]
+    }
+})
 
 # Configuration
 app.config['UPLOAD_FOLDER'] = Config.UPLOAD_FOLDER

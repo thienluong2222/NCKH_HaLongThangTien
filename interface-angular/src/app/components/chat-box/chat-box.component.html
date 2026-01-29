@@ -24,28 +24,79 @@
       }
     </div>
     <!-- Workflow Progress -->
-    <div class="workflow-progress">
-      <div class="progress-step" [class.active]="workflowStep() === 'upload'" [class.completed]="workflowStep() !== 'upload'">
-        <span class="step-icon">📤</span>
-        <span class="step-label">Tải lên</span>
+    <div class="workflow-progress workflow-bubble">
+      <div class="bubble-step" 
+        [class.active]="workflowStep() === 'upload'" 
+        [class.completed]="workflowStep() !== 'upload'">
+        <div class="bubble-icon">📤</div>
+        <div class="bubble-label">Tải lên</div>
       </div>
-      <div class="progress-line" [class.active]="workflowStep() !== 'upload'"></div>
-      <div class="progress-step" [class.active]="workflowStep() === 'analyzing'" [class.completed]="workflowStep() === 'questioning' || workflowStep() === 'completed'">
-        <span class="step-icon">🔍</span>
-        <span class="step-label">Phân tích</span>
+      <div class="bubble-connector" [class.active]="workflowStep() !== 'upload'"></div>
+      <div class="bubble-step" 
+        [class.active]="workflowStep() === 'analyzing'" 
+        [class.completed]="workflowStep() === 'questioning' || workflowStep() === 'completed'">
+        <div class="bubble-icon">🔍</div>
+        <div class="bubble-label">Phân tích</div>
       </div>
-      <div class="progress-line" [class.active]="workflowStep() === 'questioning' || workflowStep() === 'completed'"></div>
-      <div class="progress-step" [class.active]="workflowStep() === 'questioning'" [class.completed]="workflowStep() === 'completed'">
-        <span class="step-icon">💬</span>
-        <span class="step-label">Hỏi đáp</span>
+      <div class="bubble-connector" [class.active]="workflowStep() === 'questioning' || workflowStep() === 'completed'"></div>
+      <div class="bubble-step" 
+        [class.active]="workflowStep() === 'questioning'" 
+        [class.completed]="workflowStep() === 'completed'">
+        <div class="bubble-icon">💬</div>
+        <div class="bubble-label">Hỏi đáp</div>
       </div>
-      <div class="progress-line" [class.active]="workflowStep() === 'completed'"></div>
-      <div class="progress-step" [class.active]="workflowStep() === 'completed'">
-        <span class="step-icon">✅</span>
-        <span class="step-label">Hoàn tất</span>
+      <div class="bubble-connector" [class.active]="workflowStep() === 'completed'"></div>
+      <div class="bubble-step" [class.active]="workflowStep() === 'completed'">
+        <div class="bubble-icon">✅</div>
+        <div class="bubble-label">Hoàn tất</div>
       </div>
     </div>
   </div>
+
+  <!-- Fixed Media Preview Section (shown after upload) -->
+  @if (workflowStep() !== 'upload' && previews().length > 0) {
+    <div class="fixed-media-preview">
+      <div class="media-preview-header">
+        <div class="preview-title">
+          <mat-icon>perm_media</mat-icon>
+          <span>Tệp đang phân tích</span>
+        </div>
+        <button mat-icon-button class="expand-btn" (click)="toggleMediaExpand()" [matTooltip]="mediaExpanded() ? 'Thu gọn' : 'Mở rộng'">
+          <mat-icon>{{ mediaExpanded() ? 'expand_less' : 'expand_more' }}</mat-icon>
+        </button>
+      </div>
+      <div class="media-preview-content" [class.expanded]="mediaExpanded()">
+        <div class="media-items">
+          @for (preview of previews(); track preview.url; let i = $index) {
+            <div class="media-item" [class.active]="activeMediaIndex() === i" (click)="setActiveMedia(i)">
+              @if (preview.type === 'image') {
+                <img [src]="preview.url" [alt]="preview.file.name">
+              } @else {
+                <video [src]="preview.url"></video>
+                <div class="video-badge">
+                  <mat-icon>videocam</mat-icon>
+                </div>
+              }
+            </div>
+          }
+        </div>
+        <!-- Active Media Large Preview -->
+        @if (mediaExpanded() && previews().length > 0) {
+          <div class="active-media-display">
+            @if (previews()[activeMediaIndex()].type === 'image') {
+              <img [src]="previews()[activeMediaIndex()].url" [alt]="previews()[activeMediaIndex()].file.name">
+            } @else {
+              <video [src]="previews()[activeMediaIndex()].url" controls></video>
+            }
+            <div class="media-info">
+              <span class="media-name">{{ previews()[activeMediaIndex()].file.name }}</span>
+              <span class="media-size">{{ formatSize(previews()[activeMediaIndex()].file.size) }}</span>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
 
   <!-- Main Content Area -->
   <div class="chat-body">

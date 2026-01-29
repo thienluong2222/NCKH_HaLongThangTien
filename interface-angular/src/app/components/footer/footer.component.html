@@ -1,8 +1,15 @@
 <footer class="heritage-footer">
   <!-- Decorative Top Border -->
   <div class="footer-border">
-    <svg viewBox="0 0 1440 40" preserveAspectRatio="none">
-      <path fill="var(--heritage-cream)" d="M0,0 C360,40 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,0 L0,0 Z"/>
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="footerWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="var(--heritage-cream)"/>
+          <stop offset="50%" stop-color="#FDF5E6"/>
+          <stop offset="100%" stop-color="var(--heritage-cream)"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#footerWaveGrad)" d="M0,60 C360,20 720,50 1080,30 C1260,20 1380,35 1440,20 L1440,0 L0,0 Z"/>
     </svg>
   </div>
   
@@ -12,22 +19,34 @@
       <!-- Brand Section -->
       <div class="footer-brand">
         <div class="brand-logo">
-          <span class="logo-icon">🎭</span>
+          <div class="logo-wrapper">
+            <span class="logo-icon">🏛️</span>
+            <div class="logo-ring"></div>
+          </div>
           <div class="brand-text">
             <h3>ICHeritage</h3>
-            <p>Di sản Văn hóa Phi vật thể</p>
+            <span class="subtitle">Intangible Cultural Heritage</span>
           </div>
         </div>
         <p class="brand-description">
           Hệ thống nhận dạng lễ hội truyền thống Việt Nam sử dụng trí tuệ nhân tạo, 
-          góp phần bảo tồn và phát huy giá trị văn hóa dân tộc.
+          góp phần bảo tồn và phát huy giá trị văn hóa phi vật thể của dân tộc.
         </p>
+        
+        <!-- UNESCO-style Recognition -->
+        <div class="recognition-badge">
+          <mat-icon>workspace_premium</mat-icon>
+          <span>Hỗ trợ bảo tồn Di sản Văn hóa</span>
+        </div>
       </div>
       
       <!-- Links Section -->
       <div class="footer-links">
         <div class="link-group">
-          <h4>Khám phá</h4>
+          <h4>
+            <mat-icon>explore</mat-icon>
+            Khám phá
+          </h4>
           <a href="#">
             <mat-icon>festival</mat-icon>
             Danh sách lễ hội
@@ -40,33 +59,51 @@
             <mat-icon>auto_stories</mat-icon>
             Câu chuyện di sản
           </a>
+          <a href="#">
+            <mat-icon>collections</mat-icon>
+            Thư viện hình ảnh
+          </a>
         </div>
         
         <div class="link-group">
-          <h4>Nghiên cứu</h4>
+          <h4>
+            <mat-icon>biotech</mat-icon>
+            Nghiên cứu
+          </h4>
           <a href="#">
-            <mat-icon>science</mat-icon>
+            <mat-icon>article</mat-icon>
             Bài báo khoa học
           </a>
-          <a href="#">
+          <a href="https://github.com" target="_blank">
             <mat-icon>code</mat-icon>
             GitHub Repository
           </a>
           <a href="#">
             <mat-icon>dataset</mat-icon>
-            Dataset
+            Dataset công khai
+          </a>
+          <a href="#">
+            <mat-icon>api</mat-icon>
+            API Documentation
           </a>
         </div>
         
         <div class="link-group">
-          <h4>Liên hệ</h4>
-          <a href="#">
+          <h4>
+            <mat-icon>contact_support</mat-icon>
+            Liên hệ
+          </h4>
+          <a href="mailto:contact@icheritage.vn">
             <mat-icon>mail</mat-icon>
             Email hỗ trợ
           </a>
           <a href="#">
             <mat-icon>school</mat-icon>
             Đại học Cần Thơ
+          </a>
+          <a href="#">
+            <mat-icon>groups</mat-icon>
+            Đội ngũ phát triển
           </a>
         </div>
       </div>
@@ -75,18 +112,30 @@
     <!-- Footer Bottom -->
     <div class="footer-bottom">
       <div class="copyright">
-        <p>&copy; 2025 ICHeritage Project • NCKH Hạ Long Thăng Tiến</p>
-        <p class="tech-stack">Built with Angular 18 & YOLO + Gemini AI 💜</p>
+        <p class="main-copyright">
+          &copy; 2025 ICHeritage Project • Nhóm NCKH Hạ Long Thăng Tiến
+        </p>
+        <p class="tech-info">
+          <span class="tech-badge">
+            <mat-icon>memory</mat-icon>
+            Dữ liệu kết nối
+          </span>
+          <span class="tech-separator">•</span>
+          <span class="tech-badge">
+            <mat-icon>psychology</mat-icon>
+            Trợ lý AI
+          </span>
+        </p>
       </div>
       
       <div class="social-links">
-        <a href="#" class="social-btn" aria-label="GitHub">
+        <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub">
           <mat-icon>code</mat-icon>
         </a>
         <a href="#" class="social-btn" aria-label="Facebook">
           <mat-icon>facebook</mat-icon>
         </a>
-        <a href="#" class="social-btn" aria-label="Email">
+        <a href="mailto:contact@icheritage.vn" class="social-btn" aria-label="Email">
           <mat-icon>mail</mat-icon>
         </a>
       </div>

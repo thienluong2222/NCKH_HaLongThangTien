@@ -1,0 +1,78 @@
+# ==========================================
+# ICHeritage - Full Stack Docker Compose
+# Vietnamese Cultural Heritage Detection System
+# ==========================================
+
+services:
+  # ==========================================
+  # BACKEND - Python Flask + YOLO
+  # ==========================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    # image: icheritage-backend:optimized
+    container_name: icheritage-backend
+    restart: unless-stopped
+    ports:
+      - "${BACKEND_PORT:-5001}:5001"
+    env_file:
+      - ./backend/.env
+    environment:
+      - FLASK_DEBUG=${FLASK_DEBUG:-False}
+      - PORT=5001
+      - HOST=0.0.0.0
+      - MODEL_PATH=/app/weight/best.pt
+      - CSV_PATH=/app/uploads/artifacts/merged_data.csv
+      - UPLOAD_FOLDER=/app/uploads
+    volumes:
+      # Mount model weights (large file, better to mount than copy)
+      - ./backend/weight:/app/weight:ro
+      # Mount uploads for persistence
+      - backend-uploads:/app/uploads
+      # Mount artifacts (CSV mapping)
+      - ./backend/uploads/artifacts:/app/uploads/artifacts:ro
+    networks:
+      - icheritage-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:5001/api/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # ==========================================
+  # FRONTEND - Angular + Nginx
+  # ==========================================
+  frontend:
+    build:
+      context: ./interface-angular
+      dockerfile: Dockerfile
+    container_name: icheritage-frontend
+    restart: unless-stopped
+    ports:
+      - "${FRONTEND_PORT:-80}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - icheritage-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+# ==========================================
+# NETWORKS
+# ==========================================
+networks:
+  icheritage-network:
+    driver: bridge
+
+# ==========================================
+# VOLUMES
+# ==========================================
+volumes:
+  backend-uploads:
+    driver: local
