@@ -37,47 +37,96 @@
         </div>
       </mat-tab>
       
-      <!-- Visual Rules Tab -->
+      <!-- Visual Rules Tab - Now with Graph -->
       <mat-tab>
         <ng-template mat-tab-label>
           <div class="tab-label">
-            <mat-icon>visibility</mat-icon>
-            <span>Quy tắc hình ảnh</span>
+            <mat-icon>hub</mat-icon>
+            <span>Biểu đồ quan hệ</span>
           </div>
         </ng-template>
         
         <div class="tab-content">
-          <div class="rules-section">
-            <div class="section-header">
-              <span class="section-icon">🔍</span>
-              <h4>Các yếu tố hình ảnh được phát hiện</h4>
-            </div>
-            
-            @if (festivalService.hasResults()) {
-              <div class="rules-grid">
-                @for (rule of visualRules; track rule.name) {
-                  <div class="rule-card" [class.satisfied]="rule.satisfied">
-                    <div class="rule-status">
-                      <mat-icon>{{ rule.satisfied ? 'check_circle' : 'cancel' }}</mat-icon>
-                    </div>
-                    <div class="rule-content">
-                      <h5>{{ rule.name }}</h5>
-                      <p>{{ rule.description }}</p>
-                    </div>
-                    <div class="rule-badge" [class.found]="rule.satisfied">
-                      {{ rule.satisfied ? 'Phát hiện' : 'Không tìm thấy' }}
-                    </div>
-                  </div>
-                }
+          <div class="graph-section">
+            @if (festivalService.hasResults() && graphNodes.length > 0) {
+              <!-- Graph Stats -->
+              <div class="graph-stats">
+                <div class="stat-item">
+                  <span class="stat-icon">🎪</span>
+                  <span class="stat-value">{{ graphStats.festivals }}</span>
+                  <span class="stat-label">Lễ hội</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-icon">🔍</span>
+                  <span class="stat-value">{{ graphStats.features }}</span>
+                  <span class="stat-label">Đặc trưng</span>
+                </div>
+                <div class="stat-item satisfied">
+                  <span class="stat-icon">✓</span>
+                  <span class="stat-value">{{ graphStats.satisfiedLinks }}</span>
+                  <span class="stat-label">Phát hiện</span>
+                </div>
+                <div class="stat-item unsatisfied">
+                  <span class="stat-icon">✗</span>
+                  <span class="stat-value">{{ graphStats.unsatisfiedLinks }}</span>
+                  <span class="stat-label">Chưa thấy</span>
+                </div>
+              </div>
+              
+              <!-- Graph Container -->
+              <div class="graph-wrapper">
+                <div #graphContainer id="graph" class="graph-container"></div>
+                <div class="graph-instructions">
+                  <span class="instruction">
+                    <mat-icon>pan_tool</mat-icon>
+                    Kéo thả để di chuyển node
+                  </span>
+                  <span class="instruction">
+                    <mat-icon>zoom_in</mat-icon>
+                    Cuộn chuột để zoom
+                  </span>
+                  <span class="instruction">
+                    <mat-icon>touch_app</mat-icon>
+                    Click để cố định/thả node
+                  </span>
+                  <span class="instruction">
+                    <mat-icon>ads_click</mat-icon>
+                    Double-click để reset view
+                  </span>
+                </div>
+              </div>
+              
+              <!-- Legend -->
+              <div class="graph-legend">
+                <div class="legend-item">
+                  <span class="legend-symbol festival"></span>
+                  <span>Lễ hội (kích thước = độ tin cậy)</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-symbol satisfied"></span>
+                  <span>Đặc trưng đã phát hiện</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-symbol unsatisfied"></span>
+                  <span>Đặc trưng chưa phát hiện</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-line green"></span>
+                  <span>Ràng buộc thỏa mãn</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-line red"></span>
+                  <span>Ràng buộc chưa thỏa mãn</span>
+                </div>
               </div>
             } @else {
               <div class="empty-state">
                 <div class="empty-illustration">
-                  <span class="main-icon">🖼️</span>
+                  <span class="main-icon">🕸️</span>
                   <span class="orbit-icon">🔍</span>
                 </div>
                 <h5>Chưa có dữ liệu</h5>
-                <p>Tải lên hình ảnh hoặc video để xem các quy tắc hình ảnh được phát hiện</p>
+                <p>Tải lên hình ảnh hoặc video để xem biểu đồ quan hệ giữa lễ hội và các đặc trưng</p>
               </div>
             }
           </div>
