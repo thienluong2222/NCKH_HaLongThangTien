@@ -672,6 +672,75 @@ def manual_cleanup_sessions():
     }), 200
 
 
+@app.route('/api/sessions', methods=['DELETE'])
+@require_services
+def delete_all_sessions():
+    """
+    Xóa toàn bộ sessions đang active
+    ---
+    Returns:
+        - Số session đã xóa
+    """
+    try:
+        deleted_count = 0
+        session_ids = list(ACTIVE_SESSIONS.keys())
+        
+        for req_id in session_ids:
+            session_data = ACTIVE_SESSIONS.pop(req_id, None)
+            if session_data:
+                # Cleanup file nếu có
+                file_path = session_data.get('file_path')
+                if file_path:
+                    cleanup_file(file_path)
+                deleted_count += 1
+        
+        logger.info(f"🗑️ Đã xóa toàn bộ {deleted_count} sessions")
+        
+        return jsonify({
+            "message": f"Đã xóa toàn bộ {deleted_count} sessions",
+            "deleted_count": deleted_count,
+            "active_sessions": len(ACTIVE_SESSIONS)
+        }), 200
+        
+    except Exception as e:
+        logger.error(f"❌ Lỗi xóa sessions: {e}")
+        return jsonify({
+            "error": f"Lỗi xóa sessions: {str(e)}",
+            "code": "DELETE_ERROR"
+        }), 500
+
+
+@app.route('/api/sessions', methods=['GET'])
+@require_services
+def list_sessions():
+    """
+    Lấy danh sách các session đang active
+    ---
+    Returns:
+        - Danh sách sessions với thông tin cơ bản
+    """
+    sessions = []
+    current_time = datetime.now()
+    
+    for req_id, data in ACTIVE_SESSIONS.items():
+        created_at = data.get('created_at', current_time)
+        age_seconds = (current_time - created_at).total_seconds()
+        
+        sessions.append({
+            "request_id": req_id,
+            "created_at": created_at.isoformat(),
+            "age_seconds": int(age_seconds),
+            "file_path": data.get('file_path', ''),
+            "current_turn": data.get('current_turn', 0),
+            "has_detections": len(data.get('all_detections', [])) > 0
+        })
+    
+    return jsonify({
+        "active_sessions": len(sessions),
+        "sessions": sessions
+    }), 200
+
+
 # ==========================================
 # HISTORY ENDPOINTS
 # ==========================================
