@@ -294,8 +294,8 @@ class YOLOCSVPipeline:
         Returns:
             List các detection với boxes và mapping info
         """
-        # YOLO Predict
-        results = self.model.predict(frame, verbose=False)
+        # YOLO Predict - đảm bảo không cache
+        results = self.model.predict(frame, verbose=False, save=False, stream=False)
 
         detections_data = []
 
@@ -698,6 +698,13 @@ class YOLOCSVPipeline:
         print(f"🎬 BẮT ĐẦU XỬ LÝ VIDEO: {video_path}")
         print(f"{'='*60}")
         
+        # Kiểm tra file tồn tại
+        if not os.path.exists(video_path):
+            print(f"❌ File không tồn tại: {video_path}")
+            return []
+        
+        print(f"📁 File size: {os.path.getsize(video_path)} bytes")
+        
         cap = cv2.VideoCapture(video_path)
         
         if not cap.isOpened():
@@ -717,6 +724,7 @@ class YOLOCSVPipeline:
         frame_interval = max(1, int(video_fps / fps_detect))
         print(f"⚙️ Frame interval: {frame_interval} (detect mỗi {frame_interval} frames)")
         
+        # QUAN TRỌNG: Tạo list MỚI cho mỗi video
         all_objects = []
         frame_count = 0
         detected_frames = 0
@@ -753,6 +761,11 @@ class YOLOCSVPipeline:
                     all_objects.append(obj)
                 
                 detected_frames += 1
+                
+                # Debug: Log mỗi 10 frames detect
+                if detected_frames % 10 == 0:
+                    current_subs = set(obj.subclass for obj in all_objects)
+                    print(f"   Frame {frame_count}: Detected so far: {current_subs}")
             
             frame_count += 1
         
@@ -764,8 +777,10 @@ class YOLOCSVPipeline:
         print(f"├─ Tổng frames đã đọc: {frame_count}")
         print(f"├─ Frames đã detect: {detected_frames}")
         print(f"├─ Tổng objects phát hiện: {len(all_objects)}")
-        print(f"└─ Unique subclasses: {len(unique_subclasses)} - {list(unique_subclasses)[:5]}...")
+        print(f"└─ Unique subclasses: {len(unique_subclasses)} - {list(unique_subclasses)}")
         print(f"{'='*60}\n")
+        
+        return all_objects
         
         return all_objects
 
@@ -821,22 +836,22 @@ class YOLOCSVPipeline:
         return all_objects
 
 
-# Định nghĩa cấu trúc dữ liệu
-class ObjectDetection:
-    def __init__(self, subclass, confidence, frame_id, time_stamp, count, bboxs):
-        self.subclass = subclass          # e.g., "binh_bong_dua"
-        self.confidence = confidence      # trung bình các confidence trong frame
-        self.frame_id = frame_id          # số thứ tự frame
-        self.time_stamp = time_stamp      # thời gian (giây)
-        self.count = count        # số lần subclass xuất hiện trong frame
-        self.bboxs = bboxs                # danh sách bounding box (list of [x1, y1, x2, y2])
-    def __repr__(self):
-        return (f"ObjectDetection(subclass='{self.subclass}', "
-                f"confidence={self.confidence:.2f}, "
-                f"frame_id={self.frame_id}, "
-                f"time_stamp={self.time_stamp:.2f}, "
-                f"count={self.count}, "
-                f"bboxs={self.bboxs})")
+# # Định nghĩa cấu trúc dữ liệu
+# class ObjectDetection:
+#     def __init__(self, subclass, confidence, frame_id, time_stamp, count, bboxs):
+#         self.subclass = subclass          # e.g., "binh_bong_dua"
+#         self.confidence = confidence      # trung bình các confidence trong frame
+#         self.frame_id = frame_id          # số thứ tự frame
+#         self.time_stamp = time_stamp      # thời gian (giây)
+#         self.count = count        # số lần subclass xuất hiện trong frame
+#         self.bboxs = bboxs                # danh sách bounding box (list of [x1, y1, x2, y2])
+#     def __repr__(self):
+#         return (f"ObjectDetection(subclass='{self.subclass}', "
+#                 f"confidence={self.confidence:.2f}, "
+#                 f"frame_id={self.frame_id}, "
+#                 f"time_stamp={self.time_stamp:.2f}, "
+#                 f"count={self.count}, "
+                # f"bboxs={self.bboxs})")
 
 # Database ràng buộc: dict[lễ_hội] = list[ràng_buộc]
 # Mỗi ràng_buộc là tuple (type, params, is_hard, weight, threshold)
@@ -1005,8 +1020,8 @@ class BayesianFestivalClassifier:
             festival_logits[festival] = current_logit
             
             # Debug chi tiết cho Sân Khấu Dù Kê
-            if festival == "Sân Khấu Dù Kê":
-                print(f"\n🎭 DEBUG 'Sân Khấu Dù Kê':")
+            if festival == "Chợ nổi Cái Răng":
+                print(f"\n🎭 DEBUG:")
                 print(f"   ├─ Tổng rules: {len(rules)}")
                 print(f"   ├─ Rules thỏa mãn: {satisfied_count}")
                 print(f"   ├─ Logit: {current_logit:.2f}")
@@ -1541,3 +1556,9 @@ Hãy sinh câu hỏi:
                 results.append(f)
                 
         return results, final_probs
+
+
+if __name__ == "__main__":
+    # Ví dụ test nhanh
+    model = YOLOCSVPipeline(model_path='./weight/best.pt', csv_path="./uploads/artifacts/merged_data.csv")
+    print(model.process_video("/Users/thien/Downloads/Zalo/nghinh ong 2.mp4", confidence_threshold=0.5))
