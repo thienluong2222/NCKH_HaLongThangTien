@@ -7,6 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 // Loading State
@@ -147,6 +149,8 @@
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-md);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .trophy-badge {
@@ -181,6 +185,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+  text-align: center;
 }
 
 .confidence-ring {
@@ -234,9 +242,11 @@
 .description {
   color: var(--heritage-warm-gray);
   font-size: 1rem;
-  max-width: 350px;
+  max-width: min(350px, 100%);
   margin: 0;
   line-height: 1.7;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .cultural-badge {
@@ -313,6 +323,7 @@
   flex: 1;
   text-align: left;
   min-width: 0;
+  overflow: hidden;
   
   .result-name {
     font-family: var(--font-display);
@@ -320,15 +331,20 @@
     font-weight: 600;
     color: var(--heritage-dark);
     margin: 0 0 0.125rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
   
   .result-description {
     font-size: 0.75rem;
     color: var(--heritage-warm-gray);
     margin: 0;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 }
 
@@ -337,8 +353,7 @@
   flex-direction: row;
   align-items: center;
   gap: 0.75rem;
-  min-width: 120px;
-  flex-shrink: 0;
+  min-width: 80px;
 }
 
 .confidence-bar-container {
@@ -571,3 +586,158 @@
     color: var(--heritage-warm-gray);
   }
 }
+
+// ── Responsive ──────────────────────────────────────────────
+@media (max-width: 768px) {
+  .results-container {
+    padding: var(--spacing-md);
+    min-height: 300px;
+  }
+
+  .loading-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .loading-spinner {
+    width: 64px;
+    height: 64px;
+  }
+
+  .winner-state {
+    border-radius: var(--radius-lg);
+  }
+
+  .winner-decoration {
+    .lantern {
+      font-size: 1.75rem;
+    }
+  }
+
+  .top-three-results {
+    gap: 0.5rem;
+  }
+
+  .result-item {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .winner-highlight {
+    padding: 1rem;
+  }
+
+  .highlight-ring {
+    width: 80px;
+    height: 80px;
+
+    .ring-value .value {
+      font-size: 1.4rem;
+    }
+  }
+
+  .empty-illustration {
+    width: 90px;
+    height: 90px;
+
+    .illustration-icon {
+      font-size: 2.75rem;
+    }
+  }
+
+  .empty-content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .results-container {
+    padding: var(--spacing-sm);
+    min-height: 250px;
+  }
+
+  .result-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.75rem;
+
+    .rank-badge {
+      width: auto;
+      height: auto;
+    }
+
+    .result-confidence {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .highlight-content {
+    gap: 1rem;
+  }
+
+  .highlight-ring {
+    width: 72px;
+    height: 72px;
+
+    .ring-value .value {
+      font-size: 1.25rem;
+    }
+
+    .ring-value .percent {
+      font-size: 0.6rem;
+    }
+  }
+
+  .highlight-info {
+    h2 {
+      font-size: 1.05rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+
+    .btn-heritage {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .trophy-badge {
+    padding: 0.375rem 0.875rem;
+
+    .trophy-label {
+      font-size: 0.7rem;
+    }
+  }
+
+  .empty-features {
+    gap: var(--spacing-sm);
+  }
+
+  .empty-illustration {
+    width: 80px;
+    height: 80px;
+
+    .illustration-icon {
+      font-size: 2.5rem;
+    }
+  }
+
+  .empty-content {
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+    }
+  }
+}
+

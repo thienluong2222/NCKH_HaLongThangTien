@@ -1,5 +1,6 @@
 import { Injectable, signal, computed, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { TranslateService } from '@ngx-translate/core';
 import { environment } from '../../environments/environment';
 import { 
   HistoryListResponse, 
@@ -21,6 +22,7 @@ export interface ChatMessage {
 export class ChatService {
   private readonly API_URL = environment.apiBaseUrl;
   private http = inject(HttpClient);
+  private translate = inject(TranslateService);
   
   private messagesSignal = signal<ChatMessage[]>([]);
   private isLoadingSignal = signal(false);
@@ -99,35 +101,35 @@ export class ChatService {
   private generateAIResponse(userMessage: string): string {
     const lowerMsg = userMessage.toLowerCase();
     
-    if (lowerMsg.includes('đèn') || lowerMsg.includes('hoa đăng') || lowerMsg.includes('đèn nước')) {
-      return `🏮 Tuyệt vời! Đèn hoa đăng là đặc trưng quan trọng của lễ hội Ok Om Bok. Độ tin cậy đã được cải thiện!\n\nBạn có thể cho tôi biết thêm về hoạt động khác không?`;
+    if (lowerMsg.includes('đèn') || lowerMsg.includes('hoa đăng') || lowerMsg.includes('đèn nước') || lowerMsg.includes('lantern')) {
+      return this.translate.instant('CHAT.ai.lantern');
     }
     
-    if (lowerMsg.includes('ghe ngo') || lowerMsg.includes('đua thuyền') || lowerMsg.includes('đua ghe')) {
-      return `🚣 Đua ghe ngo là hoạt động đặc sắc của lễ hội Ok Om Bok! Đây là một điểm nhận diện quan trọng.\n\nCó nghi thức cúng bái nào diễn ra không?`;
+    if (lowerMsg.includes('ghe ngo') || lowerMsg.includes('đua thuyền') || lowerMsg.includes('đua ghe') || lowerMsg.includes('boat')) {
+      return this.translate.instant('CHAT.ai.boatRace');
     }
     
-    if (lowerMsg.includes('trăng') || lowerMsg.includes('cúng') || lowerMsg.includes('rằm')) {
-      return `🌙 Các nghi thức cúng trăng rằm phù hợp với lễ hội Ok Om Bok của đồng bào Khmer!\n\nBạn có nhìn thấy trang phục truyền thống nào không?`;
+    if (lowerMsg.includes('trăng') || lowerMsg.includes('cúng') || lowerMsg.includes('rằm') || lowerMsg.includes('moon')) {
+      return this.translate.instant('CHAT.ai.moonOffering');
     }
     
-    if (lowerMsg.includes('múa') || lowerMsg.includes('lân') || lowerMsg.includes('sư') || lowerMsg.includes('rồng')) {
-      return `🎭 Múa lân sư rồng có thể xuất hiện trong nhiều lễ hội. Điều này giúp thu hẹp phạm vi nhận diện!`;
+    if (lowerMsg.includes('múa') || lowerMsg.includes('lân') || lowerMsg.includes('sư') || lowerMsg.includes('rồng') || lowerMsg.includes('lion') || lowerMsg.includes('dragon')) {
+      return this.translate.instant('CHAT.ai.lionDance');
     }
     
-    if (lowerMsg.includes('chùa') || lowerMsg.includes('phật') || lowerMsg.includes('sư')) {
-      return `🛕 Yếu tố tôn giáo Phật giáo thường xuất hiện trong các lễ hội của đồng bào Khmer như Chol Chnam Thmay.`;
+    if (lowerMsg.includes('chùa') || lowerMsg.includes('phật') || lowerMsg.includes('temple') || lowerMsg.includes('buddhist')) {
+      return this.translate.instant('CHAT.ai.temple');
     }
 
     if (lowerMsg.includes('có') || lowerMsg.includes('yes') || lowerMsg.includes('đúng')) {
-      return `✅ Cảm ơn xác nhận! Thông tin này giúp tăng độ chính xác của phân tích.\n\nCòn đặc điểm nào khác bạn nhận thấy không?`;
+      return this.translate.instant('CHAT.ai.confirmYes');
     }
 
     if (lowerMsg.includes('không') || lowerMsg.includes('no') || lowerMsg.includes('chưa')) {
-      return `📝 Đã ghi nhận. Tôi sẽ điều chỉnh phân tích dựa trên thông tin này.\n\nBạn có thể mô tả thêm những gì bạn thấy trong video không?`;
+      return this.translate.instant('CHAT.ai.confirmNo');
     }
     
-    return `📝 Cảm ơn thông tin! Tôi đã ghi nhận và cập nhật phân tích.\n\nBạn có thể mô tả thêm về: đèn hoa đăng, đua ghe, hoặc các nghi lễ khác không?`;
+    return this.translate.instant('CHAT.ai.default');
   }
 
   /**

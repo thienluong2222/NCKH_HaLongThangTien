@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatChipsModule } from '@angular/material/chips';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface PreviewFile {
   file: File;
@@ -21,7 +22,8 @@ interface PreviewFile {
     MatIconModule,
     MatButtonModule,
     MatProgressBarModule,
-    MatChipsModule
+    MatChipsModule,
+    TranslateModule
   ],
   templateUrl: './upload.component.html',
   styleUrl: './upload.component.scss'

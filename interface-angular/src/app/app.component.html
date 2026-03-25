@@ -1,6 +1,6 @@
 <div class="heritage-app">
   <app-header />
-  
+
   <main class="main-content">
     <!-- Main Grid -->
     <div class="container">
@@ -8,18 +8,21 @@
       <div class="section-intro">
         <div class="intro-badge">
           <mat-icon>smart_toy</mat-icon>
-          <span>Hệ thống nhận dạng AI</span>
+          <span>{{ "APP.intro.badge" | translate }}</span>
         </div>
-        <h2>Bắt đầu <span>Phân tích</span></h2>
-        <p>Tải lên hình ảnh hoặc video lễ hội để AI nhận dạng và phân tích</p>
+        <h2>
+          {{ "APP.intro.title" | translate }}
+          <span>{{ "APP.intro.titleHighlight" | translate }}</span>
+        </h2>
+        <p>{{ "APP.intro.description" | translate }}</p>
       </div>
-      
+
       <div class="grid-layout">
         <!-- Left: Chat with integrated upload -->
         <div class="left-column">
           <app-chat-box />
         </div>
-        
+
         <!-- Right: Results and Analysis -->
         <div class="right-column">
           <app-results-card />
@@ -28,6 +31,6 @@
       </div>
     </div>
   </main>
-  
+
   <app-footer />
 </div>
