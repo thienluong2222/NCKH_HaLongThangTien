@@ -4,6 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { TranslateModule } from '@ngx-translate/core';
 import { FestivalDetectionService } from '../../services/festival-detection.service';
 import { trigger, transition, style, animate, state } from '@angular/animations';
 
@@ -15,7 +16,8 @@ import { trigger, transition, style, animate, state } from '@angular/animations'
     MatCardModule,
     MatProgressSpinnerModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    TranslateModule
   ],
   animations: [
     trigger('cardState', [

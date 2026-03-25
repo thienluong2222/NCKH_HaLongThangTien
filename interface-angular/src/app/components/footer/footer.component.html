@@ -1,8 +1,15 @@
 <footer class="heritage-footer">
   <!-- Decorative Top Border -->
   <div class="footer-border">
-    <svg viewBox="0 0 1440 40" preserveAspectRatio="none">
-      <path fill="var(--heritage-cream)" d="M0,0 C360,40 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,0 L0,0 Z"/>
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="footerWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="var(--heritage-cream)"/>
+          <stop offset="50%" stop-color="#FDF5E6"/>
+          <stop offset="100%" stop-color="var(--heritage-cream)"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#footerWaveGrad)" d="M0,60 C360,20 720,50 1080,30 C1260,20 1380,35 1440,20 L1440,0 L0,0 Z"/>
     </svg>
   </div>
   
@@ -12,61 +19,90 @@
       <!-- Brand Section -->
       <div class="footer-brand">
         <div class="brand-logo">
-          <span class="logo-icon">🎭</span>
+          <div class="logo-wrapper">
+            <span class="logo-icon">🏛️</span>
+            <div class="logo-ring"></div>
+          </div>
           <div class="brand-text">
             <h3>ICHeritage</h3>
-            <p>Di sản Văn hóa Phi vật thể</p>
+            <span class="subtitle">Intangible Cultural Heritage</span>
           </div>
         </div>
         <p class="brand-description">
-          Hệ thống nhận dạng lễ hội truyền thống Việt Nam sử dụng trí tuệ nhân tạo, 
-          góp phần bảo tồn và phát huy giá trị văn hóa dân tộc.
+          {{ 'FOOTER.brand.description' | translate }}
         </p>
+        
+        <!-- UNESCO-style Recognition -->
+        <div class="recognition-badge">
+          <mat-icon>workspace_premium</mat-icon>
+          <span>{{ 'FOOTER.brand.recognition' | translate }}</span>
+        </div>
       </div>
       
       <!-- Links Section -->
       <div class="footer-links">
         <div class="link-group">
-          <h4>Khám phá</h4>
+          <h4>
+            <mat-icon>explore</mat-icon>
+            {{ 'FOOTER.links.explore' | translate }}
+          </h4>
           <a href="#">
             <mat-icon>festival</mat-icon>
-            Danh sách lễ hội
+            {{ 'FOOTER.links.festivalList' | translate }}
           </a>
           <a href="#">
             <mat-icon>map</mat-icon>
-            Bản đồ văn hóa
+            {{ 'FOOTER.links.culturalMap' | translate }}
           </a>
           <a href="#">
             <mat-icon>auto_stories</mat-icon>
-            Câu chuyện di sản
+            {{ 'FOOTER.links.heritageStories' | translate }}
+          </a>
+          <a href="#">
+            <mat-icon>collections</mat-icon>
+            {{ 'FOOTER.links.imageLibrary' | translate }}
           </a>
         </div>
         
         <div class="link-group">
-          <h4>Nghiên cứu</h4>
+          <h4>
+            <mat-icon>biotech</mat-icon>
+            {{ 'FOOTER.links.research' | translate }}
+          </h4>
           <a href="#">
-            <mat-icon>science</mat-icon>
-            Bài báo khoa học
+            <mat-icon>article</mat-icon>
+            {{ 'FOOTER.links.papers' | translate }}
           </a>
-          <a href="#">
+          <a href="https://github.com" target="_blank">
             <mat-icon>code</mat-icon>
             GitHub Repository
           </a>
           <a href="#">
             <mat-icon>dataset</mat-icon>
-            Dataset
+            {{ 'FOOTER.links.publicDataset' | translate }}
+          </a>
+          <a href="#">
+            <mat-icon>api</mat-icon>
+            API Documentation
           </a>
         </div>
         
         <div class="link-group">
-          <h4>Liên hệ</h4>
-          <a href="#">
+          <h4>
+            <mat-icon>contact_support</mat-icon>
+            {{ 'FOOTER.links.contact' | translate }}
+          </h4>
+          <a href="mailto:contact@icheritage.vn">
             <mat-icon>mail</mat-icon>
-            Email hỗ trợ
+            {{ 'FOOTER.links.emailSupport' | translate }}
           </a>
           <a href="#">
             <mat-icon>school</mat-icon>
-            Đại học Cần Thơ
+            {{ 'FOOTER.links.university' | translate }}
+          </a>
+          <a href="#">
+            <mat-icon>groups</mat-icon>
+            {{ 'FOOTER.links.devTeam' | translate }}
           </a>
         </div>
       </div>
@@ -75,18 +111,30 @@
     <!-- Footer Bottom -->
     <div class="footer-bottom">
       <div class="copyright">
-        <p>&copy; 2025 ICHeritage Project • NCKH Hạ Long Thăng Tiến</p>
-        <p class="tech-stack">Built with Angular 18 & YOLO + Gemini AI 💜</p>
+        <p class="main-copyright">
+          {{ 'FOOTER.copyright.main' | translate }}
+        </p>
+        <p class="tech-info">
+          <span class="tech-badge">
+            <mat-icon>memory</mat-icon>
+            {{ 'FOOTER.copyright.dataConnect' | translate }}
+          </span>
+          <span class="tech-separator">•</span>
+          <span class="tech-badge">
+            <mat-icon>psychology</mat-icon>
+            {{ 'FOOTER.copyright.aiAssistant' | translate }}
+          </span>
+        </p>
       </div>
       
       <div class="social-links">
-        <a href="#" class="social-btn" aria-label="GitHub">
+        <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub">
           <mat-icon>code</mat-icon>
         </a>
         <a href="#" class="social-btn" aria-label="Facebook">
           <mat-icon>facebook</mat-icon>
         </a>
-        <a href="#" class="social-btn" aria-label="Email">
+        <a href="mailto:contact@icheritage.vn" class="social-btn" aria-label="Email">
           <mat-icon>mail</mat-icon>
         </a>
       </div>

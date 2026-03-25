@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './components/header/header.component';
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
 import { ResultsCardComponent } from './components/results-card/results-card.component';
@@ -9,6 +11,8 @@ import { FooterComponent } from './components/footer/footer.component';
   selector: 'app-root',
   standalone: true,
   imports: [
+    MatIconModule,
+    TranslateModule,
     HeaderComponent,
     ChatBoxComponent,
     ResultsCardComponent,

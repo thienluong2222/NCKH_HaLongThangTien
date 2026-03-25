@@ -4,3 +4,5 @@ __pycache__
 assets/
 node_modules/
 evaluation_results/
+.angular/
+dist/

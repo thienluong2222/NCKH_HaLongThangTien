@@ -11,41 +11,92 @@
         <div class="icon-ring"></div>
       </div>
       <div class="header-text">
-        <h3>Trợ lý Di sản AI</h3>
-        <p>{{ workflowStep() === 'upload' ? 'Tải lên hình ảnh hoặc video để bắt đầu' : 
-             workflowStep() === 'analyzing' ? 'Đang phân tích...' :
-             workflowStep() === 'questioning' ? 'Trả lời câu hỏi để tăng độ chính xác' :
-             'Phân tích hoàn tất!' }}</p>
+        <h3>{{ 'CHAT.title' | translate }}</h3>
+        <p>{{ workflowStep() === 'upload' ? ('CHAT.status.upload' | translate) : 
+             workflowStep() === 'analyzing' ? ('CHAT.status.analyzing' | translate) :
+             workflowStep() === 'questioning' ? ('CHAT.status.questioning' | translate) :
+             ('CHAT.status.completed' | translate) }}</p>
       </div>
       @if (workflowStep() !== 'upload') {
-        <button mat-icon-button class="reset-btn" (click)="resetWorkflow()" matTooltip="Bắt đầu lại">
+        <button mat-icon-button class="reset-btn" (click)="resetWorkflow()" [matTooltip]="'CHAT.resetTooltip' | translate">
           <mat-icon>refresh</mat-icon>
         </button>
       }
     </div>
     <!-- Workflow Progress -->
-    <div class="workflow-progress">
-      <div class="progress-step" [class.active]="workflowStep() === 'upload'" [class.completed]="workflowStep() !== 'upload'">
-        <span class="step-icon">📤</span>
-        <span class="step-label">Tải lên</span>
+    <div class="workflow-progress workflow-bubble">
+      <div class="bubble-step" 
+        [class.active]="workflowStep() === 'upload'" 
+        [class.completed]="workflowStep() !== 'upload'">
+        <div class="bubble-icon">📤</div>
+        <div class="bubble-label">{{ 'CHAT.workflow.upload' | translate }}</div>
       </div>
-      <div class="progress-line" [class.active]="workflowStep() !== 'upload'"></div>
-      <div class="progress-step" [class.active]="workflowStep() === 'analyzing'" [class.completed]="workflowStep() === 'questioning' || workflowStep() === 'completed'">
-        <span class="step-icon">🔍</span>
-        <span class="step-label">Phân tích</span>
+      <div class="bubble-connector" [class.active]="workflowStep() !== 'upload'"></div>
+      <div class="bubble-step" 
+        [class.active]="workflowStep() === 'analyzing'" 
+        [class.completed]="workflowStep() === 'questioning' || workflowStep() === 'completed'">
+        <div class="bubble-icon">🔍</div>
+        <div class="bubble-label">{{ 'CHAT.workflow.analyze' | translate }}</div>
       </div>
-      <div class="progress-line" [class.active]="workflowStep() === 'questioning' || workflowStep() === 'completed'"></div>
-      <div class="progress-step" [class.active]="workflowStep() === 'questioning'" [class.completed]="workflowStep() === 'completed'">
-        <span class="step-icon">💬</span>
-        <span class="step-label">Hỏi đáp</span>
+      <div class="bubble-connector" [class.active]="workflowStep() === 'questioning' || workflowStep() === 'completed'"></div>
+      <div class="bubble-step" 
+        [class.active]="workflowStep() === 'questioning'" 
+        [class.completed]="workflowStep() === 'completed'">
+        <div class="bubble-icon">💬</div>
+        <div class="bubble-label">{{ 'CHAT.workflow.qa' | translate }}</div>
       </div>
-      <div class="progress-line" [class.active]="workflowStep() === 'completed'"></div>
-      <div class="progress-step" [class.active]="workflowStep() === 'completed'">
-        <span class="step-icon">✅</span>
-        <span class="step-label">Hoàn tất</span>
+      <div class="bubble-connector" [class.active]="workflowStep() === 'completed'"></div>
+      <div class="bubble-step" [class.active]="workflowStep() === 'completed'">
+        <div class="bubble-icon">✅</div>
+        <div class="bubble-label">{{ 'CHAT.workflow.done' | translate }}</div>
       </div>
     </div>
   </div>
+
+  <!-- Fixed Media Preview Section (shown after upload) -->
+  @if (workflowStep() !== 'upload' && previews().length > 0) {
+    <div class="fixed-media-preview">
+      <div class="media-preview-header">
+        <div class="preview-title">
+          <mat-icon>perm_media</mat-icon>
+          <span>{{ 'CHAT.media.filesAnalyzing' | translate }}</span>
+        </div>
+        <button mat-icon-button class="expand-btn" (click)="toggleMediaExpand()" [matTooltip]="mediaExpanded() ? ('CHAT.media.collapse' | translate) : ('CHAT.media.expand' | translate)">
+          <mat-icon>{{ mediaExpanded() ? 'expand_less' : 'expand_more' }}</mat-icon>
+        </button>
+      </div>
+      <div class="media-preview-content" [class.expanded]="mediaExpanded()">
+        <div class="media-items">
+          @for (preview of previews(); track preview.url; let i = $index) {
+            <div class="media-item" [class.active]="activeMediaIndex() === i" (click)="setActiveMedia(i)">
+              @if (preview.type === 'image') {
+                <img [src]="preview.url" [alt]="preview.file.name">
+              } @else {
+                <video [src]="preview.url"></video>
+                <div class="video-badge">
+                  <mat-icon>videocam</mat-icon>
+                </div>
+              }
+            </div>
+          }
+        </div>
+        <!-- Active Media Large Preview -->
+        @if (mediaExpanded() && previews().length > 0) {
+          <div class="active-media-display">
+            @if (previews()[activeMediaIndex()].type === 'image') {
+              <img [src]="previews()[activeMediaIndex()].url" [alt]="previews()[activeMediaIndex()].file.name">
+            } @else {
+              <video [src]="previews()[activeMediaIndex()].url" controls></video>
+            }
+            <div class="media-info">
+              <span class="media-name">{{ previews()[activeMediaIndex()].file.name }}</span>
+              <span class="media-size">{{ formatSize(previews()[activeMediaIndex()].file.size) }}</span>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
 
   <!-- Main Content Area -->
   <div class="chat-body">
@@ -66,29 +117,29 @@
                 <span class="main-icon">📁</span>
                 <div class="icon-ring"></div>
               </div>
-              <h4>Kéo thả tệp vào đây</h4>
-              <p>hoặc chọn từ thiết bị của bạn</p>
+              <h4>{{ 'CHAT.dropzone.title' | translate }}</h4>
+              <p>{{ 'CHAT.dropzone.subtitle' | translate }}</p>
               
               <div class="upload-buttons">
                 <button mat-stroked-button class="upload-btn image" (click)="triggerImageUpload()">
                   <mat-icon>photo_library</mat-icon>
-                  <span>Hình ảnh</span>
+                  <span>{{ 'CHAT.dropzone.images' | translate }}</span>
                 </button>
                 <button mat-stroked-button class="upload-btn video" (click)="triggerVideoUpload()">
                   <mat-icon>videocam</mat-icon>
-                  <span>Video</span>
+                  <span>{{ 'CHAT.dropzone.video' | translate }}</span>
                 </button>
               </div>
               
-              <p class="supported-formats">Hỗ trợ: JPG, PNG, GIF, MP4, MOV, AVI</p>
+              <p class="supported-formats">{{ 'CHAT.dropzone.formats' | translate }}</p>
             </div>
           } @else {
             <!-- Preview Grid -->
             <div class="preview-section">
               <div class="preview-header">
-                <span class="preview-count">{{ previews().length }} tệp đã chọn</span>
+                <span class="preview-count">{{ previews().length }} {{ 'CHAT.dropzone.filesSelected' | translate }}</span>
                 <button mat-button class="add-more-btn" (click)="triggerImageUpload()">
-                  <mat-icon>add</mat-icon> Thêm
+                  <mat-icon>add</mat-icon> {{ 'CHAT.dropzone.addMore' | translate }}
                 </button>
               </div>
               
@@ -120,7 +171,7 @@
                 [disabled]="!hasUploads()"
                 (click)="startAnalysis()">
                 <mat-icon>auto_awesome</mat-icon>
-                <span>Bắt đầu phân tích</span>
+                <span>{{ 'CHAT.dropzone.startAnalysis' | translate }}</span>
                 <div class="btn-shine"></div>
               </button>
             </div>
@@ -153,8 +204,8 @@
             <div class="ring"></div>
             <span class="icon">🔍</span>
           </div>
-          <h4>Đang phân tích di sản văn hóa...</h4>
-          <p>AI đang xử lý hình ảnh và nhận diện các yếu tố văn hóa</p>
+          <h4>{{ 'CHAT.analyzing.title' | translate }}</h4>
+          <p>{{ 'CHAT.analyzing.subtitle' | translate }}</p>
           <mat-progress-bar mode="indeterminate"></mat-progress-bar>
         </div>
         
@@ -242,18 +293,18 @@
             <span class="more">+{{ previews().length - 4 }}</span>
           }
         </div>
-        <span class="files-label">{{ previews().length }} tệp đã tải</span>
+        <span class="files-label">{{ previews().length }} {{ 'CHAT.input.filesUploaded' | translate }}</span>
       </div>
 
       <div class="input-wrapper">
         <mat-form-field appearance="outline" class="input-field">
-          <mat-label>Nhập tin nhắn của bạn...</mat-label>
+          <mat-label>{{ 'CHAT.input.label' | translate }}</mat-label>
           <input 
             matInput 
             [value]="inputMessage()"
             (input)="inputMessage.set($any($event.target).value)"
             (keyup.enter)="sendMessage()"
-            placeholder="VD: Tôi thấy có đèn hoa đăng trôi trên sông...">
+            [placeholder]="'CHAT.input.placeholder' | translate">
           <mat-icon matSuffix class="input-icon">edit_note</mat-icon>
         </mat-form-field>
         
@@ -270,7 +321,7 @@
       <div class="quick-suggestions">
         <span class="suggestion-label">
           <mat-icon>tips_and_updates</mat-icon>
-          Gợi ý nhanh:
+          {{ 'CHAT.suggestions.label' | translate }}
         </span>
         <div class="suggestion-chips">
           @for (suggestion of suggestions; track suggestion.text) {

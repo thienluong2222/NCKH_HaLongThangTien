@@ -1,0 +1,53 @@
+# ==========================================
+# ICHeritage - Development Docker Compose
+# Hot reload enabled for development
+# ==========================================
+
+services:
+  # ==========================================
+  # BACKEND - Development Mode
+  # ==========================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    container_name: icheritage-backend-dev
+    restart: unless-stopped
+    ports:
+      - "${BACKEND_PORT:-5001}:5001"
+    environment:
+      - FLASK_DEBUG=True
+      - PORT=5001
+      - HOST=0.0.0.0
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - MODEL_PATH=/app/weight/best.pt
+      - CSV_PATH=/app/uploads/artifacts/merged_data.csv
+      - UPLOAD_FOLDER=/app/uploads
+    volumes:
+      # Mount source code for hot reload
+      - ./backend:/app
+      # Exclude __pycache__
+      - /app/__pycache__
+    networks:
+      - icheritage-network
+
+  # ==========================================
+  # FRONTEND - Development Mode (Optional)
+  # Usually run with `ng serve` locally
+  # ==========================================
+  frontend:
+    build:
+      context: ./interface-angular
+      dockerfile: Dockerfile
+    container_name: icheritage-frontend-dev
+    restart: unless-stopped
+    ports:
+      - "${FRONTEND_PORT:-4200}:80"
+    depends_on:
+      - backend
+    networks:
+      - icheritage-network
+
+networks:
+  icheritage-network:
+    driver: bridge

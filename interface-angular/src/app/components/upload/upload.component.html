@@ -5,8 +5,8 @@
       <mat-icon class="header-icon">cloud_upload</mat-icon>
     </div>
     <div class="header-text">
-      <h3>Tải lên phương tiện</h3>
-      <p>Kéo thả hình ảnh hoặc video để phân tích lễ hội</p>
+      <h3>{{ 'UPLOAD.title' | translate }}</h3>
+      <p>{{ 'UPLOAD.subtitle' | translate }}</p>
     </div>
   </div>
   
@@ -36,8 +36,8 @@
             <mat-icon>photo_library</mat-icon>
             <div class="icon-ring"></div>
           </div>
-          <span class="zone-title">Hình ảnh</span>
-          <span class="zone-subtitle">Kéo thả hoặc nhấp để chọn</span>
+          <span class="zone-title">{{ 'UPLOAD.imageZone.title' | translate }}</span>
+          <span class="zone-subtitle">{{ 'UPLOAD.imageZone.subtitle' | translate }}</span>
           <div class="zone-formats">
             <span class="format-tag">JPG</span>
             <span class="format-tag">PNG</span>
@@ -67,8 +67,8 @@
             <mat-icon>videocam</mat-icon>
             <div class="icon-ring"></div>
           </div>
-          <span class="zone-title">Video</span>
-          <span class="zone-subtitle">Kéo thả hoặc nhấp để chọn</span>
+          <span class="zone-title">{{ 'UPLOAD.videoZone.title' | translate }}</span>
+          <span class="zone-subtitle">{{ 'UPLOAD.videoZone.subtitle' | translate }}</span>
           <div class="zone-formats">
             <span class="format-tag">MP4</span>
             <span class="format-tag">AVI</span>
@@ -84,11 +84,11 @@
         <div class="preview-header">
           <div class="preview-title">
             <mat-icon>folder_open</mat-icon>
-            <h4>Tệp đã chọn ({{ previews().length }})</h4>
+            <h4>{{ 'UPLOAD.preview.title' | translate }} ({{ previews().length }})</h4>
           </div>
           <button mat-button class="clear-btn" (click)="clearAll()">
             <mat-icon>delete_sweep</mat-icon>
-            Xóa tất cả
+            {{ 'UPLOAD.preview.clearAll' | translate }}
           </button>
         </div>
         
@@ -118,7 +118,7 @@
         
         <button class="analyze-btn btn-heritage primary" (click)="startAnalysis()">
           <mat-icon>auto_awesome</mat-icon>
-          <span>Bắt đầu phân tích AI</span>
+          <span>{{ 'UPLOAD.preview.analyzeBtn' | translate }}</span>
           <div class="btn-shine"></div>
         </button>
       </div>

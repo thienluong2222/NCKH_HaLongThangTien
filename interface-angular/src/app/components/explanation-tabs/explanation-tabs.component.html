@@ -7,8 +7,8 @@
         <div class="icon-glow"></div>
       </div>
       <div class="header-text">
-        <h3>Phân tích Chi tiết</h3>
-        <p>Khám phá logic AI đằng sau dự đoán</p>
+        <h3>{{ 'EXPLANATION.header.title' | translate }}</h3>
+        <p>{{ 'EXPLANATION.header.subtitle' | translate }}</p>
       </div>
     </div>
     <div class="header-decoration">
@@ -26,7 +26,7 @@
         <ng-template mat-tab-label>
           <div class="tab-label">
             <mat-icon>bar_chart</mat-icon>
-            <span>Biểu đồ xác suất</span>
+            <span>{{ 'EXPLANATION.tabs.probabilityChart' | translate }}</span>
           </div>
         </ng-template>
         
@@ -37,47 +37,96 @@
         </div>
       </mat-tab>
       
-      <!-- Visual Rules Tab -->
+      <!-- Visual Rules Tab - Now with Graph -->
       <mat-tab>
         <ng-template mat-tab-label>
           <div class="tab-label">
-            <mat-icon>visibility</mat-icon>
-            <span>Quy tắc hình ảnh</span>
+            <mat-icon>hub</mat-icon>
+            <span>{{ 'EXPLANATION.tabs.relationGraph' | translate }}</span>
           </div>
         </ng-template>
         
         <div class="tab-content">
-          <div class="rules-section">
-            <div class="section-header">
-              <span class="section-icon">🔍</span>
-              <h4>Các yếu tố hình ảnh được phát hiện</h4>
-            </div>
-            
-            @if (festivalService.hasResults()) {
-              <div class="rules-grid">
-                @for (rule of visualRules; track rule.name) {
-                  <div class="rule-card" [class.satisfied]="rule.satisfied">
-                    <div class="rule-status">
-                      <mat-icon>{{ rule.satisfied ? 'check_circle' : 'cancel' }}</mat-icon>
-                    </div>
-                    <div class="rule-content">
-                      <h5>{{ rule.name }}</h5>
-                      <p>{{ rule.description }}</p>
-                    </div>
-                    <div class="rule-badge" [class.found]="rule.satisfied">
-                      {{ rule.satisfied ? 'Phát hiện' : 'Không tìm thấy' }}
-                    </div>
-                  </div>
-                }
+          <div class="graph-section">
+            @if (festivalService.hasResults() && graphNodes.length > 0) {
+              <!-- Graph Stats -->
+              <div class="graph-stats">
+                <div class="stat-item">
+                  <span class="stat-icon">🎪</span>
+                  <span class="stat-value">{{ graphStats.festivals }}</span>
+                  <span class="stat-label">{{ 'EXPLANATION.graph.festivals' | translate }}</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-icon">🔍</span>
+                  <span class="stat-value">{{ graphStats.features }}</span>
+                  <span class="stat-label">{{ 'EXPLANATION.graph.features' | translate }}</span>
+                </div>
+                <div class="stat-item satisfied">
+                  <span class="stat-icon">✓</span>
+                  <span class="stat-value">{{ graphStats.satisfiedLinks }}</span>
+                  <span class="stat-label">{{ 'EXPLANATION.graph.detected' | translate }}</span>
+                </div>
+                <div class="stat-item unsatisfied">
+                  <span class="stat-icon">✗</span>
+                  <span class="stat-value">{{ graphStats.unsatisfiedLinks }}</span>
+                  <span class="stat-label">{{ 'EXPLANATION.graph.notDetected' | translate }}</span>
+                </div>
+              </div>
+              
+              <!-- Graph Container -->
+              <div class="graph-wrapper">
+                <div #graphContainer id="graph" class="graph-container"></div>
+                <div class="graph-instructions">
+                  <span class="instruction">
+                    <mat-icon>pan_tool</mat-icon>
+                    {{ 'EXPLANATION.graph.instructions.drag' | translate }}
+                  </span>
+                  <span class="instruction">
+                    <mat-icon>zoom_in</mat-icon>
+                    {{ 'EXPLANATION.graph.instructions.zoom' | translate }}
+                  </span>
+                  <span class="instruction">
+                    <mat-icon>touch_app</mat-icon>
+                    {{ 'EXPLANATION.graph.instructions.click' | translate }}
+                  </span>
+                  <span class="instruction">
+                    <mat-icon>ads_click</mat-icon>
+                    {{ 'EXPLANATION.graph.instructions.dblclick' | translate }}
+                  </span>
+                </div>
+              </div>
+              
+              <!-- Legend -->
+              <div class="graph-legend">
+                <div class="legend-item">
+                  <span class="legend-symbol festival"></span>
+                  <span>{{ 'EXPLANATION.legend.festival' | translate }}</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-symbol satisfied"></span>
+                  <span>{{ 'EXPLANATION.legend.satisfied' | translate }}</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-symbol unsatisfied"></span>
+                  <span>{{ 'EXPLANATION.legend.unsatisfied' | translate }}</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-line green"></span>
+                  <span>{{ 'EXPLANATION.legend.greenLine' | translate }}</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-line red"></span>
+                  <span>{{ 'EXPLANATION.legend.redLine' | translate }}</span>
+                </div>
               </div>
             } @else {
               <div class="empty-state">
                 <div class="empty-illustration">
-                  <span class="main-icon">🖼️</span>
+                  <span class="main-icon">🕸️</span>
                   <span class="orbit-icon">🔍</span>
                 </div>
-                <h5>Chưa có dữ liệu</h5>
-                <p>Tải lên hình ảnh hoặc video để xem các quy tắc hình ảnh được phát hiện</p>
+                <h5>{{ 'EXPLANATION.empty.graphTitle' | translate }}</h5>
+                <p>{{ 'EXPLANATION.empty.graphSubtitle' | translate }}</p>
               </div>
             }
           </div>
@@ -89,7 +138,7 @@
         <ng-template mat-tab-label>
           <div class="tab-label">
             <mat-icon>forum</mat-icon>
-            <span>Phân tích trò chuyện</span>
+            <span>{{ 'EXPLANATION.tabs.chatAnalysis' | translate }}</span>
           </div>
         </ng-template>
         
@@ -97,7 +146,7 @@
           <div class="rules-section">
             <div class="section-header">
               <span class="section-icon">💬</span>
-              <h4>Thông tin từ cuộc trò chuyện</h4>
+              <h4>{{ 'EXPLANATION.chat.sectionTitle' | translate }}</h4>
             </div>
             
             @if (chatRules.length > 0) {
@@ -123,8 +172,8 @@
                   <span class="main-icon">💭</span>
                   <span class="orbit-icon">✨</span>
                 </div>
-                <h5>Chưa có dữ liệu trò chuyện</h5>
-                <p>Trò chuyện với AI để cung cấp thêm ngữ cảnh và cải thiện độ chính xác</p>
+                <h5>{{ 'EXPLANATION.empty.chatTitle' | translate }}</h5>
+                <p>{{ 'EXPLANATION.empty.chatSubtitle' | translate }}</p>
               </div>
             }
           </div>
