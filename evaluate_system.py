@@ -16,6 +16,7 @@ Output: evaluation_results/evaluation_YYYYMMDD_HHMMSS.txt
 import os
 import sys
 import json
+import time
 import numpy as np
 from datetime import datetime
 from collections import defaultdict
@@ -174,6 +175,9 @@ class SystemEvaluator:
         # Object detection metrics
         self.all_detection_metrics = []
         
+        # Inference time tracking
+        self.inference_times = []
+        
         print("\n✅ Khởi tạo hoàn tất!")
         print("=" * 70)
     
@@ -314,6 +318,9 @@ class SystemEvaluator:
         all_gt_labels = set()
         per_image_metrics = []
         
+        # Bắt đầu đo inference time (YOLO + Bayesian pipeline)
+        t_start = time.perf_counter()
+        
         for i, jpg_file in enumerate(jpg_files):
             jpg_path = os.path.join(folder_path, jpg_file)
             json_path = jpg_path.replace('.jpg', '.json')
@@ -351,6 +358,10 @@ class SystemEvaluator:
             confidence = 0.0
             top_3 = []
         
+        # Kết thúc đo inference time
+        t_end = time.perf_counter()
+        inference_time = t_end - t_start
+        
         # Kiểm tra festival prediction đúng/sai
         correct = (prediction == ground_truth_festival)
         
@@ -364,7 +375,8 @@ class SystemEvaluator:
             'yolo_labels': list(all_yolo_labels),
             'gt_labels': list(all_gt_labels),
             'detection_metrics': folder_detection_metrics,
-            'per_image_metrics': per_image_metrics
+            'per_image_metrics': per_image_metrics,
+            'inference_time': inference_time
         }
     
     def run_evaluation(self):
@@ -400,6 +412,7 @@ class SystemEvaluator:
             
             self.results.append(result)
             self.all_detection_metrics.append(result['detection_metrics'])
+            self.inference_times.append(result['inference_time'])
             
             if difficulty:
                 self.results_by_difficulty[difficulty].append(result)
@@ -411,6 +424,7 @@ class SystemEvaluator:
             print(f"   └─ {status} Prediction: {result['prediction']} ({result['confidence']:.2%})")
             print(f"   └─ Detection: P={det_metrics['precision']:.2f}, R={det_metrics['recall']:.2f}, F1={det_metrics['f1']:.2f}")
             print(f"   └─ YOLO detected: {len(result['yolo_labels'])} classes, GT: {len(result['gt_labels'])} classes")
+            print(f"   └─ ⏱️  Inference time: {result['inference_time']:.4f}s ({result['num_images']} images)")
         
         return self.results
     
@@ -562,6 +576,45 @@ class SystemEvaluator:
                 add_line(f"      • F1-Score:  {metrics['f1_score']:.4f}")
         add_line()
         
+        # =============================================
+        # PHẦN 2.5: INFERENCE TIME
+        # =============================================
+        add_separator("-")
+        add_line("⏱️  PHẦN 2.5: INFERENCE TIME (YOLO + Bayesian Pipeline)")
+        add_line("(Đo thời gian từ ảnh đầu vào đến kết quả phân loại lễ hội, per-folder)")
+        add_separator("-")
+        
+        if self.inference_times:
+            times = self.inference_times
+            avg_time = np.mean(times)
+            min_time = np.min(times)
+            max_time = np.max(times)
+            std_time = np.std(times)
+            total_time = np.sum(times)
+            total_images = sum(r['num_images'] for r in self.results)
+            avg_per_image = total_time / total_images if total_images > 0 else 0.0
+            
+            add_line(f"\n📊 TỔNG HỢP ({len(times)} folders, {total_images} images):")
+            add_line(f"   • Tổng thời gian:        {total_time:.4f}s")
+            add_line(f"   • Trung bình/folder:     {avg_time:.4f}s")
+            add_line(f"   • Trung bình/image:      {avg_per_image:.4f}s")
+            add_line(f"   • Nhanh nhất (folder):   {min_time:.4f}s")
+            add_line(f"   • Chậm nhất (folder):   {max_time:.4f}s")
+            add_line(f"   • Độ lệch chuẩn:       {std_time:.4f}s")
+            
+            # Inference time theo độ khó
+            add_line(f"\n📊 INFERENCE TIME THEO ĐỘ KHÓ:")
+            for difficulty, label in [('easy', 'DỄ'), ('hard', 'KHÓ')]:
+                results = self.results_by_difficulty.get(difficulty, [])
+                if results:
+                    d_times = [r['inference_time'] for r in results]
+                    d_images = sum(r['num_images'] for r in results)
+                    add_line(f"\n   🔹 {label} ({len(results)} folders, {d_images} images):")
+                    add_line(f"      • Trung bình/folder: {np.mean(d_times):.4f}s")
+                    add_line(f"      • Trung bình/image:  {np.sum(d_times)/d_images:.4f}s" if d_images > 0 else "")
+                    add_line(f"      • Min: {np.min(d_times):.4f}s, Max: {np.max(d_times):.4f}s")
+        add_line()
+        
         # Kết quả theo từng lễ hội
         add_separator("-")
         add_line("📊 PHẦN 3: KẾT QUẢ THEO TỪNG LỄ HỘI")
@@ -576,6 +629,10 @@ class SystemEvaluator:
             add_line(f"   Số mẫu: {len(results)}, Classification đúng: {metrics['correct']}")
             add_line(f"   [Detection]  P={det_agg['precision']:.2f}, R={det_agg['recall']:.2f}, F1={det_agg['f1']:.2f}")
             
+            # Inference time cho festival
+            f_times = [r['inference_time'] for r in results]
+            add_line(f"   [Inference]  Avg={np.mean(f_times):.4f}s, Min={np.min(f_times):.4f}s, Max={np.max(f_times):.4f}s")
+            
             if festival in overall_metrics.get('per_class', {}):
                 pc = overall_metrics['per_class'][festival]
                 add_line(f"   [Classification] P={pc['precision']:.2f}, R={pc['recall']:.2f}, F1={pc['f1_score']:.2f}")
@@ -584,7 +641,7 @@ class SystemEvaluator:
         
         # Chi tiết từng mẫu
         add_separator("-")
-        add_line("📋 PHẦN 4: CHI TIẾT TỪNG MẪU")
+        add_line("📋 PHẦN 5: CHI TIẾT TỮNG MẪu")
         add_separator("-")
         
         for result in self.results:
@@ -596,6 +653,7 @@ class SystemEvaluator:
             
             det = result['detection_metrics']
             add_line(f"   Detection: P={det['precision']:.2f}, R={det['recall']:.2f}, F1={det['f1']:.2f} (TP={det['tp']}, FP={det['fp']}, FN={det['fn']})")
+            add_line(f"   Inference time: {result['inference_time']:.4f}s ({result['num_images']} images)")
             
             # Show labels comparison
             yolo_only = set(result['yolo_labels']) - set(result['gt_labels'])

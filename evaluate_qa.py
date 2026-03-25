@@ -17,6 +17,7 @@ import os
 import sys
 import json
 import numpy as np
+import cv2
 from datetime import datetime
 from collections import defaultdict
 from pathlib import Path
@@ -47,6 +48,32 @@ FOLDER_TO_FESTIVAL = {
     "Frame Chol Chnam Thmay": "Tết Choi Chnam Thmay",
     "Frame Đờn Ca Tài Tử": "Đờn ca tài tử",
 }
+
+# ==========================================
+# MAPPING TÊN VIDEO -> TÊN LỄ HỘI
+# Đặt tên file video theo lễ hội, ví dụ: "Chợ Nổi.mp4", "Ngũ Âm (dễ).mp4"
+# Hoặc đặt video trong folder con có tên lễ hội
+# ==========================================
+VIDEO_NAME_TO_FESTIVAL = {
+    "Chợ Nổi": "Chợ nổi Cái Răng",
+    "Cho Noi": "Chợ nổi Cái Răng",
+    "Ngũ Âm": "Nhạc Ngũ Âm người Khmer",
+    "Ngu Am": "Nhạc Ngũ Âm người Khmer",
+    "Dù Khê": "Sân Khấu Dù Kê",
+    "Du Khe": "Sân Khấu Dù Kê",
+    "Nghinh Ông": "Nghinh Ông",
+    "Nghinh Ong": "Nghinh Ông",
+    "Kỳ Yên": "Lễ hội Kỳ Yên Đình Bình Thủy",
+    "Ky Yen": "Lễ hội Kỳ Yên Đình Bình Thủy",
+    "Thác Côn": "Lễ hội thác côn",
+    "Thac Con": "Lễ hội thác côn",
+    "Ok Bom Boc": "Ooc Bom Bóc",
+    "Chol Chnam Thmay": "Tết Choi Chnam Thmay",
+    "Đờn Ca Tài Tử": "Đờn ca tài tử",
+    "Don Ca Tai Tu": "Đờn ca tài tử",
+}
+
+VIDEO_EXTENSIONS = {'.mp4', '.avi', '.mov', '.mkv', '.webm'}
 
 # Mảng câu trả lời test (8 mức độ chắc chắn)
 
@@ -177,11 +204,19 @@ class SimpleConstraintChecker:
 
 
 class QAEvaluator:
-    def __init__(self, frame_dir, model_path, csv_path, api_key=None):
+    def __init__(self, frame_dir, model_path, csv_path, api_key=None, video_dir=None):
         """
         Khởi tạo QA Evaluator
+        
+        Args:
+            frame_dir: Thư mục chứa các folder Frame (ảnh JPG)
+            model_path: Đường dẫn model YOLO
+            csv_path: Đường dẫn file CSV mapping
+            api_key: API key cho LLM (optional)
+            video_dir: Thư mục chứa video để đánh giá (optional)
         """
         self.frame_dir = frame_dir
+        self.video_dir = video_dir
         self.api_key = api_key
         
         print("=" * 70)
@@ -434,10 +469,11 @@ class QAEvaluator:
         # Tính logits ban đầu
         initial_logits, festival_unsatisfied, festival_satisfied = self.checker.calculate_logits(all_detections)
         
-        # Xác định candidates (top festivals)
+        # Xác định candidates (top festivals) kèm xác suất
         probs = {f: sigmoid(l) for f, l in initial_logits.items()}
         sorted_probs = sorted(probs.items(), key=lambda x: x[1], reverse=True)
         candidates = [f for f, p in sorted_probs[:3]]  # Top 3
+        candidate_probs = {f: float(probs[f]) for f in candidates}  # % cho từng candidate
         
         # Sinh câu hỏi
         questions = self.generate_questions_offline(candidates, festival_unsatisfied)
@@ -452,6 +488,7 @@ class QAEvaluator:
             "initial_logit_gt": initial_logits.get(ground_truth_festival, 0.0),
             "initial_prob_gt": float(sigmoid(initial_logits.get(ground_truth_festival, 0.0))),
             "candidates": candidates,
+            "candidate_probs": candidate_probs,
             "questions": [],
             "gt_in_gt_labels": all_gt_labels,  # Ground truth labels từ JSON
         }
@@ -511,6 +548,142 @@ class QAEvaluator:
         
         return folder_result
     
+    def parse_video_name(self, filename):
+        """
+        Parse tên file video để lấy tên lễ hội và độ khó.
+        Hỗ trợ các format:
+          - "Chợ Nổi.mp4" → ("Chợ nổi Cái Răng", None)
+          - "Chợ Nổi (dễ).mp4" → ("Chợ nổi Cái Răng", "easy")
+          - "Ngũ Âm (khó).mp4" → ("Nhạc Ngũ Âm người Khmer", "hard")
+        """
+        # Bỏ extension
+        name_no_ext = os.path.splitext(filename)[0]
+        
+        # Xác định độ khó
+        difficulty = None
+        base_name = name_no_ext
+        if "(dễ)" in name_no_ext:
+            difficulty = "easy"
+            base_name = name_no_ext.replace("(dễ)", "").strip()
+        elif "(khó)" in name_no_ext:
+            difficulty = "hard"
+            base_name = name_no_ext.replace("(khó)", "").strip()
+        
+        # Tìm trong mapping
+        festival_name = VIDEO_NAME_TO_FESTIVAL.get(base_name)
+        
+        # Nếu không tìm thấy, thử tìm theo substring
+        if not festival_name:
+            for key, value in VIDEO_NAME_TO_FESTIVAL.items():
+                if key.lower() in base_name.lower() or base_name.lower() in key.lower():
+                    festival_name = value
+                    break
+        
+        return festival_name, difficulty
+    
+    def evaluate_single_video(self, video_path, ground_truth_festival=None):
+        """
+        Đánh giá Q&A scoring cho một video.
+        Sử dụng YOLOCSVPipeline.process_video() để trích frame và detect.
+        
+        Args:
+            video_path: Đường dẫn video
+            ground_truth_festival: Tên lễ hội ground truth (None nếu không biết)
+            
+        Returns:
+            dict: Kết quả đánh giá
+        """
+        # Dùng process_video từ YOLOCSVPipeline
+        all_detections = self.yolo_pipe.process_video(
+            video_path, confidence_threshold=0.5, fps_detect=1
+        )
+        
+        if not all_detections:
+            return None
+        
+        # Tính logits ban đầu
+        initial_logits, festival_unsatisfied, festival_satisfied = self.checker.calculate_logits(all_detections)
+        
+        # Xác định candidates (top festivals) kèm xác suất
+        probs = {f: sigmoid(l) for f, l in initial_logits.items()}
+        sorted_probs = sorted(probs.items(), key=lambda x: x[1], reverse=True)
+        candidates = [f for f, p in sorted_probs[:3]]  # Top 3
+        candidate_probs = {f: float(probs[f]) for f in candidates}
+        
+        # Sinh câu hỏi
+        questions = self.generate_questions_offline(candidates, festival_unsatisfied)
+        
+        if not questions:
+            return None
+        
+        # Nếu không có ground truth, dùng candidate đầu tiên để phân tích
+        eval_festival = ground_truth_festival if ground_truth_festival else candidates[0]
+        
+        # Kết quả cho video này
+        video_result = {
+            "folder": os.path.basename(video_path),
+            "source_type": "video",
+            "ground_truth": ground_truth_festival if ground_truth_festival else "(không xác định)",
+            "predicted_festival": candidates[0] if candidates else None,
+            "initial_logit_gt": initial_logits.get(eval_festival, 0.0),
+            "initial_prob_gt": float(sigmoid(initial_logits.get(eval_festival, 0.0))),
+            "candidates": candidates,
+            "candidate_probs": candidate_probs,
+            "questions": [],
+            "gt_in_gt_labels": set(),  # Video không có GT labels từ JSON
+            "total_detections": len(all_detections),
+            "unique_subclasses": list(set(d.subclass for d in all_detections)),
+        }
+        
+        # Test từng câu hỏi
+        for question in questions:
+            question_result = {
+                "question_id": question["question_id"],
+                "question_text": question["question_text"],
+                "target_features": question["target_features"],
+                "related_festivals": question["related_festivals"],
+                "feature_tests": []
+            }
+            
+            for feature in question["target_features"]:
+                feature_result = {
+                    "feature": feature,
+                    "in_ground_truth": False,  # Video không có JSON GT
+                    "answers": []
+                }
+                
+                for answer_info in TEST_ANSWERS:
+                    answer_text = answer_info["text"]
+                    parsed = self.simulate_answer_parsing(answer_text, feature)
+                    
+                    updated_logits = self.update_logits_from_answer(
+                        initial_logits, candidates, festival_unsatisfied, parsed
+                    )
+                    
+                    before_logit = initial_logits.get(eval_festival, 0.0)
+                    after_logit = updated_logits.get(eval_festival, 0.0)
+                    delta = after_logit - before_logit
+                    
+                    before_prob = float(sigmoid(before_logit))
+                    after_prob = float(sigmoid(after_logit))
+                    
+                    feature_result["answers"].append({
+                        "answer_text": answer_text,
+                        "is_positive": answer_info["is_positive"],
+                        "confidence": answer_info["confidence"],
+                        "before_logit": round(before_logit, 4),
+                        "after_logit": round(after_logit, 4),
+                        "delta": round(delta, 4),
+                        "before_prob": round(before_prob, 4),
+                        "after_prob": round(after_prob, 4),
+                    })
+                
+                question_result["feature_tests"].append(feature_result)
+            
+            video_result["questions"].append(question_result)
+        
+        return video_result
+    
     def run_evaluation(self):
         """Chạy đánh giá trên toàn bộ dataset"""
         print("\n" + "=" * 70)
@@ -538,12 +711,51 @@ class QAEvaluator:
             
             if result:
                 result["difficulty"] = difficulty
+                result["source_type"] = "frame"
                 self.results.append(result)
                 
                 # In tóm tắt
                 num_questions = len(result["questions"])
                 print(f"   └─ Sinh được {num_questions} câu hỏi")
                 print(f"   └─ Initial prob GT: {result['initial_prob_gt']:.2%}")
+        
+        # === ĐÁNH GIÁ TRÊN VIDEO (nếu có) ===
+        if self.video_dir and os.path.exists(self.video_dir):
+            print("\n" + "=" * 70)
+            print("🎬 ĐÁNH GIÁ Q&A SCORING TRÊN VIDEO")
+            print("=" * 70)
+            
+            video_files = []
+            for f in os.listdir(self.video_dir):
+                ext = os.path.splitext(f)[1].lower()
+                if ext in VIDEO_EXTENSIONS and not f.startswith('_'):
+                    video_files.append(f)
+            
+            print(f"\n🎥 Tìm thấy {len(video_files)} video")
+            
+            for video_name in sorted(video_files):
+                video_path = os.path.join(self.video_dir, video_name)
+                
+                festival_name, difficulty = self.parse_video_name(video_name)
+                
+                if not festival_name:
+                    print(f"⚠️  Bỏ qua (không xác định GT): {video_name}")
+                    print(f"   💡 Đổi tên video theo lễ hội, ví dụ: 'Chợ Nổi.mp4', 'Ngũ Âm (khó).mp4'")
+                    continue
+                
+                print(f"\n🎬 Đang đánh giá video: {video_name}")
+                print(f"   └─ Ground Truth: {festival_name}")
+                
+                result = self.evaluate_single_video(video_path, festival_name)
+                
+                if result:
+                    result["difficulty"] = difficulty
+                    self.results.append(result)
+                    
+                    num_questions = len(result["questions"])
+                    print(f"   └─ Sinh được {num_questions} câu hỏi")
+                    print(f"   └─ Initial prob GT: {result['initial_prob_gt']:.2%}")
+                    print(f"   └─ Dự đoán: {result.get('predicted_festival', 'N/A')}")
         
         return self.results
     
@@ -626,11 +838,26 @@ class QAEvaluator:
         
         for result in self.results:
             add_line()
-            add_line(f"🎭 {result['folder']}")
+            source_icon = "🎬" if result.get("source_type") == "video" else "🎭"
+            add_line(f"{source_icon} {result['folder']}")
+            if result.get("source_type") == "video":
+                add_line(f"   Loại: Video")
+                if result.get("total_detections"):
+                    add_line(f"   Tổng detections: {result['total_detections']}")
+                    add_line(f"   Unique subclasses: {result.get('unique_subclasses', [])}")
+                if result.get("predicted_festival"):
+                    add_line(f"   Dự đoán: {result['predicted_festival']}")
             add_line(f"   Ground Truth: {result['ground_truth']}")
             add_line(f"   Initial Logit: {result['initial_logit_gt']:.4f}")
             add_line(f"   Initial Prob:  {result['initial_prob_gt']:.2%}")
-            add_line(f"   Candidates: {result['candidates']}")
+            
+            # Hiển thị candidates kèm phần trăm
+            candidate_probs = result.get("candidate_probs", {})
+            add_line(f"   Candidates:")
+            for i, cand in enumerate(result['candidates'], 1):
+                prob = candidate_probs.get(cand, 0.0)
+                gt_marker = " ★" if cand == result['ground_truth'] else ""
+                add_line(f"      {i}. {cand}: {prob:.2%}{gt_marker}")
             
             for question in result["questions"]:
                 add_line()
@@ -685,25 +912,75 @@ class QAEvaluator:
 
 def main():
     """Hàm main"""
-    # Cấu hình
-    FRAME_DIR = "assets/Frame"
-    MODEL_PATH = "backend/weight/best.pt"
-    CSV_PATH = "backend/uploads/artifacts/merged_data.csv"
+    import argparse
     
-    # Không cần API key vì dùng offline evaluation
+    parser = argparse.ArgumentParser(description="Đánh giá Q&A Scoring cho hệ thống nhận dạng lễ hội")
+    parser.add_argument("--frame-dir", default="assets/Frame", help="Thư mục chứa frame ảnh")
+    parser.add_argument("--video-dir", default="assets/input", help="Thư mục chứa video (mặc định: assets/input)")
+    parser.add_argument("--model-path", default="backend/weight/best.pt", help="Đường dẫn model YOLO")
+    parser.add_argument("--csv-path", default="backend/uploads/artifacts/merged_data.csv", help="Đường dẫn CSV mapping")
+    parser.add_argument("--no-frame", action="store_true", help="Bỏ qua đánh giá trên frame (chỉ chạy video)")
+    parser.add_argument("--no-video", action="store_true", help="Bỏ qua đánh giá trên video (chỉ chạy frame)")
+    
+    args = parser.parse_args()
+    
+    FRAME_DIR = args.frame_dir
+    VIDEO_DIR = args.video_dir if args.video_dir else "assets/input"
+    MODEL_PATH = args.model_path
+    CSV_PATH = args.csv_path
     API_KEY = None
     
     # Kiểm tra
-    if not os.path.exists(FRAME_DIR):
-        print(f"❌ Không tìm thấy: {FRAME_DIR}")
+    if not os.path.exists(MODEL_PATH):
+        print(f"❌ Không tìm thấy model: {MODEL_PATH}")
         return
     
-    if not os.path.exists(MODEL_PATH):
-        print(f"❌ Không tìm thấy: {MODEL_PATH}")
+    if not os.path.exists(CSV_PATH):
+        print(f"❌ Không tìm thấy CSV: {CSV_PATH}")
         return
+    
+    # Xác định thư mục frame và video
+    frame_dir = FRAME_DIR if not args.no_frame and os.path.exists(FRAME_DIR) else None
+    video_dir = VIDEO_DIR if not args.no_video and os.path.exists(VIDEO_DIR) else None
+    
+    if not frame_dir and not video_dir:
+        print(f"❌ Không tìm thấy dữ liệu frame ({FRAME_DIR}) hoặc video ({VIDEO_DIR})")
+        return
+    
+    if frame_dir:
+        print(f"📁 Frame dir: {frame_dir}")
+    else:
+        print(f"⏭️  Bỏ qua đánh giá frame")
+    
+    if video_dir:
+        print(f"🎥 Video dir: {video_dir}")
+        # Hướng dẫn đặt tên video
+        video_files = [f for f in os.listdir(video_dir) 
+                       if os.path.splitext(f)[1].lower() in VIDEO_EXTENSIONS]
+        unnamed = []
+        for vf in video_files:
+            fn, _ = QAEvaluator.parse_video_name(None, vf)
+            if not fn:
+                unnamed.append(vf)
+        if unnamed:
+            print(f"\n⚠️  Các video sau chưa đặt tên theo lễ hội (sẽ bị bỏ qua):")
+            for u in unnamed:
+                print(f"   - {u}")
+            print(f"   💡 Đổi tên video theo lễ hội, ví dụ:")
+            for key in list(VIDEO_NAME_TO_FESTIVAL.keys())[:5]:
+                print(f"      '{key}.mp4' → {VIDEO_NAME_TO_FESTIVAL[key]}")
+            print()
+    else:
+        print(f"⏭️  Bỏ qua đánh giá video")
     
     # Khởi tạo và chạy
-    evaluator = QAEvaluator(FRAME_DIR, MODEL_PATH, CSV_PATH, API_KEY)
+    evaluator = QAEvaluator(
+        frame_dir=frame_dir or "assets/Frame",
+        model_path=MODEL_PATH,
+        csv_path=CSV_PATH,
+        api_key=API_KEY,
+        video_dir=video_dir
+    )
     
     results = evaluator.run_evaluation()
     
