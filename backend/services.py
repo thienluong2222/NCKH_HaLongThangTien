@@ -4,12 +4,10 @@ from pathlib import Path
 import cv2
 import numpy as np
 from collections import Counter, defaultdict
-import matplotlib.pyplot as plt
+import logging
 from ultralytics import YOLO
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
-from langchain_core.output_parsers import StrOutputParser
 from constraintsDB import CONSTRAINTS_DB, SUBCLASS_TO_FESTIVAL, FEATURE_DISPLAY_NAMES
 import math
 from dotenv import load_dotenv
@@ -17,6 +15,9 @@ import json
 
 load_dotenv()
 API_KEY = os.getenv("GEMINI_API_KEY")
+
+# Setup logger
+logger = logging.getLogger(__name__)
 
 # ==========================================
 # PHẦN 1: YOLO PIPELINE 
@@ -37,10 +38,7 @@ class YOLOCSVPipeline:
         # Chuẩn hóa tên cột
         self.mapping_df.columns = self.mapping_df.columns.str.strip()
 
-        print(f"✅ Đã load model: {model_path}")
-        print(f"✅ Đã load CSV: {csv_path}")
-        print(f"📊 Số dòng trong CSV: {len(self.mapping_df)}")
-        print(f"📋 Các cột: {list(self.mapping_df.columns)}")
+        logger.info(f"YOLO model loaded: {model_path}, CSV: {csv_path} ({len(self.mapping_df)} rows)")
 
     def predict_and_map(self, image_path, confidence_threshold=0.5, show_image=True):
         """
@@ -104,96 +102,44 @@ class YOLOCSVPipeline:
         return matched_results
 
     def process_single_image(self, image_path, show_unmapped=False):
-        """
-        Xử lý 1 ảnh và hiển thị kết quả
-        """
-        print(f"\n{'='*60}")
-        print(f"🖼️  Đang xử lý: {os.path.basename(image_path)}")
-        print(f"{'='*60}")
-
+        """Xử lý 1 ảnh và hiển thị kết quả"""
+        logger.debug(f"Processing image: {os.path.basename(image_path)}")
         results = self.predict_and_map(image_path)
-
         if not results:
-            print("❌ Không phát hiện object nào!")
+            logger.warning("No objects detected")
             return None
-
-        print(f"\n✅ Phát hiện {len(results)} object(s):\n")
-
-        for i, result in enumerate(results, 1):
-            if result['mapped_subclass'] is not None:
-                print(f"{i}. 🎯 Detected: {result['detected_subclass']}")
-                print(f"   ├─ SubClass: {result['mapped_subclass']}")
-                print(f"   ├─ Class: {result['class']}")
-                print(f"   ├─ Text: {result['text']}")
-                print(f"   └─ Confidence: {result['confidence']:.2%}\n")
-            elif show_unmapped:
-                print(f"{i}. ⚠️  Detected: {result['detected_subclass']}")
-                print(f"   └─ Không tìm thấy mapping trong CSV\n")
-
+        logger.debug(f"Detected {len(results)} object(s)")
         return results
 
-    def process_folder(self, image_folder, output_csv='results.csv',
-                    confidence_threshold=0.5):
-        """
-        Xử lý tất cả ảnh trong thư mục
-        """
-        print(f"\n{'='*60}")
-        print(f"📁 Xử lý thư mục: {image_folder}")
-        print(f"{'='*60}\n")
+    def process_folder(self, image_folder, output_csv='results.csv', confidence_threshold=0.5):
+        """Xử lý tất cả ảnh trong thư mục"""
+        logger.info(f"Processing folder: {image_folder}")
 
-        # Lấy tất cả ảnh
         image_extensions = ['.jpg', '.jpeg', '.png', '.bmp']
         image_files = []
-
         for ext in image_extensions:
             image_files.extend(Path(image_folder).glob(f'*{ext}'))
             image_files.extend(Path(image_folder).glob(f'*{ext.upper()}'))
 
         if not image_files:
-            print("❌ Không tìm thấy ảnh nào!")
+            logger.warning("No images found")
             return None
 
-        print(f"Tìm thấy {len(image_files)} ảnh\n")
-
+        logger.info(f"Found {len(image_files)} images")
         all_results = []
 
         for img_path in image_files:
             results = self.predict_and_map(str(img_path), confidence_threshold)
-
             for result in results:
                 result['image'] = os.path.basename(str(img_path))
                 all_results.append(result)
 
-            print(f"✓ {os.path.basename(str(img_path))}: {len(results)} detections")
-
-        # Tạo DataFrame
         df = pd.DataFrame(all_results)
-
-        # Lọc chỉ lấy kết quả có mapping
         df_mapped = df[df['mapped_subclass'].notna()].copy()
-
-        # Sắp xếp
-        df_mapped = df_mapped.sort_values(['image', 'confidence'],
-                                        ascending=[True, False])
-
-        # Lưu file
+        df_mapped = df_mapped.sort_values(['image', 'confidence'], ascending=[True, False])
         df_mapped.to_csv(output_csv, index=False, encoding='utf-8-sig')
 
-        print(f"\n{'='*60}")
-        print(f"✅ Hoàn thành!")
-        print(f"📊 Tổng detections: {len(all_results)}")
-        print(f"✓ Có mapping: {len(df_mapped)}")
-        print(f"✗ Không mapping: {len(all_results) - len(df_mapped)}")
-        print(f"💾 Đã lưu: {output_csv}")
-        print(f"{'='*60}\n")
-
-        # Thống kê
-        if not df_mapped.empty:
-            print("📈 Top 10 Class phổ biến:")
-            print(df_mapped['class'].value_counts().head(10))
-            print("\n📈 Top 10 SubClass phổ biến:")
-            print(df_mapped['mapped_subclass'].value_counts().head(10))
-
+        logger.info(f"Completed: {len(all_results)} detections, {len(df_mapped)} mapped, saved to {output_csv}")
         return df_mapped
 
     def get_info_by_subclass(self, subclass_name):
@@ -694,52 +640,39 @@ class YOLOCSVPipeline:
     
     def process_video(self, video_path, confidence_threshold=0.5, fps_detect=1):
         """Xử lý video và trả về list ObjectDetection (Dùng cho Bayesian Classifier)"""
-        print(f"\n{'='*60}")
-        print(f"🎬 BẮT ĐẦU XỬ LÝ VIDEO: {video_path}")
-        print(f"{'='*60}")
-        
-        # Kiểm tra file tồn tại
+        logger.info(f"Processing video: {video_path}")
+
         if not os.path.exists(video_path):
-            print(f"❌ File không tồn tại: {video_path}")
+            logger.error(f"File not found: {video_path}")
             return []
-        
-        print(f"📁 File size: {os.path.getsize(video_path)} bytes")
-        
+
         cap = cv2.VideoCapture(video_path)
-        
         if not cap.isOpened():
-            print(f"❌ Không thể mở video: {video_path}")
+            logger.error(f"Cannot open video: {video_path}")
             return []
-        
+
         video_fps = cap.get(cv2.CAP_PROP_FPS)
         total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-        
-        print(f"📊 Video FPS: {video_fps}, Total frames: {total_frames}")
-        
-        # Validation: tránh division by zero
+
         if video_fps <= 0:
-            print(f"⚠️ Video FPS không hợp lệ ({video_fps}), sử dụng mặc định 30")
+            logger.warning(f"Invalid FPS ({video_fps}), using default 30")
             video_fps = 30
-        
+
         frame_interval = max(1, int(video_fps / fps_detect))
-        print(f"⚙️ Frame interval: {frame_interval} (detect mỗi {frame_interval} frames)")
-        
-        # QUAN TRỌNG: Tạo list MỚI cho mỗi video
         all_objects = []
         frame_count = 0
         detected_frames = 0
 
         while True:
             ret, frame = cap.read()
-            if not ret: break
+            if not ret:
+                break
 
             if frame_count % frame_interval == 0:
                 raw_dets = self.predict_and_map_with_boxes(frame, confidence_threshold)
-                
-                # Group by subclass trong frame hiện tại
+
                 subclass_groups = {}
                 for d in raw_dets:
-                    # Chỉ lấy detection có mapping hợp lệ
                     if d.get('mapped'):
                         lbl = d['label']
                         if lbl not in subclass_groups:
@@ -748,7 +681,7 @@ class YOLOCSVPipeline:
                         subclass_groups[lbl]['boxes'].append(d['box'])
 
                 time_stamp = frame_count / video_fps
-                
+
                 for sub, data in subclass_groups.items():
                     obj = ObjectDetection(
                         subclass=sub,
@@ -759,80 +692,48 @@ class YOLOCSVPipeline:
                         bboxs=data['boxes']
                     )
                     all_objects.append(obj)
-                
+
                 detected_frames += 1
-                
-                # Debug: Log mỗi 10 frames detect
-                if detected_frames % 10 == 0:
-                    current_subs = set(obj.subclass for obj in all_objects)
-                    print(f"   Frame {frame_count}: Detected so far: {current_subs}")
-            
+
             frame_count += 1
-        
+
         cap.release()
-        
-        # Summary log
+
         unique_subclasses = set(obj.subclass for obj in all_objects)
-        print(f"\n✅ HOÀN THÀNH XỬ LÝ VIDEO:")
-        print(f"├─ Tổng frames đã đọc: {frame_count}")
-        print(f"├─ Frames đã detect: {detected_frames}")
-        print(f"├─ Tổng objects phát hiện: {len(all_objects)}")
-        print(f"└─ Unique subclasses: {len(unique_subclasses)} - {list(unique_subclasses)}")
-        print(f"{'='*60}\n")
-        
-        return all_objects
-        
+        logger.info(f"Video processed: {detected_frames} frames, {len(all_objects)} objects, {len(unique_subclasses)} unique subclasses")
+
         return all_objects
 
     def process_image(self, image_path, confidence_threshold=0.5):
-        """
-        Xử lý ảnh đơn và trả về list ObjectDetection (format giống process_video)
-        
-        Args:
-            image_path: Đường dẫn đến file ảnh
-            confidence_threshold: Ngưỡng confidence
-            
-        Returns:
-            List[ObjectDetection]: Danh sách object được phát hiện
-        """
-        print(f"\n{'='*60}")
-        print(f"🖼️ BẮT ĐẦU XỬ LÝ ẢNH: {image_path}")
-        print(f"{'='*60}")
-        
+        """Xử lý ảnh đơn và trả về list ObjectDetection"""
+        logger.info(f"Processing image: {image_path}")
+
         raw_dets = self.predict_and_map_with_boxes(image_path, confidence_threshold)
-        
-        print(f"📊 Raw detections: {len(raw_dets)}")
-        
-        # Group by subclass
+
         subclass_groups = {}
         for d in raw_dets:
-            # Chỉ lấy detection có mapping hợp lệ
             if d.get('mapped'):
                 lbl = d['label']
                 if lbl not in subclass_groups:
                     subclass_groups[lbl] = {'confs': [], 'boxes': []}
                 subclass_groups[lbl]['confs'].append(d['confidence'])
                 subclass_groups[lbl]['boxes'].append(d['box'])
-        
+
         all_objects = []
         for sub, data in subclass_groups.items():
             obj = ObjectDetection(
                 subclass=sub,
                 confidence=np.mean(data['confs']),
-                frame_id=0,  # Ảnh chỉ có 1 frame
+                frame_id=0,
                 time_stamp=0.0,
                 count=len(data['boxes']),
                 bboxs=data['boxes']
             )
             all_objects.append(obj)
-        
-        # Summary log
+
         unique_subclasses = set(obj.subclass for obj in all_objects)
-        print(f"\n✅ HOÀN THÀNH XỬ LÝ ẢNH:")
-        print(f"├─ Mapped detections: {len(all_objects)}")
-        print(f"└─ Unique subclasses: {len(unique_subclasses)} - {list(unique_subclasses)}")
-        print(f"{'='*60}\n")
-        
+        logger.info(f"Image processed: {len(all_objects)} objects, {len(unique_subclasses)} unique subclasses")
+
         return all_objects
 
 
@@ -989,56 +890,35 @@ class BayesianFestivalClassifier:
         return satisfied
 
     def calculate_initial_logits(self, detections):
-        print(f"\n{'─'*60}")
-        print(f"🧮 TÍNH TOÁN BAYESIAN LOGITS")
-        print(f"{'─'*60}")
-        print(f"📊 Input: {len(detections)} detections")
-        
+        """Tính toán Bayesian logits từ detections"""
+        logger.info(f"Calculating Bayesian logits for {len(detections)} detections")
+
         by_subclass, by_frame = self._index_detections(detections)
-        
-        print(f"📋 Unique subclasses detected: {list(by_subclass.keys())}")
-        print(f"📋 Total frames with detections: {len(by_frame)}")
-        
+        logger.debug(f"Unique subclasses: {list(by_subclass.keys())}")
+
         festival_logits = {}
         festival_unsatisfied = defaultdict(list)
         festival_satisfied = defaultdict(list)
 
         for festival, rules in CONSTRAINTS_DB.items():
             current_logit = 0.0
-            satisfied_count = 0
-            
+
             for rule in rules:
                 is_satisfied = self.check_constraints(rule, by_subclass, by_frame)
                 weight = rule[3]
                 if is_satisfied:
                     current_logit += weight
                     festival_satisfied[festival].append(rule)
-                    satisfied_count += 1
                 else:
                     festival_unsatisfied[festival].append(rule)
-            
+
             festival_logits[festival] = current_logit
-            
-            # Debug chi tiết cho Sân Khấu Dù Kê
-            if festival == "Chợ nổi Cái Răng":
-                print(f"\n🎭 DEBUG:")
-                print(f"   ├─ Tổng rules: {len(rules)}")
-                print(f"   ├─ Rules thỏa mãn: {satisfied_count}")
-                print(f"   ├─ Logit: {current_logit:.2f}")
-                print(f"   └─ Các rules thỏa mãn:")
-                for r in festival_satisfied[festival][:5]:  # Chỉ hiện 5 rules đầu
-                    print(f"      • {r[0]}: {r[1]} (weight={r[3]})")
-                if satisfied_count > 5:
-                    print(f"      ... và {satisfied_count - 5} rules khác")
-        
-        # Log top 5 festivals by logit
-        sorted_logits = sorted(festival_logits.items(), key=lambda x: x[1], reverse=True)[:5]
-        print(f"\n🏆 TOP 5 FESTIVALS (by logit):")
-        for fest, logit_val in sorted_logits:
-            prob = sigmoid(logit_val)
-            print(f"   {fest}: logit={logit_val:.2f}, prob={prob:.2%}")
-        print(f"{'─'*60}\n")
-        
+
+        # Log top 3 festivals
+        sorted_logits = sorted(festival_logits.items(), key=lambda x: x[1], reverse=True)[:3]
+        top_info = ", ".join([f"{f}:{sigmoid(l):.2%}" for f, l in sorted_logits])
+        logger.info(f"Top 3 festivals: {top_info}")
+
         return festival_logits, festival_unsatisfied, festival_satisfied
     
     def get_top_3_with_constraints(self, festival_logits, festival_satisfied, festival_unsatisfied):
@@ -1234,7 +1114,7 @@ Hãy sinh câu hỏi:
                 result = result[1:-1]
             return result
         except Exception as e:
-            print(f"Lỗi sinh câu hỏi bằng LLM: {e}")
+            logger.warning(f"LLM question generation failed: {e}")
             # Fallback về câu hỏi mặc định
             feature_str = self._format_feature_list(features)
             if question_number == 1:
@@ -1496,7 +1376,7 @@ Hãy sinh câu hỏi:
             
             return technical_result
         except Exception as e:
-            print(f"Lỗi parse JSON từ LLM: {e}")
+            logger.warning(f"LLM JSON parse failed: {e}")
             return {}
 
     def update_logits_from_consolidated_answer(self, festival_logits, candidates, festival_unsatisfied, parsed_answer):
@@ -1546,19 +1426,21 @@ Hãy sinh câu hỏi:
         """Kết luận cuối cùng"""
         final_probs = {f: sigmoid(l) for f, l in final_logits.items()}
         results = []
-        
-        print(f"\n KẾT QUẢ CUỐI CÙNG:")
+
         sorted_res = sorted(final_probs.items(), key=lambda x: x[1], reverse=True)
         for f, p in sorted_res:
-            status = "ĐẠT" if p >= GLOBAL_CONFIG["T_out"] else "TRƯỢT"
-            print(f"   {f}: {p:.2%} ({status})")
             if p >= GLOBAL_CONFIG["T_out"]:
                 results.append(f)
-                
+
+        if results:
+            logger.info(f"Final result: {results}")
+        else:
+            logger.info("No festival passed threshold")
+
         return results, final_probs
 
 
 if __name__ == "__main__":
-    # Ví dụ test nhanh
+    # Test
     model = YOLOCSVPipeline(model_path='./weight/best.pt', csv_path="./uploads/artifacts/merged_data.csv")
-    print(model.process_video("/Users/thien/Downloads/Zalo/nghinh ong 2.mp4", confidence_threshold=0.5))
+    logger.info(model.process_video("/Users/thien/Downloads/Zalo/nghinh ong 2.mp4", confidence_threshold=0.5))
