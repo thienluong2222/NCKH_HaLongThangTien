@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ChatService, ChatMessage } from '../../services/chat.service';
 import { FestivalDetectionService } from '../../services/festival-detection.service';
 
@@ -33,7 +34,8 @@ type WorkflowStep = 'upload' | 'analyzing' | 'questioning' | 'completed';
     MatIconModule,
     MatProgressBarModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    TranslateModule
   ],
   templateUrl: './chat-box.component.html',
   styleUrl: './chat-box.component.scss'
@@ -59,18 +61,28 @@ export class ChatBoxComponent implements AfterViewChecked, OnInit {
     (this.workflowStep() === 'questioning' || this.workflowStep() === 'completed')
   );
   
-  suggestions = [
-    { icon: '🏮', text: 'Có đèn hoa đăng' },
-    { icon: '🚣', text: 'Đua ghe ngo' },
-    { icon: '🌙', text: 'Cúng trăng rằm' },
-    { icon: '🎎', text: 'Múa lân sư rồng' }
-  ];
+  suggestions: { icon: string; text: string }[] = [];
 
   constructor(
     public chatService: ChatService,
     public festivalService: FestivalDetectionService,
-    private snackBar: MatSnackBar
-  ) {}
+    private snackBar: MatSnackBar,
+    private translate: TranslateService
+  ) {
+    this.updateSuggestionTexts();
+    this.translate.onLangChange.subscribe(() => {
+      this.updateSuggestionTexts();
+    });
+  }
+
+  private updateSuggestionTexts(): void {
+    this.suggestions = [
+      { icon: '🏮', text: this.translate.instant('CHAT.suggestions.lantern') },
+      { icon: '🚣', text: this.translate.instant('CHAT.suggestions.boatRace') },
+      { icon: '🌙', text: this.translate.instant('CHAT.suggestions.moonOffering') },
+      { icon: '🎎', text: this.translate.instant('CHAT.suggestions.lionDance') }
+    ];
+  }
 
   async ngOnInit() {
     // Check backend health on init
@@ -171,7 +183,7 @@ export class ChatBoxComponent implements AfterViewChecked, OnInit {
     const files = this.previews().map(p => p.file);
     
     // Add system message about analysis
-    this.chatService.addSystemMessage('🔍 Đang phân tích tệp tin của bạn... Vui lòng đợi trong giây lát.');
+    this.chatService.addSystemMessage(this.translate.instant('CHAT.messages.analyzingFiles'));
     
     try {
       // Trigger analysis (real API call or mock)
@@ -180,9 +192,13 @@ export class ChatBoxComponent implements AfterViewChecked, OnInit {
       // Check for errors
       if (this.festivalService.status() === 'error') {
         this.chatService.addSystemMessage(
-          `❌ ${this.festivalService.errorMessage() || 'Đã xảy ra lỗi khi phân tích video.'}`
+          `❌ ${this.festivalService.errorMessage() || this.translate.instant('CHAT.messages.analysisError')}`
         );
-        this.snackBar.open('Lỗi phân tích video', 'Đóng', { duration: 5000 });
+        this.snackBar.open(
+          this.translate.instant('CHAT.messages.analysisErrorSnackbar'),
+          this.translate.instant('CHAT.messages.snackbarClose'),
+          { duration: 5000 }
+        );
         this.workflowStep.set('upload');
         return;
       }
@@ -197,7 +213,7 @@ export class ChatBoxComponent implements AfterViewChecked, OnInit {
       if (backendQuestion) {
         // AI question from backend (Human-in-the-Loop)
         this.chatService.addAIMessage(
-          `✨ Phân tích hoàn tất! ${backendQuestion}`
+          `${this.translate.instant('CHAT.messages.analysisComplete')} ${backendQuestion}`
         );
         
         // Update suggestions based on target features
@@ -206,13 +222,7 @@ export class ChatBoxComponent implements AfterViewChecked, OnInit {
         }
       } else {
         // Default question when using mock or finished immediately
-        this.chatService.addSystemMessage(
-          '✨ Phân tích hoàn tất! Tôi đã phát hiện một số đặc điểm văn hóa. Để tăng độ chính xác, bạn có thể cho tôi biết thêm:\n\n' +
-          '• Bạn có thấy đèn hoa đăng hoặc đèn nước không?\n' +
-          '• Có hoạt động đua ghe ngo không?\n' +
-          '• Lễ hội diễn ra vào thời điểm nào (ngày/đêm)?\n' +
-          '• Có nghi thức cúng bái nào không?'
-        );
+        this.chatService.addSystemMessage(this.translate.instant('CHAT.messages.analysisCompleteDefault'));
       }
       
       // Check if analysis is already finished
@@ -221,14 +231,21 @@ export class ChatBoxComponent implements AfterViewChecked, OnInit {
         const winner = this.festivalService.winner();
         if (winner) {
           this.chatService.addSystemMessage(
-            `🎉 **Kết quả:** Đây là lễ hội **${winner.name}** với độ tin cậy ${winner.confidence}%!`
+            this.translate.instant('CHAT.messages.resultAnnounce', {
+              name: winner.name,
+              confidence: winner.confidence
+            })
           );
         }
       }
     } catch (error) {
       console.error('Analysis error:', error);
-      this.chatService.addSystemMessage('❌ Đã xảy ra lỗi khi phân tích video. Vui lòng thử lại.');
-      this.snackBar.open('Lỗi phân tích video', 'Đóng', { duration: 5000 });
+      this.chatService.addSystemMessage(this.translate.instant('CHAT.messages.genericError'));
+      this.snackBar.open(
+        this.translate.instant('CHAT.messages.analysisErrorSnackbar'),
+        this.translate.instant('CHAT.messages.snackbarClose'),
+        { duration: 5000 }
+      );
       this.workflowStep.set('upload');
     }
   }
@@ -255,7 +272,7 @@ export class ChatBoxComponent implements AfterViewChecked, OnInit {
     }
     
     // Add "Không thấy" options
-    featureSuggestions.push({ icon: '❌', text: 'Không thấy những điều này' });
+    featureSuggestions.push({ icon: '❌', text: this.translate.instant('CHAT.messages.notSeen') });
     
     if (featureSuggestions.length > 0) {
       this.suggestions = featureSuggestions;
@@ -294,7 +311,11 @@ export class ChatBoxComponent implements AfterViewChecked, OnInit {
       const winner = this.festivalService.winner();
       if (winner) {
         this.chatService.addSystemMessage(
-          `🎉 **Xác nhận:** Đây là lễ hội **${winner.name}** với độ tin cậy ${winner.confidence}%!\n\n${winner.description}`
+          this.translate.instant('CHAT.messages.resultConfirm', {
+            name: winner.name,
+            confidence: winner.confidence,
+            description: winner.description
+          })
         );
       }
     } else {

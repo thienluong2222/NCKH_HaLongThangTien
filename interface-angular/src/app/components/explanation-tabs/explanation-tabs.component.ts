@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { FestivalDetectionService } from '../../services/festival-detection.service';
 import { FestivalConstraints } from '../../models/api.models';
 
@@ -43,7 +44,8 @@ interface D3Link {
     MatIconModule,
     MatListModule,
     MatChipsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    TranslateModule
   ],
   templateUrl: './explanation-tabs.component.html',
   styleUrl: './explanation-tabs.component.scss'
@@ -74,7 +76,10 @@ export class ExplanationTabsComponent implements AfterViewInit, OnDestroy {
   
   chatRules: { keyword: string; impact: string; boost: number }[] = [];
 
-  constructor(public festivalService: FestivalDetectionService) {
+  constructor(
+    public festivalService: FestivalDetectionService,
+    private translate: TranslateService
+  ) {
     // Watch for changes in results and constraints data
     effect(() => {
       const results = this.festivalService.results();
@@ -90,6 +95,11 @@ export class ExplanationTabsComponent implements AfterViewInit, OnDestroy {
         this.buildGraphData(constraints);
         setTimeout(() => this.renderD3Graph(), 150);
       }
+    });
+
+    // Re-render chart when language changes
+    this.translate.onLangChange.subscribe(() => {
+      setTimeout(() => this.renderChart(), 100);
     });
   }
 
@@ -536,17 +546,17 @@ export class ExplanationTabsComponent implements AfterViewInit, OnDestroy {
       textposition: 'auto',
       insidetextanchor: 'middle',
       textfont: { family: 'K2D', size: 14, color: '#fff', weight: 'bold' },
-      hovertemplate: '<b>%{x}</b><br>Xác suất: %{y}%<extra></extra>'
+      hovertemplate: this.translate.instant('EXPLANATION.chart.hoverTemplate')
     }];
 
     const layout = {
       title: {
-        text: 'Phân bố xác suất lễ hội',
+        text: this.translate.instant('EXPLANATION.chart.title'),
         font: { family: 'K2D', size: 18, color: '#333' }
       },
       xaxis: { tickfont: { family: 'K2D', size: 12 } },
       yaxis: {
-        title: 'Xác suất (%)',
+        title: this.translate.instant('EXPLANATION.chart.yAxisTitle'),
         range: [0, 100],
         tickfont: { family: 'K2D', size: 12 }
       },

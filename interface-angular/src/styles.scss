@@ -73,6 +73,7 @@
 html {
   scroll-behavior: smooth;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -445,5 +446,23 @@ p {
     --spacing-lg: 1.5rem;
     --spacing-xl: 2rem;
     --spacing-2xl: 2.5rem;
+  }
+
+  .heritage-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.25rem;
+    --spacing-xl: 1.5rem;
+    --spacing-2xl: 2rem;
+  }
+
+  .heritage-card:hover {
+    transform: translateY(-2px);
   }
 }

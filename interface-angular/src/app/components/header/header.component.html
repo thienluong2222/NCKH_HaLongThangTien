@@ -41,19 +41,24 @@
       <div class="nav-links">
         <a href="https://dsvh.gov.vn/danh-muc-di-san-van-hoa-phi-vat-the-quoc-gia-1789" target="_blank" class="nav-item">
           <mat-icon>explore</mat-icon>
-          <span>Khám phá</span>
+          <span>{{ 'HEADER.nav.explore' | translate }}</span>
         </a>
         <a href="https://dsvh.gov.vn" target="_blank" class="nav-item">
           <mat-icon>museum</mat-icon>
-          <span>Di sản</span>
+          <span>{{ 'HEADER.nav.heritage' | translate }}</span>
         </a>
         <a href="https://www.ctu.edu.vn" target="_blank" class="nav-item">
           <mat-icon>info</mat-icon>
-          <span>Giới thiệu</span>
+          <span>{{ 'HEADER.nav.about' | translate }}</span>
         </a>
         <a href="https://github.com/thienluong2222/NCKH_HaLongThangTien" target="_blank" class="nav-item github">
           <mat-icon>code</mat-icon>
         </a>
+        <!-- Language Toggle -->
+        <button class="lang-toggle" (click)="translationService.toggleLanguage()">
+          <span class="flag">{{ translationService.currentLang() === 'vi' ? '🇬🇧' : '🇻🇳' }}</span>
+          <span class="lang-code">{{ translationService.currentLang() === 'vi' ? 'EN' : 'VI' }}</span>
+        </button>
       </div>
     </nav>
     
@@ -65,22 +70,20 @@
           <mat-icon>verified</mat-icon>
         </div>
         <div class="badge-text">
-          <span class="badge-label">AI-Powered</span>
-          <span class="badge-title">Cultural Heritage Recognition</span>
+          <span class="badge-label">{{ 'HEADER.badge.label' | translate }}</span>
+          <span class="badge-title">{{ 'HEADER.badge.title' | translate }}</span>
         </div>
       </div>
       
       <h2 class="hero-headline">
-        <span class="line-1">Khám phá & Bảo tồn</span>
-        <span class="line-2">Di sản văn hóa </span>
-        <span class="line-2"> <em>Phi vật thể Nam Bộ</em></span>
-        <span class="line-2"> <em>Việt Nam</em></span>
+        <span class="line-1">{{ 'HEADER.hero.line1' | translate }}</span>
+        <span class="line-2">{{ 'HEADER.hero.line2' | translate }} </span>
+        <span class="line-2"> <em>{{ 'HEADER.hero.line3' | translate }}</em></span>
+        <span class="line-2"> <em>{{ 'HEADER.hero.line4' | translate }}</em></span>
       </h2>
       
       <p class="hero-description">
-        Hệ thống nhận dạng thông minh sử dụng AI để phân tích và xác định 
-        các lễ hội truyền thống qua hình ảnh và video, góp phần gìn giữ 
-        bản sắc văn hóa dân tộc cho thế hệ mai sau.
+        {{ 'HEADER.hero.description' | translate }}
       </p>
       
       <!-- Stats Bar - UNESCO Style -->
@@ -89,7 +92,7 @@
           <div class="stat-icon">🎭</div>
           <div class="stat-info">
             <span class="stat-value">15+</span>
-            <span class="stat-label">Lễ hội được nhận dạng</span>
+            <span class="stat-label">{{ 'HEADER.stats.festivals' | translate }}</span>
           </div>
         </div>
         <div class="stat-divider"></div>
@@ -97,15 +100,15 @@
           <div class="stat-icon">🎯</div>
           <div class="stat-info">
             <span class="stat-value">95%</span>
-            <span class="stat-label">Độ chính xác</span>
+            <span class="stat-label">{{ 'HEADER.stats.accuracy' | translate }}</span>
           </div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-card">
           <div class="stat-icon">📑</div>
           <div class="stat-info">
-            <span class="stat-value">Hệ thống ràng buộc</span>
-            <span class="stat-label">Từ Chuyên gia</span>
+            <span class="stat-value">{{ 'HEADER.stats.constraintSystem' | translate }}</span>
+            <span class="stat-label">{{ 'HEADER.stats.fromExperts' | translate }}</span>
           </div>
         </div>
       </div>

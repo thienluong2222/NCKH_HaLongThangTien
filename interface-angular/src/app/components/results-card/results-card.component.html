@@ -6,8 +6,8 @@
         <div class="spinner-ring"></div>
         <div class="spinner-icon">🔍</div>
       </div>
-      <h3>Đang phân tích...</h3>
-      <p>AI đang nhận dạng các yếu tố lễ hội trong phương tiện của bạn</p>
+      <h3>{{ 'RESULTS.loading.title' | translate }}</h3>
+      <p>{{ 'RESULTS.loading.subtitle' | translate }}</p>
       <div class="loading-progress">
         <div class="progress-bar"></div>
       </div>
@@ -31,7 +31,7 @@
       <!-- Trophy Badge -->
       <div class="trophy-badge">
         <span class="trophy-icon">🏆</span>
-        <span class="trophy-label">Top 3 kết quả phân tích</span>
+        <span class="trophy-label">{{ 'RESULTS.topResults' | translate }}</span>
       </div>
       
       <!-- Top 3 Results -->
@@ -74,7 +74,7 @@
         <div class="winner-highlight">
           <div class="highlight-header">
             <mat-icon>emoji_events</mat-icon>
-            <span>Kết quả chính xác nhất</span>
+            <span>{{ 'RESULTS.winner.title' | translate }}</span>
           </div>
           
           <div class="highlight-content">
@@ -115,7 +115,7 @@
               <p>{{ winner.description }}</p>
               <div class="cultural-badge">
                 <mat-icon>verified</mat-icon>
-                <span>Di sản Văn hóa Phi vật thể</span>
+                <span>{{ 'RESULTS.winner.culturalBadge' | translate }}</span>
               </div>
             </div>
           </div>
@@ -126,11 +126,11 @@
       <div class="action-buttons">
         <button class="btn-heritage primary">
           <mat-icon>share</mat-icon>
-          <span>Chia sẻ kết quả</span>
+          <span>{{ 'RESULTS.actions.share' | translate }}</span>
         </button>
         <button class="btn-heritage secondary" (click)="festivalService.reset()">
           <mat-icon>refresh</mat-icon>
-          <span>Phân tích mới</span>
+          <span>{{ 'RESULTS.actions.newAnalysis' | translate }}</span>
         </button>
       </div>
     </div>
@@ -146,20 +146,20 @@
         <span class="illustration-icon">🎭</span>
         <div class="illustration-ring"></div>
       </div>
-      <h3>Sẵn sàng khám phá</h3>
-      <p>Tải lên hình ảnh hoặc video để nhận dạng lễ hội văn hóa Việt Nam</p>
+      <h3>{{ 'RESULTS.empty.title' | translate }}</h3>
+      <p>{{ 'RESULTS.empty.subtitle' | translate }}</p>
       <div class="empty-features">
         <div class="feature">
           <mat-icon>photo_camera</mat-icon>
-          <span>Hình ảnh</span>
+          <span>{{ 'RESULTS.empty.images' | translate }}</span>
         </div>
         <div class="feature">
           <mat-icon>videocam</mat-icon>
-          <span>Video</span>
+          <span>{{ 'RESULTS.empty.video' | translate }}</span>
         </div>
         <div class="feature">
           <mat-icon>auto_awesome</mat-icon>
-          <span>AI Analysis</span>
+          <span>{{ 'RESULTS.empty.ai' | translate }}</span>
         </div>
       </div>
     </div>
