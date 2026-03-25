@@ -442,9 +442,15 @@ def submit_answer():
     data = request.json
     if not data:
         return jsonify({'error': 'Thiếu request body', 'code': 'NO_BODY'}), 400
-        
+
     req_id = data.get('request_id')
-    user_answer = data.get('answer', '').strip()
+    user_answer = data.get('answer', '')
+
+    # Validate answer length
+    if isinstance(user_answer, str):
+        user_answer = user_answer.strip()
+        if len(user_answer) > 5000:
+            return jsonify({'error': 'Câu trả lời quá dài (tối đa 5000 ký tự)', 'code': 'ANSWER_TOO_LONG'}), 400
 
     if not req_id or req_id not in ACTIVE_SESSIONS:
         return jsonify({
