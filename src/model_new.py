@@ -1052,7 +1052,7 @@ class BayesianFestivalClassifier:
 # ==========================================
 if __name__ == "__main__":
     # Cấu hình đường dẫn
-    MODEL_PATH = '../weight/best.pt' 
+    MODEL_PATH = '../weight/best_openvino_model/' 
     CSV_PATH = '../artifacts/merged_data.csv'
     VIDEO_PATH = '../assets/input/2.mp4'
     

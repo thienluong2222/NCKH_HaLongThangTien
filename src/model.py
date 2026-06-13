@@ -1058,7 +1058,7 @@ if __name__ == "__main__":
 
     from constraintsDB import CONSTRAINTS_DB, SUBCLASS_TO_FESTIVAL
 
-    model_path = '../weight/best.pt'
+    model_path = '../weight/best_openvino_model/'
     csv_path = '../artifacts/merged_data.csv'
     video_path = '../assets/input/1.mp4'
     output_video_path = '../assets/output/1_detected.mp4'

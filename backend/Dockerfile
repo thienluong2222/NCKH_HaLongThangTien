@@ -1,7 +1,6 @@
 # ==========================================
-# ICHeritage Backend - OPTIMIZED Dockerfile
-# Multi-stage build with CPU-only PyTorch
-# Expected size: ~3-4GB (down from 13.9GB)
+# ICHeritage Backend - ULTIMATE STANDALONE & SPEED OPTIMIZED
+# Combined with requirements-cpu.txt and .dockerignore
 # ==========================================
 
 # ============ Stage 1: Builder ============
@@ -14,20 +13,22 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /build
 
-# Install build dependencies (only needed for compilation)
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    g++ \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends gcc g++ && rm -rf /var/lib/apt/lists/*
 
-# Create virtual environment for cleaner dependency management
 RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Copy and install requirements with CPU-only PyTorch
+# Tận dụng file cấu hình CPU của bạn
 COPY requirements-cpu.txt .
 RUN pip install --upgrade pip && \
+    # Cài thêm lõi openvino để kích hoạt tính năng tăng tốc dự đoán CPU
+    pip install openvino openvino-telemetry && \
     pip install -r requirements-cpu.txt
+
+# Hút mỡ triệt để Virtual Environment
+RUN find /opt/venv -type d -name "tests" -exec rm -rf {} + && \
+    find /opt/venv -type d -name "__pycache__" -exec rm -rf {} + && \
+    find /opt/venv -name "*.pyc" -delete
 
 # ============ Stage 2: Runtime ============
 FROM python:3.11-slim AS runtime
@@ -35,50 +36,34 @@ FROM python:3.11-slim AS runtime
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PYTHONPATH=/app \
-    PATH="/opt/venv/bin:$PATH"
+    PATH="/opt/venv/bin:$PATH" \
+    OMP_NUM_THREADS=1 \
+    MKL_NUM_THREADS=1
 
 WORKDIR /app
 
-# Install ONLY runtime dependencies (no gcc/g++)
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libgl1 \
-    libglib2.0-0 \
-    libsm6 \
-    libxext6 \
-    libxrender1 \
-    libgomp1 \
-    ffmpeg \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* \
-    && rm -rf /root/.cache
+    libgl1 libglib2.0-0 libsm6 libxext6 libxrender1 libgomp1 ffmpeg \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Copy virtual environment from builder
+# Nhận venv siêu sạch từ stage builder
 COPY --from=builder /opt/venv /opt/venv
 
-# Copy application code
+# Copy mã nguồn (Nhờ .dockerignore, các file rác và file media nặng sẽ bị tự động bỏ qua)
 COPY app.py config.py constraintsDB.py history_store.py models.py services.py ./
 
-# Copy weight file
-COPY weight/ weight/
+# Nhúng trực tiếp mô hình đã xuất dạng OpenVINO vào Image để chạy độc lập không cần Volume trên Hosting
+COPY weight/best_openvino_model/ /app/weight/best_openvino_model/
 
-# Copy artifacts
-COPY uploads/artifacts/ uploads/artifacts/
+# Khởi tạo sẵn cấu trúc thư mục uploads sạch
+RUN mkdir -p uploads/artifacts && chmod -R 755 /app
 
-# Create necessary directories
-RUN mkdir -p uploads && \
-    chmod -R 755 uploads
-
-# Create non-root user for security
-RUN useradd --create-home --shell /bin/bash appuser && \
-    chown -R appuser:appuser /app
+RUN useradd --create-home --shell /bin/bash appuser && chown -R appuser:appuser /app
 USER appuser
 
-# Expose port
 EXPOSE 5001
 
-# Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:5001/api/health')" || exit 1
 
-# Run with gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:5001", "--workers", "1", "--threads", "4", "--timeout", "300", "--keep-alive", "5", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5001", "--workers", "2", "--threads", "2", "--timeout", "300", "app:app"]

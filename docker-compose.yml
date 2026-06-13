@@ -1,17 +1,17 @@
 # ==========================================
 # ICHeritage - Full Stack Docker Compose
 # Vietnamese Cultural Heritage Detection System
+# Optimized for CPU Speed & Standalone Hosting Deployment
 # ==========================================
 
 services:
   # ==========================================
-  # BACKEND - Python Flask + YOLO
+  # BACKEND - Python Flask + YOLO (OpenVINO)
   # ==========================================
   backend:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    # image: icheritage-backend:optimized
     container_name: icheritage-backend
     restart: unless-stopped
     ports:
@@ -22,20 +22,24 @@ services:
       - FLASK_DEBUG=${FLASK_DEBUG:-False}
       - PORT=5001
       - HOST=0.0.0.0
-      - MODEL_PATH=/app/weight/best.pt
+      # Tối ưu: Trỏ trực tiếp vào thư mục mô hình OpenVINO đã nhúng bên trong Image
+      - MODEL_PATH=/app/weight/best_openvino_model
       - CSV_PATH=/app/uploads/artifacts/merged_data.csv
       - UPLOAD_FOLDER=/app/uploads
     volumes:
-      # Mount model weights (large file, better to mount than copy)
-      - ./backend/weight:/app/weight:ro
-      # Mount uploads for persistence
+      # Giữ lại Volume này để lưu giữ ảnh/video người dùng upload lên không bị mất khi restart
       - backend-uploads:/app/uploads
-      # Mount artifacts (CSV mapping)
-      - ./backend/uploads/artifacts:/app/uploads/artifacts:ro
     networks:
       - icheritage-network
     healthcheck:
-      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:5001/api/health')"]
+      # Sửa lỗi: Dùng thư viện urllib mặc định của Python (Không cần cài thêm gói requests)
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:5001/api/health')",
+        ]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -58,7 +62,16 @@ services:
     networks:
       - icheritage-network
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      # Sửa lỗi: Sử dụng wget có sẵn của Alpine thay vì curl để tránh lỗi vặt báo đỏ
+      test:
+        [
+          "CMD",
+          "wget",
+          "--no-verbose",
+          "--tries=1",
+          "--spider",
+          "http://localhost:80/",
+        ]
       interval: 30s
       timeout: 10s
       retries: 3

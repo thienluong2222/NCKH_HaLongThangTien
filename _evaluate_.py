@@ -524,7 +524,7 @@ def main():
     """Main function"""
     # Paths
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    MODEL_PATH = os.path.join(BASE_DIR, "backend/weight/best.pt")
+    MODEL_PATH = os.path.join(BASE_DIR, "backend/weight/best_openvino_model/")
     CSV_PATH = os.path.join(BASE_DIR, "backend/uploads/artifacts/merged_data.csv")
     FRAME_DIR = os.path.join(BASE_DIR, "assets/Frame")
     

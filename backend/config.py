@@ -18,7 +18,7 @@ class Config:
     ALLOWED_IMAGE_EXTENSIONS = {'jpg', 'jpeg', 'png', 'bmp', 'gif'}
     
     # Model paths
-    MODEL_PATH = os.getenv("MODEL_PATH", "weight/best.pt")
+    MODEL_PATH = os.getenv("MODEL_PATH", "weight/best_openvino_model/")
     CSV_PATH = os.getenv("CSV_PATH", "uploads/artifacts/merged_data.csv")
     
     # API Keys

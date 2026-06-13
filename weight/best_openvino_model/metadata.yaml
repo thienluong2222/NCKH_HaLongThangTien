@@ -1,0 +1,130 @@
+description: Ultralytics YOLO11n model trained on //content/My-First-Project-3/data.yaml
+author: Ultralytics
+date: '2026-06-11T18:37:14.207808'
+version: 8.4.66
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: Ao Khoac vai
+  1: Ao dai
+  2: Ao dai truyen thong
+  3: Ao ren dinh hat
+  4: Ban tho Dinh Binh Thuy
+  5: Ban tho ong
+  6: Banh gung
+  7: Banh num kha mos
+  8: Binh bong dua
+  9: Cam gay
+  10: Cam vu khi
+  11: Canh bien
+  12: Canh cung dien
+  13: Canh hang dong
+  14: Canh thien nhien trong rung
+  15: Cau con ong
+  16: Cay beo
+  17: Chay
+  18: Choi Chnam Thmay
+  19: Chua
+  20: Co Phat dan
+  21: Co hoi
+  22: Coi
+  23: Com
+  24: Cong Dinh
+  25: Cong lang ong
+  26: Cong tre
+  27: Dan cong Coung-tuoch Coung-thom
+  28: Dan sat Ro-niet-dek
+  29: Dan thuyen Ro niet ek
+  30: Dau doi khan dong
+  31: Dau doi vuong mien
+  32: Den hoa dang
+  33: Den hoa dang dang thung
+  34: Den nuoc
+  35: Den troi
+  36: Deo vong co
+  37: Deo vong tay
+  38: Dinh Binh Thuy
+  39: Do vai bong
+  40: Du ruoc doan
+  41: Ghe ngo
+  42: Giap nguc dinh hat
+  43: Giap than duoi
+  44: Hoa sen
+  45: Ken Srolay pin-piet
+  46: Khan Sac Than
+  47: Khan ran
+  48: Khoac ao ren
+  49: Khoai
+  50: Kieu ruoc ong
+  51: Lan su rong
+  52: Le phuc Ky Yen
+  53: Le vat Ky Yen
+  54: Long may ke dam
+  55: Mac do dinh hat
+  56: Mam cung
+  57: Mieu
+  58: Moi do
+  59: Mua Lan
+  60: Nghe si Hat Boi
+  61: Nguoi bieu dien
+  62: Nguoi dan
+  63: Nguoi di ca kheo
+  64: Nguoi mua
+  65: Nguoi mua chan
+  66: Nguoi tham gia te nuoc
+  67: Nha su
+  68: Nhac cu Ngu Am
+  69: Nui cat
+  70: Nuoc thom
+  71: Ok om bok
+  72: Rau dai
+  73: Sac Than
+  74: San khau Hat Boi
+  75: Tau bien
+  76: Tay ao dinh hat
+  77: Than 3 mat
+  78: That lung ban to
+  79: Thuyen
+  80: Toc bui cao
+  81: Trang diem mat quy
+  82: Trang phuc Khmer
+  83: Trang phuc bieu dien nghe thuat nhan gian
+  84: Trang phuc le hoi
+  85: Trang phuc linh
+  86: Trong
+  87: Trong lon Sakho-thom
+  88: Trong nho Kha-so-sompho
+  89: Tuong Phat
+  90: Vay sampot
+  91: Xe dieu hanh
+  92: Xe dieu hanh ruoc ong
+  93: Xoi
+  94: bong dua
+  95: dan bau
+  96: dan co
+  97: dan guitar
+  98: dan kim
+  99: dan nho
+  100: dan tam
+  101: dan tranh
+  102: dan ty ba
+  103: sao
+  104: sat
+  105: trai dua
+  106: trong Chhay-dam
+args:
+  data: null
+  batch: 1
+  fraction: 1.0
+  half: false
+  int8: false
+  dynamic: false
+  nms: false
+channels: 3
+end2end: false

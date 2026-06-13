@@ -1442,5 +1442,5 @@ Hãy sinh câu hỏi:
 
 if __name__ == "__main__":
     # Test
-    model = YOLOCSVPipeline(model_path='./weight/best.pt', csv_path="./uploads/artifacts/merged_data.csv")
+    model = YOLOCSVPipeline(model_path='./weight/best_openvino_model/', csv_path="./uploads/artifacts/merged_data.csv")
     logger.info(model.process_video("/Users/thien/Downloads/Zalo/nghinh ong 2.mp4", confidence_threshold=0.5))

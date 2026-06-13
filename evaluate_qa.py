@@ -917,7 +917,7 @@ def main():
     parser = argparse.ArgumentParser(description="Đánh giá Q&A Scoring cho hệ thống nhận dạng lễ hội")
     parser.add_argument("--frame-dir", default="assets/Frame", help="Thư mục chứa frame ảnh")
     parser.add_argument("--video-dir", default="assets/input", help="Thư mục chứa video (mặc định: assets/input)")
-    parser.add_argument("--model-path", default="backend/weight/best.pt", help="Đường dẫn model YOLO")
+    parser.add_argument("--model-path", default="backend/weight/best_openvino_model/", help="Đường dẫn model YOLO")
     parser.add_argument("--csv-path", default="backend/uploads/artifacts/merged_data.csv", help="Đường dẫn CSV mapping")
     parser.add_argument("--no-frame", action="store_true", help="Bỏ qua đánh giá trên frame (chỉ chạy video)")
     parser.add_argument("--no-video", action="store_true", help="Bỏ qua đánh giá trên video (chỉ chạy frame)")

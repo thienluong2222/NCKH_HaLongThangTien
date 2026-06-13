@@ -15,7 +15,7 @@ from constraintsDB import CONSTRAINTS_DB, SUBCLASS_TO_FESTIVAL
 
 # --- CẤU HÌNH ---
 load_dotenv()
-MODEL_PATH = "../models/best.pt" 
+MODEL_PATH = "../models/best_openvino_model/" 
 CSV_PATH = "../artifacts/merged_data.csv"
 FINAL_SCORE_THRESHOLD = 0.85  # Ngưỡng điểm để chốt kết quả
 

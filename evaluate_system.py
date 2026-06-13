@@ -696,7 +696,7 @@ def main():
     """
     # Cấu hình
     FRAME_DIR = "assets/Frame"
-    MODEL_PATH = "backend/weight/best.pt"
+    MODEL_PATH = "backend/weight/best_openvino_model/"
     CSV_PATH = "backend/uploads/artifacts/merged_data.csv"
     
     # Kiểm tra files tồn tại

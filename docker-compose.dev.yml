@@ -20,7 +20,7 @@ services:
       - PORT=5001
       - HOST=0.0.0.0
       - GEMINI_API_KEY=${GEMINI_API_KEY}
-      - MODEL_PATH=/app/weight/best.pt
+      - MODEL_PATH=/app/weight/best_openvino_model/
       - CSV_PATH=/app/uploads/artifacts/merged_data.csv
       - UPLOAD_FOLDER=/app/uploads
     volumes:
